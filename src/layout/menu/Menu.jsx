@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import LogoIEPA from '../../assets/img_test/logoIEPA.png';
+import { MapPin, Megaphone, ClipboardPen } from 'lucide-react';
 
 
 function Menu({ onPreregisterClick }) {
@@ -15,24 +16,35 @@ function Menu({ onPreregisterClick }) {
     };
 
     return(
-        <div className="bg-gradient-to-b from-black/75 to-transparent pb-25 md:pb-60">
+        <div className="bg-gradient-to-b from-black/75 to-transparent pb-10 md:pb-25">
             <div className="flex justify-between items-center pt-10 md:pt-5 px-3 md:pl-10 text-white font-bold text-lg">
                 <button className="cursor-pointer transition hover:scale-110">
                     <img src={LogoIEPA} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                 </button>
 
                 <div className="hidden md:flex gap-13">
-                    <button className="cursor-pointer transition hover:scale-110">Provincias</button>
-                    <button className="cursor-pointer transition hover:scale-110">Promociones</button>
-                    <button className="cursor-pointer transition hover:scale-110" onClick={goToRegister}>Registro</button>
+                    {/* Provincias */}
+                    <button className="group flex items-center gap-2 cursor-pointer transition hover:scale-110" >
+                        <MapPin size={15} className="opacity-0 transition-opacity group-hover:opacity-100" />
+                        <span className='order-1 md:order-2'>Provincias</span>
+                    </button>
+                    {/* Promociones */}
+                    <button className="group flex items-center gap-2 cursor-pointer transition hover:scale-110">
+                        <Megaphone size={15} className="opacity-0 transition-opacity group-hover:opacity-100"/>
+                        <span>Promociones</span>
+                    </button>
+                    {/* Registro */}
+                    <button className="group flex items-center gap-2 cursor-pointer transition hover:scale-110" onClick={goToRegister}>
+                        <ClipboardPen size={15} className="opacity-0 transition-opacity group-hover:opacity-100" />
+                        <span>Registro</span>
+                    </button>
                 </div>
-
                 <button className="md:hidden transition hover:scale-110" onClick={() => setIsOpen(true)}>
                     ☰
                 </button>
 
                 <div className="hidden md:block pr-10"></div>
-
+                
                 <div
                     className={`fixed inset-0 z-40 bg-gray-100 transition-opacity duration-300 ${
                         isOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'
