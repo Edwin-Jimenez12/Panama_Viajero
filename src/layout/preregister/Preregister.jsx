@@ -1,4 +1,4 @@
-function Preregistrer(){
+function Preregister(){
     return(
         // Cambié los márgenes fijos por max-w-4xl y mx-auto para centrarlo
         <div className="max-w-4xl mx-auto mt-10 border-2 border-gray-200 rounded-xl p-8 shadow-md">
@@ -36,4 +36,4 @@ function Preregistrer(){
         </div>
     )
 }
-export default Preregistrer;
+export default Preregister;

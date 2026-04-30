@@ -1,4 +1,4 @@
-function map() {
+function Map() {
     return(
         <div className="justify-center items-center flex flex-col mt-70 mb-70">
             <h1>Seccion del mapa</h1>
@@ -6,4 +6,4 @@ function map() {
         </div>
     )
 }
-export default map
+export default Map

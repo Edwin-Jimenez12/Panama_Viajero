@@ -1,5 +1,5 @@
 
-function ButtomBanner() {
+function BottomBanner() {
     return (
         <div >
             <h1>Buttom Banner</h1>
@@ -7,4 +7,4 @@ function ButtomBanner() {
     )
 }
 
-export default ButtomBanner;
+export default BottomBanner;

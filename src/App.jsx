@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import Menu from './layout/menu/Menu.jsx'
 import BannerLayout from './layout/banner/BannerLayout.jsx'
 import Map from './layout/map/DinamicMap.jsx';
-import Preregistrer from './layout/preregistrer/Preregistrer.jsx'
-import ButtomBanner from './layout/buttombanner/Buttombanner.jsx';
+import Preregister from './layout/preregister/Preregister.jsx'
+import BottomBanner from './layout/bottombanner/Bottombanner.jsx';
 import CountdownModal from './layout/counter/Counter.jsx';
 import './App.css'
 
@@ -56,9 +56,9 @@ function App() {
       <BannerLayout />
       <Map />
       <section ref={preregisterRef} className="scroll-mt-24">
-        <Preregistrer />
+        <Preregister />
       </section>
-      <ButtomBanner />
+      <BottomBanner />
     </div>
   )
 }

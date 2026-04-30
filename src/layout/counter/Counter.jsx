@@ -42,6 +42,8 @@ useEffect(() => {
     return () => clearInterval(timer);
 },);
 
+
+
 return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm">
         <div className="bg-white p-8 rounded-lg max-w-md w-[90%] relative text-center shadow-2xl">

@@ -1,6 +1,6 @@
 import Banner from '../../assets/img_test/bannerP.png';
 
-function BannnerLayout() {
+function BannerLayout() {
     return (
         <div className="w-full overflow-hidden aspect-[1920/800]">
             <img
@@ -11,4 +11,4 @@ function BannnerLayout() {
         </div>
     )
 }
-export default BannnerLayout
+export default BannerLayout
