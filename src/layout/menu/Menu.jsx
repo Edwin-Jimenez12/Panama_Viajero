@@ -1,10 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import LogoIEPA from '../../assets/img_test/logoIEPA.png';
 import { MapPin, Megaphone, ClipboardPen } from 'lucide-react';
 
 
-function Menu({ onPreregisterClick }) {
+function Menu({ onLogoClick, onPreregisterClick }) {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
 
     const closeMenu = () => {
         setIsOpen(false);
@@ -15,10 +23,17 @@ function Menu({ onPreregisterClick }) {
         onPreregisterClick?.();
     };
 
+    const goToHome = () => {
+        closeMenu();
+        onLogoClick?.();
+    };
+
     return(
-        <div className="bg-gradient-to-b from-black/75 to-transparent pb-10 md:pb-25">
+        /* Fondo del menu */
+        <div className="bg-gradient-to-b from-black/75 to-transparent pb-10 ">
+            {/* Justificacion del menu */}
             <div className="flex justify-between items-center pt-10 md:pt-5 px-3 md:pl-10 text-white font-bold text-lg">
-                <button className="cursor-pointer transition hover:scale-110">
+                <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
                     <img src={LogoIEPA} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                 </button>
 
@@ -46,8 +61,8 @@ function Menu({ onPreregisterClick }) {
                 <div className="hidden md:block pr-10"></div>
                 
                 <div
-                    className={`fixed inset-0 z-40 bg-gray-100 transition-opacity duration-300 ${
-                        isOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                    className={`fixed inset-0 z-40 bg-black/50 transition-opacity h-screen duration-300 ${
+                        isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
                     onClick={closeMenu}
                 ></div>
@@ -59,7 +74,7 @@ function Menu({ onPreregisterClick }) {
                 >
                     <div className="flex flex-col gap-8 py-6">
                         <div className="flex flex-col items-center gap-3">
-                            <button className="cursor-pointer transition hover:scale-110">
+                            <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
                                 <img src={LogoIEPA} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                             </button>
                             <label>Panama Viajero</label>

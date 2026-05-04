@@ -11,8 +11,14 @@ import './App.css'
 function App() {
   const [showCountdown, setShowCountdown] = useState(true)
   const [showMenu, setShowMenu] = useState(true)
+  const homeRef = useRef(null)
   const preregisterRef = useRef(null)
   const lastScrollY = useRef(0)
+
+  const scrollToHome = () => {
+    setShowCountdown(false)
+    homeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   const scrollToPreregister = () => {
     setShowCountdown(false)
@@ -51,14 +57,19 @@ function App() {
           showMenu ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <Menu onPreregisterClick={scrollToPreregister} />
+        <Menu
+          onLogoClick={scrollToHome}
+          onPreregisterClick={scrollToPreregister}
+        />
       </div>
-      <BannerLayout />
+      <section ref={homeRef}>
+        <BannerLayout />
+      </section>
       <Map />
       <section ref={preregisterRef} className="scroll-mt-24">
         <Preregister />
       </section>
-      <BottomBanner />
+      <BottomBanner onLogoClick={scrollToHome} />
     </div>
   )
 }
