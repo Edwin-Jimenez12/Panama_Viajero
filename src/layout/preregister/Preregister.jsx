@@ -2,7 +2,7 @@ import { Mail, Phone, User } from 'lucide-react';
 
 function Preregister() {
     return (
-        <div className="max-w-4xl mx-auto mt-10 border-2 border-gray-200 rounded-xl p-8 shadow-md">
+        <div className="max-w-4xl mx-auto mt-10 border-2 border-gray-200 rounded-xl p-8 shadow-xl">
             <form action="" className="space-y-6">
                 <div className="flex flex-col md:flex-row gap-2 justify-end items-baseline border-b pb-4">
                     <span className="text-xl text-gray-600">Regístrate y obtén una</span>

@@ -1,6 +1,6 @@
 import {FaInstagram, FaTiktok, FaFacebook} from "react-icons/fa6"
 
-import LogoIEPA from "../../assets/img_test/logoIEPA.png";
+import LogoIEPA from "../../img_test/logoIEPA.png";
 function BottomBanner({ onLogoClick }) {
     return (
         <div className="mt-20 bg-blue-900 py-15 shadow-[0_-3px_12px_rgba(0,0,0,0.08)] shadow-black/50  ">

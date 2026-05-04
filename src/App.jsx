@@ -1,19 +1,30 @@
 import { useEffect, useRef, useState } from 'react'
-import Menu from './layout/menu/Menu.jsx'
+import { Route, Routes } from 'react-router-dom'
+import Menu from './assets/components/menu/Menu.jsx'
 import BannerLayout from './layout/banner/BannerLayout.jsx'
 import Map from './layout/map/DinamicMap.jsx';
 import Preregister from './layout/preregister/Preregister.jsx'
-import BottomBanner from './layout/bottombanner/Bottombanner.jsx';
+import BottomBanner from './assets/components/bottombanner/Bottombanner.jsx';
 import CountdownModal from './layout/counter/Counter.jsx';
+import Colon from './data/america/panama/colon/Colon.jsx';
 import './App.css'
 
 
-function App() {
+
+function Home() {
   const [showCountdown, setShowCountdown] = useState(true)
   const [showMenu, setShowMenu] = useState(true)
   const homeRef = useRef(null)
   const preregisterRef = useRef(null)
   const lastScrollY = useRef(0)
+  const mapRef = useRef(null)
+
+  
+  const scrollToMap = () => {
+  setShowCountdown(false)
+  mapRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 
   const scrollToHome = () => {
     setShowCountdown(false)
@@ -60,17 +71,29 @@ function App() {
         <Menu
           onLogoClick={scrollToHome}
           onPreregisterClick={scrollToPreregister}
+          onMapClick={scrollToMap}
         />
       </div>
       <section ref={homeRef}>
         <BannerLayout />
       </section>
-      <Map />
+      <section ref={mapRef} className="scroll-mt-24">
+        <Map />
+      </section>
       <section ref={preregisterRef} className="scroll-mt-24">
         <Preregister />
       </section>
       <BottomBanner onLogoClick={scrollToHome} />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/provincias/colon" element={<Colon />} />
+    </Routes>
   )
 }
 

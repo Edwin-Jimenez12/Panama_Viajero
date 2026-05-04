@@ -2,7 +2,7 @@ import Banner from '../../assets/img_test/bannerP.png';
 
 function BannerLayout() {
     return (
-        <div className="w-full overflow-hidden aspect-[1920/800]">
+        <div className="w-full overflow-hidden aspect-[1920/1080]">
             <img
                 src={Banner}
                 alt="BannerLayout"

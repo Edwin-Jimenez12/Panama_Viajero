@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import LogoIEPA from '../../assets/img_test/logoIEPA.png';
+import LogoIEPA from '../../img_test/logoIEPA.png';
 import { MapPin, Megaphone, ClipboardPen } from 'lucide-react';
 
 
-function Menu({ onLogoClick, onPreregisterClick }) {
+function Menu({ onLogoClick, onPreregisterClick, onMapClick }) {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -27,6 +27,10 @@ function Menu({ onLogoClick, onPreregisterClick }) {
         closeMenu();
         onLogoClick?.();
     };
+    const goToMap = () => {
+        closeMenu();
+        onMapClick?.();
+    };
 
     return(
         /* Fondo del menu */
@@ -39,10 +43,15 @@ function Menu({ onLogoClick, onPreregisterClick }) {
 
                 <div className="hidden md:flex gap-13">
                     {/* Provincias */}
-                    <button className="group flex items-center gap-2 cursor-pointer transition hover:scale-110" >
-                        <MapPin size={15} className="opacity-0 transition-opacity group-hover:opacity-100" />
-                        <span className='order-1 md:order-2'>Provincias</span>
+                    <button
+                        className="group flex items-center gap-2 cursor-pointer transition hover:scale-110"
+                        onClick={goToMap}
+                        >
+                            <MapPin size={15} className="opacity-0 transition-opacity group-hover:opacity-100" />
+                        <span>Provincias</span>
+                        
                     </button>
+
                     {/* Promociones */}
                     <button className="group flex items-center gap-2 cursor-pointer transition hover:scale-110">
                         <Megaphone size={15} className="opacity-0 transition-opacity group-hover:opacity-100"/>
@@ -81,7 +90,7 @@ function Menu({ onLogoClick, onPreregisterClick }) {
                         </div>
 
                         <div className="flex flex-col items-start ml-3 gap-2.5">
-                            <button className="cursor-pointer transition hover:scale-110">Provincias</button>
+                            <button className="cursor-pointer transition hover:scale-110" onClick={goToMap}>Provincias</button>
                             <button className="cursor-pointer transition hover:scale-110">Promociones</button>
                             <button className="cursor-pointer transition hover:scale-110" onClick={goToRegister}>Registro</button>
                         </div>
