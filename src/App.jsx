@@ -8,6 +8,7 @@ import BottomBanner from './assets/components/bottombanner/Bottombanner.jsx';
 import CountdownModal from './layout/counter/Counter.jsx';
 import Colon from './data/america/panama/colon/Colon.jsx';
 import './App.css'
+import Logo from "./assets/img_test/logoRex.svg";
 
 
 
@@ -74,8 +75,12 @@ function Home() {
           onMapClick={scrollToMap}
         />
       </div>
-      <section ref={homeRef}>
+      <section ref={homeRef} className="relative">
         <BannerLayout />
+        {/* Nombre panama viajero */}
+        <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center">
+          <img src={Logo} alt="Logo" className="h-24 w-auto max-w-full md:h-40" />
+        </div>
       </section>
       <section ref={mapRef} className="scroll-mt-24">
         <Map />

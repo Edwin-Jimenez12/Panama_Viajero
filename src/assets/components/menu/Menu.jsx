@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import LogoIEPA from '../../img_test/logoIEPA.png';
+import LogoCircular from '../../img_test/logoCircular.svg';
 import { MapPin, Megaphone, ClipboardPen } from 'lucide-react';
 
 
@@ -34,11 +34,11 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick }) {
 
     return(
         /* Fondo del menu */
-        <div className="bg-gradient-to-b from-black/75 to-transparent pb-10 ">
+        <div className="bg-gradient-to-b from-black/40 to-transparent pb-7 ">
             {/* Justificacion del menu */}
-            <div className="flex justify-between items-center pt-10 md:pt-5 px-3 md:pl-10 text-white font-bold text-lg">
+            <div className="flex justify-between items-center pt-10 md:pt-5 px-3 md:pl-10 md:pr-30 text-white font-bold text-lg">
                 <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
-                    <img src={LogoIEPA} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
+                    <img src={LogoCircular} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                 </button>
 
                 <div className="hidden md:flex gap-13">
@@ -67,7 +67,7 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick }) {
                     ☰
                 </button>
 
-                <div className="hidden md:block pr-10"></div>
+                <div className="hidden md:block "></div>
                 
                 <div
                     className={`fixed inset-0 z-40 bg-black/50 transition-opacity h-screen duration-300 ${
@@ -84,7 +84,7 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick }) {
                     <div className="flex flex-col gap-8 py-6">
                         <div className="flex flex-col items-center gap-3">
                             <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>
-                                <img src={LogoIEPA} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
+                                <img src={LogoCircular} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                             </button>
                             <label>Panama Viajero</label>
                         </div>

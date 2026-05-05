@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+@font-face {
+  font-family: 'InvisibleSans';
+  /* La ruta debe subir niveles hasta llegar a assets */
+  src: url('./assets/fonts/Invisible-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
