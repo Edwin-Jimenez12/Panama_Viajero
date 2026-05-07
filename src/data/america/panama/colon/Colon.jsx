@@ -8,7 +8,6 @@ import { provincias } from './ColonData.js';
 function Colon() {
     const navigate = useNavigate();
     const colon = provincias[0];
-
     return (
         <div className="relative bg-brand-soft text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
@@ -31,16 +30,19 @@ function Colon() {
                     playsInline
                     preload="metadata"
                 />
-                <div className="absolute inset-0 z-10 flex items-center bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4">
-                    <div className="max-w-md rounded-xl bg-white/30 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:ml-15">
-                        <h1 className="font-invisible text-5xl font-bold text-brand-blue md:pb-4 md:text-6xl opacity-100 brightness-150">
-                            {colon.nombre}
-                        </h1>
-                        <p className="text-lg leading-7 text-brand-white/90 opacity-100 brightness-100 ">
-                            {colon.descripcionCorta}
-                        </p>
-                    </div>
-                </div>
+                {/* Cambiamos items-center por items-start en móvil y md:items-center en desktop */}
+<div className="absolute inset-0 z-10 flex items-start md:items-center bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4">
+    
+    {/* Añadimos mt-20 (o el valor que prefieras) para empujarlo desde arriba solo en móvil */}
+    <div className="max-w-md rounded-xl bg-white/30 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm mt-24 md:mt-0 md:ml-15">
+        <h1 className="font-invisible text-5xl font-bold text-brand-blue md:pb-4 md:text-6xl brightness-150">
+            {colon.nombre}
+        </h1>
+        <p className="text-lg leading-7 text-brand-white/90">
+            {colon.descripcionCorta}
+        </p>
+    </div>
+</div>
             </div>
 
             {/* provincia y resena */}
