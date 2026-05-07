@@ -23,7 +23,7 @@ function Colon() {
             <div className="relative z-0">
                 <video
                     src={ColonVideo}
-                    className="h-[calc(100vh+15px)] md:h-screen w-full object-cover"
+                    className="h-screen w-full object-cover"
                     autoPlay
                     muted
                     loop

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Jugador from '../../img_test/tarjeta-jugador-prueba.png'
+import BocasMap from '../../srcProvincias/bocas_del_toto/bocas del toro.svg'
 
 function AnimateProvince() {
     const [rotation, setRotation] = useState({ x: 0, y: 0 })
@@ -29,9 +29,9 @@ function AnimateProvince() {
             style={{ perspective: '750px' }}
         >
             <img
-                src={Jugador}
+                src={BocasMap}
                 alt="Tarjeta de jugadores"
-                className="w-full rounded-xl object-cover shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-transform duration-150"
+                className="w-full rounded-xl object-cover drop-shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-transform duration-150"
                 style={{
                     transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.03)`,
                 }}
