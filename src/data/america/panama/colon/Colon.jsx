@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Menu from '../../../../assets/components/menu/Menu.jsx';
-import Banner from '../../../../assets/img_test/colonBanner.png';
+import ColonVideo from '../../../../assets/srcProvincias/bocas_del_toto/Playa-banner-1080p.mp4';
 import BottomBanner from '../../../../assets/components/bottombanner/Bottombanner.jsx';
 import AnimateProvince from '../../../../assets/components/animatecard/animateprovince.tsx';
 import { provincias } from './ColonData.js';
@@ -22,11 +22,23 @@ function Colon() {
             </div>
 
             <div className="relative z-0">
-                <img src={Banner} alt="Banner colon" className="h-screen w-full object-cover" />
+                <video
+                    src={ColonVideo}
+                    className="h-screen w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
                 <div className="absolute inset-0 z-10 flex items-center bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4">
-                    <div className="max-w-md rounded-xl bg-brand-white/90 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] md:ml-15">
-                        <h1 className="font-invisible text-5xl font-bold text-brand-blue md:pb-4 md:text-6xl">{colon.nombre}</h1>
-                        <p className="text-lg leading-7 text-brand-charcoal/80">{colon.descripcionCorta}</p>
+                    <div className="max-w-md rounded-xl bg-white/30 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:ml-15">
+                        <h1 className="font-invisible text-5xl font-bold text-brand-blue md:pb-4 md:text-6xl opacity-100 brightness-150">
+                            {colon.nombre}
+                        </h1>
+                        <p className="text-lg leading-7 text-brand-white/90 opacity-100 brightness-100 ">
+                            {colon.descripcionCorta}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -74,13 +86,15 @@ function Colon() {
                 <h1 className="flex justify-center font-invisible text-3xl font-bold text-brand-blue md:pb-4 md:text-4xl">Sugerencias turisticas</h1>
                 <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 md:gap-8">
                     {colon.lugaresDestacados.map((lugar) => (
-                        <a key={lugar.id} className="transition hover:scale-105">
+                        <a key={lugar.id} className="w-[195px] transition hover:scale-105 md:w-[350px]">
+                            <div className="aspect-[16/9] w-full overflow-hidden rounded-lg shadow-[0_12px_30px_rgba(77,76,76,0.22)]">
                             <img
                                 src={lugar.imagen}
                                 alt={lugar.nombre}
-                                className="w-[250px] cursor-pointer rounded-lg shadow-[0_12px_30px_rgba(77,76,76,0.22)] md:w-[350px]"
+                                className="h-full w-full cursor-pointer object-cover"
                                 onClick={() => navigate('../colon/places/' + lugar.id)}
                             />
+                            </div>
                         </a>
                     ))}
                 </div>
