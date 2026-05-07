@@ -5,7 +5,7 @@ import Map from './layout/map/DinamicMap.jsx'
 import Preregister from './layout/preregister/Preregister.jsx'
 import BottomBanner from './assets/components/bottombanner/Bottombanner.jsx'
 import CountdownModal from './layout/counter/Counter.jsx'
-import Colon from './data/america/panama/colon/Colon.jsx'
+import BocasDelToro from './data/america/panama/BocasDelToro/BocasDelToro.jsx'
 import AboutUs from './assets/components/about us/AboutUs.jsx'
 import AleatorySuggestions from './layout/suggestion/Suggestions.tsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
@@ -88,7 +88,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/provincias/colon" element={<Colon />} />
+      <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />
     </Routes>
   )
 }

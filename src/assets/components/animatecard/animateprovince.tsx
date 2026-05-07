@@ -30,8 +30,8 @@ function AnimateProvince() {
         >
             <img
                 src={BocasMap}
-                alt="Tarjeta de jugadores"
-                className="w-full rounded-xl object-cover drop-shadow-[0_18px_45px_rgba(0,0,0,0.35)] transition-transform duration-150"
+                alt="Mapa de Bocas del Toro"
+                className="w-full object-contain drop-shadow-[0_18px_25px_rgba(0,0,0,0.35)] transition-transform duration-150"
                 style={{
                     transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.03)`,
                 }}

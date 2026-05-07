@@ -19,10 +19,10 @@ function Map() {
                 </p>
 
                 <Link
-                    to="/provincias/colon"
+                    to="/provincias/bocas-del-toro"
                     className="mt-8 inline-flex rounded-full bg-brand-red px-6 py-3 font-semibold text-brand-white shadow-[0_12px_25px_rgba(205,46,76,0.28)] transition hover:bg-brand-blue"
                 >
-                    Ver Colon
+                    Ver Bocas del Toro
                 </Link>
             </div>
         </div>

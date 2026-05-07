@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { provincias as colonData } from '../../data/america/panama/colon/ColonData.js';
+import { provincias as bocasDelToroData } from '../../data/america/panama/BocasDelToro/BocasDelToro.js';
 import { lugaresPanama } from '../../data/america/panama/panama/places/place.js';
 
 const DEFAULT_IMAGE = 'https://tripealotuyo.com/wp-content/uploads/2025/06/Panama%CC%81-%E2%80%93-Foto-Home-Provincia%E2%80%93-Autoridad-de-Turismo-de-Panama%CC%81-%E2%80%93-Tripea-Lo-Tuyo.jpg-Custom-600x338.jpg';
@@ -12,14 +12,14 @@ function getRandomItems(items, limit) {
 
 function AleatorySuggestions() {
     const suggestions = useMemo(() => {
-        const colon = colonData[0];
+        const bocasDelToro = bocasDelToroData[0];
 
-        const colonPlaces = [
-            ...colon.lugaresDestacados,
-            ...colon.restoDeLugares,
+        const bocasDelToroPlaces = [
+            ...bocasDelToro.lugaresDestacados,
+            ...bocasDelToro.restoDeLugares,
         ].map((place) => ({
             ...place,
-            provincia: colon.nombre,
+            provincia: bocasDelToro.nombre,
         }));
 
         const panamaPlaces = lugaresPanama.map((place) => ({
@@ -27,7 +27,7 @@ function AleatorySuggestions() {
             provincia: 'Panama',
         }));
 
-        return getRandomItems([...colonPlaces, ...panamaPlaces], 6);
+        return getRandomItems([...bocasDelToroPlaces, ...panamaPlaces], 6);
     }, []);
 
     return (
