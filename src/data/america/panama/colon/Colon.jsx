@@ -33,7 +33,7 @@ function Colon() {
                 
                 <div className="absolute mt-5 inset-0 z-10 flex items-start md:items-center bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4">
                     <div className="max-w-md rounded-xl bg-white/5 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm mt-24 md:mt-0 md:ml-15">
-                        <h1 className="font-invisible text-5xl font-bold text-brand-blue md:pb-4 md:text-6xl brightness-150">
+                        <h1 className="font-invisible text-5xl font-bold text-[#00CD9B] md:pb-4 md:text-6xl brightness-150">
                             {colon.nombre}
                         </h1>
                         <p className="text-lg leading-7 text-brand-white/90">
