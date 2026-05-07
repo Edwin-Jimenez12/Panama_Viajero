@@ -10,6 +10,15 @@ export default {
       fontFamily: {
         'invisible': ['InvisibleSans', 'sans-serif'],
       },
+      colors: {
+        brand: {
+          red: '#CD2E4C',
+          blue: '#4956A2',
+          charcoal: '#4D4C4C',
+          soft: '#EBEBEB',
+          white: '#FFFFFF',
+        },
+      },
       // ------------------
       keyframes: {
         'marquee-right': {

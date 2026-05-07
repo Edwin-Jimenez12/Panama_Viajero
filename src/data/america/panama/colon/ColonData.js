@@ -32,7 +32,7 @@ export const provincias = [
     ],
 
     resena:
-      'Colón combina el Caribe panameño con una profunda herencia histórica. Sus fortalezas de Portobelo y San Lorenzo, sus playas, su cultura congo, su gastronomía costeña y el Canal de Panamá la convierten en una provincia ideal para quienes buscan historia, mar y experiencias auténticas.',
+      'Colón combina el Caribe panameño con una profunda herencia histórica. Sus fortalezas de Portobelo y San Lorenzo, sus playas, su cultura congo, su gastronomía costeña y el Canal de Panamá la convierten en una provincia ideal para quienes buscan historia, mar y experiencias auténticas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci doloribus quisquam atque debitis in explicabo assumenda similique ex? Nisi rem eos ad quia officia suscipit velit consequatur repellendus quis Totam adipisci doloribus quisquam atque debitis in explicabo assumenda similique ex? Nisi rem eos ad quia officia suscipit velit consequatur repellendus quisn',
 
     gastronomia: [
       {

@@ -45,40 +45,40 @@ useEffect(() => {
 
 
 return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm">
-        <div className="bg-white p-8 rounded-lg max-w-md w-[90%] relative text-center shadow-2xl">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-brand-charcoal/85 backdrop-blur-sm">
+        <div className="relative w-[90%] max-w-md rounded-xl bg-brand-white p-8 text-center shadow-2xl">
             <button
                 onClick={onClose}
-                className="absolute top-4 right-4 text-gray-500 hover:text-black text-xl font-bold cursor-pointer"
+                className="absolute top-4 right-4 cursor-pointer text-xl font-bold text-brand-charcoal/60 hover:text-brand-red"
                 aria-label="Cerrar ventana emergente"
             >X</button>
-            <h2 className="text-2xl font-bold mb-4">Lanzamiento muy pronto</h2>
+            <h2 className="mb-4 text-2xl font-bold text-brand-blue">Lanzamiento muy pronto</h2>
             <div className="grid grid-cols-5 gap-3 mb-6">
-                <div className="bg-gray-100 p-3 rounded-lg">
-                    <span className="block text-3xl font-bold">{timeLeft.months}</span>
+                <div className="rounded-lg bg-brand-soft p-3">
+                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.months}</span>
                     <span className="text-xs uppercase">Meses</span>
                 </div>
-                <div className="bg-gray-100 p-3 rounded-lg">
-                    <span className="block text-3xl font-bold">{timeLeft.days}</span>
+                <div className="rounded-lg bg-brand-soft p-3">
+                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.days}</span>
                     <span className="text-xs uppercase">Dias</span>
                 </div>
-                <div className="bg-gray-100 p-3 rounded-lg">
-                    <span className="block text-3xl font-bold">{timeLeft.hours}</span>
+                <div className="rounded-lg bg-brand-soft p-3">
+                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.hours}</span>
                     <span className="text-xs uppercase">Horas</span>
                 </div>
-                <div className="bg-gray-100 p-3 rounded-lg">
-                    <span className="block text-3xl font-bold">{timeLeft.minutes}</span>
+                <div className="rounded-lg bg-brand-soft p-3">
+                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.minutes}</span>
                     <span className="text-xs uppercase">Min</span>
                 </div>
-                <div className="bg-gray-100 p-3 rounded-lg">
-                    <span className="block text-3xl font-bold">{timeLeft.seconds}</span>
+                <div className="rounded-lg bg-brand-soft p-3">
+                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.seconds}</span>
                     <span className="text-xs uppercase">Seg</span>
                 </div>
             </div>
-            <p className="mb-6 text-gray-600">No te pierdas nuestra apertura oficial.</p>
+            <p className="mb-6 text-brand-charcoal/75">No te pierdas nuestra apertura oficial.</p>
             <button
                 onClick={onPreregister}
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition cursor-pointer"
+                className="cursor-pointer rounded-lg bg-brand-red px-6 py-3 font-bold text-brand-white transition hover:bg-brand-blue"
             >Preregistrarme ahora</button>
         </div>
     </div>
