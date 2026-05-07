@@ -32,20 +32,20 @@ function Colon() {
             </div>
 
             {/* provincia y resena */}
-            <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-16 md:flex-row md:justify-between">
+            <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 md:gap-15 px-4 py-16 md:flex-row md:justify-between">
                 <div className="w-full md:w-1/2">
                     <AnimateProvince />
                 </div>
 
                 <div className="flex w-full flex-col justify-center md:w-1/2">
-                    <h1 className="font-invisible text-3xl font-bold text-brand-blue">Resena historica</h1>
-                    <p className="mt-4 leading-7 text-brand-charcoal/80">{colon.resena}</p>
+                    <h1 className="font-invisible text-3xl md:text-4xl font-bold text-brand-blue">Reseña histórica</h1>
+                    <p className="mt-4 leading-7 text-brand-charcoal/80 text-lg">{colon.resena}</p>
                 </div>
             </section>
 
             {/* Actividades */}
             <div className="mx-auto flex w-full max-w-6xl flex-col px-4 py-16">
-                <h1 className="font-invisible text-2xl font-bold text-brand-blue md:text-4xl">Actividades</h1>
+                <h1 className="font-invisible text-3xl font-bold text-brand-blue md:text-4xl">Actividades</h1>
                 <div className="overflow-hidden py-5 md:mt-2 [mask-image:linear-gradient(to_right,transparent,black_3%,black_90%,transparent)]">
                     <div className="flex w-max animate-marquee-right hover:[animation-play-state:paused]">
                         {[0, 1].map((grupo) => (
@@ -71,7 +71,7 @@ function Colon() {
 
             {/* sugerencias */}
             <div className="flex flex-col gap-5">
-                <h1 className="flex justify-center font-invisible text-2xl font-bold text-brand-blue md:pb-4 md:text-4xl">Sugerencias turisticas</h1>
+                <h1 className="flex justify-center font-invisible text-3xl font-bold text-brand-blue md:pb-4 md:text-4xl">Sugerencias turisticas</h1>
                 <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 md:gap-8">
                     {colon.lugaresDestacados.map((lugar) => (
                         <a key={lugar.id} className="transition hover:scale-105">

@@ -10,7 +10,7 @@ export const provincias = [
     },
 
     descripcionCorta:
-      'Un paraíso donde la historia se funde con el Caribe. Explora fortalezas coloniales, relájate en islas vibrantes y sumérgete en la rica cultura afroantillana, todo bajo la mirada del Canal de Panamá.',
+      'Un rincón caribeño donde la naturaleza se siente en cada ola. Descubre islas de aguas cristalinas, playas de arena blanca y una cultura alegre que combina tradición indígena y esencia afrocaribeña en un ambiente único.',
 
     imagenProvincia: {
       src: '',
@@ -32,7 +32,7 @@ export const provincias = [
     ],
 
     resena:
-      'Colón combina el Caribe panameño con una profunda herencia histórica. Sus fortalezas de Portobelo y San Lorenzo, sus playas, su cultura congo, su gastronomía costeña y el Canal de Panamá la convierten en una provincia ideal para quienes buscan historia, mar y experiencias auténticas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci doloribus quisquam atque debitis in explicabo assumenda similique ex? Nisi rem eos ad quia officia suscipit velit consequatur repellendus quis Totam adipisci doloribus quisquam atque debitis in explicabo assumenda similique ex? Nisi rem eos ad quia officia suscipit velit consequatur repellendus quisn',
+      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un importante centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
 
     gastronomia: [
       {
