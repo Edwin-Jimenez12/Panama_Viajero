@@ -31,7 +31,7 @@ function BottomBanner({ onLogoClick }) {
                     
                     <FaFacebook size={25} />
                 </a>
-                <button ></button>
+                
             </div>
             </div>
 
