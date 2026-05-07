@@ -78,7 +78,7 @@ function Colon() {
                             <img
                                 src={lugar.imagen}
                                 alt={lugar.nombre}
-                                className="w-[150px] cursor-pointer rounded-lg shadow-[0_12px_30px_rgba(77,76,76,0.22)] md:w-[350px]"
+                                className="w-[175px] cursor-pointer rounded-lg shadow-[0_12px_30px_rgba(77,76,76,0.22)] md:w-[350px]"
                                 onClick={() => navigate('../colon/places/' + lugar.id)}
                             />
                         </a>
