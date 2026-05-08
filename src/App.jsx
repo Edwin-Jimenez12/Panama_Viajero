@@ -59,7 +59,7 @@ function Home() {
         </div>
       </section>
 
-      {/* US */}
+      {/*US*/}
       <section id="us" ref={usRef} className="scroll-mt-7 md:scroll-mt-20">
         <AboutUs />
       </section>
@@ -78,11 +78,11 @@ function Home() {
       <section id="preregister" ref={preregisterRef} className="scroll-mt-24">
         <Preregister />
       </section>
-
       <BottomBanner onLogoClick={scrollToHome} />
     </div>
   )
 }
+
 
 function App() {
   return (

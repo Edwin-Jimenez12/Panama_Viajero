@@ -1,4 +1,5 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Menu from '../../../../assets/components/menu/Menu.jsx';
 import BocasDelToroVideo from '../../../../assets/srcProvincias/bocas_del_toto/Playa-banner-1080p.mp4';
 import BottomBanner from '../../../../assets/components/bottombanner/Bottombanner.jsx';
@@ -7,7 +8,19 @@ import { provincias } from './BocasDelToro.js';
 
 function BocasDelToro() {
     const navigate = useNavigate();
+    const location = useLocation();
     const bocasDelToro = provincias[0];
+
+    useEffect(() => {
+        if (location.hash) {
+            const targetId = location.hash.replace('#', '');
+            const section = document.getElementById(targetId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }, [location.hash]);
+
     return (
         <div className="relative bg-brand-soft text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
@@ -20,7 +33,8 @@ function BocasDelToro() {
                 />
             </div>
 
-            <div className="relative z-0">
+            <section id="video">
+                <div className="relative z-0">
                 <video
                     src={BocasDelToroVideo}
                     className="h-screen w-full object-cover"
@@ -42,6 +56,7 @@ function BocasDelToro() {
                     </div>
                 </div>
             </div>
+            </section>
 
             {/* provincia y resena */}
             <section className="mx-auto flex w-full max-w-5xl flex-col gap-10  px-4 py-16 md:flex-row md:justify-between">
@@ -54,6 +69,9 @@ function BocasDelToro() {
                     <p className="mt-4 leading-7 text-brand-charcoal/80 text-lg">{bocasDelToro.resena}</p>
                 </div>
             </section>
+            <div>
+                
+            </div>
 
             {/* Actividades */}
             <div className="mx-auto flex w-full max-w-6xl flex-col px-4 py-16">

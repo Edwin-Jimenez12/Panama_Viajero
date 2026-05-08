@@ -1,13 +1,28 @@
 import { Link } from 'react-router-dom';
 import MapGenera from '../../assets/srcProvincias/Mpa.svg';
 import LosSantos from '../../assets/srcProvincias/los_santos/los santos.svg';
-import Chiriqui from '../../assets/srcProvincias/chiriqui/chiriqui.svg';
-import BocasDelToro from '../../assets/srcProvincias/bocas_del_toto/bocas del toro.svg';
-import NgabeBugle from '../../assets/srcProvincias/comarca_ngabe_bugle/comarca_ngabe_bugle.svg';
+import ChiriquiSvg from '../../assets/components/provincias/ChiriquiSvg.jsx';
+import BocasDelToroSvg from '../../assets/components/provincias/BocasDelToroSvg.jsx';
+import NgabeBugle from '../../assets/components/provincias/nbSvg.jsx';
 import Cocle from '../../assets/srcProvincias/cocle/cocle.svg';
 import Colon from '../../assets/srcProvincias/colon/colon.svg';
 import GunaYala from '../../assets/srcProvincias/comarca_guna_yala/guna_yala.svg';
 import Darien from '../../assets/srcProvincias/darien/darien.svg';
+import Veraguas from '../../assets/srcProvincias/veraguas/veraguas.svg';
+import Herrera from '../../assets/srcProvincias/herrera/herrera.svg';
+
+const provinces = [
+    { src: LosSantos, alt: 'Los Santos', top: '68.87%', left: '39.90%', width: '11.71%' },
+    { component: ChiriquiSvg, alt: 'Chiriqui', top: '30.90%', left: '0%', width: '25.66%' },
+    { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '0.24%', left: '1.27%', width: '11.80%' },
+    { component: NgabeBugle, alt: 'Comarca Ngabe Bugle', top: '20.05%', left: '10.73%', width: '20.68%' },
+    { src: Cocle, alt: 'Cocle', top: '26.18%', left: '38.54%', width: '12.20%' },
+    { src: Colon, alt: 'Colon', top: '0%', left: '37.56%', width: '30.05%' },
+    { src: GunaYala, alt: 'Guna Yala', top: '7.08%', left: '64.68%', width: '31.22%' },
+    { src: Darien, alt: 'Darien', top: '23.58%', left: '78.54%', width: '21.46%' },
+    { src: Veraguas, alt: 'Veraguas', top: '26%', left: '20.85%', width: '23.60%' },
+    { src: Herrera, alt: 'Herrera', top: '58.50%', left: '29%', width: '21%' },
+];
 
 function Map() {
     return (
@@ -15,36 +30,40 @@ function Map() {
             <div className="w-full rounded-xl  md:p-12">
                 {/* map */}
                 
-                <div className='relative drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]'>
-                    <img src={MapGenera} alt="" className='opacity-50'/>
+                <div className='relative mx-auto aspect-[1025/424] w-full max-w-[1025px] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]'>
+                    <img src={MapGenera} alt="Mapa de Panama" className='absolute inset-0 h-full w-full opacity-50'/>
                     {/* Provincias imagenes */}
-                    <img src={LosSantos} alt="" className='absolute top-[292px] left-[409px] w-[120px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={Chiriqui} alt="" className='absolute top-[131px] left-[0px] w-[263px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={BocasDelToro} alt="" className='absolute top-[1px] left-[13px] w-[121px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={NgabeBugle} alt="" className='absolute top-[85px] left-[110px] w-[212px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={Cocle} alt="" className='absolute top-[111px] left-[395px] w-[125px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={Colon} alt="" className='absolute top-[0px] left-[385px] w-[308px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={GunaYala} alt="" className='absolute top-[30px] left-[663px] w-[320px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-                    <img src={Darien} alt="" className='absolute top-[100px] left-[805px] w-[220px] h-auto cursor-pointer transition hover:scale-110 duration-300' />
-
+                    {provinces.map((province) => (
+                        province.to ? (
+                            <Link
+                                key={province.alt}
+                                to={province.to}
+                                className="absolute cursor-pointer transition duration-300 
+                                hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                style={{
+                                    top: province.top,
+                                    left: province.left,
+                                    width: province.width,
+                                }}
+                            >
+                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
+                            </Link>
+                        ) : (
+                            <div
+                                key={province.alt}
+                                className="absolute cursor-pointer transition duration-300 
+                                hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                style={{
+                                    top: province.top,
+                                    left: province.left,
+                                    width: province.width,
+                                }}
+                            >
+                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
+                            </div>
+                        )
+                    ))}
                 </div>
-                <Link
-                    to="/provincias/bocas-del-toro"
-                    className="mt-8 inline-flex rounded-full bg-brand-red px-6 py-3 
-                    font-semibold text-brand-white shadow-[0_12px_25px_rgba(205,46,76,0.28)] 
-                    transition hover:bg-brand-blue"
-                >
-                    Ver Bocas del Toro
-                </Link>
-
-                <Link
-                    to="/provincias/bocas-del-toro"
-                    className="mt-8 inline-flex rounded-full bg-brand-red px-6 py-3 
-                    font-semibold text-brand-white shadow-[0_12px_25px_rgba(205,46,76,0.28)] 
-                    transition hover:bg-brand-blue"
-                >
-                    Ver Bocas del Toro
-                </Link>
             </div>
         </div>
     )

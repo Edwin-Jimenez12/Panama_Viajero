@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import BocasMap from '../../srcProvincias/bocas_del_toto/bocas del toro.svg'
+import BocasDelToroSvg from '../provincias/BocasDelToroSvg.jsx'
 
 function AnimateProvince() {
     const [rotation, setRotation] = useState({ x: 0, y: 0 })
@@ -28,9 +28,7 @@ function AnimateProvince() {
             onMouseLeave={onMouseLeave}
             style={{ perspective: '750px' }}
         >
-            <img
-                src={BocasMap}
-                alt="Mapa de Bocas del Toro"
+            <BocasDelToroSvg
                 className="w-full object-contain drop-shadow-[0_18px_25px_rgba(0,0,0,0.35)] transition-transform duration-150"
                 style={{
                     transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.03)`,
