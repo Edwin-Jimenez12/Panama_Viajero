@@ -38,8 +38,7 @@ function Map() {
                             <Link
                                 key={province.alt}
                                 to={province.to}
-                                className="absolute cursor-pointer transition duration-300 
-                                hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
                                 style={{
                                     top: province.top,
                                     left: province.left,
@@ -51,8 +50,7 @@ function Map() {
                         ) : (
                             <div
                                 key={province.alt}
-                                className="absolute cursor-pointer transition duration-300 
-                                hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
                                 style={{
                                     top: province.top,
                                     left: province.left,
