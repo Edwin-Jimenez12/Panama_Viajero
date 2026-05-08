@@ -8,7 +8,7 @@ import Cocle from '../../assets/srcProvincias/cocle/cocle.svg';
 import Colon from '../../assets/srcProvincias/colon/colon.svg';
 import GunaYala from '../../assets/srcProvincias/comarca_guna_yala/guna_yala.svg';
 import Darien from '../../assets/srcProvincias/darien/darien.svg';
-import Veraguas from '../../assets/srcProvincias/veraguas/veraguas.svg';
+import Veraguas from "../../assets/srcProvincias/veraguas/Veraguas.svg";
 import Herrera from '../../assets/srcProvincias/herrera/herrera.svg';
 
 const provinces = [
