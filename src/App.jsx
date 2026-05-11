@@ -65,7 +65,7 @@ function Home() {
       </section>
 
       {/* MAP */}
-      <section id="map" ref={mapRef} className="scroll-mt-60">
+      <section id="map" ref={mapRef} className="">
         <Map />
       </section>
 
