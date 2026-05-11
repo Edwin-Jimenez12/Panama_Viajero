@@ -67,7 +67,6 @@ function Map() {
                         )
                     ))}
                 </div>
-                
             </div>
             <label className='text-brand-red font-invisible mt-10 md:mt-0 text-xs md:text-lg'>Elige la provincia a visitar</label>
         </div>

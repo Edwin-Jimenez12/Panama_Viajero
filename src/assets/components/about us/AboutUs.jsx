@@ -6,7 +6,7 @@ function AboutUs() {
       <div className="flex flex-col items-start gap-5 text-left">
         <div>
           <h2 className="font-invisible text-2xl font-bold text-brand-red md:text-3xl">Guia turistica</h2>
-          <h1 className="font-invisible text-4xl font-bold text-brand-blue md:text-6xl">Explora Panama</h1>
+          <h1 className="font-invisible text-4xl font-bold text-brand-blue md:text-6xl">Explora Panamá</h1>
           <h1 className="font-invisible text-4xl font-bold text-brand-charcoal md:text-6xl">y sus costumbres</h1>
         </div>
 
