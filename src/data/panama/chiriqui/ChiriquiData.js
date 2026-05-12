@@ -1,4 +1,4 @@
-import ChiriquiVideo from '../../../assets/srcProvincias/chiriqui/Hiking Volcan Baru National Park, Tierras Altas, Chiriqui province, Panamá.mp4';
+import ChiriquiImage from '../../../assets/srcProvincias/chiriqui/chiriqui.jpg';
 
 
 export const provincias = [
@@ -7,9 +7,9 @@ export const provincias = [
     nombre: 'Chiriqui',
 
     banner: {
-      tipo: 'video',
-      src: ChiriquiVideo,
-      alt: 'Video de la provincia de Chiriquí',
+      tipo: 'imagen',
+      src: ChiriquiImage,
+      alt: 'Vista de la provincia de Chiriquí',
     },
 
     descripcionCorta:
