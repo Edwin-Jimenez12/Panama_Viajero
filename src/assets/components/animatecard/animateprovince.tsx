@@ -30,7 +30,8 @@ function AnimateProvince({ provinceData }) {
     const [rotation, setRotation] = useState({ x: 0, y: 0 })
 
     const onMouseMove = (event) => {
-        const rect = event.currentTarget.getBoundingClientRect()
+        const svgElement = event.currentTarget.ownerSVGElement || event.currentTarget
+        const rect = svgElement.getBoundingClientRect()
         const x = event.clientX - rect.left
         const y = event.clientY - rect.top
         const px = x / rect.width
@@ -55,15 +56,15 @@ function AnimateProvince({ provinceData }) {
     return (
         <div
             className="transition duration-300"
-            onMouseMove={onMouseMove}
-            onMouseLeave={onMouseLeave}
             style={{ perspective: '750px' }}
         >
-            <SvgComponent
+            <SvgComponent 
                 className="w-full object-contain drop-shadow-[0_18px_25px_rgba(0,0,0,0.35)] transition-transform duration-150"
                 style={{
                     transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.03)`,
                 }}
+                onMouseMove={onMouseMove}
+                onMouseLeave={onMouseLeave}
             />
         </div>
     )

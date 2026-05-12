@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import LosSantos from '../../assets/components/prov_pages/LosSantos.jsx';
 import ChiriquiSvg from '../../assets/components/prov_pages/ChiriquiSvg.jsx';
 import BocasDelToroSvg from '../../assets/components/prov_pages/BocasDelToroSvg.jsx';
@@ -26,6 +27,9 @@ const provinces = [
 ];
 
 function Map() {
+    const [activeProvince, setActiveProvince] = useState(null);
+    const navigate = useNavigate();
+
     return (
         <div className="mx-auto my-28 flex max-w-6xl flex-col items-center px-4 text-center md:my-10">
             <div className="w-full rounded-xl  md:p-12">
@@ -34,22 +38,29 @@ function Map() {
                     <label className='font-invisible text-5xl text-brand-blue'>Panamá</label>
                     <label className='font-invisible font-bold' >Un Pais de union</label>
                 </div>
-                <div className='relative mx-auto aspect-[1025/424] w-full max-w-[1025px] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)] mb-[-25px]'>
+                <div className='relative  aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)] mb-[-25px]'>
                     {/* Provincias imagenes */}
                     {provinces.map((province) => (
                         province.to ? (
-                            <Link
+                            <div
                                 key={province.alt}
-                                to={province.to}
-                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
+                                className="absolute transition duration-300 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
                                 style={{
                                     top: province.top,
                                     left: province.left,
                                     width: province.width,
+                                    transform: activeProvince === province.alt ? 'scale(1.1)' : 'scale(1)',
                                 }}
                             >
-                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
-                            </Link>
+                                {province.component ? (
+                                    <province.component
+                                        className="h-auto w-full"
+                                        onMouseEnter={() => setActiveProvince(province.alt)}
+                                        onMouseLeave={() => setActiveProvince(null)}
+                                        onClick={() => navigate(province.to)}
+                                    />
+                                ) : <img src={province.src} alt={province.alt} className="" />}
+                            </div>
                         ) : (
                             <div
                                 key={province.alt}

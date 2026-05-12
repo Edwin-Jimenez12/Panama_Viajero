@@ -23,7 +23,7 @@ function Chiriqui() {
         }
     }, []);
 
-    const scrollToHome = () => navigate('/#home');
+
 
     return (
         <div className="relative bg-brand-soft text-brand-charcoal">
