@@ -1,5 +1,3 @@
-
-
 function ProvinceVideo({ provinceData, videoSrc }) {
     const banner = provinceData.banner || {};
     const source = videoSrc || banner.src;
@@ -11,7 +9,7 @@ function ProvinceVideo({ provinceData, videoSrc }) {
                 {isVideo ? (
                     <video
                         src={source}
-                        className="h-screen w-full object-cover"
+                        className="h-screen w-full object-cover object-top"
                         autoPlay
                         muted
                         loop

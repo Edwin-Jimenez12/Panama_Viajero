@@ -1,3 +1,7 @@
+/* const  = new URL('../../../assets/srcProvincias', import.meta.url).href;*/
+const LOVERS_FALL = new URL('../../../assets/srcProvincias/cocle/Lovers_Fall.mp4', import.meta.url).href;
+const CHORRO_LA_TORTUGA = new URL('../../../assets/srcProvincias/cocle/Chorro_la_Tortuga.mp4', import.meta.url).href;
+const CERRO_CARAIGUANA = new URL('../../../assets/srcProvincias/cocle/Cerro_Caraiguana.mp4', import.meta.url).href;
 export const provincias = [
   {
     id: 'cocle',
@@ -41,21 +45,24 @@ export const provincias = [
         id: 'Lovers_Fall',
         nombre: 'Lovers Fall',
         descripcion: 'Capital de la provincia.',
-        imagen: 'video',
+        tipo: 'video',
+        imagen: LOVERS_FALL,
         ubicacion: 'Lovers Fall, Coclé',
       },
       {
-        id: 'Chorro_la_Tortguga',
-        nombre: 'Chorro la Tortguga',
+        id: 'Chorro_la_Tortuga',
+        nombre: 'Chorro la Tortuga',
         descripcion: '',
-        imagen: 'video',
-        ubicacion: 'Chorro la Tortguga, Río Hato',
+        tipo: 'video',
+        imagen: CHORRO_LA_TORTUGA,
+        ubicacion: 'Chorro la Tortuga, Río Hato',
       },
       {
         id: 'Cerro_Caraiguana',
         nombre: 'Cerro Caraiguana',
         descripcion: '',
-        imagen: 'video',
+        tipo: 'video',
+        imagen: CERRO_CARAIGUANA,
         ubicacion: 'Cerro Caraiguana, Coclé',
       },
       {

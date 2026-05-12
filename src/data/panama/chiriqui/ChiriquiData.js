@@ -1,14 +1,15 @@
-import ChiriquiImage from '../../../assets/srcProvincias/chiriqui/chiriqui.jpg';
-
-
+const CHIRIQUI_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/VideoBannerChiriqui.mp4', import.meta.url).href;
+const SALTO_DEL_TIGRE_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/salto-del-tigre.mp4', import.meta.url).href;
+const CASCADA_JAGUATATA_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/Cascada_Jagüatta.mp4', import.meta.url).href;
+/* const  = new URL('../../../assets/srcProvincias', import.meta.url).href;*/
 export const provincias = [
   {
     id: 'chiriqui',
     nombre: 'Chiriqui',
 
     banner: {
-      tipo: 'imagen',
-      src: ChiriquiImage,
+      tipo: 'video',
+      src: CHIRIQUI_VIDEO,
       alt: 'Vista de la provincia de Chiriquí',
     },
 
@@ -63,7 +64,8 @@ export const provincias = [
         nombre: 'Salto del Tigre',
         descripcion:
         '',
-                imagen: 'SaltoTigre',
+        tipo: 'video',
+                imagen: SALTO_DEL_TIGRE_VIDEO,
         ubicacion: 'Salto del Tigre, Volcan',
       },
       {
@@ -79,7 +81,8 @@ export const provincias = [
         nombre: 'Cascada Jagüatta',
         descripcion:
         '',
-                imagen: 'CASCADA_JAGUATATAa',
+        tipo: 'video',
+                imagen: CASCADA_JAGUATATA_VIDEO,
         ubicacion: 'Cascada Jagüatta, Caldera',
       }
       
@@ -88,6 +91,7 @@ export const provincias = [
         nombre: '',
         descripcion:
         '',
+        tipo: 'video',
                 imagen: '',
         ubicacion: '',
       }, */
