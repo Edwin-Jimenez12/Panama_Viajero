@@ -1,0 +1,74 @@
+import { Link } from 'react-router-dom';
+import LosSantos from '../../assets/components/prov_pages/LosSantos.jsx';
+import ChiriquiSvg from '../../assets/components/prov_pages/ChiriquiSvg.jsx';
+import BocasDelToroSvg from '../../assets/components/prov_pages/BocasDelToroSvg.jsx';
+import NgabeBugle from '../../assets/components/prov_pages/nbSvg.jsx';
+import Cocle from '../../assets/components/prov_pages/CocleSvg.jsx';
+import Colon from '../../assets/components/prov_pages/Colon.jsx';
+import GunaYala from '../../assets/components/prov_pages/GunaYalaSvg.jsx';
+import Darien from '../../assets/components/prov_pages/Darien.jsx';
+import Veraguas from "../../assets/components/prov_pages/VeraguasSvg.jsx";
+import Herrera from '../../assets/components/prov_pages/HerreraSvg.jsx';
+import Panama from '../../assets/components/prov_pages/PanamaSvg.jsx';
+
+const provinces = [
+    { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos', top: '68.87%', left: '39.90%', width: '11.71%' },
+    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui', top: '30.90%', left: '0%', width: '25.66%' },
+    { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '0.24%', left: '1.27%', width: '11.80%' },
+    { component: NgabeBugle, alt: 'Comarca Ngabe Bugle', to: '/provincias/comarca-ngabe-bugle', top: '20.05%', left: '10.73%', width: '20.68%' },
+    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle', top: '12%', left: '34.75%', width: '21%' },
+    { component: Colon, alt: 'Colon', to: '/provincias/colon', top: '0%', left: '37.56%', width: '30.05%' },
+    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala', top: '7.08%', left: '64.68%', width: '31.22%' },
+    { component: Darien, alt: 'Darien', to: '/provincias/darien', top: '23.58%', left: '78.54%', width: '21.46%' },
+    { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas', top: '26%', left: '20.85%', width: '23.60%' },
+    { component: Herrera, alt: 'Herrera', to: '/provincias/herrera', top: '58.50%', left: '29%', width: '21%' },
+    { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '-6.4%', left: '46.10%', width: '41.20%' },
+];
+
+function Map() {
+    return (
+        <div className="mx-auto my-28 flex max-w-6xl flex-col items-center px-4 text-center md:my-10">
+            <div className="w-full rounded-xl  md:p-12">
+                {/* map */}
+                <div className='flex flex-col'>
+                    <label className='font-invisible text-5xl text-brand-blue'>Panamá</label>
+                    <label className='font-invisible font-bold' >Un Pais de union</label>
+                </div>
+                <div className='relative mx-auto aspect-[1025/424] w-full max-w-[1025px] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)] mb-[-25px]'>
+                    {/* Provincias imagenes */}
+                    {provinces.map((province) => (
+                        province.to ? (
+                            <Link
+                                key={province.alt}
+                                to={province.to}
+                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
+                                style={{
+                                    top: province.top,
+                                    left: province.left,
+                                    width: province.width,
+                                }}
+                            >
+                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
+                            </Link>
+                        ) : (
+                            <div
+                                key={province.alt}
+                                className="absolute cursor-pointer transition duration-300 hover:scale-110 drop-shadow-[0_3px_6px_rgba(77,76,76,0.50)]"
+                                style={{
+                                    top: province.top,
+                                    left: province.left,
+                                    width: province.width,
+                                }}
+                            >
+                                {province.component ? <province.component className="h-auto w-full" /> : <img src={province.src} alt={province.alt} className="h-auto w-full" />}
+                            </div>
+                        )
+                    ))}
+                </div>
+            </div>
+            <label className='text-brand-red font-invisible mt-10 md:mt-0 text-xs md:text-lg'>Elige la provincia a visitar</label>
+        </div>
+    )
+}
+
+export default Map
