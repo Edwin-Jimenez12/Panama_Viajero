@@ -1,3 +1,5 @@
+const DARIEN_IMAGE = new URL('../../../assets/srcProvincias/darien/darien.png', import.meta.url).href;
+
 export const provincias = [
   {
     id: 'darien',
@@ -5,53 +7,53 @@ export const provincias = [
 
     banner: {
       tipo: 'imagen',
-      src: 'https://example.com/darien-banner.jpg',
+      src: DARIEN_IMAGE,
       alt: 'Vista de la provincia de Darién',
     },
 
     descripcionCorta:
-      'Provincia de Darién, hogar de la selva tropical y biodiversidad.',
+      'Darién es el último refugio de la vida salvaje donde el asfalto se rinde ante el dominio de la selva tropical más densa del continente. Es el destino ideal para los exploradores de corazón que buscan conocer la sabiduría de pueblos que viven en armonía con la naturaleza.',
 
     ubicacionProvincia: {
-      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202302.23954103104!2d-82.46734803926626!3d8.366126177385008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa578bccbaa2e9f%3A0x23db549450c8f698!2sDari%C3%A9n%2C%20Dari%C3%A9n%20Province!5e1!3m2!1sen!2spa!4v1778531685061!5m2!1sen!2spa',
+      src: 'https://www.google.com/maps?q=Dari%C3%A9n%2C%20Panam%C3%A1&output=embed',
     },
 
     actividades: [
-      'Naturaleza',
-      'Senderismo',
-      'Observación de aves',
-      'Ecoturismo',
+      'Expediciones en selva',
+      'Avistamiento de aves',
+      'Navegación en piragua',
+      'Convivencia indígena',
+      'Fotografía',
+      'Pesca artesanal',
     ],
 
     resena:
-      'Darién es la provincia más grande y menos poblada de Panamá.',
+      'La provincia del Darién representa el punto donde la geografía detuvo al progreso moderno para proteger un ecosistema único en su tipo. Fue el hogar de la primera ciudad española en tierra firme y hoy sigue siendo el territorio sagrado de las etnias Emberá y Wounaan que custodian los secretos de sus bosques. Su historia es un relato de resistencia frente a los intentos de conquista y un testimonio de la fuerza de sus ríos que sirven como las únicas carreteras posibles en gran parte de su extensión. Visitar esta región es entender el valor de lo que permanece intacto y descubrir un Panamá que todavía respira al ritmo original de la tierra lejos de las distracciones y el ruido de la vida moderna.',
 
     lugaresDestacados: [
       {
-        id: 'parque-nacional-darien',
+        id: 'Parque_Nacional_Darien',
         nombre: 'Parque Nacional Darién',
-        descripcion: 'Área protegida con selva tropical.',
-        imagen: 'https://example.com/parque-darien.jpg',
+        descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, ideal para expediciones de naturaleza.',
+        tipo: 'imagen',
+        imagen: DARIEN_IMAGE,
         ubicacion: 'Darién, Panamá',
       },
-    ],
-
-    ubicacion: {
-      region: 'Darién',
-      pais: 'Panamá',
-      coordenadas: {
-        lat: 8.0,
-        lng: -78.0,
-      },
-    },
-
-    restoDeLugares: [
       {
-        id: 'la-palma',
+        id: 'La_Palma',
         nombre: 'La Palma',
-        descripcion: 'Capital de la provincia.',
-        imagen: 'https://example.com/la-palma.jpg',
+        descripcion: 'Cabecera provincial ubicada frente al golfo, punto de entrada a rutas fluviales y comunidades del Darién.',
+        tipo: 'imagen',
+        imagen: DARIEN_IMAGE,
         ubicacion: 'La Palma, Darién',
+      },
+      {
+        id: 'Comunidades_Embera_Wounaan',
+        nombre: 'Comunidades Emberá y Wounaan',
+        descripcion: 'Comunidades indígenas donde se pueden conocer tradiciones, artesanías y formas de vida ligadas al bosque.',
+        tipo: 'imagen',
+        imagen: DARIEN_IMAGE,
+        ubicacion: 'Darién, Panamá',
       },
     ],
   },

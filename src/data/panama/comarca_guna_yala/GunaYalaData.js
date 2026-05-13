@@ -1,3 +1,5 @@
+const GUNA_YALA_IMAGE = new URL('../../../assets/srcProvincias/comarca_guna_yala/guna ya.jpg', import.meta.url).href;
+
 export const provincias = [
   {
     id: 'comarca-guna-yala',
@@ -5,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'imagen',
-      src: 'https://example.com/guna-yala-banner.jpg',
+      src: GUNA_YALA_IMAGE,
       alt: 'Vista de la Comarca Guna Yala',
     },
 
@@ -30,8 +32,8 @@ export const provincias = [
       {
         id: 'isla-carti',
         nombre: 'Isla Cartí',
-        descripcion: 'Isla principal de la comarca.',
-        imagen: 'https://example.com/isla-carti.jpg',
+        descripcion: 'Isla de acceso frecuente en Guna Yala, ideal para conocer playas caribeñas y la cultura local.',
+        imagen: GUNA_YALA_IMAGE,
         ubicacion: 'Guna Yala, Panamá',
       },
     ],
@@ -49,8 +51,8 @@ export const provincias = [
       {
         id: 'playa-uru',
         nombre: 'Playa Uru',
-        descripcion: 'Playa hermosa.',
-        imagen: 'https://example.com/playa-uru.jpg',
+        descripcion: 'Playa de aguas claras y arena suave, perfecta para descansar y disfrutar el paisaje de la comarca.',
+        imagen: GUNA_YALA_IMAGE,
         ubicacion: 'Guna Yala, Panamá',
       },
     ],

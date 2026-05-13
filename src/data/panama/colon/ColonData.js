@@ -1,3 +1,13 @@
+/* const  = new URL('../../../assets/srcProvincias/colon', import.meta.url).href;*/
+const COLON_IMAGE = new URL('../../../assets/srcProvincias/colon/colon.png', import.meta.url).href;
+const CERRO_PAVON = new URL('../../../assets/srcProvincias/colon/Cerro_Pavon.mp4', import.meta.url).href;
+const TUNEL_AMOR = new URL('../../../assets/srcProvincias/colon/El_tunel_del_amor.mp4', import.meta.url).href;
+const LAGO_GATUN = new URL('../../../assets/srcProvincias/colon/Lago_Gatun.mp4', import.meta.url).href;
+const PORTOBELLO = new URL('../../../assets/srcProvincias/colon/Portobelo.mp4', import.meta.url).href;
+const FUERTE_SAN_FERNANDO = new URL('../../../assets/srcProvincias/colon/Fuerte_de_San_Fernando.mp4', import.meta.url).href;
+const ISLA_MAMEY = new URL('../../../assets/srcProvincias/colon/Isla_Mamey.mp4', import.meta.url).href;
+
+
 export const provincias = [
   {
     id: 'colon',
@@ -5,7 +15,7 @@ export const provincias = [
 
     banner: {
       tipo: 'imagen',
-      src: 'https://example.com/colon-banner.jpg',
+      src: COLON_IMAGE,
       alt: 'Vista de la provincia de Colón',
     },
 
@@ -33,57 +43,63 @@ export const provincias = [
       {
         id: 'Cerro_Pavon',
         nombre: 'Cerro Pavon',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Mirador natural con vistas verdes y senderos ideales para caminatas de aventura en la provincia.',
+        tipo: 'video',
+        imagen: CERRO_PAVON,
         ubicacion: 'Cerro Pavon, Colón',
       },
       {
         id: 'El_tunel_del_amor',
         nombre: 'El túnel del amor',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Pasaje costero rodeado de vegetación y aguas tranquilas, perfecto para una experiencia visual diferente.',
+        tipo: 'video',
+        imagen: TUNEL_AMOR,
         ubicacion: 'El túnel del amor, Colón',
       },
       {
         id: 'Lago_Gatun',
         nombre: 'Lago Gatún',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Gran lago artificial vinculado al Canal de Panamá, famoso por sus paisajes, fauna y recorridos en bote.',
+        tipo: 'video',
+        imagen: LAGO_GATUN,
         ubicacion: 'Lago Gatún, Colón',
       },
       {
         id: 'Portobelo',
         nombre: 'Portobelo',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Pueblo histórico del Caribe panameño con fortalezas coloniales, tradición Congo y una bahía llena de memoria.',
+        tipo: 'video',
+        imagen: PORTOBELLO,
         ubicacion: 'Portobelo, Colón',
       },
       {
         id: 'Fuerte_de_San_Fernando',
         nombre: 'Fuerte de San Fernando',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Fortificación colonial que recuerda la defensa del Caribe y el paso de las rutas comerciales españolas.',
+        tipo: 'video',
+        imagen: FUERTE_SAN_FERNANDO,
         ubicacion: 'Fuerte de San Fernando, Colón',
       },
       {
         id: 'Sendero_Tortuguilla',
         nombre: 'Sendero Tortuguilla',
-        descripcion: '',
+        descripcion: 'Sendero natural para caminar entre vegetación tropical y descubrir la biodiversidad costera de Colón.',
         imagen: 'https://dam.visitpanama.com/files/8938cfaa-c15c-32b5-8024-7f27e64c4712?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779206921946&signature=rT%2FiSyVTyu22ZwBT%2BwhBt5FRHn2REOy7wG4I%2FJKj5Cy%2FKlponlIs74%2BjnvpVqciGth%2BYubBLUT16A4m4PIA4AQ%3D%3D&version=a0b1ec4b',
         ubicacion: 'Sendero Tortuguilla, Colón',
       },
       {
         id: 'Fuerte_de_San_Lorenzo',
         nombre: 'Fuerte de San Lorenzo',
-        descripcion: '',
+        descripcion: 'Imponente fortaleza histórica ubicada frente al Caribe, declarada patrimonio por su valor colonial.',
         imagen: 'https://dam.visitpanama.com/files/870254a4-7c50-3ece-9266-19fcfd18c4e4?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779206962375&signature=qX7aMqHFxpucRwcWwCjAQ0N3YYeXxE%2BAHy%2FybkwyolLDXGO7H2aXrfCBghdEpyrnNuAZKkexZ5heUNZjniFaAA%3D%3D&version=a0b1ec4b',
         ubicacion: 'Fuerte de San Lorenzo, Colón',
       },
       {
         id: 'Isla_Mamey',
         nombre: 'Isla Mamey',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Isla caribeña de aguas claras y ambiente relajado, ideal para playa, snorkel y escapadas de un día.',
+        tipo: 'video',
+        imagen: ISLA_MAMEY,
         ubicacion: 'Isla Mamey, Colón',
       },
     ],

@@ -1,3 +1,5 @@
+const NGABE_BUGLE_IMAGE = new URL('../../../assets/srcProvincias/comarca_ngabe_bugle/nb.jpg', import.meta.url).href;
+
 export const provincias = [
   {
     id: 'comarca-ngabe-bugle',
@@ -5,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'imagen',
-      src: 'https://example.com/ngabe-bugle-banner.jpg',
+      src: NGABE_BUGLE_IMAGE,
       alt: 'Vista de la Comarca Ngäbe-Buglé',
     },
 
@@ -30,8 +32,8 @@ export const provincias = [
       {
         id: 'chichica',
         nombre: 'Chichica',
-        descripcion: 'Capital de la comarca.',
-        imagen: 'https://example.com/chichica.jpg',
+        descripcion: 'Comunidad de montaña donde se aprecia la vida cultural Ngäbe y el entorno natural de la comarca.',
+        imagen: NGABE_BUGLE_IMAGE,
         ubicacion: 'Chichica, Ngäbe-Buglé',
       },
     ],
@@ -49,8 +51,8 @@ export const provincias = [
       {
         id: 'cerro-tute',
         nombre: 'Cerro Tute',
-        descripcion: 'Montaña emblemática.',
-        imagen: 'https://example.com/cerro-tute.jpg',
+        descripcion: 'Montaña emblemática para caminatas, vistas rurales y contacto con el paisaje montañoso Ngäbe-Buglé.',
+        imagen: NGABE_BUGLE_IMAGE,
         ubicacion: 'Ngäbe-Buglé, Panamá',
       },
     ],

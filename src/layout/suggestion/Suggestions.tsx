@@ -1,8 +1,30 @@
 import { useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { provincias as bocasDelToroData } from '../../data/panama/BocasDelToro/BocasDelToro.js';
-import { lugaresPanama } from '../../data/panama/panama/places/place.js';
+import { provincias as chiriquiData } from '../../data/panama/chiriqui/ChiriquiData.js';
+import { provincias as cocleData } from '../../data/panama/cocle/CocleData.js';
+import { provincias as colonData } from '../../data/panama/colon/ColonData.js';
+import { provincias as darienData } from '../../data/panama/darien/DarienData.js';
+import { provincias as herreraData } from '../../data/panama/herrera/HerreraData.js';
+import { provincias as losSantosData } from '../../data/panama/lossantos/LosSantosData.js';
+import { provincias as panamaData } from '../../data/panama/panama/PanamaData.js';
+import { provincias as veraguasData } from '../../data/panama/veraguas/VeraguasData.js';
+import { provincias as gunaYalaData } from '../../data/panama/comarca_guna_yala/GunaYalaData.js';
+import { provincias as ngabeBugleData } from '../../data/panama/comarca_ngabe_bugle/NgabeBugleData.js';
 
-const DEFAULT_IMAGE = 'https://tripealotuyo.com/wp-content/uploads/2025/06/Panama%CC%81-%E2%80%93-Foto-Home-Provincia%E2%80%93-Autoridad-de-Turismo-de-Panama%CC%81-%E2%80%93-Tripea-Lo-Tuyo.jpg-Custom-600x338.jpg';
+const provinceRoutes = [
+    { data: bocasDelToroData[0], path: '/provincias/bocas-del-toro' },
+    { data: chiriquiData[0], path: '/provincias/chiriqui' },
+    { data: cocleData[0], path: '/provincias/cocle' },
+    { data: colonData[0], path: '/provincias/colon' },
+    { data: darienData[0], path: '/provincias/darien' },
+    { data: herreraData[0], path: '/provincias/herrera' },
+    { data: losSantosData[0], path: '/provincias/los-santos' },
+    { data: panamaData[0], path: '/provincias/panama' },
+    { data: veraguasData[0], path: '/provincias/veraguas' },
+    { data: gunaYalaData[0], path: '/provincias/comarca-guna-yala' },
+    { data: ngabeBugleData[0], path: '/provincias/comarca-ngabe-bugle' },
+];
 
 function getRandomItems(items, limit) {
     return [...items]
@@ -10,24 +32,28 @@ function getRandomItems(items, limit) {
         .slice(0, limit);
 }
 
+function getBannerVideo(province) {
+    const banner = province.banner || {};
+
+    return {
+        src: banner.src,
+        alt: banner.alt || province.nombre,
+    };
+}
+
 function AleatorySuggestions() {
+    const navigate = useNavigate();
     const suggestions = useMemo(() => {
-        const bocasDelToro = bocasDelToroData[0];
+        const provincesWithVideoBanner = provinceRoutes.filter(({ data }) => {
+            const banner = data.banner || {};
 
-        const bocasDelToroPlaces = [
-            ...bocasDelToro.lugaresDestacados,
-            ...bocasDelToro.restoDeLugares,
-        ].map((place) => ({
-            ...place,
-            provincia: bocasDelToro.nombre,
+            return banner.tipo === 'video' && banner.src;
+        });
+
+        return getRandomItems(provincesWithVideoBanner, 3).map((province) => ({
+            ...province,
+            media: getBannerVideo(province.data),
         }));
-
-        const panamaPlaces = lugaresPanama.map((place) => ({
-            ...place,
-            provincia: 'Panama',
-        }));
-
-        return getRandomItems([...bocasDelToroPlaces, ...panamaPlaces], 6);
     }, []);
 
     return (
@@ -37,43 +63,34 @@ function AleatorySuggestions() {
                     Sugerencias para explorar
                 </h2>
                 <p className="ml-2 mt-3 max-w-2xl text-brand-charcoal/90 md:text-lg text-left">
-                    Lugares recomendados de Panama para descubrir historia, naturaleza, cultura y experiencias urbanas.
+                    Provincias recomendadas para descubrir historia, naturaleza, cultura y experiencias únicas.
                 </p>
             </div>
 
             <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6">
-                {suggestions.map((place) => (
-                    <article
-                        key={`${place.provincia}-${place.id}`}
-                        className="flex w-full max-w-md flex-col overflow-hidden rounded-xl bg-brand-white shadow-[0_14px_35px_rgba(77,76,76,0.14)] transition 
-                        hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(73,86,162,0.22)] md:w-[355px]"
+                {suggestions.map(({ data: province, path, media }) => (
+                    <button
+                        key={province.id}
+                        type="button"
+                        aria-label={`Explorar ${province.nombre}`}
+                        onClick={() => navigate(`${path}#video`)}
+                        className="group relative aspect-[16/9] w-full max-w-md overflow-hidden rounded-lg bg-brand-soft shadow-[0_12px_30px_rgba(77,76,76,0.22)] transition hover:scale-105 cursor-pointer md:w-[355px]"
                     >
-                        <div className="aspect-[16/9] w-full overflow-hidden bg-brand-soft">
-                            <img
-                                src={place.imagen || DEFAULT_IMAGE}
-                                alt={place.nombre}
-                                className="h-full w-full cursor-pointer object-cover transition duration-300 hover:scale-105"
-                            />
-                        </div>
-
-                        <div className="flex flex-1 flex-col p-5">
-                            <span className="text-sm font-semibold text-brand-red">
-                                {place.provincia}
+                        <video
+                            src={media.src}
+                            className="h-[116%] w-full object-cover object-top"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload="metadata"
+                        />
+                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 px-4 transition duration-300 group-hover:bg-black/40">
+                            <span className="text-center text-2xl font-bold text-brand-white opacity-0 drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] transition duration-300 group-hover:opacity-100">
+                                {province.nombre}
                             </span>
-
-                            <h3 className="mt-2 text-xl font-bold text-brand-charcoal">
-                                {place.nombre}
-                            </h3>
-
-                            <p className="mt-3 line-clamp-3 text-sm leading-6 text-brand-charcoal/95">
-                                {place.descripcion}
-                            </p>
-
-                            <p className="mt-auto pt-4 text-sm font-semibold text-brand-blue">
-                                {place.ubicacion}
-                            </p>
                         </div>
-                    </article>
+                    </button>
                 ))}
             </div>
         </section>

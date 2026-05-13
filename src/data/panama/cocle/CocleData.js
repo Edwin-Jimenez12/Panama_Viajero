@@ -1,7 +1,11 @@
 /* const  = new URL('../../../assets/srcProvincias', import.meta.url).href;*/
+const COCLE_IMAGE = new URL('../../../assets/srcProvincias/cocle/cocle.png', import.meta.url).href;
 const LOVERS_FALL = new URL('../../../assets/srcProvincias/cocle/Lovers_Fall.mp4', import.meta.url).href;
 const CHORRO_LA_TORTUGA = new URL('../../../assets/srcProvincias/cocle/Chorro_la_Tortuga.mp4', import.meta.url).href;
 const CERRO_CARAIGUANA = new URL('../../../assets/srcProvincias/cocle/Cerro_Caraiguana.mp4', import.meta.url).href;
+const CASCADA_LAS_PAILAS = new URL('../../../assets/srcProvincias/cocle/Cascada_Las_Pailas.mp4', import.meta.url).href;
+const CHORRO_MACHO = new URL('../../../assets/srcProvincias/cocle/Chorro_Macho.mp4', import.meta.url).href;
+const CERRO_LA_SILLA = new URL('../../../assets/srcProvincias/cocle/Cerro_la_Silla.mp4', import.meta.url).href;
 export const provincias = [
   {
     id: 'cocle',
@@ -9,7 +13,7 @@ export const provincias = [
 
     banner: {
       tipo: 'imagen',
-      src: 'https://example.com/cocle-banner.jpg',
+      src: COCLE_IMAGE,
       alt: 'Vista de la provincia de Coclé',
     },
 
@@ -37,14 +41,14 @@ export const provincias = [
       {
         id: 'La_India_Dormida',
         nombre: 'La India Dormida',
-        descripcion: 'Hermosa playa en Coclé.',
+        descripcion: 'Montaña emblemática del Valle de Antón con senderos, vistas panorámicas y una silueta cargada de leyenda.',
         imagen: 'https://dam.visitpanama.com/files/f6ba2fbb-34f8-3d14-aa5f-1f0db2c6517b?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779204894601&signature=JPEc1ZMTbw4jowiocKB8vPe2d1LIWEIb0ullUlrEc2xk%2F8MvwhQDpQrKc%2FX4UTXghsRvw8gL8rb%2Fw%2FyZ%2BqRFBA%3D%3D&version=a0b1ec4b',
         ubicacion: 'La India Dormida, Coclé',
       },
       {
         id: 'Lovers_Fall',
         nombre: 'Lovers Fall',
-        descripcion: 'Capital de la provincia.',
+        descripcion: 'Cascada natural rodeada de vegetación, ideal para una visita fresca y tranquila en Coclé.',
         tipo: 'video',
         imagen: LOVERS_FALL,
         ubicacion: 'Lovers Fall, Coclé',
@@ -52,7 +56,7 @@ export const provincias = [
       {
         id: 'Chorro_la_Tortuga',
         nombre: 'Chorro la Tortuga',
-        descripcion: '',
+        descripcion: 'Cascada escondida entre vegetación, ideal para quienes buscan un rincón fresco y tranquilo en Coclé.',
         tipo: 'video',
         imagen: CHORRO_LA_TORTUGA,
         ubicacion: 'Chorro la Tortuga, Río Hato',
@@ -60,7 +64,7 @@ export const provincias = [
       {
         id: 'Cerro_Caraiguana',
         nombre: 'Cerro Caraiguana',
-        descripcion: '',
+        descripcion: 'Caída de agua natural con entorno tropical, perfecta para caminatas cortas y contacto directo con la naturaleza.',
         tipo: 'video',
         imagen: CERRO_CARAIGUANA,
         ubicacion: 'Cerro Caraiguana, Coclé',
@@ -68,56 +72,59 @@ export const provincias = [
       {
         id: 'Cascada_Las_Pailas',
         nombre: 'Cascada Las Pailas',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Cerro de origen volcánico con senderos y vistas panorámicas del Valle de Antón.',
+        tipo: 'video',
+        imagen: CASCADA_LAS_PAILAS,
         ubicacion: 'Cascada Las Pailas, Loma Grande',
       },
       {
         id: 'Chorro_Macho',
         nombre: 'Chorro Macho',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Serie de pozas y cascadas naturales rodeadas de paisaje rural y vegetación abundante.',
+        tipo: 'video',
+        imagen: CHORRO_MACHO,
         ubicacion: 'Chorro Machom, Coclé',
       },
       {
         id: 'Isla_Farallón',
         nombre: 'Isla Farallón',
-        descripcion: '',
+        descripcion: 'Cascada emblemática del Valle de Antón, popular por su fácil acceso y ambiente de bosque húmedo.',
         imagen: 'https://dam.visitpanama.com/files/b6e28d76-b357-3115-853a-eaefc2df96b9?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779205500874&signature=zwCNNknLI70eAIz5STkG8e5lqeiWF%2FFv1%2FJn9XOdwX%2BxdVN%2Bt6Gnh2KC2bL3j2Mb2Brz2YUGl22LBHNw%2BjiaBA%3D%3D&version=a0b1ec4b',
         ubicacion: 'Isla Farallón, Coclé',
       },
       {
         id: 'Cascada_Pozo_Azul',
         nombre: 'Cascada Pozo Azul',
-        descripcion: '',
+        descripcion: 'Isla cercana a la costa pacífica, valorada por su paisaje marino y cercanía a zonas de playa.',
         imagen: 'https://dam.visitpanama.com/files/e4d08461-57d3-397b-aab9-d0fda9e3238c?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779205563960&signature=jq9%2B2fTFpAWcjMBz1bg82n%2FMwOb5LQG4d9mcozwcou4upoSqwuwKU6UgWAjgZAPKQ9oPA%2F4nJS78%2FmrpYdajDA%3D%3D&version=a0b1ec4b',
         ubicacion: 'Cascada Pozo Azul, Coclé',
       },
       {
         id: 'Cerro_la_Silla',
         nombre: 'Cerro la Silla',
-        descripcion: '',
-        imagen: 'video',
+        descripcion: 'Cascada con poza natural de agua clara, ideal para refrescarse y disfrutar un entorno tranquilo.',
+        tipo: 'video',
+        imagen: CERRO_LA_SILLA,
         ubicacion: 'Cerro la Silla, ',
       },
       {
         id: 'Chorros_de_Ola',
         nombre: 'Chorros de Ola',
-        descripcion: '',
+        descripcion: 'Elevación natural con rutas de caminata y vistas abiertas hacia el paisaje interiorano de Coclé.',
         imagen: 'https://dam.visitpanama.com/files/3956ce72-22a5-3204-9677-02de23beaaec?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779205688998&signature=aJ9%2BVTQ7t3KvqpCWmTZKMBNoiTmBsHtRLS7JX9Hgbu7O6gbKjCvbEcLmev3yG1%2F9tHwsR4SYWaWcB34AEcBMDQ%3D%3D&version=a0b1ec4b',
         ubicacion: 'Chorros de Ola, Coclé',
       },
       {
         id: 'Cerro_Picacho',
         nombre: 'Cerro Picacho',
-        descripcion: '',
+        descripcion: 'Conjunto de chorros naturales rodeados de vegetación, perfecto para una visita de aventura ligera.',
         imagen: 'https://dam.visitpanama.com/files/664ec05e-f755-30d4-beef-24db565f644e?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779205850412&signature=w4%2FU7DxDe3DagYuxX0SsvtEawfCd%2Fq4LzKj1Ap4ci8%2BcjC7LoExq1WC7g2HzLpMUYjAm8ieEErTsmKUsFX2zDA%3D%3D&version=a0b1ec4b',
         ubicacion: 'Cerro Picacho, Coclé',
       },
       /* {
         id: '',
         nombre: '',
-        descripcion: '',
+        descripcion: 'Mirador natural con senderos y vistas panorámicas, ideal para senderismo y fotografía.',
         imagen: 'video',
         ubicacion: '',
       }, */
