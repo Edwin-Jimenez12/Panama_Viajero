@@ -85,8 +85,8 @@ function AleatorySuggestions() {
                             playsInline
                             preload="metadata"
                         />
-                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 px-4 transition duration-300 group-hover:bg-black/40">
-                            <span className="text-center text-2xl font-bold text-brand-white opacity-0 drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] transition duration-300 group-hover:opacity-100">
+                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 px-4 transition duration-300 bg-black/40">
+                            <span className="text-center text-2xl font-bold text-brand-white opacity-0 drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] transition duration-300 opacity-100">
                                 {province.nombre}
                             </span>
                         </div>
