@@ -1,4 +1,5 @@
-const HERRERA_IMAGE = new URL('../../../assets/srcProvincias/herrera/herrera.png', import.meta.url).href;
+const PESE = new URL('../../../assets/srcProvincias/herrera/Pese.mp4', import.meta.url).href;
+const HERRERA_BANNER = new URL('../../../assets/srcProvincias/herrera/HerreraBanner.mp4', import.meta.url).href;
 
 export const provincias = [
   {
@@ -6,8 +7,8 @@ export const provincias = [
     nombre: 'Herrera',
 
     banner: {
-      tipo: 'imagen',
-      src: HERRERA_IMAGE,
+      tipo: 'video',
+      src: HERRERA_BANNER,
       alt: 'Vista de la provincia de Herrera',
     },
 
@@ -36,25 +37,26 @@ export const provincias = [
         nombre: 'Chitré',
         descripcion: 'Capital provincial reconocida por su vida comercial, sus fiestas populares y su ambiente hospitalario.',
         tipo: 'imagen',
-        imagen: HERRERA_IMAGE,
+        imagen: 'https://dam.visitpanama.com/files/8a378958-c79b-3dae-ae56-c22afaac316c?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779378216450&signature=nDtnlQ5PkTwMM%2BAdeOuUOzgySOk9HHUdSQNv1gph%2BwW8%2FBL%2BPS4ATaIFG83W%2FtB%2Fd3Zo3QFRT6bkldRN0%2FMkAw%3D%3D&version=a0b1ec4b',
         ubicacion: 'Chitré, Herrera',
+      },
+      {
+        id: 'Pese',
+        nombre: 'Pesé',
+        descripcion: 'Pueblo ligado a la tradición de destilería y al sabor interiorano que caracteriza a Herrera.',
+        tipo: 'video',
+        imagen: PESE,
+        ubicacion: 'Pesé, Herrera',
       },
       {
         id: 'Sarigua',
         nombre: 'Sarigua',
         descripcion: 'Paisaje árido de gran valor natural e histórico, con senderos y vistas distintas al resto de Azuero.',
         tipo: 'imagen',
-        imagen: HERRERA_IMAGE,
+        imagen: 'https://dam.visitpanama.com/files/04357342-5f12-3970-ae21-2584210ac474?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779378311486&signature=KAve1y6ptYiMF9HHAy4ovW2wdBYH9Dw2SpttEiESZRv3DkPnnkF%2BQ7gda4V9WjkY3CAMsAbo5ScweJSm%2BpVEBw%3D%3D&version=a0b1ec4b',
         ubicacion: 'Parque Nacional Sarigua, Herrera',
       },
-      {
-        id: 'Pese',
-        nombre: 'Pesé',
-        descripcion: 'Pueblo ligado a la tradición de destilería y al sabor interiorano que caracteriza a Herrera.',
-        tipo: 'imagen',
-        imagen: HERRERA_IMAGE,
-        ubicacion: 'Pesé, Herrera',
-      },
+      
     ],
   },
 ];

@@ -36,7 +36,7 @@ export const provincias = [
         nombre: 'Parque Nacional Darién',
         descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, ideal para expediciones de naturaleza.',
         tipo: 'imagen',
-        imagen: DARIEN_IMAGE,
+        imagen: 'https://lac.wetlands.org/wp-content/uploads/sites/3/2019/12/PROYECTOS-garachine-WETLANDS-EDITABLE-03.jpg',
         ubicacion: 'Darién, Panamá',
       },
       {
@@ -44,7 +44,7 @@ export const provincias = [
         nombre: 'La Palma',
         descripcion: 'Cabecera provincial ubicada frente al golfo, punto de entrada a rutas fluviales y comunidades del Darién.',
         tipo: 'imagen',
-        imagen: DARIEN_IMAGE,
+        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnR3YmjzDw4AMqhlQGalQUHCOgX0Oy27AYA&s',
         ubicacion: 'La Palma, Darién',
       },
       {
@@ -52,7 +52,7 @@ export const provincias = [
         nombre: 'Comunidades Emberá y Wounaan',
         descripcion: 'Comunidades indígenas donde se pueden conocer tradiciones, artesanías y formas de vida ligadas al bosque.',
         tipo: 'imagen',
-        imagen: DARIEN_IMAGE,
+        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxGWewQ4IhUxmAEUu9LaezeQHc49vi17Vbg&s',
         ubicacion: 'Darién, Panamá',
       },
     ],

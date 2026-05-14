@@ -1,5 +1,5 @@
 /* const  = new URL('../../../assets/srcProvincias', import.meta.url).href;*/
-const COCLE_IMAGE = new URL('../../../assets/srcProvincias/cocle/cocle.png', import.meta.url).href;
+const COCLE_BANNER = new URL('../../../assets/srcProvincias/cocle/CocleBanner.mp4', import.meta.url).href;
 const LOVERS_FALL = new URL('../../../assets/srcProvincias/cocle/Lovers_Fall.mp4', import.meta.url).href;
 const CHORRO_LA_TORTUGA = new URL('../../../assets/srcProvincias/cocle/Chorro_la_Tortuga.mp4', import.meta.url).href;
 const CERRO_CARAIGUANA = new URL('../../../assets/srcProvincias/cocle/Cerro_Caraiguana.mp4', import.meta.url).href;
@@ -12,8 +12,8 @@ export const provincias = [
     nombre: 'Coclé',
 
     banner: {
-      tipo: 'imagen',
-      src: COCLE_IMAGE,
+      tipo: 'video',
+      src: COCLE_BANNER,
       alt: 'Vista de la provincia de Coclé',
     },
 

@@ -1,5 +1,5 @@
 /* const  = new URL('../../../assets/srcProvincias/colon', import.meta.url).href;*/
-const COLON_IMAGE = new URL('../../../assets/srcProvincias/colon/colon.png', import.meta.url).href;
+const COLON_BANNER = new URL('../../../assets/srcProvincias/colon/ColonBanner.mp4', import.meta.url).href;
 const CERRO_PAVON = new URL('../../../assets/srcProvincias/colon/Cerro_Pavon.mp4', import.meta.url).href;
 const TUNEL_AMOR = new URL('../../../assets/srcProvincias/colon/El_tunel_del_amor.mp4', import.meta.url).href;
 const LAGO_GATUN = new URL('../../../assets/srcProvincias/colon/Lago_Gatun.mp4', import.meta.url).href;
@@ -14,8 +14,8 @@ export const provincias = [
     nombre: 'Colón',
 
     banner: {
-      tipo: 'imagen',
-      src: COLON_IMAGE,
+      tipo: 'video',
+      src: COLON_BANNER,
       alt: 'Vista de la provincia de Colón',
     },
 

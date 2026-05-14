@@ -1,7 +1,8 @@
-const PANAMA_BANNER = new URL('../../../assets/srcProvincias/panama/panama.jpg', import.meta.url).href;
 const PARQUE_NATURAL_SOBERANIA = new URL('../../../assets/srcProvincias/panama/Parque_Natural_Soberania.mp4', import.meta.url).href;
 const ISLA_TABOGA = new URL('../../../assets/srcProvincias/panama/Isla_Taboga.mp4', import.meta.url).href;
 const CERRO_ANCON = new URL('../../../assets/srcProvincias/panama/Cerro_Ancon.mp4', import.meta.url).href
+const PANAMA_BANNER = new URL('../../../assets/srcProvincias/panama/PanamaBanner.mp4', import.meta.url).href
+
 
 
 export const provincias = [
@@ -10,7 +11,7 @@ export const provincias = [
     nombre: 'Panamá',
 
     banner: {
-      tipo: 'imagen',
+      tipo: 'video',
       src: PANAMA_BANNER,
       alt: 'Vista urbana y costera de la provincia de Panamá',
     },
@@ -19,7 +20,7 @@ export const provincias = [
       'La capital es el punto donde los rascacielos de cristal vigilan las ruinas de una ciudad que se negó a desaparecer. Entre el movimiento del Canal y la vida nocturna en el Casco Antiguo descubrirás un Panamá cosmopolita que ofrece mil mundos distintos en una sola avenida llena de vida.',
 
     ubicacionProvincia: {
-      src: 'https://www.google.com/maps?q=Panam%C3%A1%2C%20Panam%C3%A1&output=embed',
+      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1595279.2668934553!2d-80.1916458868211!3d8.860426845993237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e535944ba70296f%3A0x22cb5fba7603eb68!2sPanam%C3%A1%20Province!5e1!3m2!1sen!2spa!4v1778780378442!5m2!1sen!2spa',
     },
 
     actividades: [
