@@ -1,4 +1,4 @@
-const DARIEN_IMAGE = new URL('../../../assets/srcProvincias/darien/darien.png', import.meta.url).href;
+const DARIEN_BANNER = new URL('../../../assets/srcProvincias/darien/DarienBanner.mp4', import.meta.url).href;
 
 export const provincias = [
   {
@@ -6,8 +6,8 @@ export const provincias = [
     nombre: 'Darién',
 
     banner: {
-      tipo: 'imagen',
-      src: DARIEN_IMAGE,
+      tipo: 'video',
+      src: DARIEN_BANNER,
       alt: 'Vista de la provincia de Darién',
     },
 

@@ -1,4 +1,3 @@
-const PARQUE_NATURAL_SOBERANIA = new URL('../../../assets/srcProvincias/panama/Parque_Natural_Soberania.mp4', import.meta.url).href;
 const ISLA_TABOGA = new URL('../../../assets/srcProvincias/panama/Isla_Taboga.mp4', import.meta.url).href;
 const CERRO_ANCON = new URL('../../../assets/srcProvincias/panama/Cerro_Ancon.mp4', import.meta.url).href
 const PANAMA_BANNER = new URL('../../../assets/srcProvincias/panama/PanamaBanner.mp4', import.meta.url).href
@@ -87,14 +86,7 @@ export const provincias = [
         imagen: 'https://dam.visitpanama.com/files/6d2a2241-0897-3e09-99a1-bd481a0d11bc?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779298712132&signature=gHiaOBMKSdK3X7KKBb1kU%2FMZd5ujQ7XvFjdnkDsV5cTQb9A%2B3aoUHZdy15cQQVY%2BlH5FlFU0Rg8KJaGccTOoDQ%3D%3D&version=a0b1ec4b',
         ubicacion: 'Cinta Costera, Ciudad de Panamá',
       },
-      {
-        id: 'Isla_Taboga',
-        nombre: 'Isla Taboga',
-        descripcion: 'Isla cercana a la capital con playas, ambiente de pueblo y una escapada tranquila desde la ciudad.',
-        tipo: 'video',
-        imagen: ISLA_TABOGA,
-        ubicacion: 'Isla Taboga, Panamá',
-      },
+      
       {
         id: 'Parque_Natural_Metropolitano',
         nombre: 'Parque Natural Metropolitano',
@@ -112,6 +104,14 @@ export const provincias = [
         ubicacion: 'Isla Contadora, Panamá',
       },
       {
+        id: 'Isla_Taboga',
+        nombre: 'Isla Taboga',
+        descripcion: 'Isla cercana a la capital con playas, ambiente de pueblo y una escapada tranquila desde la ciudad.',
+        tipo: 'video',
+        imagen: ISLA_TABOGA,
+        ubicacion: 'Isla Taboga, Panamá',
+      },
+      {
         id: 'Isla_Flamenco',
         nombre: 'Isla Flamenco',
         descripcion: 'Zona de la Calzada de Amador con marina, restaurantes y vistas hacia la bahía y la ciudad.',
@@ -123,8 +123,8 @@ export const provincias = [
         id: 'Parque_Natural_Soberania',
         nombre: 'Parque Natural Soberanía',
         descripcion: 'Parque nacional cercano al Canal, reconocido por sus senderos, aves y bosque tropical accesible desde la capital.',
-        tipo: 'video',
-        imagen: PARQUE_NATURAL_SOBERANIA,
+        tipo: 'imagen',
+        imagen: 'https://dam.visitpanama.com/files/b4add769-80f8-3b69-a090-0ee8d5f0a851?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779398732009&signature=oafHdEAw67e82n2UDhUrLV9B%2FJ4vLOljWpsjxZ5gqjeAQGsD%2BTgtstgLtN2aajFK70dC5h4ZGU8CPIQyfgJXCw%3D%3D&version=a0b1ec4b',
         ubicacion: 'Parque Natural Soberanía, Panamá',
       },
     ],

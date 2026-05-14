@@ -1,4 +1,4 @@
-import CocleImage from '../../srcProvincias/cocle/cocle.png';
+import CocleImage from '../../srcProvincias/cocle/CocleMap.png';
 
 const CocleSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

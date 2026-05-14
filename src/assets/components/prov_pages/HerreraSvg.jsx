@@ -1,4 +1,4 @@
-import HerreraImag from '../../srcProvincias/herrera/herrera.png';
+import HerreraImag from '../../srcProvincias/herrera/HerreraMap.png';
 
 const HerreraSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

@@ -1,4 +1,4 @@
-import chiriquiImage from '../../srcProvincias/chiriqui/chiriqui.jpg';
+import chiriquiImage from '../../srcProvincias/chiriqui/ChiriquiMap.png';
 
 const ChiriquiSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

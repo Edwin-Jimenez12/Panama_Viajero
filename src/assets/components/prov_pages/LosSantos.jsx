@@ -1,4 +1,4 @@
-import LosSantosImage from '../../srcProvincias/los_santos/los santos.png';
+import LosSantosImage from '../../srcProvincias/los_santos/LosSantosMap.jpg';
 
 const LosSantos = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (
