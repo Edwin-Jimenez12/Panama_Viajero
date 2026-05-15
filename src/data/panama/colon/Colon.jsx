@@ -7,7 +7,8 @@ import Suggestions from '../../../assets/components/province/Suggestions.jsx';
 import MapSection from '../../../assets/components/province/MapSection.jsx';
 import Menu from '../../../assets/components/menu/Menu.jsx';
 import BottomBanner from '../../../assets/components/bottombanner/Bottombanner.jsx';
-import { provincias as colonData } from './ColonData.js';
+import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
+import { provincias } from './ColonData.js';
 
 function Colon() {
     const navigate = useNavigate();

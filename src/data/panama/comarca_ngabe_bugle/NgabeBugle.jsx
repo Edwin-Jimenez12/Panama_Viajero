@@ -7,11 +7,12 @@ import Suggestions from '../../../assets/components/province/Suggestions.jsx';
 import MapSection from '../../../assets/components/province/MapSection.jsx';
 import Menu from '../../../assets/components/menu/Menu.jsx';
 import BottomBanner from '../../../assets/components/bottombanner/Bottombanner.jsx';
-import { provincias as ngabeBugleData } from './NgabeBugleData.js';
+import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
+import { provincias } from './NgabeBugleData.js';
 
 function NgabeBugle() {
     const navigate = useNavigate();
-    const provinceData = ngabeBugleData[0];
+    const provinceData = provincias[0];
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -39,6 +40,7 @@ function NgabeBugle() {
             <Activities provinceData={provinceData} />
             <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/comarca-ngabe-bugle" />
             <MapSection provinceData={provinceData} />
+            <OtherProvinces provincias={provincias} />
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
     );

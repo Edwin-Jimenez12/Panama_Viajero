@@ -7,11 +7,12 @@ import Suggestions from '../../../assets/components/province/Suggestions.jsx';
 import MapSection from '../../../assets/components/province/MapSection.jsx';
 import Menu from '../../../assets/components/menu/Menu.jsx';
 import BottomBanner from '../../../assets/components/bottombanner/Bottombanner.jsx';
-import { provincias as gunaYalaData } from './GunaYalaData.js';
+import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
+import { provincias } from './GunaYalaData.js';
 
 function GunaYala() {
     const navigate = useNavigate();
-    const provinceData = gunaYalaData[0];
+    const provinceData = provincias[0];
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -39,6 +40,7 @@ function GunaYala() {
             <Activities provinceData={provinceData} />
             <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/comarca-guna-yala" />
             <MapSection provinceData={provinceData} />
+            <OtherProvinces provincias={provincias} />
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
     );
