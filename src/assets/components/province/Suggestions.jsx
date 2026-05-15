@@ -1,7 +1,7 @@
 function Suggestions({ provinceData }) {
     return (
         <div className="flex flex-col gap-5">
-            <h1 className="font-main flex justify-center text-3xl font-bold text-brand-blue md:pb-4 md:text-4xl">Sugerencias turisticas</h1>
+            <h1 className="font-main flex justify-center text-3xl font-bold text-brand-blue md:pb-4 md:text-4xl">Lugares Turisticos</h1>
             <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6">
                 {provinceData.lugaresDestacados.map((lugar) => {
                     const isVideo = lugar.tipo === 'video';

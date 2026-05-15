@@ -7,6 +7,7 @@ import ProvinceInfo from '../../../assets/components/province/ProvinceInfo.jsx';
 import Activities from '../../../assets/components/province/Activities.jsx';
 import Suggestions from '../../../assets/components/province/Suggestions.jsx';
 import MapSection from '../../../assets/components/province/MapSection.jsx';
+import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
 import { provincias } from './BocasDelToro.js';
 
 function BocasDelToro() {
@@ -45,6 +46,8 @@ function BocasDelToro() {
             <Suggestions provinceData={bocasDelToro} navigate={navigate} basePath="../bocas-del-toro" />
 
             <MapSection provinceData={bocasDelToro} />
+
+            <OtherProvinces provincias={provincias} />
 
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
