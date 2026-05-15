@@ -1,6 +1,26 @@
+import { useState } from 'react';
 import LogoCircular from '../../img_test/logoCircular.svg';
 
 function AboutUs() {
+  const [rotation, setRotation] = useState({ x: 0, y: 0 });
+
+  const onMouseMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const px = x / rect.width;
+    const py = y / rect.height;
+
+    setRotation({
+      x: (0.5 - py) * 25,
+      y: (px - 0.5) * 25,
+    });
+  };
+
+  const onMouseLeave = () => {
+    setRotation({ x: 0, y: 0 });
+  };
+
   return (
     <div className="mx-auto mt-20 flex max-w-6xl flex-col items-center justify-center gap-12 px-4 py-14 md:flex-row md:gap-16">
       <div className="flex flex-col items-start gap-5 text-left">
@@ -18,8 +38,21 @@ function AboutUs() {
         </p>
       </div>
 
-      <div className="rounded-full bg-brand-white p-6 shadow-[0_18px_45px_rgba(73,86,162,0.22)]">
-        <img src={LogoCircular} alt="Provincias" className="h-50 w-auto md:h-72" />
+      <div
+        className="flex items-center justify-center overflow-visible"
+        style={{ perspective: '1000px' }}
+      >
+        <div
+          className="rounded-full   shadow-[0_18px_45px_rgba(73,86,162,0.22)] transition-transform duration-150 ease-out"
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+          style={{
+            transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.05)`,
+            transformStyle: 'preserve-3d',
+          }}
+        >
+          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-80 w-auto rounded-full md:h-72" />
+        </div>
       </div>
     </div>
   );

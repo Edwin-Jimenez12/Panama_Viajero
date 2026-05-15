@@ -10,6 +10,7 @@ import HerreraSvg from '../../srcProvincias/herrera/HerreraMap.png'
 import PanamaSvg from '../../srcProvincias/panama/panama.jpg'
 import PanamaOesteSvg from '../../srcProvincias/panama_oeste/PanamaOesteMap.png'
 import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpg'
+import PV from '../../img_test/Logocircular.svg'
 
 
 const imageMaps = {
@@ -25,6 +26,7 @@ const imageMaps = {
     'panama-oeste': PanamaOesteSvg,
     'los-santos': LosSantos,
     'comarca-guna-yala': GunaYalaSvg, // assuming same as guna-yala
+    'Panama-viajero': PV,
 }
 
 function AnimateProvince({ provinceData }) {

@@ -64,7 +64,7 @@ function Home() {
       <section id="home" ref={homeRef} className="relative">
         <BannerLayout />
         <div className=" mr-5 mb-2 md:mr-10 md:mb-5 pointer-events-none absolute inset-0 z-20 flex items-end justify-end">
-          <img src={Logo} alt="Logo" className="h-10 md:h-27 w-auto max-w-full drop-shadow-[0_18px_10px_rgba(0,0,0,0.45)]" />
+          <img src={Logo} alt="Logo" className="h-7 mb-2 md:mb-none md:h-20 w-auto max-w-full drop-shadow-[0_18px_10px_rgba(0,0,0,0.45)]" />
         </div>
       </section>
 
