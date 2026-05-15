@@ -50,16 +50,20 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                     <img src={LogoCuadrado} alt="Logo IEPA" className="h-12 w-auto max-w-full" />
                 </button>
 
-                <div className="hidden md:flex gap-8 font-invisible">
+                <div className="hidden md:flex gap-8 font-secondary">
                     {/* Nosotros */}
-                    <button className="group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition hover:bg-brand-white/15 hover:text-brand-white" onClick={goToUs}>
-                        <Users size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
+                    <button className=" hover:scale-105 group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition-all 
+                    ease-out hover:bg-brand-white/15 hover:text-brand-white
+                    hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToUs}>
+                        <Users size={15} className=" text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
                         <span>Nosotros</span>
                         
                     </button>
                     {/* Provincias */}
                     <button
-                        className="group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition hover:bg-brand-white/15 hover:text-brand-white"
+                        className="hover:scale-105 group flex items-center gap-2 cursor-pointer rounded-full 
+                        px-3 py-2 transition-all  ease-out hover:bg-brand-white/15 
+                        hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
                         onClick={goToMap}
                         >
                             <MapPin size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
@@ -68,18 +72,22 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                     </button>
 
                     {/* Promociones */}
-                    <button className="group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition hover:bg-brand-white/15 hover:text-brand-white" onClick={goToSuggestions}>
+                    <button className=" hover:scale-105 group flex items-center gap-2 cursor-pointer 
+                    rounded-full px-3 py-2 transition-all  ease-out hover:bg-brand-white/15 
+                    hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToSuggestions}>
                         <Megaphone size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100"/>
                         <span>Recomendaciones</span>
                     </button>
                     {/* Registro */}
-                    <button className="group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition hover:bg-brand-white/15 hover:text-brand-white" onClick={goToRegister}>
+                    <button className="hover:scale-105 group flex items-center gap-2 cursor-pointer 
+                    rounded-full px-3 py-2 transition-all  ease-out hover:bg-brand-white/15 hover:text-brand-white 
+                    hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToRegister}>
                         <ClipboardPen size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
                         <span>Registro</span>
                     </button>
                 </div>
                 {/* Menu Responsive */}
-                <button className="md:hidden rounded-full bg-brand-white/15 px-3 py-1 transition hover:bg-brand-red" onClick={() => setIsOpen(true)}>
+                <button className="md:hidden rounded-full bg-brand-white/15 px-3 py-1 transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)]" onClick={() => setIsOpen(true)}>
                     ☰
                 </button>
                 
@@ -104,15 +112,15 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                             </button>
                         </div>
 
-                        <div className="flex flex-col items-start ml-3 gap-2.5">
-                            <button className="rounded-full px-4 py-2 transition hover:bg-brand-white/10" onClick={goToUs}>Nosotros</button>
-                            <button className="rounded-full px-4 py-2 transition hover:bg-brand-white/10" onClick={goToMap}>Provincias</button>
-                            <button className="rounded-full px-4 py-2 transition hover:bg-brand-white/10" onClick={goToSuggestions}>Sugerencia</button>
-                            <button className="rounded-full px-4 py-2 transition hover:bg-brand-white/10" onClick={goToRegister}>Registro</button>
+                        <div className="font-secondary flex flex-col items-start ml-3 gap-2.5">
+                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToUs}>Nosotros</button>
+                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToMap}>Provincias</button>
+                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToSuggestions}>Sugerencia</button>
+                            <button className="font-secondary rounded-full px-4 py-2 transition-all duration-300 ease-out hover:bg-brand-white/10 hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>Registro</button>
                         </div>
 
                         <div className="flex justify-center mt-15">
-                            <button className="rounded-lg bg-brand-red text-brand-white px-5 py-2 font-semibold transition hover:bg-brand-blue" onClick={goToRegister}>
+                            <button className="font-secondary rounded-lg bg-brand-red text-brand-white px-5 py-2 transition-all duration-300 ease-out hover:bg-brand-blue hover:shadow-[0_8px_24px_rgba(255,255,255,0.12)]" onClick={goToRegister}>
                                 Registrarme
                             </button>
                         </div>

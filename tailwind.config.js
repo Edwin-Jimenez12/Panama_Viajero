@@ -6,9 +6,18 @@ export default {
   ],
   theme: {
     extend: {
-      // --- AÑADE ESTO ---
       fontFamily: {
-        'invisible': ['InvisibleSans', 'sans-serif'],
+        // Tu fuente principal
+        'main': ['InvisibleSans', 'sans-serif'], 
+        // Tu fuente secundaria
+        'secondary': ['TangoSans', 'sans-serif'],
+        'secondary-bold': ['TangoSansBold', 'sans-serif'],
+        'secondary-italic': ['TangoSansItalic', 'sans-serif'],
+        'secondary-bold-italic': ['TangoSansBoldItalic', 'sans-serif'],
+        // Body
+        'body': ['Inter', 'sans-serif'],
+        // Otras fuentes
+        'accent': ['Caveat', 'cursive'],
       },
       colors: {
         brand: {

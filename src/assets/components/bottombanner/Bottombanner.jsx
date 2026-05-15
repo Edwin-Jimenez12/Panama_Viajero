@@ -4,13 +4,13 @@ import LogoCircular from "../../img_test/LogoRectangular.svg";
 function BottomBanner({ onLogoClick }) {
     return (
         <div className="mt-20 bg-brand-blue py-10 shadow-[0_-12px_30px_rgba(77,76,76,0.18)]">
-            <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 font-serif text-brand-white">
-                <h1 className="text-center text-2xl md:text-4xl font-bold">Se parte de esta gran aventura</h1>
+            <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 text-brand-white">
+                <h1 className="font-main text-center text-2xl md:text-4xl font-bold">Se parte de esta gran aventura</h1>
             <button className="cursor-pointer transition hover:scale-110" onClick={onLogoClick}>
                 <img src={LogoCircular} alt="Logo IEPA" className="h-15 md:h-20 w-auto max-w-full" />
             </button>
             <div className="flex flex-col items-center gap-4">
-                <h2 className="text-lg md:text-xl font-bold">Redes sociales</h2>
+                <h2 className="font-body font-bold text-lg md:text-xl">Redes sociales</h2>
             <div className="flex gap-3">
                 {/* Instagram */}
                 <a href="https://www.instagram.com/panamaviajero.app/" className="flex h-11 w-11 items-center justify-center rounded-full border 
@@ -36,7 +36,7 @@ function BottomBanner({ onLogoClick }) {
             </div>
 
             <hr className="w-full border-brand-white opacity-40" />
-            <div className="text-center text-xs md:text-md">
+            <div className="font-body text-center text-xs md:text-md">
                 © 2026 Panamá viajero. Todos los derechos reservados. | Desarrollado por DHM-Asesores | Contacto: <a href="panamaviajero@.com.pa">panamaviajero@.com.pa</a>
             </div>
             </div>

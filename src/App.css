@@ -1,9 +1,43 @@
+/* 1. Unificamos Inter y Caveat en un solo llamado de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+/* FUENTE PRINCIPAL */
 @font-face {
   font-family: 'InvisibleSans';
-  /* La ruta debe subir niveles hasta llegar a assets */
   src: url('./assets/fonts/Invisible-ExtraBold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
+}
+
+/* FUENTE SECUNDARIA: Agrupamos todo bajo 'TangoSans' */
+@font-face {
+  font-family: 'TangoSans';
+  src: url('./assets/fonts/TangoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TangoSans';
+  src: url('./assets/fonts/TangoSans_Bold.ttf') format('truetype');
+  font-weight: 700; /* Definimos que este archivo es el Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TangoSans';
+  src: url('./assets/fonts/TangoSans_Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic; /* Definimos que este archivo es el Italic */
+  font-display: swap;
+}
+
+/* Aplicamos Inter al body globalmente */
+body {
+  font-family: 'Inter', sans-serif;
 }

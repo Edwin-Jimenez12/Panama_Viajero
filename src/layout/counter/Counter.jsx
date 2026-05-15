@@ -52,33 +52,33 @@ return (
                 className="absolute top-4 right-4 cursor-pointer text-xl font-bold text-brand-charcoal/60 hover:text-brand-red"
                 aria-label="Cerrar ventana emergente"
             >X</button>
-            <h2 className="mb-4 text-2xl font-bold text-brand-blue">Lanzamiento muy pronto</h2>
+            <h2 className="font-main mb-4 text-2xl font-bold text-brand-blue">Lanzamiento muy pronto</h2>
             <div className="grid grid-cols-5 gap-3 mb-6">
                 <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.months}</span>
-                    <span className="text-xs uppercase">Meses</span>
+                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.months}</span>
+                    <span className="font-secondary text-xs uppercase">Meses</span>
                 </div>
                 <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.days}</span>
-                    <span className="text-xs uppercase">Dias</span>
+                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.days}</span>
+                    <span className="font-secondary text-xs uppercase">Dias</span>
                 </div>
                 <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.hours}</span>
-                    <span className="text-xs uppercase">Horas</span>
+                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.hours}</span>
+                    <span className="font-secondary text-xs uppercase">Horas</span>
                 </div>
                 <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.minutes}</span>
-                    <span className="text-xs uppercase">Min</span>
+                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.minutes}</span>
+                    <span className="font-secondary text-xs uppercase">Min</span>
                 </div>
                 <div className="rounded-lg bg-brand-soft p-3">
-                    <span className="block text-3xl font-bold text-brand-red">{timeLeft.seconds}</span>
-                    <span className="text-xs uppercase">Seg</span>
+                    <span className="font-secondary-bold block text-3xl text-brand-red">{timeLeft.seconds}</span>
+                    <span className="font-secondary text-xs uppercase">Seg</span>
                 </div>
             </div>
-            <p className="mb-6 text-brand-charcoal/75">No te pierdas nuestra apertura oficial.</p>
+            <p className="font-body mb-6 text-brand-charcoal/75">No te pierdas nuestra apertura oficial.</p>
             <button
                 onClick={onPreregister}
-                className="cursor-pointer rounded-lg bg-brand-red px-6 py-3 font-bold text-brand-white transition hover:bg-brand-blue"
+                className="font-secondary-bold cursor-pointer rounded-lg bg-brand-red px-6 py-3 text-brand-white transition hover:bg-brand-blue"
             >Preregistrarme ahora</button>
         </div>
     </div>

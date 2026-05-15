@@ -59,22 +59,24 @@ function AleatorySuggestions() {
     return (
         <section className="mx-auto w-full max-w-6xl px-4 py-16">
             <div className="mb-8 text-center">
-                <h2 className="font-invisible text-3xl font-bold text-brand-blue md:text-5xl text-left">
+                <h2 className="font-main text-3xl text-brand-blue md:text-5xl text-left">
                     Sugerencias para explorar
                 </h2>
-                <p className="ml-2 mt-3 max-w-2xl text-brand-charcoal/90 md:text-lg text-left">
+                <p className="font-body-italic ml-2 mt-3 max-w-2xl text-brand-charcoal/90 md:text-lg text-left">
                     Provincias recomendadas para descubrir historia, naturaleza, cultura y experiencias únicas.
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6">
+            <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 ">
                 {suggestions.map(({ data: province, path, media }) => (
                     <button
-                        key={province.id}
-                        type="button"
-                        aria-label={`Explorar ${province.nombre}`}
-                        onClick={() => navigate(`${path}#video`)}
-                        className="group relative aspect-[16/9] w-full max-w-md overflow-hidden rounded-lg bg-brand-soft shadow-[0_12px_30px_rgba(77,76,76,0.22)] transition hover:scale-105 cursor-pointer md:w-[355px]"
+                    key={province.id}
+                    type="button"
+                    aria-label={`Explorar ${province.nombre}`}
+                    onClick={() => navigate(`${path}#video`)}
+                    className="group relative aspect-[16/9] w-full max-w-md overflow-hidden rounded-lg 
+                    bg-brand-soft hover:shadow-[0_0_20px_5px_rgba(255,255,255,1),0_0_60px_20px_rgba(255,255,255,0.4)]
+                    transition-all duration-300 hover:scale-105 cursor-pointer md:w-[355px]"
                     >
                         <video
                             src={media.src}
@@ -85,8 +87,13 @@ function AleatorySuggestions() {
                             playsInline
                             preload="metadata"
                         />
-                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 px-4 transition duration-300 bg-black/40">
-                            <span className="text-center text-2xl font-bold text-brand-white opacity-0 drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] transition duration-300 opacity-100">
+                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center 
+                        bg-black/40 px-4 transition-all duration-300 group-hover:bg-black/0">
+                            <span className="font-accent text-center text-4xl font-bold text-brand-white 
+                            transition-all duration-300
+                            drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] 
+                            group-hover:drop-shadow-[0_4px_12px_rgba(0,0,0,1)] 
+                            group-hover:scale-110">
                                 {province.nombre}
                             </span>
                         </div>

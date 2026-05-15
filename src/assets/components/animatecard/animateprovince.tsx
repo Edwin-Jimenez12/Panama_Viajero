@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import BocasDelToroSvg from '../prov_pages/BocasDelToroSvg.jsx'
-import ChiriquiSvg from '../prov_pages/ChiriquiSvg.jsx'
-import CocleSvg from '../prov_pages/CocleSvg.jsx'
-import Colon from '../prov_pages/Colon.jsx'
-import GunaYalaSvg from '../prov_pages/GunaYalaSvg.jsx'
-import Darien from '../prov_pages/Darien.jsx'
-import VeraguasSvg from '../prov_pages/VeraguasSvg.jsx'
-import HerreraSvg from '../prov_pages/HerreraSvg.jsx'
-import PanamaSvg from '../prov_pages/PanamaSvg.jsx'
-import LosSantos from '../prov_pages/LosSantos.jsx'
-import NgabeBugle from '../prov_pages/nbSvg.jsx'
+import BocasDelToroSvg from '../../srcProvincias/bocas_del_toto/BocasGeneralMap.jpg'
+import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.png'
+import CocleSvg from '../../srcProvincias/cocle/CocleMap.png'
+import Colon from '../../srcProvincias/colon/colon.png'
+import GunaYalaSvg from '../../srcProvincias/comarca_guna_yala/guna ya.jpg'
+import Darien from '../../srcProvincias/darien/DarienMap.png'
+import VeraguasSvg from '../../srcProvincias/veraguas/VeraguasMap.jpg'
+import HerreraSvg from '../../srcProvincias/herrera/HerreraMap.png'
+import PanamaSvg from '../../srcProvincias/panama/panama.jpg'
+import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpg'
 
-const svgComponents = {
+
+const imageMaps = {
     'bocas-del-toro': BocasDelToroSvg,
     'chiriqui': ChiriquiSvg,
     'cocle': CocleSvg,
@@ -22,7 +22,6 @@ const svgComponents = {
     'herrera': HerreraSvg,
     'panama': PanamaSvg,
     'los-santos': LosSantos,
-    'comarca-ngabe-bugle': NgabeBugle,
     'comarca-guna-yala': GunaYalaSvg, // assuming same as guna-yala
 }
 
@@ -47,25 +46,30 @@ function AnimateProvince({ provinceData }) {
         setRotation({ x: 0, y: 0 })
     }
 
-    const SvgComponent = svgComponents[provinceData.id]
+    const currentImage = imageMaps[provinceData.id]
 
-    if (!SvgComponent) {
-        return <div>SVG no encontrado para {provinceData.id}</div>
-    }
-
-    return (
+    
+return (
         <div
-            className="transition duration-300"
-            style={{ perspective: '750px' }}
+            className="flex justify-center items-center overflow-visible py-10"
+            style={{ perspective: '1000px' }}
         >
-            <SvgComponent 
-                className="w-full object-contain drop-shadow-[0_18px_25px_rgba(0,0,0,0.35)] transition-transform duration-150"
-                style={{
-                    transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.03)`,
-                }}
-                onMouseMove={onMouseMove}
-                onMouseLeave={onMouseLeave}
-            />
+            {currentImage ? (
+                <img 
+                    src={currentImage}
+                    alt={`Mapa de ${provinceData.nombre}`}
+                    onMouseMove={onMouseMove}
+                    onMouseLeave={onMouseLeave}
+                    className="aspect-[4/3] rounded-xl h-full w-full object-cover transition-transform duration-150 ease-out 
+                    drop-shadow-[0_25px_35px_rgba(0,0,0,0.4)]"
+                    style={{
+                        transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale(1.05)`,
+                        transformStyle: 'preserve-3d'
+                    }}
+                />
+            ) : (
+                <p className="text-brand-white">Imagen no encontrada</p>
+            )}
         </div>
     )
 }
