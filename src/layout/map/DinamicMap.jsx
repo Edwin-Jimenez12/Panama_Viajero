@@ -36,7 +36,7 @@ function Map() {
                 {/* map */}
                 <div className='flex flex-col'>
                     <label className='font-main text-5xl text-brand-blue'>Panamá</label>
-                    <label className='font-secondary' >Un Pais de union</label>
+                    <label className='font-secondary-italic' >Un Pais de union</label>
                 </div>
                 <div className='relative  aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)] mb-[-25px]'>
                     {/* Provincias imagenes */}
@@ -79,7 +79,7 @@ function Map() {
                     ))}
                 </div>
             </div>
-            <label className='font-secondary text-brand-red mt-10 md:mt-0 text-xs md:text-lg'>Elige la provincia a visitar</label>
+            <label className='font-secondary-italic text-brand-red mt-10 md:mt-0 text-xs md:text-lg'>Elige la provincia a visitar</label>
         </div>
     )
 }
