@@ -15,7 +15,6 @@ import LosSantos from './data/panama/lossantos/LosSantos.jsx'
 import Panama from './data/panama/panama/Panama.jsx'
 import Veraguas from './data/panama/veraguas/Veraguas.jsx'
 import GunaYala from './data/panama/comarca_guna_yala/GunaYala.jsx'
-import NgabeBugle from './data/panama/comarca_ngabe_bugle/NgabeBugle.jsx'
 import AboutUs from './assets/components/about us/AboutUs.jsx'
 import AleatorySuggestions from './layout/suggestion/Suggestions.tsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
@@ -108,7 +107,6 @@ function App() {
       <Route path="/provincias/panama" element={<Panama />} />
       <Route path="/provincias/veraguas" element={<Veraguas />} />
       <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
-      <Route path="/provincias/comarca-ngabe-bugle" element={<NgabeBugle />} />
     </Routes>
   )
 }
