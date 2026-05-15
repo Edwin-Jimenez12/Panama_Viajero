@@ -10,7 +10,6 @@ import { provincias as losSantosData } from '../../../data/panama/lossantos/LosS
 import { provincias as panamaData } from '../../../data/panama/panama/PanamaData.js';
 import { provincias as veraguasData } from '../../../data/panama/veraguas/VeraguasData.js';
 import { provincias as gunaYalaData } from '../../../data/panama/comarca_guna_yala/GunaYalaData.js';
-import { provincias as ngabeBugleData } from '../../../data/panama/comarca_ngabe_bugle/NgabeBugleData.js';
 
 const provinceRoutes = [
     { data: bocasDelToroData[0], path: '/provincias/bocas-del-toro' },
@@ -23,7 +22,6 @@ const provinceRoutes = [
     { data: panamaData[0], path: '/provincias/panama' },
     { data: veraguasData[0], path: '/provincias/veraguas' },
     { data: gunaYalaData[0], path: '/provincias/comarca-guna-yala' },
-    { data: ngabeBugleData[0], path: '/provincias/comarca-ngabe-bugle' },
 ];
 
 function getRandomItems(items, limit) {

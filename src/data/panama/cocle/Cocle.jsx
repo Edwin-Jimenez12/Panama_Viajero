@@ -12,7 +12,7 @@ import { provincias } from './CocleData.js';
 
 function Cocle() {
     const navigate = useNavigate();
-    const provinceData = cocleData[0];
+    const provinceData = provincias[0];
 
     useEffect(() => {
         const hash = window.location.hash;

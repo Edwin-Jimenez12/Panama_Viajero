@@ -7,11 +7,12 @@ import Suggestions from '../../../assets/components/province/Suggestions.jsx';
 import MapSection from '../../../assets/components/province/MapSection.jsx';
 import Menu from '../../../assets/components/menu/Menu.jsx';
 import BottomBanner from '../../../assets/components/bottombanner/Bottombanner.jsx';
-import { provincias as chiriquiData } from './ChiriquiData.js';
+import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
+import { provincias } from './ChiriquiData.js';
 
 function Chiriqui() {
     const navigate = useNavigate();
-    const provinceData = chiriquiData[0];
+    const provinceData = provincias[0];
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -41,6 +42,7 @@ function Chiriqui() {
             <Activities provinceData={provinceData} />
             <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/chiriqui" />
             <MapSection provinceData={provinceData} />
+            <OtherProvinces provincias={provincias} />
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
     );

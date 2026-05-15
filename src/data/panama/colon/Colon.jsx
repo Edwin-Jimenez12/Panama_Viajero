@@ -12,7 +12,7 @@ import { provincias } from './ColonData.js';
 
 function Colon() {
     const navigate = useNavigate();
-    const provinceData = colonData[0];
+    const provinceData = provincias[0];
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -39,6 +39,7 @@ function Colon() {
             <Activities provinceData={provinceData} />
             <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/colon" />
             <MapSection provinceData={provinceData} />
+            <OtherProvinces provincias={provincias} />
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>
     );
