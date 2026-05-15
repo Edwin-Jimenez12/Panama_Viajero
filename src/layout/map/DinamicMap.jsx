@@ -3,7 +3,6 @@ import { useState } from 'react';
 import LosSantos from '../../assets/components/prov_pages/LosSantos.jsx';
 import ChiriquiSvg from '../../assets/components/prov_pages/ChiriquiSvg.jsx';
 import BocasDelToroSvg from '../../assets/components/prov_pages/BocasDelToroSvg.jsx';
-import NgabeBugle from '../../assets/components/prov_pages/nbSvg.jsx';
 import Cocle from '../../assets/components/prov_pages/CocleSvg.jsx';
 import Colon from '../../assets/components/prov_pages/Colon.jsx';
 import GunaYala from '../../assets/components/prov_pages/GunaYalaSvg.jsx';
@@ -11,19 +10,20 @@ import Darien from '../../assets/components/prov_pages/Darien.jsx';
 import Veraguas from "../../assets/components/prov_pages/VeraguasSvg.jsx";
 import Herrera from '../../assets/components/prov_pages/HerreraSvg.jsx';
 import Panama from '../../assets/components/prov_pages/PanamaSvg.jsx';
+import PanamaOeste from '../../assets/components/prov_pages/PanamaOesteSvg.jsx';
 
 const provinces = [
     { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos', top: '68.87%', left: '39.90%', width: '11.71%' },
     { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui', top: '30.90%', left: '0%', width: '25.66%' },
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '0.24%', left: '1.27%', width: '11.80%' },
-    { component: NgabeBugle, alt: 'Comarca Ngabe Bugle', to: '/provincias/comarca-ngabe-bugle', top: '20.05%', left: '10.73%', width: '20.68%' },
     { component: Cocle, alt: 'Cocle', to: '/provincias/cocle', top: '12%', left: '34.75%', width: '21%' },
     { component: Colon, alt: 'Colon', to: '/provincias/colon', top: '0%', left: '37.56%', width: '30.05%' },
     { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala', top: '7.08%', left: '64.68%', width: '31.22%' },
     { component: Darien, alt: 'Darien', to: '/provincias/darien', top: '23.58%', left: '78.54%', width: '21.46%' },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas', top: '26%', left: '20.85%', width: '23.60%' },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera', top: '58.50%', left: '29%', width: '21%' },
-    { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '-6.4%', left: '46.10%', width: '41.20%' },
+    { component: PanamaOeste, alt: 'Panama Oeste', top: '12.2%', left: '46.35%', width: '15.5%' },
+    { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '0%', left: '56.5%', width: '30.80%' },
 ];
 
 function Map() {

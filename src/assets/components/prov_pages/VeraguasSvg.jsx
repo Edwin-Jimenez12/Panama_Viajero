@@ -1,4 +1,4 @@
-import VeraguasImag from '../../srcProvincias/veraguas/VeraguasMap.jpg';
+import VeraguasImag from '../../srcProvincias/veraguas/VeraguasMap.png';
 
 const VeraguasSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

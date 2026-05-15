@@ -1,4 +1,4 @@
-import DarienImage from '../../srcProvincias/darien/DarienMap.png';
+import DarienImage from '../../srcProvincias/darien/DarienMap.jpg';
 
 const DarienSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (

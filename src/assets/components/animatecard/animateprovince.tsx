@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import BocasDelToroSvg from '../../srcProvincias/bocas_del_toto/BocasGeneralMap.jpg'
-import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.png'
+import BocasDelToroSvg from '../../srcProvincias/bocas_del_toto/BocasGeneralMap.jpeg'
+import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.jpeg'
 import CocleSvg from '../../srcProvincias/cocle/CocleMap.png'
-import Colon from '../../srcProvincias/colon/colon.png'
+import Colon from '../../srcProvincias/colon/colon.jpeg'
 import GunaYalaSvg from '../../srcProvincias/comarca_guna_yala/guna ya.jpg'
-import Darien from '../../srcProvincias/darien/DarienMap.png'
-import VeraguasSvg from '../../srcProvincias/veraguas/VeraguasMap.jpg'
+import Darien from '../../srcProvincias/darien/DarienMap.jpg'
+import VeraguasSvg from '../../srcProvincias/veraguas/VeraguasMap.png'
 import HerreraSvg from '../../srcProvincias/herrera/HerreraMap.png'
 import PanamaSvg from '../../srcProvincias/panama/panama.jpg'
+import PanamaOesteSvg from '../../srcProvincias/panama_oeste/PanamaOesteMap.png'
 import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpg'
 
 
@@ -21,6 +22,7 @@ const imageMaps = {
     'veraguas': VeraguasSvg,
     'herrera': HerreraSvg,
     'panama': PanamaSvg,
+    'panama-oeste': PanamaOesteSvg,
     'los-santos': LosSantos,
     'comarca-guna-yala': GunaYalaSvg, // assuming same as guna-yala
 }

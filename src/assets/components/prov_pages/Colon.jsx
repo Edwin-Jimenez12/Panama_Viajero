@@ -1,4 +1,4 @@
-import ColonImag from '../../srcProvincias/colon/colon.png';
+import ColonImag from '../../srcProvincias/colon/colon.jpeg';
 
 const ColonSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLeave, onClick }) => {
     return (
