@@ -21,7 +21,7 @@ const CocleSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLea
         <image
             xlinkHref={CocleImage}
             x="0"
-            y="0"
+            y="15"
             width="141"
             height="174"
             preserveAspectRatio="xMidYMid slice"

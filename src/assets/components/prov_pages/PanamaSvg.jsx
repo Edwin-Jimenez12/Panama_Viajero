@@ -20,7 +20,7 @@ const PanamaSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseLe
         <image
             xlinkHref={PanamaImage}
             x="0"
-            y="0"
+            y="-20"
             width="322"
             height="194"
             preserveAspectRatio="xMidYMid slice"

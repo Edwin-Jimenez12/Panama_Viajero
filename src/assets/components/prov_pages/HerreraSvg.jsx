@@ -20,7 +20,7 @@ const HerreraSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouseL
         </defs>
         <image
             xlinkHref={HerreraImag}
-            x="0"
+            x="23"
             y="0"
             width="146"
             height="99"

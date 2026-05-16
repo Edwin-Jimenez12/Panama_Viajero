@@ -21,7 +21,7 @@ const BocasDelToroSvg = ({ className = '', style, onMouseMove, onMouseEnter, onM
 
       <image
         xlinkHref={bocasImage}
-        x="0"
+        x="-7"
         y="0"
         width="338"
         height="230"

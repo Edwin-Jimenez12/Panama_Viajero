@@ -20,7 +20,7 @@ const ChiriquiSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouse
         <image
             xlinkHref={chiriquiImage}
             x="0"
-            y="0"
+            y="-40"
             width="269"
             height="200"
             preserveAspectRatio="xMidYMid slice"

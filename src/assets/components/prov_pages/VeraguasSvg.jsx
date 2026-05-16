@@ -21,7 +21,7 @@ const VeraguasSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMouse
         <image
             xlinkHref={VeraguasImag}
             x="0"
-            y="0"
+            y="-20"
             width="163"
             height="241"
             preserveAspectRatio="xMidYMid slice"

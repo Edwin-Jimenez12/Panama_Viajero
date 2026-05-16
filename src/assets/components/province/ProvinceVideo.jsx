@@ -26,7 +26,7 @@ function ProvinceVideo({ provinceData, videoSrc }) {
                 
                 <div className="absolute inset-0 z-10 flex items-start md:items-center bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent px-4">
                     <div className="max-w-md rounded-xl p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm mt-24 md:mt-0 md:ml-15">
-                        <h1 className="font-main text-5xl font-bold text-[#3E477B] md:pb-4 md:text-6xl brightness-150">
+                        <h1 className="font-main text-5xl font-bold text-[#CD2E4C] md:pb-4 md:text-6xl brightness-150">
                             {provinceData.nombre}
                         </h1>
                         <p className="font-body text-lg leading-7 text-brand-white/90">
