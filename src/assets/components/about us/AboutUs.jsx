@@ -31,10 +31,8 @@ function AboutUs() {
         </div>
 
         <p className="font-body max-w-xs leading-7 text-brand-charcoal/85 md:max-w-md md:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Eaque consectetur blanditiis, autem, sequi nihil quos accusamus harum,
-          voluptatibus eius optio provident delectus deserunt distinctio voluptate.
-          Veniam deleniti molestias blanditiis quas...
+          Somos un directorio digital turístico que conecta a viajeros nacionales e internacionales 
+          con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país, somos un canal de promoción y visibilidad digital.
         </p>
       </div>
 
