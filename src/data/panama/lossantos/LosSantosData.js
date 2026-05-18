@@ -3,7 +3,7 @@ const LOS_SANTOS_BANNER = new URL('../../../assets/srcProvincias/los_santos/Los_
 const PLAYA_VENAO = new URL('../../../assets/srcProvincias/los_santos/Playa_Venao.mp4', import.meta.url).href;
 const ISLA_IGUANA = new URL('../../../assets/srcProvincias/los_santos/Isla_Iguana.mp4', import.meta.url).href;
 const PLAYA_CAMBUTAL = new URL('../../../assets/srcProvincias/los_santos/Playa_Cambutal.mp4', import.meta.url).href;
-const ISLA_CANAS = new URL('../../../assets/srcProvincias/los_santos/Isla_Cañas.mp4', import.meta.url).href;
+const ISLA_CANAS = new URL('../../../assets/srcProvincias/los_santos/Isla_Canas.mp4', import.meta.url).href;
 const CAJONES_LA_ANGOSTURA = new URL('../../../assets/srcProvincias/los_santos/Cajones_la_Angostura.mp4', import.meta.url).href;
 
 
@@ -68,7 +68,7 @@ export const provincias = [
         ubicacion: 'Playa Cambutal, Los Santos',
       },
       {
-        id: 'Isla_Cañas',
+        id: 'Isla_Canas',
         nombre: 'Isla Cañas',
         descripcion: 'Isla de tradición pesquera y valor natural, conocida por sus tortugas marinas y paisajes de manglar.',
         tipo: 'video',

@@ -1,6 +1,6 @@
 const CHIRIQUI_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/VideoBannerChiriqui.mp4', import.meta.url).href;
 const SALTO_DEL_TIGRE_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/salto-del-tigre.mp4', import.meta.url).href;
-const CASCADA_JAGUATATA_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/Cascada_Jagüatta.mp4', import.meta.url).href;
+const CASCADA_JAGUATATA_VIDEO = new URL('../../../assets/srcProvincias/chiriqui/Cascada_Jaguatta.mp4', import.meta.url).href;
 
 export const provincias = [
   {
