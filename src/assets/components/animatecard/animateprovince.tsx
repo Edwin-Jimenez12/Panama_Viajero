@@ -9,7 +9,7 @@ import VeraguasSvg from '../../srcProvincias/veraguas/VeraguasMap.png'
 import HerreraSvg from '../../srcProvincias/herrera/HerreraMap.png'
 import PanamaSvg from '../../srcProvincias/panama/panama.jpg'
 import PanamaOesteSvg from '../../srcProvincias/panama_oeste/PanamaOesteMap.png'
-import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpg'
+import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpeg'
 import PV from '../../img_test/logoCircular.svg'
 
 

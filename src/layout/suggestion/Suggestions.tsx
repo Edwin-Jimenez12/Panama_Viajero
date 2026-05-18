@@ -32,7 +32,6 @@ function getRandomItems(items, limit) {
 
 function getBannerVideo(province) {
     const banner = province.banner || {};
-
     return {
         src: banner.src,
         alt: banner.alt || province.nombre,
@@ -41,10 +40,10 @@ function getBannerVideo(province) {
 
 function AleatorySuggestions() {
     const navigate = useNavigate();
+    
     const suggestions = useMemo(() => {
         const provincesWithVideoBanner = provinceRoutes.filter(({ data }) => {
             const banner = data.banner || {};
-
             return banner.tipo === 'video' && banner.src;
         });
 
@@ -65,33 +64,38 @@ function AleatorySuggestions() {
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 ">
+            <div className="max-w-6xl mx-auto flex  justify-center gap-8">
                 {suggestions.map(({ data: province, path, media }) => (
                     <button
-                    key={province.id}
-                    type="button"
-                    aria-label={`Explorar ${province.nombre}`}
-                    onClick={() => navigate(`${path}#video`)}
-                    className="group relative aspect-[16/9] w-full max-w-md overflow-hidden rounded-lg 
-                    bg-brand-soft hover:shadow-[0_0_20px_5px_rgba(255,255,255,1),0_0_60px_20px_rgba(255,255,255,0.4)]
-                    transition-all duration-300 hover:scale-105 cursor-pointer md:w-[355px]"
+                        key={province.id}
+                        type="button"
+                        aria-label={`Explorar ${province.nombre}`}
+                        onClick={() => navigate(`${path}#video`)}
+                        className="group flex flex-col items-center w-full max-w-md cursor-pointer md:w-[355px]"
                     >
-                        <video
-                            src={media.src}
-                            className="h-[116%] w-full object-cover object-top"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            preload="metadata"
-                        />
-                        <div className="pointer-events-none absolute inset-0 flex items-center justify-center 
-                        bg-black/40 px-4 transition-all duration-300 group-hover:bg-black/0">
-                            <span className="font-accent text-center text-4xl font-bold text-brand-white 
-                            transition-all duration-300
-                            drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] 
-                            group-hover:drop-shadow-[0_4px_12px_rgba(0,0,0,1)] 
-                            group-hover:scale-110">
+                        {/* Video Container */}
+                        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-brand-soft 
+                            transition-all duration-300 group-hover:scale-105
+                            group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
+                        >
+                            <video
+                                src={media.src}
+                                className="h-[116%] w-full object-cover object-top"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="metadata"
+                            />
+                            {/* Overlay discret que se aclara en hover */}
+                            <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
+                        </div>
+                        {/* Province Name Below */}
+                        <div className="mt-4 overflow-hidden w-full text-center">
+                            <span className="inline-block font-accent text-4xl font-bold text-brand-blue
+                                transform translate-y-4 opacity-0 transition-all duration-300 ease-out
+                                group-hover:translate-y-0 group-hover:opacity-100"
+                            >
                                 {province.nombre}
                             </span>
                         </div>
