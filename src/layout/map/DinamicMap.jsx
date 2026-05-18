@@ -34,8 +34,8 @@ function Map() {
         <div className="mx-auto my-28 flex max-w-6xl flex-col items-center text-center md:my-10">
             <div className="w-full rounded-xl md:p-12">
 
-                <div className='flex flex-col mb-15 md:ml-5 '>
-                    <label className='font-main text-5xl text-brand-blue'>Panamá</label>
+                <div className='flex flex-col mb-5  '>
+                    <label className='font-main text-6xl text-brand-blue'>Panamá</label>
                     <label className='font-secondary-italic'>Descúbrelo como nunca antes</label>
                 </div>
 
@@ -90,11 +90,10 @@ function Map() {
                         )
                     ))}
                 </div>
-
                 {/* Province Name Display Section Below Map */}
-                <div className="h-16 flex items-center justify-center mt-5 overflow-hidden">
+                <div className="h-16 flex items-center justify-center mt-[-10px] overflow-hidden">
                     <span 
-                        className={`font-main text-3xl text-brand-blue tracking-wide transition-all duration-300 ease-out ${
+                        className={`font-main text-4xl text-brand-blue tracking-wide transition-all duration-300 ease-out ${
                             activeProvince 
                                 ? 'opacity-100 translate-y-0' 
                                 : 'opacity-0 translate-y-4'

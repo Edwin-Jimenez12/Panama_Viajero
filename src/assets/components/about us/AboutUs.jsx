@@ -41,7 +41,7 @@ function AboutUs() {
         style={{ perspective: '1000px' }}
       >
         <div
-          className="rounded-full   shadow-[0_18px_45px_rgba(73,86,162,0.22)] transition-transform duration-150 ease-out"
+          className="rounded-full  shadow-[0_18px_45px_rgba(73,86,162,0.50)] transition-transform duration-150 ease-out"
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
           style={{
@@ -49,7 +49,7 @@ function AboutUs() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-80 w-auto rounded-full md:h-72" />
+          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-80 w-auto rounded-full md:h-72 " />
         </div>
       </div>
     </div>
