@@ -20,7 +20,7 @@ const PanamaOesteSvg = ({ className = '', style, onMouseMove, onMouseEnter, onMo
             </defs>
             <image
                 xlinkHref={PanamaOesteImage}
-                x="10"
+                x="5"
                 y="25"
                 width="169"
                 height="177"

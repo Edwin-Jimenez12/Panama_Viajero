@@ -3,12 +3,8 @@ import Banner from '../../assets/img_test/PanamaViajero.mp4';
 function BannerLayout() {
     return (
         <div className="relative aspect-[1920/800] md:aspect-[1920/485] w-full overflow-hidden">
-            {/* <img
-                src={Banner}
-                alt="BannerLayout"
-                className="block h-full object-cover"
-            /> */}
-             <video src={Banner} className="block h-full w-full object-cover"
+            
+            <video src={Banner} className="block h-full w-full object-cover"
                 autoPlay
                 muted
                 loop
