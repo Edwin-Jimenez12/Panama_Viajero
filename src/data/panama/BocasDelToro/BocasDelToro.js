@@ -1,7 +1,6 @@
 const BOCAS_IMAGE =
   'https://tripealotuyo.com/wp-content/uploads/2025/06/Bocas-del-Toro-%E2%80%93-Foto-Home-Provincia%E2%80%93-Autoridad-de-Turismo-de-Panama%CC%81-%E2%80%93-Tripea-Lo-Tuyo-Custom-600x338.jpg';
 
-const BOCAS_VIDEO = new URL('../../../assets/srcProvincias/bocas_del_toto/Playa-banner-1080p.mp4', import.meta.url).href;
 
 export const provincias = [
   {
@@ -9,8 +8,8 @@ export const provincias = [
     nombre: 'Bocas del Toro',
 
     banner: {
-      tipo: 'video',
-      src: BOCAS_VIDEO,
+      tipo: 'imagen',
+      src: BOCAS_IMAGE,
       alt: 'Costa caribeña de la provincia de Bocas del Toro',
     },
 
@@ -29,7 +28,7 @@ export const provincias = [
     actividades: [
       'Surf',
       'Buceo',
-      'Esnórquel',
+      'Snorkel',
       'Paseos en bote',
       'Delfines',
       'Senderismo',
@@ -41,7 +40,7 @@ export const provincias = [
     ],
 
     resena:
-      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un important centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
+      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un importante centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
 
     lugaresDestacados: [
       {

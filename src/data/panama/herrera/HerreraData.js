@@ -1,5 +1,5 @@
-const PESE = new URL('../../../assets/srcProvincias/herrera/Pese.mp4', import.meta.url).href;
-const HERRERA_BANNER = new URL('../../../assets/srcProvincias/herrera/HerreraBanner.mp4', import.meta.url).href;
+const PESE = '/videos/herrera/Pese.mp4';
+const HERRERA_BANNER = '/videos/herrera/HerreraBanner.mp4';
 
 export const provincias = [
   {

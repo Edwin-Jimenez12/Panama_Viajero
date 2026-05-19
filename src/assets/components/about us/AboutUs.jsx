@@ -25,14 +25,17 @@ function AboutUs() {
     <div className="mx-auto mt-20 flex max-w-6xl flex-col items-center justify-center gap-12 px-4 py-14 md:flex-row md:gap-16">
       <div className="flex flex-col items-start gap-5 text-left">
         <div>
-          <h2 className="font-secondary-italic text-2xl text-brand-red md:text-3xl">Guia turística</h2>
+          <h2 className="font-secondary-italic text-2xl text-brand-red md:text-3xl">Guía turística</h2>
           <h1 className="font-main text-4xl font-bold text-brand-blue md:text-6xl">Explora Panamá</h1>
           <h1 className="font-main text-4xl font-bold text-brand-charcoal md:text-6xl">y sus costumbres.</h1>
         </div>
 
         <p className="font-body max-w-xs leading-7 text-brand-charcoal/85 md:max-w-md md:text-lg">
-          Somos un directorio digital turístico que conecta a viajeros nacionales e 
-          internacionales con alojamientos, experiencias, gastronomía y comercios turísticos en todo el país.
+          Somos un directorio digital turístico que conecta a viajeros nacionales e internacionales con experiencias 
+          turísticas en todo el país. Nos convertimos en el puente digital que 
+          transforma un simple viaje en una aventura inolvidable. Nuestro objetivo es dar visibilidad al talento y la calidez 
+          local, ofreciendo a los viajeros del mundo una guía auténtica para descubrir 
+          los secretos mejor guardados de nuestra tierra.
         </p>
       </div>
 
@@ -49,7 +52,7 @@ function AboutUs() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-100  " />
+          <img src={LogoCircular} alt="Provincias" className="h-50 md:h-115  " />
         </div>
       </div>
     </div>

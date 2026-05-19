@@ -1,4 +1,4 @@
-const DARIEN_BANNER = new URL('../../../assets/srcProvincias/darien/DarienBanner.mp4', import.meta.url).href;
+const DARIEN_BANNER = '/videos/darien/DarienBanner.mp4';
 
 export const provincias = [
   {

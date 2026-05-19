@@ -32,8 +32,13 @@ function getRandomItems(items, limit) {
 
 function getBannerVideo(province) {
     const banner = province.banner || {};
+    const poster = banner.poster
+        || province.imagenProvincia?.src
+        || province.lugaresDestacados?.find((lugar) => lugar.tipo !== 'video')?.imagen;
+
     return {
         src: banner.src,
+        poster,
         alt: banner.alt || province.nombre,
     };
 }
@@ -85,7 +90,8 @@ function AleatorySuggestions() {
                                 muted
                                 loop
                                 playsInline
-                                preload="metadata"
+                                poster={media.poster}
+                                preload="none"
                             />
                             {/* Overlay discret que se aclara en hover */}
                             <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />

@@ -1,6 +1,6 @@
-const ISLA_TABOGA = new URL('../../../assets/srcProvincias/panama/Isla_Taboga.mp4', import.meta.url).href;
-const CERRO_ANCON = new URL('../../../assets/srcProvincias/panama/Cerro_Ancon.mp4', import.meta.url).href;
-const PANAMA_BANNER = new URL('../../../assets/srcProvincias/panama/PanamaBanner.mp4', import.meta.url).href;
+const ISLA_TABOGA = '/videos/panama/Isla_Taboga.mp4';
+const CERRO_ANCON = '/videos/panama/Cerro_Ancon.mp4';
+const PANAMA_BANNER = '/videos/panama/PanamaBanner.mp4';
 
 export const provincias = [
   {

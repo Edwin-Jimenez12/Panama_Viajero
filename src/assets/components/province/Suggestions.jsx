@@ -1,4 +1,8 @@
 function Suggestions({ provinceData }) {
+    const fallbackPoster = provinceData.banner?.poster
+        || provinceData.imagenProvincia?.src
+        || provinceData.lugaresDestacados.find((item) => item.tipo !== 'video')?.imagen;
+
     return (
         <div className="flex flex-col gap-5">
             <h1 className="font-main flex justify-center text-3xl font-bold text-brand-blue md:pb-4 md:text-4xl">Lugares Turisticos</h1>
@@ -20,7 +24,8 @@ function Suggestions({ provinceData }) {
                                         muted
                                         loop
                                         playsInline
-                                        preload="metadata"
+                                        poster={lugar.poster || fallbackPoster}
+                                        preload="none"
                                     />
                                 ) : (
                                     <img

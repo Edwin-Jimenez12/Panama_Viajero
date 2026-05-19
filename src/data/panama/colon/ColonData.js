@@ -1,11 +1,10 @@
-/* const  = new URL('../../../assets/srcProvincias/colon', import.meta.url).href;*/
-const COLON_BANNER = new URL('../../../assets/srcProvincias/colon/ColonBanner.mp4', import.meta.url).href;
-const CERRO_PAVON = new URL('../../../assets/srcProvincias/colon/Cerro_Pavon.mp4', import.meta.url).href;
-const TUNEL_AMOR = new URL('../../../assets/srcProvincias/colon/El_tunel_del_amor.mp4', import.meta.url).href;
-const LAGO_GATUN = new URL('../../../assets/srcProvincias/colon/Lago_Gatun.mp4', import.meta.url).href;
-const PORTOBELLO = new URL('../../../assets/srcProvincias/colon/Portobelo.mp4', import.meta.url).href;
-const FUERTE_SAN_FERNANDO = new URL('../../../assets/srcProvincias/colon/Fuerte_de_San_Fernando.mp4', import.meta.url).href;
-const ISLA_MAMEY = new URL('../../../assets/srcProvincias/colon/Isla_Mamey.mp4', import.meta.url).href;
+const COLON_BANNER = '/videos/colon/ColonBanner.mp4';
+const CERRO_PAVON = '/videos/colon/Cerro_Pavon.mp4';
+const TUNEL_AMOR = '/videos/colon/El_tunel_del_amor.mp4';
+const LAGO_GATUN = '/videos/colon/Lago_Gatun.mp4';
+const PORTOBELLO = '/videos/colon/Portobelo.mp4';
+const FUERTE_SAN_FERNANDO = '/videos/colon/Fuerte_de_San_Fernando.mp4';
+const ISLA_MAMEY = '/videos/colon/Isla_Mamey.mp4';
 
 
 export const provincias = [

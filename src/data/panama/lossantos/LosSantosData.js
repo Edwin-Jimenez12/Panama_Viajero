@@ -1,10 +1,9 @@
-/* const  = new URL('../../../assets/srcProvincias/los_santos/', import.meta.url).href;*/
-const LOS_SANTOS_BANNER = new URL('../../../assets/srcProvincias/los_santos/Los_santos_Banner.mp4', import.meta.url).href;
-const PLAYA_VENAO = new URL('../../../assets/srcProvincias/los_santos/Playa_Venao.mp4', import.meta.url).href;
-const ISLA_IGUANA = new URL('../../../assets/srcProvincias/los_santos/Isla_Iguana.mp4', import.meta.url).href;
-const PLAYA_CAMBUTAL = new URL('../../../assets/srcProvincias/los_santos/Playa_Cambutal.mp4', import.meta.url).href;
-const ISLA_CANAS = new URL('../../../assets/srcProvincias/los_santos/Isla_Canas.mp4', import.meta.url).href;
-const CAJONES_LA_ANGOSTURA = new URL('../../../assets/srcProvincias/los_santos/Cajones_la_Angostura.mp4', import.meta.url).href;
+const LOS_SANTOS_BANNER = '/videos/los_santos/Los_santos_Banner.mp4';
+const PLAYA_VENAO = '/videos/los_santos/Playa_Venao.mp4';
+const ISLA_IGUANA = '/videos/los_santos/Isla_Iguana.mp4';
+const PLAYA_CAMBUTAL = '/videos/los_santos/Playa_Cambutal.mp4';
+const ISLA_CANAS = '/videos/los_santos/Isla_Canas.mp4';
+const CAJONES_LA_ANGOSTURA = '/videos/los_santos/Cajones_la_Angostura.mp4';
 
 export const provincias = [
   {

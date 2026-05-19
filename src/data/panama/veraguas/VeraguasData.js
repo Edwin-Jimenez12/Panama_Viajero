@@ -1,10 +1,9 @@
-/* const  = new URL('../../../assets/srcProvincias', import.meta.url).href; */
-const VERAGUAS_BANNER = new URL('../../../assets/srcProvincias/veraguas/VeraguasBanner.mp4', import.meta.url).href;
-const ISLA_CEBACO = new URL('../../../assets/srcProvincias/veraguas/Isla_Cebaco.mp4', import.meta.url).href;
-const MARIATO = new URL('../../../assets/srcProvincias/veraguas/Mariato.mp4', import.meta.url).href;
-const ISLA_COCOS = new URL('../../../assets/srcProvincias/veraguas/Isla_Cocos.mp4', import.meta.url).href;
-const ISLA_RANCHERIA = new URL('../../../assets/srcProvincias/veraguas/Isla_Rancheria.mp4', import.meta.url).href;
-const PLAYA_EL_ESTERO = new URL('../../../assets/srcProvincias/veraguas/Playa_el_estero.mp4', import.meta.url).href;
+const VERAGUAS_BANNER = '/videos/veraguas/VeraguasBanner.mp4';
+const ISLA_CEBACO = '/videos/veraguas/Isla_Cebaco.mp4';
+const MARIATO = '/videos/veraguas/Mariato.mp4';
+const ISLA_COCOS = '/videos/veraguas/Isla_Cocos.mp4';
+const ISLA_RANCHERIA = '/videos/veraguas/Isla_Rancheria.mp4';
+const PLAYA_EL_ESTERO = '/videos/veraguas/Playa_El_Estero.mp4';
 
 export const provincias = [
   {

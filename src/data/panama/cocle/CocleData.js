@@ -1,11 +1,10 @@
-/* const  = new URL('../../../assets/srcProvincias', import.meta.url).href;*/
-const COCLE_BANNER = new URL('../../../assets/srcProvincias/cocle/CocleBanner.mp4', import.meta.url).href;
-const LOVERS_FALL = new URL('../../../assets/srcProvincias/cocle/Lovers_Fall.mp4', import.meta.url).href;
-const CHORRO_LA_TORTUGA = new URL('../../../assets/srcProvincias/cocle/Chorro_la_Tortuga.mp4', import.meta.url).href;
-const CERRO_CARAIGUANA = new URL('../../../assets/srcProvincias/cocle/Cerro_Caraiguana.mp4', import.meta.url).href;
-const CASCADA_LAS_PAILAS = new URL('../../../assets/srcProvincias/cocle/Cascada_Las_Pailas.mp4', import.meta.url).href;
-const CHORRO_MACHO = new URL('../../../assets/srcProvincias/cocle/Chorro_Macho.mp4', import.meta.url).href;
-const CERRO_LA_SILLA = new URL('../../../assets/srcProvincias/cocle/Cerro_la_Silla.mp4', import.meta.url).href;
+const COCLE_BANNER = '/videos/cocle/CocleBanner.mp4';
+const LOVERS_FALL = '/videos/cocle/Lovers_Fall.mp4';
+const CHORRO_LA_TORTUGA = '/videos/cocle/Chorro_la_Tortuga.mp4';
+const CERRO_CARAIGUANA = '/videos/cocle/Cerro_Caraiguana.mp4';
+const CASCADA_LAS_PAILAS = '/videos/cocle/Cascada_Las_Pailas.mp4';
+const CHORRO_MACHO = '/videos/cocle/Chorro_Macho.mp4';
+const CERRO_LA_SILLA = '/videos/cocle/Cerro_la_Silla.mp4';
 export const provincias = [
   {
     id: 'cocle',

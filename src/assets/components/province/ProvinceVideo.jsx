@@ -2,6 +2,9 @@ function ProvinceVideo({ provinceData, videoSrc }) {
     const banner = provinceData.banner || {};
     const source = videoSrc || banner.src;
     const isVideo = banner.tipo === 'video';
+    const fallbackPoster = provinceData.imagenProvincia?.src
+        || provinceData.lugaresDestacados?.find((lugar) => lugar.tipo !== 'video')?.imagen;
+    const poster = banner.poster || fallbackPoster;
 
     return (
         <section id="video">
@@ -14,6 +17,7 @@ function ProvinceVideo({ provinceData, videoSrc }) {
                         muted
                         loop
                         playsInline
+                        poster={poster}
                         preload="metadata"
                     />
                 ) : (

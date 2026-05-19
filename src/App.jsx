@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Menu from './assets/components/menu/Menu.jsx'
 import BannerLayout from './layout/banner/BannerLayout.jsx'
@@ -5,21 +6,30 @@ import Map from './layout/map/DinamicMap.jsx'
 import Preregister from './layout/preregister/Preregister.jsx'
 import BottomBanner from './assets/components/bottombanner/Bottombanner.jsx'
 import CountdownModal from './layout/counter/Counter.jsx'
-import BocasDelToro from './data/panama/BocasDelToro/BocasDelToro.jsx'
-import Chiriqui from './data/panama/chiriqui/chiriqui.jsx'
-import Cocle from './data/panama/cocle/Cocle.jsx'
-import Colon from './data/panama/colon/Colon.jsx'
-import Darien from './data/panama/darien/Darien.jsx'
-import Herrera from './data/panama/herrera/Herrera.jsx'
-import LosSantos from './data/panama/lossantos/LosSantos.jsx'
-import Panama from './data/panama/panama/Panama.jsx'
-import Veraguas from './data/panama/veraguas/Veraguas.jsx'
-import GunaYala from './data/panama/comarca_guna_yala/GunaYala.jsx'
 import AboutUs from './assets/components/about us/AboutUs.jsx'
 import AleatorySuggestions from './layout/suggestion/Suggestions.tsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './assets/img_test/LogoRectangular.svg'
+
+const BocasDelToro = lazy(() => import('./data/panama/BocasDelToro/BocasDelToro.jsx'))
+const Chiriqui = lazy(() => import('./data/panama/chiriqui/chiriqui.jsx'))
+const Cocle = lazy(() => import('./data/panama/cocle/Cocle.jsx'))
+const Colon = lazy(() => import('./data/panama/colon/Colon.jsx'))
+const Darien = lazy(() => import('./data/panama/darien/Darien.jsx'))
+const Herrera = lazy(() => import('./data/panama/herrera/Herrera.jsx'))
+const LosSantos = lazy(() => import('./data/panama/lossantos/LosSantos.jsx'))
+const Panama = lazy(() => import('./data/panama/panama/Panama.jsx'))
+const Veraguas = lazy(() => import('./data/panama/veraguas/Veraguas.jsx'))
+const GunaYala = lazy(() => import('./data/panama/comarca_guna_yala/GunaYala.jsx'))
+
+function RouteFallback() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-brand-soft px-6 text-center text-brand-charcoal">
+      <p className="text-sm uppercase tracking-[0.2em]">Cargando provincia...</p>
+    </div>
+  )
+}
 
 function Home() {
   const {
@@ -96,19 +106,21 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />
-      <Route path="/provincias/chiriqui" element={<Chiriqui />} />
-      <Route path="/provincias/cocle" element={<Cocle />} />
-      <Route path="/provincias/colon" element={<Colon />} />
-      <Route path="/provincias/darien" element={<Darien />} />
-      <Route path="/provincias/herrera" element={<Herrera />} />
-      <Route path="/provincias/los-santos" element={<LosSantos />} />
-      <Route path="/provincias/panama" element={<Panama />} />
-      <Route path="/provincias/veraguas" element={<Veraguas />} />
-      <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
-    </Routes>
+    <Suspense fallback={<RouteFallback />}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />
+        <Route path="/provincias/chiriqui" element={<Chiriqui />} />
+        <Route path="/provincias/cocle" element={<Cocle />} />
+        <Route path="/provincias/colon" element={<Colon />} />
+        <Route path="/provincias/darien" element={<Darien />} />
+        <Route path="/provincias/herrera" element={<Herrera />} />
+        <Route path="/provincias/los-santos" element={<LosSantos />} />
+        <Route path="/provincias/panama" element={<Panama />} />
+        <Route path="/provincias/veraguas" element={<Veraguas />} />
+        <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
+      </Routes>
+    </Suspense>
   )
 }
 
