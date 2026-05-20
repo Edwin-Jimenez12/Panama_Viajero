@@ -1,31 +1,20 @@
 import { useState } from 'react'
-import BocasDelToroSvg from '../../srcProvincias/bocas_del_toto/BocasGeneralMap.jpeg'
-import ChiriquiSvg from '../../srcProvincias/chiriqui/ChiriquiMap.jpg'
-import CocleSvg from '../../srcProvincias/cocle/CocleMap.png'
-import Colon from '../../srcProvincias/colon/colon.jpeg'
-import GunaYalaSvg from '../../srcProvincias/comarca_guna_yala/guna ya.jpg'
-import Darien from '../../srcProvincias/darien/DarienMap.jpg'
-import VeraguasSvg from '../../srcProvincias/veraguas/VeraguasMap.png'
-import HerreraSvg from '../../srcProvincias/herrera/HerreraMap.png'
-import PanamaSvg from '../../srcProvincias/panama/panama.jpg'
-import PanamaOesteSvg from '../../srcProvincias/panama_oeste/PanamaOesteMap.png'
-import LosSantos from '../../srcProvincias/los_santos/LosSantosMap.jpeg'
 import PV from '../../img_test/logoCircular.svg'
 
 
 const imageMaps = {
-    'bocas-del-toro': BocasDelToroSvg,
-    'chiriqui': ChiriquiSvg,
-    'cocle': CocleSvg,
-    'colon': Colon,
-    'guna-yala': GunaYalaSvg,
-    'darien': Darien,
-    'veraguas': VeraguasSvg,
-    'herrera': HerreraSvg,
-    'panama': PanamaSvg,
-    'panama-oeste': PanamaOesteSvg,
-    'los-santos': LosSantos,
-    'comarca-guna-yala': GunaYalaSvg, // assuming same as guna-yala
+    'bocas-del-toro': '/maps/provinces/bocas-del-toro.jpeg',
+    'chiriqui': '/maps/provinces/chiriqui.jpg',
+    'cocle': '/maps/provinces/cocle.png',
+    'colon': '/maps/provinces/colon.jpeg',
+    'guna-yala': '/maps/provinces/comarca-guna-yala.jpg',
+    'darien': '/maps/provinces/darien.jpg',
+    'veraguas': '/maps/provinces/veraguas.png',
+    'herrera': '/maps/provinces/herrera.png',
+    'panama': '/maps/provinces/panama.jpg',
+    'panama-oeste': '/maps/provinces/panama-oeste.png',
+    'los-santos': '/maps/provinces/los-santos.jpeg',
+    'comarca-guna-yala': '/maps/provinces/comarca-guna-yala.jpg',
     'Panama-viajero': PV,
 }
 

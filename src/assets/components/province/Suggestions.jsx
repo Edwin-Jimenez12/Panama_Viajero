@@ -1,3 +1,5 @@
+import SmartVideo from '../video/SmartVideo.jsx';
+
 function Suggestions({ provinceData }) {
     const fallbackPoster = provinceData.banner?.poster
         || provinceData.imagenProvincia?.src
@@ -17,13 +19,10 @@ function Suggestions({ provinceData }) {
                         >
                             <div className="group relative aspect-[16/9] w-full overflow-hidden bg-brand-soft">
                                 {isVideo ? (
-                                    <video
+                                    <SmartVideo
                                         src={lugar.imagen}
                                         className="h-[116%] w-full object-cover object-top"
                                         autoPlay
-                                        muted
-                                        loop
-                                        playsInline
                                         poster={lugar.poster || fallbackPoster}
                                         preload="none"
                                     />
@@ -34,19 +33,10 @@ function Suggestions({ provinceData }) {
                                         className="h-full w-full object-cover"
                                     />
                                 )}
-                                <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 px-4 transition duration-300 group-hover:bg-black/50">
-                                    <span className="font-accent text-center text-4xl text-brand-white opacity-0 drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] transition duration-300 group-hover:opacity-100">
-                                        {lugar.nombre}
-                                    </span>
-                                </div>
+                                <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
                             </div>
-
                             <div className="flex flex-1 flex-col p-5">
-                                <span className="font-secondary-italic text-sm text-brand-red">
-                                    {provinceData.nombre}
-                                </span>
-
-                                <h3 className="font-main mt-2 text-xl font-bold text-brand-charcoal">
+                                <h3 className="font-accent mt-2 text-3xl font-bold text-brand-red">
                                     {lugar.nombre}
                                 </h3>
 

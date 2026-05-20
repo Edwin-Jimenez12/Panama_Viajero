@@ -1,4 +1,4 @@
-const GUNA_YALA_IMAGE = new URL('../../../assets/srcProvincias/comarca_guna_yala/guna ya.jpg', import.meta.url).href;
+
 
 export const provincias = [
   {
@@ -6,8 +6,8 @@ export const provincias = [
     nombre: 'Comarca Guna Yala',
 
     banner: {
-      tipo: 'imagen',
-      src: GUNA_YALA_IMAGE,
+      tipo: 'video',
+      src: '/videos/guna_yala/GunaYalaBanner.mp4',
       alt: 'Vista de la Comarca Guna Yala',
     },
 
@@ -15,7 +15,7 @@ export const provincias = [
       'Un archipiélago paradisíaco de aguas turquesas donde el tiempo parece detenerse. Guna Yala combina playas vírgenes de arena blanca con el misticismo de una de las culturas indígenas mejor preservadas de América.',
 
     ubicacionProvincia: {
-      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202302.23954103104!2d-82.46734803926626!3d8.366126177385008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa578bccbaa2e9f%3A0x23db549450c8f698!2sGuna%20Yala%2C%20Panama!5e1!3m2!1sen!2spa!4v1778531685061!5m2!1sen!2spa',
+      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825591.6817842708!2d-79.64365842487119!3d9.052276123298334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e513dd4281b06cf%3A0x13d9b0240ba4f630!2sGuna%20Yala%20Comarca!5e1!3m2!1sen!2spa!4v1779311689200!5m2!1sen!2spa',
     },
 
     actividades: [
@@ -35,28 +35,18 @@ export const provincias = [
         id: 'isla-carti',
         nombre: 'Isla Cartí',
         descripcion: 'Comunidad portuaria e isla cultural de acceso frecuente, ideal para conocer de cerca el estilo de vida guna y abordar los botes hacia el archipiélago.',
-        imagen: GUNA_YALA_IMAGE,
+        imagen: '/maps/provinces/comarca-guna-yala.jpg',
         ubicacion: 'Isla Cartí, Guna Yala',
       },
-    ],
-
-    ubicacion: {
-      region: 'Caribe',
-      pais: 'Panamá',
-      coordenadas: {
-        lat: 9.3,
-        lng: -78.2,
-      },
-    },
-
-    restoDeLugares: [
       {
-        id: 'playa-uru',
-        nombre: 'Playa Uru',
-        descripcion: 'Playa tranquila de aguas claras y arena suave, perfecta para descansar y disfrutar del paisaje virgen de la comarca.',
-        imagen: GUNA_YALA_IMAGE,
-        ubicacion: 'Playa Uru, Guna Yala',
+        id: 'isla-perro',
+        nombre: 'Isla Perro (Chichime)',
+        descripcion: 'Una de las islas turísticas más famosas, conocida mundialmente por el barco hundido cerca de su orilla, el cual está cubierto de coral y es perfecto para hacer esnórquel.',
+        tipo: 'imagen',
+        imagen: '/videos/guna_yala/isla-perro.jpg',
+        ubicacion: 'Archipiélago de San Blas, Guna Yala',
       },
     ],
+
   },
 ];

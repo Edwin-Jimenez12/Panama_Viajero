@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import SmartVideo from '../../assets/components/video/SmartVideo.jsx';
 import { provincias as bocasDelToroData } from '../../data/panama/BocasDelToro/BocasDelToro.js';
 import { provincias as chiriquiData } from '../../data/panama/chiriqui/ChiriquiData.js';
 import { provincias as cocleData } from '../../data/panama/cocle/CocleData.js';
@@ -8,6 +9,7 @@ import { provincias as darienData } from '../../data/panama/darien/DarienData.js
 import { provincias as herreraData } from '../../data/panama/herrera/HerreraData.js';
 import { provincias as losSantosData } from '../../data/panama/lossantos/LosSantosData.js';
 import { provincias as panamaData } from '../../data/panama/panama/PanamaData.js';
+import { provincias as panamaOesteData } from '../../data/panama/panama_oeste/PanamaOesteData.js';
 import { provincias as veraguasData } from '../../data/panama/veraguas/VeraguasData.js';
 import { provincias as gunaYalaData } from '../../data/panama/comarca_guna_yala/GunaYalaData.js';
 
@@ -20,6 +22,7 @@ const provinceRoutes = [
     { data: herreraData[0], path: '/provincias/herrera' },
     { data: losSantosData[0], path: '/provincias/los-santos' },
     { data: panamaData[0], path: '/provincias/panama' },
+    { data: panamaOesteData[0], path: '/provincias/panama-oeste' },
     { data: veraguasData[0], path: '/provincias/veraguas' },
     { data: gunaYalaData[0], path: '/provincias/comarca-guna-yala' },
 ];
@@ -83,13 +86,10 @@ function AleatorySuggestions() {
                             transition-all duration-300 group-hover:scale-105
                             group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
                         >
-                            <video
+                            <SmartVideo
                                 src={media.src}
                                 className="h-[116%] w-full object-cover object-top"
                                 autoPlay
-                                muted
-                                loop
-                                playsInline
                                 poster={media.poster}
                                 preload="none"
                             />

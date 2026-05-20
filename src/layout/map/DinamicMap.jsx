@@ -22,7 +22,7 @@ const provinces = [
     { component: Darien, alt: 'Darien', to: '/provincias/darien', top: '18.5%', left: '77.2%', width: '23.5%' },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22 },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23 },
-    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
+    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
     { component: Panama, alt: 'Panama', to: '/provincias/panama', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29 },
 ];
 
@@ -47,7 +47,7 @@ function Map() {
                                 left: province.left,
                                 width: province.width,
                                 zIndex: activeProvince === province.alt ? 50 : (province.zIndex ?? 1),
-                                transform: activeProvince === province.alt ? 'scale(1.05)' : 'scale(1)',
+                                transform: activeProvince === province.alt ? 'scale(1.15)' : 'scale(1)',
                             }}
                         >
                             {province.component ? (

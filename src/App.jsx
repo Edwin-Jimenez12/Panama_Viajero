@@ -20,6 +20,7 @@ const Darien = lazy(() => import('./data/panama/darien/Darien.jsx'))
 const Herrera = lazy(() => import('./data/panama/herrera/Herrera.jsx'))
 const LosSantos = lazy(() => import('./data/panama/lossantos/LosSantos.jsx'))
 const Panama = lazy(() => import('./data/panama/panama/Panama.jsx'))
+const PanamaOeste = lazy(() => import('./data/panama/panama_oeste/PanamaOeste.jsx'))
 const Veraguas = lazy(() => import('./data/panama/veraguas/Veraguas.jsx'))
 const GunaYala = lazy(() => import('./data/panama/comarca_guna_yala/GunaYala.jsx'))
 
@@ -117,6 +118,7 @@ function App() {
         <Route path="/provincias/herrera" element={<Herrera />} />
         <Route path="/provincias/los-santos" element={<LosSantos />} />
         <Route path="/provincias/panama" element={<Panama />} />
+        <Route path="/provincias/panama-oeste" element={<PanamaOeste />} />
         <Route path="/provincias/veraguas" element={<Veraguas />} />
         <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
       </Routes>

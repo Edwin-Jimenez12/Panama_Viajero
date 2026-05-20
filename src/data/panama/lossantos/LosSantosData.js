@@ -1,10 +1,3 @@
-const LOS_SANTOS_BANNER = '/videos/los_santos/Los_santos_Banner.mp4';
-const PLAYA_VENAO = '/videos/los_santos/Playa_Venao.mp4';
-const ISLA_IGUANA = '/videos/los_santos/Isla_Iguana.mp4';
-const PLAYA_CAMBUTAL = '/videos/los_santos/Playa_Cambutal.mp4';
-const ISLA_CANAS = '/videos/los_santos/Isla_Canas.mp4';
-const CAJONES_LA_ANGOSTURA = '/videos/los_santos/Cajones_la_Angostura.mp4';
-
 export const provincias = [
   {
     id: 'los-santos',
@@ -12,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: LOS_SANTOS_BANNER,
+      src: '/videos/los_santos/Los_santos_Banner.mp4',
       alt: 'Vista de la provincia de Los Santos',
     },
 
@@ -34,7 +27,7 @@ export const provincias = [
     ],
 
     resena:
-      'Los Santos es el corazón de la península de Azuero y el lugar donde nació el espíritu libertador del país con el famoso Grito de La Villa en 1821. Su historia es un relato de familias que han perfeccionado el arte de la pollera y la orfebrería durante generaciones, convirtiendo cada traje en una pieza de historia viva. Mientras caminas por las plazas de sus pueblos coloniales, sientes el peso de una tradición que no se rinde ante el paso del tiempo. Desde las hazañas de los próceres hasta la vida tranquila de los pescadores en Pedasí, esta provincia representa el equilibrio perfecto entre el respeto por lo que fuimos y la alegría de un pueblo que celebra su identidad.',
+      'Los Santos es el corazón de la península de Azuero y el lugar donde nació el espíritu libertador del país con el famoso Grito de La Villa en 1821. Su historia es un relato de familias que han perfeccionado el arte de la pollera y la orfebrería durante generations, convirtiendo cada traje en una pieza de historia viva. Mientras caminas por las plazas de sus pueblos coloniales, sientes el peso de una tradición que no se rinde ante el paso del tiempo. Desde las hazañas de los próceres hasta la vida tranquila de los pescadores en Pedasí, esta provincia representa el equilibrio perfecto entre el respeto por lo que fuimos y la alegría de un pueblo que celebra su identidad.',
 
     lugaresDestacados: [
       {
@@ -42,7 +35,7 @@ export const provincias = [
         nombre: 'Playa Venao',
         descripcion: 'Playa de fama internacional reconocida por sus olas consistentes, ambiente bohemio y vibrante vida costera, ideal para surfistas y viajeros.',
         tipo: 'video',
-        imagen: PLAYA_VENAO,
+        imagen: '/videos/los_santos/Playa_Venao.mp4',
         ubicacion: 'Playa Venao, Los Santos',
       },
       {
@@ -50,7 +43,7 @@ export const provincias = [
         nombre: 'Isla Iguana',
         descripcion: 'Refugio de vida silvestre con un arrecife de coral espectacular, aguas cristalinas, arena blanca y espacios ideales para el buceo libre.',
         tipo: 'video',
-        imagen: ISLA_IGUANA,
+        imagen: '/videos/los_santos/Isla_Iguana.mp4',
         ubicacion: 'Refugio de Vida Silvestre Isla Iguana, Los Santos',
       },
       {
@@ -58,7 +51,7 @@ export const provincias = [
         nombre: 'Playa Cambutal',
         descripcion: 'Costa imponente y tranquila donde las montañas se encuentran con el océano Pacífico, un rincón perfecto para el surf y la pesca profunda.',
         tipo: 'video',
-        imagen: PLAYA_CAMBUTAL,
+        imagen: '/videos/los_santos/Playa_Cambutal.mp4',
         ubicacion: 'Playa Cambutal, Los Santos',
       },
       {
@@ -66,24 +59,24 @@ export const provincias = [
         nombre: 'Isla Cañas',
         descripcion: 'Santuario ecológico y hogar de extensos manglares, famoso a nivel global por ser un sitio clave de anidación de miles de tortugas marinas.',
         tipo: 'video',
-        imagen: ISLA_CANAS,
+        imagen: '/videos/los_santos/Isla_Canas.mp4',
         ubicacion: 'Isla Cañas, Los Santos',
-      },
-      {
-        id: 'Cajones_la_Angostura',
-        nombre: 'Cajones de La Angostura',
-        descripcion: 'Cañón y formación rocosa donde el río Oria se estrecha creando pozas naturales profundas, perfectas para nadar y explorar.',
-        tipo: 'video',
-        imagen: CAJONES_LA_ANGOSTURA,
-        ubicacion: 'Cajones de La Angostura, Los Santos',
       },
       {
         id: 'Cerro_Hoya',
         nombre: 'Cerro Hoya',
         descripcion: 'Parque nacional montañoso que protege el bosque lluvioso más antiguo de Azuero, refugio de especies endémicas y cascadas ocultas.',
         tipo: 'imagen',
-        imagen: 'https://dam.visitpanama.com/files/4bf29a02-49b6-3a60-8f89-bd28976ad56b?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779297667759&signature=R37gCO5CDDNEabyjLe%2BkQHi4e%2Bey85mNMrdnXX1%2BxrlhBTQ3aw91mRFHhw9MxV2LYOISdOQ1Z6lketHPnHwCCQ%3D%3D&version=a0b1ec4b',
+        imagen:'/videos/los_santos/Cerro_Hoya.jpg',
         ubicacion: 'Parque Nacional Cerro Hoya, Los Santos',
+      },
+      {
+        id: 'Cajones_la_Angostura',
+        nombre: 'Cajones de La Angostura',
+        descripcion: 'Cañón y formación rocosa donde el río Oria se estrecha creando pozas naturales profundas, perfectas para nadar y explorar.',
+        tipo: 'video',
+        imagen: '/videos/los_santos/Cajones_la_Angostura.mp4',
+        ubicacion: 'Cajones de La Angostura, Los Santos',
       },
     ],
   },

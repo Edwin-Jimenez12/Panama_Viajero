@@ -1,4 +1,4 @@
-const DARIEN_BANNER = '/videos/darien/DarienBanner.mp4';
+
 
 export const provincias = [
   {
@@ -7,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: DARIEN_BANNER,
+      src: '/videos/darien/DarienBanner.mp4',
       alt: 'Vista de la provincia de Darién',
     },
 
@@ -36,7 +36,7 @@ export const provincias = [
         nombre: 'Parque Nacional Darién',
         descripcion: 'Área protegida de selva tropical, ríos y biodiversidad única, declarada Patrimonio de la Humanidad e ideal para expediciones de naturaleza.',
         tipo: 'imagen',
-        imagen: 'https://lac.wetlands.org/wp-content/uploads/sites/3/2019/12/PROYECTOS-garachine-WETLANDS-EDITABLE-03.jpg',
+        imagen: '/videos/darien/Parque_Nacional_Darien.jpg',
         ubicacion: 'Parque Nacional Darién, Darién',
       },
       {
@@ -44,7 +44,7 @@ export const provincias = [
         nombre: 'La Palma',
         descripcion: 'Cabecera provincial ubicada frente al golfo de San Miguel, punto de entrada a rutas fluviales y comunidades locales.',
         tipo: 'imagen',
-        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnR3YmjzDw4AMqhlQGalQUHCOgX0Oy27AYA&s',
+        imagen: '/videos/darien/La_Palma.jpg',
         ubicacion: 'La Palma, Darién',
       },
       {
@@ -52,7 +52,7 @@ export const provincias = [
         nombre: 'Comunidades Emberá y Wounaan',
         descripcion: 'Asentamientos indígenas a orillas del río donde se pueden conocer tradiciones ancestrales, artesanías y formas de vida ligadas al bosque.',
         tipo: 'imagen',
-        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxGWewQ4IhUxmAEUu9LaezeQHc49vi17Vbg&s',
+        imagen: '/videos/darien/Comunidades_Embera_Wounaan.jpg',
         ubicacion: 'Comunidades Indígenas, Darién',
       },
     ],

@@ -1,12 +1,3 @@
-const COLON_BANNER = '/videos/colon/ColonBanner.mp4';
-const CERRO_PAVON = '/videos/colon/Cerro_Pavon.mp4';
-const TUNEL_AMOR = '/videos/colon/El_tunel_del_amor.mp4';
-const LAGO_GATUN = '/videos/colon/Lago_Gatun.mp4';
-const PORTOBELLO = '/videos/colon/Portobelo.mp4';
-const FUERTE_SAN_FERNANDO = '/videos/colon/Fuerte_de_San_Fernando.mp4';
-const ISLA_MAMEY = '/videos/colon/Isla_Mamey.mp4';
-
-
 export const provincias = [
   {
     id: 'colon',
@@ -14,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: COLON_BANNER,
+      src: '/videos/colon/ColonBanner.mp4',
       alt: 'Vista de la provincia de Colón',
     },
 
@@ -44,7 +35,7 @@ export const provincias = [
         nombre: 'Cerro Pavón',
         descripcion: 'Mirador natural con vistas verdes y senderos ideales para caminatas de aventura en la provincia.',
         tipo: 'video',
-        imagen: CERRO_PAVON,
+        imagen: '/videos/colon/Cerro_Pavon.mp4',
         ubicacion: 'Cerro Pavón, Colón',
       },
       {
@@ -52,7 +43,7 @@ export const provincias = [
         nombre: 'El Túnel del Amor',
         descripcion: 'Pasaje costero rodeado de vegetación y aguas tranquilas, perfecto para una experiencia visual diferente.',
         tipo: 'video',
-        imagen: TUNEL_AMOR,
+        imagen: '/videos/colon/El_tunel_del_amor.mp4',
         ubicacion: 'El Túnel del Amor, Colón',
       },
       {
@@ -60,7 +51,7 @@ export const provincias = [
         nombre: 'Lago Gatún',
         descripcion: 'Gran lago artificial vinculado al Canal de Panamá, famoso por sus paisajes, fauna y recorridos en bote.',
         tipo: 'video',
-        imagen: LAGO_GATUN,
+        imagen: '/videos/colon/Lago_Gatun.mp4',
         ubicacion: 'Lago Gatún, Colón',
       },
       {
@@ -68,7 +59,7 @@ export const provincias = [
         nombre: 'Portobelo',
         descripcion: 'Pueblo histórico del Caribe panameño con fortalezas coloniales, tradición congo y una bahía llena de memoria.',
         tipo: 'video',
-        imagen: PORTOBELLO,
+        imagen: '/videos/colon/Portobelo.mp4',
         ubicacion: 'Portobelo, Colón',
       },
       {
@@ -76,21 +67,23 @@ export const provincias = [
         nombre: 'Fuerte de San Fernando',
         descripcion: 'Fortificación colonial que recuerda la defense del Caribe y el paso de las rutas comerciales españolas.',
         tipo: 'video',
-        imagen: FUERTE_SAN_FERNANDO,
+        imagen: '/videos/colon/Fuerte_de_San_Fernando.mp4',
         ubicacion: 'Fuerte de San Fernando, Colón',
       },
       {
         id: 'Sendero_Tortuguilla',
         nombre: 'Sendero Tortuguilla',
         descripcion: 'Sendero natural para caminar entre vegetación tropical y descubrir la biodiversidad costera de Colón.',
-        imagen: 'https://dam.visitpanama.com/files/8938cfaa-c15c-32b5-8024-7f27e64c4712?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779206921946&signature=rT%2FiSyVTyu22ZwBT%2BwhBt5FRHn2REOy7wG4I%2FJKj5Cy%2FKlponlIs74%2BjnvpVqciGth%2BYubBLUT16A4m4PIA4AQ%3D%3D&version=a0b1ec4b',
+        tipo: 'imagen',
+        imagen: '/videos/colon/Sendero_Tortuguilla.jpg',
         ubicacion: 'Sendero Tortuguilla, Colón',
       },
       {
         id: 'Fuerte_de_San_Lorenzo',
         nombre: 'Fuerte de San Lorenzo',
         descripcion: 'Imponente fortaleza histórica ubicada frente al Caribe, declarada patrimonio por su valor colonial.',
-        imagen: 'https://dam.visitpanama.com/files/870254a4-7c50-3ece-9266-19fcfd18c4e4?account_id=6642FBAB-A4D7-4BE0-A372A15EFDD15853&expiry=1779206962375&signature=qX7aMqHFxpucRwcWwCjAQ0N3YYeXxE%2BAHy%2FybkwyolLDXGO7H2aXrfCBghdEpyrnNuAZKkexZ5heUNZjniFaAA%3D%3D&version=a0b1ec4b',
+        tipo: 'imagen',
+        imagen: '/videos/colon/Fuerte_de_San_Lorenzo.jpg',
         ubicacion: 'Fuerte de San Lorenzo, Colón',
       },
       {
@@ -98,7 +91,7 @@ export const provincias = [
         nombre: 'Isla Mamey',
         descripcion: 'Isla caribeña de aguas claras y ambiente relajado, ideal para playa, esnórquel y escapadas de un día.',
         tipo: 'video',
-        imagen: ISLA_MAMEY,
+        imagen: '/videos/colon/Isla_Mamey.mp4',
         ubicacion: 'Isla Mamey, Colón',
       },
     ],
