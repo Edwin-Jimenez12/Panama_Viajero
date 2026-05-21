@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import DeferredSection from './assets/components/layout/DeferredSection.jsx'
 import Menu from './assets/components/menu/Menu.jsx'
-import BannerLayout from './layout/banner/BannerLayout.jsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './assets/img_test/LogoRectangular.svg'
@@ -12,6 +11,7 @@ const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
 const AleatorySuggestions = lazy(() => import('./layout/suggestion/Suggestions.tsx'))
 const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./assets/components/bottombanner/Bottombanner.jsx'))
+const BannerLayout = lazy(() => import('./layout/banner/BannerLayout.jsx'))
 const CountdownModal = lazy(() => import('./layout/counter/Counter.jsx'))
 const BocasDelToro = lazy(() => import('./data/panama/BocasDelToro/BocasDelToro.jsx'))
 const Chiriqui = lazy(() => import('./data/panama/chiriqui/chiriqui.jsx'))
