@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/los_santos/Los_santos_Banner.mp4',
+      src: '/videos/los_santos/Los_santos_Banner.av1.mp4',
       alt: 'Vista de la provincia de Los Santos',
     },
 
@@ -35,7 +35,7 @@ export const provincias = [
         nombre: 'Playa Venao',
         descripcion: 'Playa de fama internacional reconocida por sus olas consistentes, ambiente bohemio y vibrante vida costera, ideal para surfistas y viajeros.',
         tipo: 'video',
-        imagen: '/videos/los_santos/Playa_Venao.mp4',
+        imagen: '/videos/los_santos/Playa_Venao.av1.mp4',
         ubicacion: 'Playa Venao, Los Santos',
       },
       {
@@ -43,7 +43,7 @@ export const provincias = [
         nombre: 'Isla Iguana',
         descripcion: 'Refugio de vida silvestre con un arrecife de coral espectacular, aguas cristalinas, arena blanca y espacios ideales para el buceo libre.',
         tipo: 'video',
-        imagen: '/videos/los_santos/Isla_Iguana.mp4',
+        imagen: '/videos/los_santos/Isla_Iguana.av1.mp4',
         ubicacion: 'Refugio de Vida Silvestre Isla Iguana, Los Santos',
       },
       {
@@ -51,7 +51,7 @@ export const provincias = [
         nombre: 'Playa Cambutal',
         descripcion: 'Costa imponente y tranquila donde las montañas se encuentran con el océano Pacífico, un rincón perfecto para el surf y la pesca profunda.',
         tipo: 'video',
-        imagen: '/videos/los_santos/Playa_Cambutal.mp4',
+        imagen: '/videos/los_santos/Playa_Cambutal.av1.mp4',
         ubicacion: 'Playa Cambutal, Los Santos',
       },
       {
@@ -59,7 +59,7 @@ export const provincias = [
         nombre: 'Isla Cañas',
         descripcion: 'Santuario ecológico y hogar de extensos manglares, famoso a nivel global por ser un sitio clave de anidación de miles de tortugas marinas.',
         tipo: 'video',
-        imagen: '/videos/los_santos/Isla_Canas.mp4',
+        imagen: '/videos/los_santos/Isla_Canas.av1.mp4',
         ubicacion: 'Isla Cañas, Los Santos',
       },
       {
@@ -75,7 +75,7 @@ export const provincias = [
         nombre: 'Cajones de La Angostura',
         descripcion: 'Cañón y formación rocosa donde el río Oria se estrecha creando pozas naturales profundas, perfectas para nadar y explorar.',
         tipo: 'video',
-        imagen: '/videos/los_santos/Cajones_la_Angostura.mp4',
+        imagen: '/videos/los_santos/Cajones_la_Angostura.av1.mp4',
         ubicacion: 'Cajones de La Angostura, Los Santos',
       },
     ],

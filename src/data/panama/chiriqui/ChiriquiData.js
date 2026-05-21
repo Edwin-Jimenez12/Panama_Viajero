@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/chiriqui/VideoBannerChiriqui.mp4',
+      src: '/videos/chiriqui/VideoBannerChiriqui.av1.mp4',
       alt: 'Vista de la provincia de Chiriquí',
     },
 
@@ -65,7 +65,7 @@ imagen:'/videos/chiriqui',
         descripcion:
           'Cascada de gran fuerza visual en Tierras Altas, ideal para aventura, fotografía y contacto con la naturaleza.',
         tipo: 'video',
-        imagen: '/videos/chiriqui/Salto_del_Tigre.mp4',
+        imagen: '/videos/chiriqui/Salto_del_Tigre.av1.mp4',
         ubicacion: 'Salto del Tigre, Volcán',
       },
       {
@@ -74,7 +74,7 @@ imagen:'/videos/chiriqui',
         descripcion:
           'Reserva privada de montaña reconocida por sus senderos, observación de aves y biodiversidad.',
         tipo: 'video',
-        imagen:'/videos/chiriqui/Monte_Las_Totumas.mp4',
+        imagen:'/videos/chiriqui/Monte_Las_Totumas.av1.mp4',
         ubicacion: 'Monte Las Totumas, Tierras Altas',
       },
       {
@@ -83,7 +83,7 @@ imagen:'/videos/chiriqui',
         descripcion:
           'Cascada natural en Caldera, rodeada de vegetación y ambiente fresco para una visita de aventura.',
         tipo: 'video',
-        imagen: '/videos/chiriqui/Cascada_Jaguatta.mp4',
+        imagen: '/videos/chiriqui/Cascada_Jaguatta.av1.mp4',
         ubicacion: 'Cascada Jagüatta, Caldera',
       },
     ],

@@ -6,6 +6,7 @@ function SmartVideo({
     poster,
     preload = 'none',
     eager = false,
+    autoPlay = false,
     rootMargin = '200px',
     ...props
 }) {
@@ -40,7 +41,7 @@ function SmartVideo({
             return;
         }
 
-        if (isVisible) {
+        if (isVisible && autoPlay) {
             const playPromise = node.play();
             if (playPromise?.catch) {
                 playPromise.catch(() => {});

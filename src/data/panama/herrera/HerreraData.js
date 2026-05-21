@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/herrera/HerreraBanner.mp4',
+      src: '/videos/herrera/HerreraBanner.av1.mp4',
       alt: 'Vista de la provincia de Herrera',
     },
 
@@ -42,7 +42,7 @@ export const provincias = [
         nombre: 'Pesé',
         descripcion: 'Pueblo histórico, cuna del desarrollo de la caña y estrechamente ligado a la tradición de la destilería y al auténtico sabor interiorano.',
         tipo: 'video',
-        imagen: '/videos/herrera/Pese.mp4',
+        imagen: '/videos/herrera/Pese.av1.mp4',
         ubicacion: 'Pesé, Herrera',
       },
       {

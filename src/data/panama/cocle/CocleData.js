@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/cocle/CocleBanner.mp4',
+      src: '/videos/cocle/CocleBanner.av1.mp4',
       alt: 'Vista de la provincia de Coclé',
     },
 
@@ -35,7 +35,7 @@ export const provincias = [
         nombre: 'Lovers Fall',
         descripcion: 'Cascada natural rodeada de vegetación, ideal para una visita fresca y tranquila en Coclé.',
         tipo: 'video',
-        imagen: '/videos/cocle/Lovers_Fall.mp4',
+        imagen: '/videos/cocle/Lovers_Fall.av1.mp4',
         ubicacion: 'Lovers Fall, Coclé',
       },
       {
@@ -50,7 +50,7 @@ export const provincias = [
         nombre: 'Chorro la Tortuga',
         descripcion: 'Cascada escondida entre vegetación, ideal para quienes buscan un rincón fresco y tranquilo en Coclé.',
         tipo: 'video',
-        imagen: '/videos/cocle/Chorro_la_Tortuga.mp4',
+        imagen: '/videos/cocle/Chorro_la_Tortuga.av1.mp4',
         ubicacion: 'Chorro la Tortuga, Río Hato',
       },
       {
@@ -58,7 +58,7 @@ export const provincias = [
         nombre: 'Cerro Caraiguana',
         descripcion: 'Caída de agua natural con entorno tropical, perfecta para caminatas cortas y contacto directo con la naturaleza.',
         tipo: 'video',
-        imagen: '/videos/cocle/Cerro_Caraiguana.mp4',
+        imagen: '/videos/cocle/Cerro_Caraiguana.av1.mp4',
         ubicacion: 'Cerro Caraiguana, Coclé',
       },
       {
@@ -73,7 +73,7 @@ export const provincias = [
         nombre: 'Chorro Macho',
         descripcion: 'Serie de pozas y casasadas naturales rodeadas de paisaje rural y vegetación abundante.',
         tipo: 'video',
-        imagen: '/videos/cocle/Chorro_Macho.mp4',
+        imagen: '/videos/cocle/Chorro_Macho.av1.mp4',
         ubicacion: 'Chorro Macho, Coclé',
       },
       {
@@ -95,7 +95,7 @@ export const provincias = [
         nombre: 'Cerro la Silla',
         descripcion: 'Cascada con poza natural de agua clara, ideal para refrescarse y disfrutar un entorno tranquilo.',
         tipo: 'video',
-        imagen: '/videos/cocle/Cerro_la_Silla.mp4',
+        imagen: '/videos/cocle/Cerro_la_Silla.av1.mp4',
         ubicacion: 'Cerro la Silla, Coclé',
       },
       {

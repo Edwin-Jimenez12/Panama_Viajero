@@ -1,9 +1,9 @@
-const VERAGUAS_BANNER = '/videos/veraguas/VeraguasBanner.mp4';
-const ISLA_CEBACO = '/videos/veraguas/Isla_Cebaco.mp4';
-const MARIATO = '/videos/veraguas/Mariato.mp4';
-const ISLA_COCOS = '/videos/veraguas/Isla_Cocos.mp4';
-const ISLA_RANCHERIA = '/videos/veraguas/Isla_Rancheria.mp4';
-const PLAYA_EL_ESTERO = '/videos/veraguas/Playa_El_Estero.mp4';
+const VERAGUAS_BANNER = '/videos/veraguas/VeraguasBanner.av1.mp4';
+const ISLA_CEBACO = '/videos/veraguas/Isla_Cebaco.av1.mp4';
+const MARIATO = '/videos/veraguas/Mariato.av1.mp4';
+const ISLA_COCOS = '/videos/veraguas/Isla_Cocos.av1.mp4';
+const ISLA_RANCHERIA = '/videos/veraguas/Isla_Rancheria.av1.mp4';
+const PLAYA_EL_ESTERO = '/videos/veraguas/Playa_El_Estero.av1.mp4';
 
 export const provincias = [
   {
@@ -59,7 +59,7 @@ export const provincias = [
         nombre: 'Isla Cébaco',
         descripcion: 'Isla extensa y un paraíso virgen poco masificado, con playas de arena dorada ideales para la desconexión total y la pesca.',
         tipo: 'video',
-        imagen: '/videos/veraguas/Isla_Cebaco.mp4',
+        imagen: '/videos/veraguas/Isla_Cebaco.av1.mp4',
         ubicacion: 'Isla Cébaco, Veraguas',
       },
       {
@@ -67,7 +67,7 @@ export const provincias = [
         nombre: 'Mariato',
         descripcion: 'Distrito costero que alberga el punto más al sur del continente centroamericano, con playas abiertas y reservas naturales imponentes.',
         tipo: 'video',
-        imagen: '/videos/veraguas/Mariato.mp4',
+        imagen: '/videos/veraguas/Mariato.av1.mp4',
         ubicacion: 'Mariato, Veraguas',
       },
       {
@@ -75,7 +75,7 @@ export const provincias = [
         nombre: 'Isla Cocos',
         descripcion: 'Pequeño rincón paradisíaco de arenas blancas y palmeras dentro del entorno veragüense, perfecto para la fotografía de paisaje.',
         tipo: 'video',
-        imagen: '/videos/veraguas/Isla_Cocos.mp4',
+        imagen: '/videos/veraguas/Isla_Cocos.av1.mp4',
         ubicacion: 'Isla Cocos, Veraguas',
       },
       {
@@ -83,7 +83,7 @@ export const provincias = [
         nombre: 'Isla Ranchería',
         descripcion: 'También conocida como Coibita, una isla de aguas cristalinas y cocoteros frecuentada como zona de descanso al explorar el parque marino.',
         tipo: 'video',
-        imagen: '/videos/veraguas/Isla_Rancheria.mp4',
+        imagen: '/videos/veraguas/Isla_Rancheria.av1.mp4',
         ubicacion: 'Parque Nacional Coiba, Veraguas',
       },
       {
@@ -91,7 +91,7 @@ export const provincias = [
         nombre: 'Playa El Estero',
         descripcion: 'Extensa playa de arena oscura en Santa Catalina, con condiciones perfectas para escuelas de surf y caminatas al atardecer.',
         tipo: 'video',
-        imagen: '/videos/veraguas/Playa_El_Estero.mp4',
+        imagen: '/videos/veraguas/Playa_El_Estero.av1.mp4',
         ubicacion: 'Santa Catalina, Veraguas',
       },
       /*

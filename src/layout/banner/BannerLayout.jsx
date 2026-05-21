@@ -9,7 +9,7 @@ function BannerLayout() {
                 loop
                 playsInline
                 preload="none"
-                src='/videos/BannerPrincipal.mp4'
+                src='/videos/BannerPrincipal.av1.mp4'
             ></video>
         </div>
     )

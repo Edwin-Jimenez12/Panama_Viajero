@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/panama/PanamaBanner.mp4',
+      src: '/videos/panama/PanamaBanner.av1.mp4',
       alt: 'Vista urbana y costera de la provincia de Panamá',
     },
 
@@ -61,7 +61,7 @@ export const provincias = [
         nombre: 'Cerro Ancón',
         descripcion: 'El punto más alto de la ciudad, un mirador natural protegido famoso por su imponente bandera nacional, senderos ecológicos y vistas del skyline capitalino.',
         tipo: 'video',
-        imagen: '/videos/panama/Cerro_Ancon.mp4',
+        imagen: '/videos/panama/Cerro_Ancon.av1.mp4',
         ubicacion: 'Cerro Ancón, Ciudad de Panamá',
       },
       {
@@ -101,7 +101,7 @@ export const provincias = [
         nombre: 'Isla Taboga',
         descripcion: 'Conocida como la isla de las flores, es una joya histórica cercana a la capital con senderos pintorescos y playas tranquilas.',
         tipo: 'video',
-        imagen: '/videos/panama/Isla_Taboga.mp4',
+        imagen: '/videos/panama/Isla_Taboga.av1.mp4',
         ubicacion: 'Isla Taboga, Panamá',
       },
       {

@@ -7,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/bocasDelToro/bocasBanner.mp4',
+      src: '/videos/bocasDelToro/bocasBanner.av1.mp4',
       alt: 'Costa caribeña de la provincia de Bocas del Toro',
     },
 

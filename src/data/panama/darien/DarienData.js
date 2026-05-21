@@ -7,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/darien/DarienBanner.mp4',
+      src: '/videos/darien/DarienBanner.av1.mp4',
       alt: 'Vista de la provincia de Darién',
     },
 

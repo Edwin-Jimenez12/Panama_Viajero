@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SmartVideo from '../../assets/components/video/SmartVideo.jsx';
 import { provinceMedia } from '../../data/panama/provinceMedia.js';
 
 function getRandomItems(items, limit) {
@@ -37,17 +36,17 @@ function AleatorySuggestions() {
                         onClick={() => navigate(`${province.path}#video`)}
                         className="group flex flex-col items-center w-full max-w-md cursor-pointer md:w-[355px]"
                     >
-                        {/* Video Container */}
+                        {/* Poster estático para evitar cargar tres videos extra en home */}
                         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-brand-soft 
                             transition-all duration-300 group-hover:scale-105
                             group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
                         >
-                            <SmartVideo
-                                src={province.banner}
+                            <img
+                                src={province.poster}
+                                alt={province.nombre}
+                                loading="lazy"
+                                decoding="async"
                                 className="h-[116%] w-full object-cover object-top"
-                                autoPlay
-                                poster={province.poster}
-                                preload="none"
                             />
                             {/* Overlay discret que se aclara en hover */}
                             <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />

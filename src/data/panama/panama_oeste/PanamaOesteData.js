@@ -6,7 +6,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/panamaOeste/VideoBannerPanamaOeste.mp4',
+      src: '/videos/panamaOeste/VideoBannerPanamaOeste.av1.mp4',
       alt: 'Vista de la provincia de Panamá Oeste',
     },
 
@@ -36,7 +36,7 @@ export const provincias = [
         nombre: 'Cascada Las Filipinas',
         descripcion: 'Un impresionante circuito de varias cascadas escondidas en la montaña, ideal para los amantes del senderismo, la aventura y los chapuzones en pozas cristalinas.',
         tipo: 'video',
-        imagen: '/videos/panamaOeste/Cascada_Las_Filipinas.mp4',
+        imagen: '/videos/panamaOeste/Cascada_Las_Filipinas.av1.mp4',
         ubicacion: 'Las Filipinas, Sorá, Panamá Oeste',
       },
       {
@@ -68,7 +68,7 @@ export const provincias = [
         nombre: 'Playa Santa Clara',
         descripcion: 'Famosa playa de arena blanca y aguas tranquilas, considerada un destino ideal para pasar el día en familia, relajarse bajo el sol y disfrutar del mar Pacífico.',
         tipo: 'video',
-        imagen: '/videos/panamaOeste/Playa_Santa_Clara.mp4',
+        imagen: '/videos/panamaOeste/Playa_Santa_Clara.av1.mp4',
         ubicacion: 'Santa Clara, Coclé', // Nota: Tradicionalmente pertenece a Coclé, pero queda excelente en el circuito de playas del oeste.
       },
     ],

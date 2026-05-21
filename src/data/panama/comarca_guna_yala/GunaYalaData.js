@@ -7,7 +7,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/guna_yala/GunaYalaBanner.mp4',
+      src: '/videos/guna_yala/GunaYalaBanner.av1.mp4',
       alt: 'Vista de la Comarca Guna Yala',
     },
 

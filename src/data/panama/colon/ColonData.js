@@ -5,7 +5,7 @@ export const provincias = [
 
     banner: {
       tipo: 'video',
-      src: '/videos/colon/ColonBanner.mp4',
+      src: '/videos/colon/ColonBanner.av1.mp4',
       alt: 'Vista de la provincia de Colón',
     },
 
@@ -35,7 +35,7 @@ export const provincias = [
         nombre: 'Cerro Pavón',
         descripcion: 'Mirador natural con vistas verdes y senderos ideales para caminatas de aventura en la provincia.',
         tipo: 'video',
-        imagen: '/videos/colon/Cerro_Pavon.mp4',
+        imagen: '/videos/colon/Cerro_Pavon.av1.mp4',
         ubicacion: 'Cerro Pavón, Colón',
       },
       {
@@ -43,7 +43,7 @@ export const provincias = [
         nombre: 'El Túnel del Amor',
         descripcion: 'Pasaje costero rodeado de vegetación y aguas tranquilas, perfecto para una experiencia visual diferente.',
         tipo: 'video',
-        imagen: '/videos/colon/El_tunel_del_amor.mp4',
+        imagen: '/videos/colon/El_tunel_del_amor.av1.mp4',
         ubicacion: 'El Túnel del Amor, Colón',
       },
       {
@@ -51,7 +51,7 @@ export const provincias = [
         nombre: 'Lago Gatún',
         descripcion: 'Gran lago artificial vinculado al Canal de Panamá, famoso por sus paisajes, fauna y recorridos en bote.',
         tipo: 'video',
-        imagen: '/videos/colon/Lago_Gatun.mp4',
+        imagen: '/videos/colon/Lago_Gatun.av1.mp4',
         ubicacion: 'Lago Gatún, Colón',
       },
       {
@@ -59,7 +59,7 @@ export const provincias = [
         nombre: 'Portobelo',
         descripcion: 'Pueblo histórico del Caribe panameño con fortalezas coloniales, tradición congo y una bahía llena de memoria.',
         tipo: 'video',
-        imagen: '/videos/colon/Portobelo.mp4',
+        imagen: '/videos/colon/Portobelo.av1.mp4',
         ubicacion: 'Portobelo, Colón',
       },
       {
@@ -67,7 +67,7 @@ export const provincias = [
         nombre: 'Fuerte de San Fernando',
         descripcion: 'Fortificación colonial que recuerda la defense del Caribe y el paso de las rutas comerciales españolas.',
         tipo: 'video',
-        imagen: '/videos/colon/Fuerte_de_San_Fernando.mp4',
+        imagen: '/videos/colon/Fuerte_de_San_Fernando.av1.mp4',
         ubicacion: 'Fuerte de San Fernando, Colón',
       },
       {
@@ -91,7 +91,7 @@ export const provincias = [
         nombre: 'Isla Mamey',
         descripcion: 'Isla caribeña de aguas claras y ambiente relajado, ideal para playa, esnórquel y escapadas de un día.',
         tipo: 'video',
-        imagen: '/videos/colon/Isla_Mamey.mp4',
+        imagen: '/videos/colon/Isla_Mamey.av1.mp4',
         ubicacion: 'Isla Mamey, Colón',
       },
     ],
