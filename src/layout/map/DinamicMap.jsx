@@ -11,6 +11,7 @@ import Veraguas from '../../assets/components/prov_pages/VeraguasSvg.jsx';
 import Herrera from '../../assets/components/prov_pages/HerreraSvg.jsx';
 import Panama from '../../assets/components/prov_pages/PanamaSvg.jsx';
 import PanamaOeste from '../../assets/components/prov_pages/PanamaOesteSvg.jsx';
+import MapMarkersLayer from '../../assets/components/province/MapMarkersLayer.jsx';
 
 const provinces = [
     { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24 },
@@ -34,10 +35,14 @@ function Map() {
         <div className="mx-auto my-28 flex max-w-6xl flex-col items-center text-center md:my-10">
             <div className="w-full rounded-xl md:p-12">
                 <div className="mb-10 flex flex-col text-center">
-                    <label className="font-main text-4xl text-brand-red">Conoce Panama como nunca antes lo viste</label>
+                    <label className="font-main text-4xl text-brand-red">¡Conoce Panama como nunca antes lo viste!</label>
                 </div>
 
                 <div className="relative mb-6 aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]">
+                    <MapMarkersLayer
+                        className="flex items-center justify-center h-130 w-full mt-[-25px] ml-[-25px]"
+                    />
+
                     {provinces.map((province) => (
                         <div
                             key={province.alt}

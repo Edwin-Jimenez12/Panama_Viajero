@@ -1,17 +1,18 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import DeferredSection from './assets/components/layout/DeferredSection.jsx'
 import Menu from './assets/components/menu/Menu.jsx'
 import BannerLayout from './layout/banner/BannerLayout.jsx'
-import Map from './layout/map/DinamicMap.jsx'
-import Preregister from './layout/preregister/Preregister.jsx'
-import BottomBanner from './assets/components/bottombanner/Bottombanner.jsx'
-import CountdownModal from './layout/counter/Counter.jsx'
-import AboutUs from './assets/components/about us/AboutUs.jsx'
-import AleatorySuggestions from './layout/suggestion/Suggestions.tsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './assets/img_test/LogoRectangular.svg'
 
+const AboutUs = lazy(() => import('./assets/components/about us/AboutUs.jsx'))
+const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
+const AleatorySuggestions = lazy(() => import('./layout/suggestion/Suggestions.tsx'))
+const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
+const BottomBanner = lazy(() => import('./assets/components/bottombanner/Bottombanner.jsx'))
+const CountdownModal = lazy(() => import('./layout/counter/Counter.jsx'))
 const BocasDelToro = lazy(() => import('./data/panama/BocasDelToro/BocasDelToro.jsx'))
 const Chiriqui = lazy(() => import('./data/panama/chiriqui/chiriqui.jsx'))
 const Cocle = lazy(() => import('./data/panama/cocle/Cocle.jsx'))
@@ -30,6 +31,10 @@ function RouteFallback() {
       <p className="text-sm uppercase tracking-[0.2em]">Cargando provincia...</p>
     </div>
   )
+}
+
+function SectionFallback({ className = '' }) {
+  return <div aria-hidden="true" className={className} />
 }
 
 function Home() {
@@ -52,10 +57,12 @@ function Home() {
   return (
     <div className="relative bg-brand-soft text-brand-charcoal">
       {showCountdown && (
-        <CountdownModal
-          onClose={() => setShowCountdown(false)}
-          onPreregister={scrollToPreregister}
-        />
+        <Suspense fallback={null}>
+          <CountdownModal
+            onClose={() => setShowCountdown(false)}
+            onPreregister={scrollToPreregister}
+          />
+        </Suspense>
       )}
 
       <div
@@ -71,39 +78,58 @@ function Home() {
           onSuggestionsClick={scrollToSuggestions}
         />
       </div>
-      {/* BANNER */}
+
       <section id="home" ref={homeRef} className="relative">
         <BannerLayout />
-        <div className=" mr-2 mb-2 md:mr-5 md:mb-4 pointer-events-none absolute inset-0 z-20 flex items-end justify-end">
-          <img src={Logo} alt="Logo" className="h-7 mb-1 md:mb-none md:h-15 w-auto 
-          max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]" />
+        <div className="pointer-events-none absolute inset-0 z-20 mr-2 mb-2 flex items-end justify-end md:mr-5 md:mb-4">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="h-7 w-auto max-w-full mb-1 drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:h-15 md:mb-none md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
+          />
         </div>
       </section>
 
-      {/*US*/}
       <section id="us" ref={usRef} className="scroll-mt-7 md:scroll-mt-20">
-        <AboutUs />
+        <DeferredSection fallback={<SectionFallback className="min-h-[320px]" />}>
+          <Suspense fallback={<SectionFallback className="min-h-[320px]" />}>
+            <AboutUs />
+          </Suspense>
+        </DeferredSection>
       </section>
 
-      {/* MAP */}
-      <section id="map" ref={mapRef} className="">
-        <Map />
+      <section id="map" ref={mapRef}>
+        <DeferredSection fallback={<SectionFallback className="min-h-[560px]" />}>
+          <Suspense fallback={<SectionFallback className="min-h-[560px]" />}>
+            <Map />
+          </Suspense>
+        </DeferredSection>
       </section>
 
-      {/* SUGGESTIONS */}
-      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-1/2 md:scroll-mt-0">
-        <AleatorySuggestions />
+      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-1/2 md:scroll-mt-15">
+        <DeferredSection fallback={<SectionFallback className="min-h-[480px]" />}>
+          <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
+            <AleatorySuggestions />
+          </Suspense>
+        </DeferredSection>
       </section>
 
-      {/* PREREGISTER */}
-      <section id="preregister" ref={preregisterRef} className="scroll-mt-24">
-        <Preregister />
+      <section id="preregister" ref={preregisterRef} className="scroll-mt-30">
+        <DeferredSection fallback={<SectionFallback className="min-h-[440px]" />}>
+          <Suspense fallback={<SectionFallback className="min-h-[440px]" />}>
+            <Preregister />
+          </Suspense>
+        </DeferredSection>
       </section>
-      <BottomBanner onLogoClick={scrollToHome} />
+
+      <DeferredSection fallback={<SectionFallback className="min-h-[120px]" />} rootMargin="200px">
+        <Suspense fallback={<SectionFallback className="min-h-[120px]" />}>
+          <BottomBanner onLogoClick={scrollToHome} />
+        </Suspense>
+      </DeferredSection>
     </div>
   )
 }
-
 
 function App() {
   return (

@@ -1,27 +1,68 @@
-import { Mail, Phone, User } from 'lucide-react';
+function IconBase({ children, className = '' }) {
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className={className}
+        >
+            {children}
+        </svg>
+    );
+}
+
+function UserIcon({ className = '' }) {
+    return (
+        <IconBase className={className}>
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+        </IconBase>
+    );
+}
+
+function PhoneIcon({ className = '' }) {
+    return (
+        <IconBase className={className}>
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.34 2.74a2 2 0 0 1-.57 1.72L7.1 9.9a16 16 0 0 0 7 7l1.72-1.78a2 2 0 0 1 1.72-.57l2.74.34A2 2 0 0 1 22 16.92Z" />
+        </IconBase>
+    );
+}
+
+function MailIcon({ className = '' }) {
+    return (
+        <IconBase className={className}>
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+        </IconBase>
+    );
+}
 
 function Preregister() {
     return (
         <div className="mx-auto mt-10 max-w-4xl rounded-xl border border-brand-blue/15 bg-brand-white p-8 shadow-[0_18px_45px_rgba(77,76,76,0.15)]">
             <form action="" className="space-y-6">
                 <div className="flex flex-col gap-2 border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">
-                    <span className="font-body text-xl text-brand-charcoal/90">Regístrate y participa por </span>
+                    <span className="font-body text-xl text-brand-charcoal/90">Registrate y participa por </span>
                     <span className="font-main text-3xl font-bold text-brand-red">UNA NOCHE GRATIS</span>
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     <div className="relative">
-                        <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" />
+                        <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
                         <input type="text" placeholder="Juan" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
 
                     <div className="relative">
-                        <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" />
-                        <input type="text" placeholder="Pérez" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
+                        <UserIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
+                        <input type="text" placeholder="Perez" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
 
                     <div className="relative">
-                        <Phone size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" />
+                        <PhoneIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
                         <input type="text" placeholder="65094159" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                     </div>
                 </div>
@@ -29,7 +70,7 @@ function Preregister() {
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-4 md:flex-row">
                         <div className="relative flex-1">
-                            <Mail size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" />
+                            <MailIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" />
                             <input type="email" placeholder="micorreo012@gmail.com" className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90" />
                         </div>
 

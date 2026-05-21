@@ -1,31 +1,7 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SmartVideo from '../../assets/components/video/SmartVideo.jsx';
-import { provincias as bocasDelToroData } from '../../data/panama/BocasDelToro/BocasDelToro.js';
-import { provincias as chiriquiData } from '../../data/panama/chiriqui/ChiriquiData.js';
-import { provincias as cocleData } from '../../data/panama/cocle/CocleData.js';
-import { provincias as colonData } from '../../data/panama/colon/ColonData.js';
-import { provincias as darienData } from '../../data/panama/darien/DarienData.js';
-import { provincias as herreraData } from '../../data/panama/herrera/HerreraData.js';
-import { provincias as losSantosData } from '../../data/panama/lossantos/LosSantosData.js';
-import { provincias as panamaData } from '../../data/panama/panama/PanamaData.js';
-import { provincias as panamaOesteData } from '../../data/panama/panama_oeste/PanamaOesteData.js';
-import { provincias as veraguasData } from '../../data/panama/veraguas/VeraguasData.js';
-import { provincias as gunaYalaData } from '../../data/panama/comarca_guna_yala/GunaYalaData.js';
-
-const provinceRoutes = [
-    { data: bocasDelToroData[0], path: '/provincias/bocas-del-toro' },
-    { data: chiriquiData[0], path: '/provincias/chiriqui' },
-    { data: cocleData[0], path: '/provincias/cocle' },
-    { data: colonData[0], path: '/provincias/colon' },
-    { data: darienData[0], path: '/provincias/darien' },
-    { data: herreraData[0], path: '/provincias/herrera' },
-    { data: losSantosData[0], path: '/provincias/los-santos' },
-    { data: panamaData[0], path: '/provincias/panama' },
-    { data: panamaOesteData[0], path: '/provincias/panama-oeste' },
-    { data: veraguasData[0], path: '/provincias/veraguas' },
-    { data: gunaYalaData[0], path: '/provincias/comarca-guna-yala' },
-];
+import { provinceMedia } from '../../data/panama/provinceMedia.js';
 
 function getRandomItems(items, limit) {
     return [...items]
@@ -33,32 +9,12 @@ function getRandomItems(items, limit) {
         .slice(0, limit);
 }
 
-function getBannerVideo(province) {
-    const banner = province.banner || {};
-    const poster = banner.poster
-        || province.imagenProvincia?.src
-        || province.lugaresDestacados?.find((lugar) => lugar.tipo !== 'video')?.imagen;
-
-    return {
-        src: banner.src,
-        poster,
-        alt: banner.alt || province.nombre,
-    };
-}
-
 function AleatorySuggestions() {
     const navigate = useNavigate();
     
     const suggestions = useMemo(() => {
-        const provincesWithVideoBanner = provinceRoutes.filter(({ data }) => {
-            const banner = data.banner || {};
-            return banner.tipo === 'video' && banner.src;
-        });
-
-        return getRandomItems(provincesWithVideoBanner, 3).map((province) => ({
-            ...province,
-            media: getBannerVideo(province.data),
-        }));
+        const provincesWithVideoBanner = provinceMedia.filter((province) => province.banner);
+        return getRandomItems(provincesWithVideoBanner, 3);
     }, []);
 
     return (
@@ -73,12 +29,12 @@ function AleatorySuggestions() {
             </div>
 
             <div className="max-w-6xl mx-auto flex  justify-center gap-8">
-                {suggestions.map(({ data: province, path, media }) => (
+                {suggestions.map((province) => (
                     <button
                         key={province.id}
                         type="button"
                         aria-label={`Explorar ${province.nombre}`}
-                        onClick={() => navigate(`${path}#video`)}
+                        onClick={() => navigate(`${province.path}#video`)}
                         className="group flex flex-col items-center w-full max-w-md cursor-pointer md:w-[355px]"
                     >
                         {/* Video Container */}
@@ -87,10 +43,10 @@ function AleatorySuggestions() {
                             group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
                         >
                             <SmartVideo
-                                src={media.src}
+                                src={province.banner}
                                 className="h-[116%] w-full object-cover object-top"
                                 autoPlay
-                                poster={media.poster}
+                                poster={province.poster}
                                 preload="none"
                             />
                             {/* Overlay discret que se aclara en hover */}

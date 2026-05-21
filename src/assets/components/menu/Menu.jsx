@@ -1,7 +1,75 @@
 import { useEffect, useState } from 'react';
 import LogoVertical from '../../img_test/LogoVertical.svg';
-import { MapPin, Megaphone, ClipboardPen, Users } from 'lucide-react';
 import LogoCuadrado from '../../img_test/LogoCuadrado.svg';
+
+function IconBase({ children }) {
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className="h-[15px] w-[15px]"
+        >
+            {children}
+        </svg>
+    );
+}
+
+function UsersIcon(props) {
+    return (
+        <span {...props}>
+            <IconBase>
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </IconBase>
+        </span>
+    );
+}
+
+function MapPinIcon(props) {
+    return (
+        <span {...props}>
+            <IconBase>
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+            </IconBase>
+        </span>
+    );
+}
+
+function MegaphoneIcon(props) {
+    return (
+        <span {...props}>
+            <IconBase>
+                <path d="m3 11 14-5v12L3 13z" />
+                <path d="M11 18v4" />
+                <path d="M7 14.5V18a2 2 0 0 0 2 2h2" />
+                <path d="M21 9v6" />
+            </IconBase>
+        </span>
+    );
+}
+
+function ClipboardPenIcon(props) {
+    return (
+        <span {...props}>
+            <IconBase>
+                <path d="M9 5h6" />
+                <path d="M9 3h6a2 2 0 0 1 2 2v1H7V5a2 2 0 0 1 2-2Z" />
+                <path d="M7 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5" />
+                <path d="M18 8h.01" />
+                <path d="M14 20h7" />
+                <path d="m17.5 12.5 2 2L14 20l-2.5.5L12 18z" />
+            </IconBase>
+        </span>
+    );
+}
 
 
 function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSuggestionsClick}) {
@@ -55,7 +123,7 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                     <button className=" hover:scale-105 group flex items-center gap-2 cursor-pointer rounded-full px-3 py-2 transition-all 
                     ease-out hover:bg-brand-white/15 hover:text-brand-white
                     hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToUs}>
-                        <Users size={15} className=" text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
+                        <UsersIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
                         <span>Nosotros</span>
                         
                     </button>
@@ -66,7 +134,7 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                         hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
                         onClick={goToMap}
                         >
-                            <MapPin size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
+                            <MapPinIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
                         <span>Provincias</span>
                         
                     </button>
@@ -75,14 +143,14 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
                     <button className=" hover:scale-105 group flex items-center gap-2 cursor-pointer 
                     rounded-full px-3 py-2 transition-all  ease-out hover:bg-brand-white/15 
                     hover:text-brand-white hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToSuggestions}>
-                        <Megaphone size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100"/>
+                        <MegaphoneIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100"/>
                         <span>Recomendaciones</span>
                     </button>
                     {/* Registro */}
                     <button className="hover:scale-105 group flex items-center gap-2 cursor-pointer 
                     rounded-full px-3 py-2 transition-all  ease-out hover:bg-brand-white/15 hover:text-brand-white 
                     hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]" onClick={goToRegister}>
-                        <ClipboardPen size={15} className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
+                        <ClipboardPenIcon className="text-brand-red opacity-0 transition-opacity group-hover:opacity-100" />
                         <span>Registro</span>
                     </button>
                 </div>
