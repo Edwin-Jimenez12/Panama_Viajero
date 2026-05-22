@@ -34,8 +34,10 @@ function BannerLayout() {
                     playsInline
                     preload="none"
                     poster="/videos/BannerPrincipal.avif"
-                    src="/videos/BannerPrincipal.av1.mp4"
-                />
+                >
+                    <source src="/videos/BannerPrincipal.av1.mp4" type='video/mp4; codecs="av01.0.05M.08"' />
+                    <source src="/videos/BannerPrincipal.h264.mp4" type="video/mp4" />
+                </video>
             )}
         </div>
     )

@@ -1,7 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 
+function deriveFallbackSrc(src) {
+    if (typeof src !== 'string' || !src.endsWith('.av1.mp4')) {
+        return null;
+    }
+
+    return src.replace(/\.av1\.mp4$/, '.h264.mp4');
+}
+
 function SmartVideo({
     src,
+    fallbackSrc,
     className,
     poster,
     preload = 'none',
@@ -13,6 +22,7 @@ function SmartVideo({
     const videoRef = useRef(null);
     const [shouldLoad, setShouldLoad] = useState(eager);
     const [isVisible, setIsVisible] = useState(eager);
+    const resolvedFallbackSrc = fallbackSrc || deriveFallbackSrc(src);
 
     useEffect(() => {
         if (eager || !videoRef.current) {
@@ -50,12 +60,11 @@ function SmartVideo({
         }
 
         node.pause();
-    }, [isVisible, shouldLoad]);
+    }, [autoPlay, isVisible, shouldLoad]);
 
     return (
         <video
             ref={videoRef}
-            src={shouldLoad ? src : undefined}
             className={className}
             poster={poster}
             preload={shouldLoad ? preload : 'none'}
@@ -63,7 +72,17 @@ function SmartVideo({
             loop
             playsInline
             {...props}
-        />
+        >
+            {shouldLoad && resolvedFallbackSrc && (
+                <>
+                    <source src={src} type='video/mp4; codecs="av01.0.05M.08"' />
+                    <source src={resolvedFallbackSrc} type='video/mp4' />
+                </>
+            )}
+            {shouldLoad && !resolvedFallbackSrc && src && (
+                <source src={src} type='video/mp4' />
+            )}
+        </video>
     );
 }
 
