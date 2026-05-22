@@ -3,9 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { provinceMedia } from '../../data/panama/provinceMedia.js';
 
 function getRandomItems(items, limit) {
-    return [...items]
-        .sort(() => Math.random() - 0.5)
-        .slice(0, limit);
+    const shuffled = [...items];
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+    }
+
+    return shuffled.slice(0, limit);
 }
 
 function AleatorySuggestions() {

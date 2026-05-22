@@ -1,3 +1,5 @@
+import politicaDePrivacidadPdf from '../../assets/Politica de privacidad.pdf';
+
 function IconBase({ children, className = '' }) {
     return (
         <svg
@@ -80,8 +82,18 @@ function Preregister() {
                     </div>
 
                     <div className="flex items-center gap-2 text-sm text-brand-charcoal/90">
-                        <input type="checkbox" id="terms" className="h-4 w-4 cursor-pointer accent-brand-blue" />
-                        <label htmlFor="terms" className="font-body cursor-pointer hover:underline">He leido y acepto los terminos y condiciones</label>
+                        <input type="checkbox" id="terms" required className="h-4 w-4 cursor-pointer accent-brand-blue" />
+                        <label htmlFor="terms" className="font-body">
+                            He leido y acepto la{' '}
+                            <a
+                                href={politicaDePrivacidadPdf}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="cursor-pointer underline hover:text-brand-blue"
+                            >
+                                politica de privacidad
+                            </a>
+                        </label>
                     </div>
                 </div>
             </form>

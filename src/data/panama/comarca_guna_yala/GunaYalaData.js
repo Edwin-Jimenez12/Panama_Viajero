@@ -3,7 +3,7 @@
 export const provincias = [
   {
     id: 'comarca-guna-yala',
-    nombre: 'Comarca Guna Yala',
+    nombre: 'Comarca Guna Yala (San Blas)',
 
     banner: {
       tipo: 'video',

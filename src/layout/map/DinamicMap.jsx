@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import LosSantos from '../../assets/components/prov_pages/LosSantos.jsx';
 import ChiriquiSvg from '../../assets/components/prov_pages/ChiriquiSvg.jsx';
+import LineaBocasDelToroSvg from '../../assets/components/prov_pages/LineaBocasDelToroSvg.jsx';
+import LineaChiriquiSvg from '../../assets/components/prov_pages/LineaChiriquiSvg.jsx';
 import BocasDelToroSvg from '../../assets/components/prov_pages/BocasDelToroSvg.jsx';
 import Cocle from '../../assets/components/prov_pages/CocleSvg.jsx';
 import Colon from '../../assets/components/prov_pages/Colon.jsx';
@@ -11,20 +13,42 @@ import Veraguas from '../../assets/components/prov_pages/VeraguasSvg.jsx';
 import Herrera from '../../assets/components/prov_pages/HerreraSvg.jsx';
 import Panama from '../../assets/components/prov_pages/PanamaSvg.jsx';
 import PanamaOeste from '../../assets/components/prov_pages/PanamaOesteSvg.jsx';
-import MapMarkersLayer from '../../assets/components/province/MapMarkersLayer.jsx';
+import LineaCocleSvg from '../../assets/components/prov_pages/LineaCocleSvg.jsx';
+import LineaColonSvg from '../../assets/components/prov_pages/LineaColonSvg.jsx';
+import LineaDarienSvg from '../../assets/components/prov_pages/LineaDarienSvg.jsx';
+import LineaGunaYalaSvg from '../../assets/components/prov_pages/LineaGunaYalaSvg.jsx';
+import LineaHerreraSvg from '../../assets/components/prov_pages/LineaHerreraSvg.jsx';
+import LineaLosSantosSvg from '../../assets/components/prov_pages/LineaLosSantosSvg.jsx';
+import LineaPanamaSvg from '../../assets/components/prov_pages/LineaPanamaSvg.jsx';
+import LineaPanamaOesteSvg from '../../assets/components/prov_pages/LineaPanamaOesteSvg.jsx';
+import LineaVeraguasSvg from '../../assets/components/prov_pages/LineaVeraguasSvg.jsx';
 
 const provinces = [
-    { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos#video', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24 },
-    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%' },
-    { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%' },
-    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%' },
-    { component: Colon, alt: 'Colon', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31 },
-    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23 },
-    { component: Darien, alt: 'Darien', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%' },
-    { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22 },
-    { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23 },
-    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32 },
-    { component: Panama, alt: 'Panama', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29 },
+    { component: LosSantos, alt: 'Los Santos', to: '/provincias/los-santos#video', top: '68.87%', left: '39.90%', width: '11.71%', zIndex: 24, useExternalTrigger: true },
+    { component: ChiriquiSvg, alt: 'Chiriqui', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%', useExternalTrigger: true },
+    { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%', useExternalTrigger: true },
+    { component: Cocle, alt: 'Cocle', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%', useExternalTrigger: true },
+    { component: Colon, alt: 'Colon', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true },
+    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23, useExternalTrigger: true },
+    { component: Darien, alt: 'Darien', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%', useExternalTrigger: true },
+    { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22, useExternalTrigger: true },
+    { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23, useExternalTrigger: true },
+    { component: PanamaOeste, alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32, useExternalTrigger: true },
+    { component: Panama, alt: 'Panama', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29, useExternalTrigger: true },
+];
+
+const externalProvinceDecorations = [
+    { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '10%', lineLeft: '13.8%', lineWidth: '1.80%', buttonTop: '7.3%', buttonLeft: '15.3%', buttonFontSize: '1.2rem', color: '#9B7702' },
+    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '49.4%', lineLeft: '7.4%', lineWidth: '2.1%', buttonTop: '62%', buttonLeft: '9.2%', buttonFontSize: '1.2rem', color: '#876001' },
+    { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '67.2%', lineLeft: '25.4%', lineWidth: '2%', buttonTop: '81.5%', buttonLeft: '19.6%', buttonFontSize: '1.2rem', color: '#0070AA' },
+    { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '2%', buttonTop: '97%', buttonLeft: '50.3%', buttonFontSize: '1.2rem', color: '#9D89CC' },
+    { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '65.5%', lineLeft: '43.5%', lineWidth: '6%', buttonTop: '64%', buttonLeft: '49.3%', buttonFontSize: '1.2rem', color: '#303F43' },
+    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '35.4%', lineLeft: '48.6%', lineWidth: '3.3%', buttonTop: '56.6%', buttonLeft: '52%', buttonFontSize: '1.2rem', color: '#868245' },
+    { alt: 'Colon', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4%', lineLeft: '40%', lineWidth: '2%', buttonTop: '1.5%', buttonLeft: '41.7%', buttonFontSize: '1.2rem', color: '#7A241A' },
+    { alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '37.6%', lineLeft: '54%', lineWidth: '2%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '1.2rem', color: '#009A91' },
+    { alt: 'Panama', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '20%', lineLeft: '61.1%', lineWidth: '3%', buttonTop: '39%', buttonLeft: '64%', buttonFontSize: '1.2rem', color: '#47363A' },
+    { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '6.5%', lineLeft: '87.7%', lineWidth: '1.75%', buttonTop: '5.4%', buttonLeft: '82.6%', buttonFontSize: '1.2rem', color: '#74BECB' },
+    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '63.4%', lineLeft: '88.5%', lineWidth: '3.5%', buttonTop: '92.5%', buttonLeft: '91.6%', buttonFontSize: '1.2rem', color: '#5D8905' }
 ];
 
 function Map() {
@@ -38,9 +62,22 @@ function Map() {
                     <label className="font-accent font-bold text-5xl text-brand-red">¡Conoce Panamá como nunca antes lo viste!</label>
                 </div>
                 <div className="relative mb-6 aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]">
-                    <MapMarkersLayer
-                        className="flex items-center justify-center h-130 w-full mt-[-25px] ml-[-25px]"
-                    />
+                    {externalProvinceDecorations.map((item) => {
+                        const LineComponent = item.lineComponent;
+                        return (
+                            <div
+                                key={`${item.alt}-line`}
+                                className="pointer-events-none absolute z-0"
+                                style={{
+                                    top: item.lineTop,
+                                    left: item.lineLeft,
+                                    width: item.lineWidth,
+                                }}
+                            >
+                                <LineComponent className="h-auto w-full" />
+                            </div>
+                        );
+                    })}
 
                     {provinces.map((province) => (
                         <div
@@ -56,28 +93,41 @@ function Map() {
                         >
                             {province.component ? (
                                 <province.component
-                                    className="pointer-events-auto h-auto w-full cursor-pointer"
-                                    onMouseEnter={() => setActiveProvince(province.alt)}
-                                    onMouseLeave={() => setActiveProvince(null)}
+                                    className="pointer-events-none h-auto w-full"
+                                    onMouseEnter={province.useExternalTrigger ? undefined : () => setActiveProvince(province.alt)}
+                                    onMouseLeave={province.useExternalTrigger ? undefined : () => setActiveProvince(null)}
                                     onClick={() => navigate(province.to)}
                                 />
                             ) : null}
                         </div>
                     ))}
+
+                    {externalProvinceDecorations.map((item) => (
+                        <button
+                            key={`${item.alt}-button`}
+                            type="button"
+                            className="absolute z-[60] cursor-pointer whitespace-nowrap bg-transparent font-accent font-bold leading-none tracking-wide transition-transform duration-300"
+                            style={{
+                                top: item.buttonTop,
+                                left: item.buttonLeft,
+                                fontSize: item.buttonFontSize,
+                                color: item.color,
+                                transform: activeProvince === item.alt ? 'scale(1.15)' : 'scale(1)',
+                            }}
+                            onMouseEnter={() => setActiveProvince(item.alt)}
+                            onMouseLeave={() => setActiveProvince(null)}
+                            onClick={() => navigate(item.to)}
+                        >
+                            {item.alt}
+                        </button>
+                    ))}
                 </div>
 
                 <div className="mt-[-10px] flex h-16 items-center justify-center overflow-hidden">
-                    <span
-                        className={`font-main text-4xl tracking-wide text-brand-blue transition-all duration-300 ease-out ${
-                            activeProvince ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-                        }`}
-                    >
-                        {activeProvince || ''}
-                    </span>
+                    
                 </div>
             </div>
         </div>
     );
 }
-
 export default Map;
