@@ -38,7 +38,7 @@ function Suggestions({ provinceData }) {
                                 <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
                             </div>
                             <div className="flex flex-1 flex-col p-5">
-                                <h3 className="font-accent mt-2 text-3xl font-bold text-brand-red">
+                                <h3 className="font-secondary-italic mt-2 text-2xl  text-brand-red">
                                     {lugar.nombre}
                                 </h3>
 

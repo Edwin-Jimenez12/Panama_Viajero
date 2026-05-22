@@ -16,8 +16,6 @@ export default {
         'secondary-bold-italic': ['TangoSansBoldItalic', 'sans-serif'],
         // Body
         'body': ['Inter', 'Segoe UI', 'system-ui', 'sans-serif'],
-        // Otras fuentes
-        'accent': ['Caveat', 'TangoSansItalic', 'Segoe Script', 'cursive'],
       },
       colors: {
         brand: {

@@ -56,7 +56,7 @@ function AleatorySuggestions() {
                         </div>
                         <div className="mt-4 w-full overflow-hidden text-center">
                             <span
-                                className="inline-block font-accent text-2xl md:text-4xl font-bold text-brand-blue
+                                className="inline-block font-secondary-italic text-2xl md:text-4xl font-bold text-brand-blue
                                 transform translate-y-0 opacity-100 
                                 transition-all duration-300 ease-out
                                 md:translate-y-3 md:opacity-0 
