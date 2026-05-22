@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SmartVideo from '../video/SmartVideo.jsx';
 import { provinceMedia } from '../../../data/panama/provinceMedia.js';
 
 function getRandomItems(items, limit) {
@@ -12,8 +11,8 @@ function getRandomItems(items, limit) {
 function AleatorySuggestions() {
     const navigate = useNavigate();
     const suggestions = useMemo(() => {
-        const provincesWithVideoBanner = provinceMedia.filter((province) => province.banner);
-        return getRandomItems(provincesWithVideoBanner, 3);
+        const provincesWithPoster = provinceMedia.filter((province) => province.poster);
+        return getRandomItems(provincesWithPoster, 3);
     }, []);
 
     return (
@@ -41,12 +40,12 @@ function AleatorySuggestions() {
                             transition-all duration-300 group-hover:scale-105
                             group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
                         >
-                            <SmartVideo
-                                src={province.banner}
+                            <img
+                                src={province.poster}
+                                alt={province.nombre}
+                                loading="lazy"
+                                decoding="async"
                                 className="h-[116%] w-full object-cover object-top"
-                                autoPlay
-                                poster={province.poster}
-                                preload="none"
                             />
                             <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
                         </div>
