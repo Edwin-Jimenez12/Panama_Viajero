@@ -22,7 +22,7 @@ export const registrationSchema = z.object({
         .email('El correo no es valido')
         .max(160, 'El correo es demasiado largo'),
     acceptedPrivacyPolicy: z.literal(true, {
-        errorMap: () => ({ message: 'Debes aceptar la politica de privacidad' }),
+        message: 'Debes aceptar la politica de privacidad',
     }),
 });
 
