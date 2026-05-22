@@ -39,11 +39,11 @@ const provinces = [
 
 const externalProvinceDecorations = [
     { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '10%', lineLeft: '13.8%', lineWidth: '1.80%', buttonTop: '7.3%', buttonLeft: '15.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '49.4%', lineLeft: '7.4%', lineWidth: '2.1%', buttonTop: '62%', buttonLeft: '9.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '67.2%', lineLeft: '25.4%', lineWidth: '2%', buttonTop: '81.5%', buttonLeft: '19.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '2%', buttonTop: '97%', buttonLeft: '50.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '65.5%', lineLeft: '43.5%', lineWidth: '6%', buttonTop: '64%', buttonLeft: '49.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '35.4%', lineLeft: '48.6%', lineWidth: '3.3%', buttonTop: '56.6%', buttonLeft: '52%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '49.4%', lineLeft: '7.4%', lineWidth: '2.1%', buttonTop: '62%', buttonLeft: '9.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '67.2%', lineLeft: '25.4%', lineWidth: '2%', buttonTop: '81.5%', buttonLeft: '19.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '2%', buttonTop: '97%', buttonLeft: '50.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '65.5%', lineLeft: '43.5%', lineWidth: '6%', buttonTop: '64%', buttonLeft: '49.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '35.4%', lineLeft: '48.6%', lineWidth: '3.3%', buttonTop: '56.6%', buttonLeft: '52%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
     { alt: 'Colon', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4%', lineLeft: '40%', lineWidth: '2%', buttonTop: '1.5%', buttonLeft: '41.7%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '37.6%', lineLeft: '54%', lineWidth: '2%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
     { alt: 'Panama', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '20%', lineLeft: '61.1%', lineWidth: '3%', buttonTop: '39%', buttonLeft: '64%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
@@ -61,7 +61,7 @@ function Map() {
                 <div className="mb-10 flex flex-col text-center">
                     <label className="font-secondary-italic text-3xl text-brand-red">¡Conoce Panamá como nunca antes lo viste!</label>
                 </div>
-                <div className="relative mb-6 aspect-[1025/424] drop-shadow-[0_18px_45px_rgba(77,76,76,0.50)]">
+                <div className="relative mb-6 aspect-[1025/424] ">
                     {externalProvinceDecorations.map((item) => {
                         const LineComponent = item.lineComponent;
                         return (
