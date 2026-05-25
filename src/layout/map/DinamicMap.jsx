@@ -106,7 +106,7 @@ function Map() {
                         <button
                             key={`${item.alt}-button`}
                             type="button"
-                            className="font-secondary absolute z-[60] cursor-pointer whitespace-nowrap bg-transparent leading-none tracking-wide transition-transform duration-300 text-[0.55rem] md:text-[0.85rem]"
+                            className="font-secondary absolute z-[60] cursor-pointer whitespace-nowrap bg-transparent leading-none tracking-wide transition-transform duration-300 text-[0.50rem] md:text-[0.85rem]"
                             style={{
                                 top: item.buttonTop,
                                 left: item.buttonLeft,

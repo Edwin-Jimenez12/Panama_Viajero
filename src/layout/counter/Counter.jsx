@@ -10,13 +10,11 @@ function CountdownModal({ onClose, onPreregister }) {
                 >
                     X
                 </button>
-
                 <img
                     src="" //Ingresar imagen cuando la tengas
                     alt="Promoción"
                     className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
                 />
-
                 <button
                     type="button"
                     onClick={onPreregister}

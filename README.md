@@ -1,6 +1,6 @@
 # Panama Viajero
 
-## Fase 1: Guia turistica PV
+## Fase 1: Guia turistica PANAMA VIAJERO
 
 Panama Viajero es un directorio enfocado en promover destinos turisticos de Panama mediante una experiencia Visual, interactiva y optimizada para la navegación por destinos turísticos. Esta fase se concentra en la guía turística digital (página web responsive), contenido multimedia e información sobre algunos destinos turísticos, divididos por provincia para facilitar la navegación del usuario. Además, incluye un formulario de prerregistro para el lanzamiento de la app.
 
