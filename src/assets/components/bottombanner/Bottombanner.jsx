@@ -10,7 +10,7 @@ function BottomBanner({ onLogoClick }) {
                 <img src={LogoCircular} alt="Logo IEPA" className="h-15 md:h-20 w-auto max-w-full" />
             </button>
             <div className="flex flex-col items-center gap-4">
-                <h2 className="font-body font-bold text-lg md:text-xl">¡Siguenos en nuestras redes!</h2>
+                <h2 className="font-body font-bold text-lg md:text-xl">¡Síguenos en nuestras redes!</h2>
             <div className="flex gap-3">
                 {/* Instagram */}
                 <a href="https://www.instagram.com/panamaviajero.app/" className="flex h-11 w-11 items-center justify-center rounded-full border 
