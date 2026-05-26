@@ -25,6 +25,11 @@ export const provincias = [
       'Picnics',
       'Playas',
       'Fotografía',
+      'Camping',
+      'Canopy',
+      'Kitesurf',
+      'Windsurf',
+
     ],
 
     resena:

@@ -29,7 +29,7 @@ const provinces = [
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%', useExternalTrigger: true },
     { component: Cocle, alt: 'Cocle', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%', useExternalTrigger: true },
     { component: Colon, alt: 'Colon', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true },
-    { component: GunaYala, alt: 'Guna Yala', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23, useExternalTrigger: true },
+    { component: GunaYala, alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23, useExternalTrigger: true },
     { component: Darien, alt: 'Darien', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%', useExternalTrigger: true },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22, useExternalTrigger: true },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23, useExternalTrigger: true },
@@ -101,7 +101,7 @@ function Map() {
                             ) : null}
                         </div>
                     ))}
-
+                    
                     {externalProvinceDecorations.map((item) => (
                         <button
                             key={`${item.alt}-button`}
@@ -121,9 +121,7 @@ function Map() {
                         </button>
                     ))}
                 </div>
-
                 <div className="mt-[-10px] flex h-16 items-center justify-center overflow-hidden">
-                    
                 </div>
             </div>
         </div>

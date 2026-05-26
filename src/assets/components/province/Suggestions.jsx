@@ -43,7 +43,7 @@ function Suggestions({ provinceData }) {
                                 </h3>
 
                                 {lugar.descripcion && (
-                                    <p className="font-body mt-3 line-clamp-3 text-sm leading-6 text-brand-charcoal/95">
+                                    <p className="font-body mt-3 text-sm leading-6 text-brand-charcoal/95">
                                         {lugar.descripcion}
                                     </p>
                                 )}

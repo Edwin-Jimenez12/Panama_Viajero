@@ -24,6 +24,8 @@ export const provincias = [
       'Avistamiento de aves',
       'Giras históricas',
       'Esnórquel',
+      'Kitesurf',
+      'Windsurf',
     ],
 
     resena:

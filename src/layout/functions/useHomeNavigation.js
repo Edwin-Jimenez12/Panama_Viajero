@@ -71,7 +71,10 @@ function useHomeNavigation() {
     setShowCountdown(false);
 
     const timer = setTimeout(() => {
-      targetRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      targetRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: location.hash === '#map' ? 'center' : 'start',
+      });
     }, 0);
 
     return () => clearTimeout(timer);
