@@ -38,17 +38,17 @@ const provinces = [
 ];
 
 const externalProvinceDecorations = [
-    { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '10%', lineLeft: '13.8%', lineWidth: '1.80%', buttonTop: '7.3%', buttonLeft: '15.3%', buttonFontSize: '0.55rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '49.4%', lineLeft: '7.4%', lineWidth: '2.1%', buttonTop: '62%', buttonLeft: '9.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '67.2%', lineLeft: '25.4%', lineWidth: '2%', buttonTop: '81.5%', buttonLeft: '19.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '2%', buttonTop: '97%', buttonLeft: '50.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '65.5%', lineLeft: '43.5%', lineWidth: '6%', buttonTop: '64%', buttonLeft: '49.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '35.4%', lineLeft: '48.6%', lineWidth: '3.3%', buttonTop: '56.6%', buttonLeft: '52%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
-    { alt: 'Colon', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4%', lineLeft: '40%', lineWidth: '2%', buttonTop: '1.5%', buttonLeft: '41.7%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Panama Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '37.6%', lineLeft: '54%', lineWidth: '2%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Panama', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '20%', lineLeft: '61.1%', lineWidth: '3%', buttonTop: '39%', buttonLeft: '64%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '6.5%', lineLeft: '87.7%', lineWidth: '1.75%', buttonTop: '5.4%', buttonLeft: '82.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
-    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '63.4%', lineLeft: '88.5%', lineWidth: '3.5%', buttonTop: '92.5%', buttonLeft: '91.6%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
+    { alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', lineComponent: LineaBocasDelToroSvg, lineTop: '13%', lineLeft: '13.8%', lineWidth: '4%', buttonTop: '13%', buttonLeft: '16.5%', buttonFontSize: '0.55rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Chiriqui', to: '/provincias/chiriqui#video', lineComponent: LineaChiriquiSvg, lineTop: '51.9%', lineLeft: '7.4%', lineWidth: '4%', buttonTop: '62.6%', buttonLeft: '10.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Veraguas', to: '/provincias/veraguas#video', lineComponent: LineaVeraguasSvg, lineTop: '71.4%', lineLeft: '25.4%', lineWidth: '4%', buttonTop: '86%', buttonLeft: '20.7%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Los Santos', to: '/provincias/los-santos#video', lineComponent: LineaLosSantosSvg, lineTop: '85%', lineLeft: '48.4%', lineWidth: '4%', buttonTop: '95%', buttonLeft: '51.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Herrera', to: '/provincias/herrera#video', lineComponent: LineaHerreraSvg, lineTop: '64.7%', lineLeft: '43%', lineWidth: '4%', buttonTop: '64.8%', buttonLeft: '46.8%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Cocle', to: '/provincias/cocle#video', lineComponent: LineaCocleSvg, lineTop: '43%', lineLeft: '48.5%', lineWidth: '4%', buttonTop: '56.6%', buttonLeft: '51.3%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/65' },
+    { alt: 'Colón', to: '/provincias/colon#video', lineComponent: LineaColonSvg, lineTop: '4.5%', lineLeft: '40.7%', lineWidth: '3%', buttonTop: '4.4%', buttonLeft: '43.4%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', lineComponent: LineaPanamaOesteSvg, lineTop: '35.5%', lineLeft: '53%', lineWidth: '4%', buttonTop: '49.5%', buttonLeft: '55.9%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Panamá', to: '/provincias/panama#video', lineComponent: LineaPanamaSvg, lineTop: '23%', lineLeft: '61.1%', lineWidth: '4%', buttonTop: '37.3%', buttonLeft: '64%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', lineComponent: LineaGunaYalaSvg, lineTop: '4.5%', lineLeft: '81.5%', lineWidth: '3%', buttonTop: '5.4%', buttonLeft: '85%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' },
+    { alt: 'Darien', to: '/provincias/darien#video', lineComponent: LineaDarienSvg, lineTop: '67.8%', lineLeft: '77.3%', lineWidth: '4%', buttonTop: '82.6%', buttonLeft: '74.2%', buttonFontSize: '0.85rem', color: 'text-brand-charcoal/85' }
 ];
 
 function Map() {
