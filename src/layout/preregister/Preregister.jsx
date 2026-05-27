@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import politicaDePrivacidadPdf from '../../assets/Politica de privacidad.pdf';
+import politicaDePrivacidadPdf from '../../guide_module/Politica de privacidad.pdf';
 
 const APPS_SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL ?? '';
 

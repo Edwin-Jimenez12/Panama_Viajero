@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Menu from '../../../assets/components/menu/Menu.jsx';
-import BottomBanner from '../../../assets/components/bottombanner/Bottombanner.jsx';
-import ProvinceVideoJSX from '../../../assets/components/province/ProvinceVideo.jsx';
-import ProvinceInfo from '../../../assets/components/province/ProvinceInfo.jsx';
-import Activities from '../../../assets/components/province/Activities.jsx';
-import Suggestions from '../../../assets/components/province/Suggestions.jsx';
-import MapSection from '../../../assets/components/province/MapSection.jsx';
-import OtherProvinces from '../../../assets/components/province/OtherProvinces.jsx';
+import Menu from '../../../guide_module/components/menu/Menu.jsx';
+import BottomBanner from '../../../guide_module/components/bottombanner/Bottombanner.jsx';
+import ProvinceVideoJSX from '../../../guide_module/components/province/ProvinceVideo.jsx';
+import ProvinceInfo from '../../../guide_module/components/province/ProvinceInfo.jsx';
+import Activities from '../../../guide_module/components/province/Activities.jsx';
+import Suggestions from '../../../guide_module/components/province/Suggestions.jsx';
+import MapSection from '../../../guide_module/components/province/MapSection.jsx';
+import OtherProvinces from '../../../guide_module/components/province/OtherProvinces.tsx';
 import { provincias } from './BocasDelToro.js';
 
 function BocasDelToro() {
