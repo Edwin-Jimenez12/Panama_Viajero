@@ -1,7 +1,7 @@
 function CountdownModal({ onClose, onPreregister }) {
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-brand-charcoal/85 backdrop-blur-sm">
-            <div className="relative w-[90%] max-w-4xl rounded-xl  p-6 text-center bg-brand-charcoal">
+            <div className="relative w-[90%] max-w-4xl rounded-xl bg-brand-charcoal p-6 text-center">
                 <button
                     type="button"
                     onClick={onClose}
@@ -11,17 +11,17 @@ function CountdownModal({ onClose, onPreregister }) {
                     X
                 </button>
                 <img
-                    src="/public/VentanaEmergente.svg" //Ingresar imagen cuando la tengas
-                    alt="Promoción"
+                    src="/VentanaEmergente.svg"
+                    alt="Promocion"
                     className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
                 />
-                
+
                 <button
                     type="button"
                     onClick={onPreregister}
                     className="mb-4 w-full rounded-lg bg-brand-red px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-blue"
                 >
-                    Regístrate
+                    Registrate
                 </button>
 
                 <p className="font-secondary text-sm text-brand-white/75">Y participa por una noche gratis</p>
