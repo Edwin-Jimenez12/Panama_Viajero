@@ -117,7 +117,7 @@ export const provincias = [
         nombre: 'Parque Nacional Soberanía',
         descripcion: 'Parque nacional colindante con el Canal de Panamá, un paraíso mundial para la observación de aves en su célebre Camino de Oleoducto.',
         tipo: 'imagen',
-        imagen: '/videos/panama/ParqueSoberania.jpg',
+        imagen: '/videos/panama/Parque_Natural_Soberania.avif',
         ubicacion: 'Parque Nacional Soberanía, Panamá',
       },
     ],
