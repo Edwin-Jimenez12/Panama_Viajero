@@ -26,9 +26,6 @@ export const provincias = [
       'Observación de aves',
     ],
 
-    resena:
-      'Esta provincia es custodia de uno de los legados arqueológicos más importantes de Centroamérica. Antes de la época colonial, los cacicazgos de Coclé dominaban las llanuras con una orfebrería de oro que todavía asombra al mundo moderno. Su capital, Penonomé, fue incluso sede provisional del gobierno nacional en tiempos de conflicto, reflejando la importancia estratégica de la zona. La historia de Coclé está ligada a personajes emblemáticos como Victoriano Lorenzo y a la defense de las costumbres campesinas. Hoy es un centro de producción artesanal donde el sombrero pintao representa la maestría de un pueblo que valora su pasado mientras impulsa el turismo de playa y montaña más dinámico del país.',
-
     lugaresDestacados: [
       {
         id: 'Lovers_Fall',

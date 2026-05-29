@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../../components/province/ProvinceVideo.jsx';
-import ProvinceInfo from '../../../components/province/ProvinceInfo.jsx';
 import Activities from '../../../components/province/Activities.jsx';
 import Suggestions from '../../../components/province/Suggestions.jsx';
 import MapSection from '../../../components/province/MapSection.jsx';
@@ -27,7 +26,7 @@ function Chiriqui() {
 
 
     return (
-        <div className="relative bg-brand-soft text-brand-charcoal">
+        <div className="relative isolate text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
                 <Menu
                     onLogoClick={() => navigate('/#home')}
@@ -37,13 +36,14 @@ function Chiriqui() {
                     onPreregisterClick={() => navigate('/#preregister')}
                 />
             </div>
-            <ProvinceVideo provinceData={provinceData} />
-            <ProvinceInfo provinceData={provinceData} />
-            <Activities provinceData={provinceData} />
-            <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/chiriqui" />
-            <MapSection provinceData={provinceData} />
-            <OtherProvinces provincias={provincias} />
-            <BottomBanner onLogoClick={() => navigate('/#home')} />
+            <ProvinceVideo provinceData={provinceData} fixedBackground />
+            <div className="relative z-10">
+                <Activities provinceData={provinceData} />
+                <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/chiriqui" />
+                <MapSection provinceData={provinceData} />
+                <OtherProvinces provincias={provincias} />
+                <BottomBanner onLogoClick={() => navigate('/#home')} />
+            </div>
         </div>
     );
 }

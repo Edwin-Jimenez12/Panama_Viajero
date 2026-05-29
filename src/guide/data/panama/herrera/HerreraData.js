@@ -25,9 +25,6 @@ export const provincias = [
       'Tours gastronómicos',
     ],
 
-    resena:
-      'A Herrera se viene a conocer el alma de la península de Azuero y a entender por qué a Chitré se le llama "la ciudad donde nadie es forastero". Su historia está forjada por el trabajo de hombres y mujeres que convirtieron la alfarería y la destilería en un arte reconocido a nivel internacional. Cada calle y cada plaza de esta provincia guardan ecos de un pasado colonial que todavía se celebra con danzas tradicionales de diablicos y un profundo respeto por lo religioso. Es una tierra que ha sabido mantener su sencillez interiorana mientras se desarrolla como un centro comercial clave, demostrando que se puede mirar al futuro sin soltar nunca la mano de las costumbres de los abuelos.',
-
     lugaresDestacados: [
       {
         id: 'Chitre',

@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../../components/province/ProvinceVideo.jsx';
-import ProvinceInfo from '../../../components/province/ProvinceInfo.jsx';
 import Activities from '../../../components/province/Activities.jsx';
 import Suggestions from '../../../components/province/Suggestions.jsx';
 import MapSection from '../../../components/province/MapSection.jsx';
@@ -25,7 +24,7 @@ function GunaYala() {
     }, []);
 
     return (
-        <div className="relative bg-brand-soft text-brand-charcoal">
+        <div className="relative isolate text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
                 <Menu
                     onLogoClick={() => navigate('/#home')}
@@ -35,8 +34,7 @@ function GunaYala() {
                     onPreregisterClick={() => navigate('/#preregister')}
                 />
             </div>
-            <ProvinceVideo provinceData={provinceData} />
-            <ProvinceInfo provinceData={provinceData} />
+            <ProvinceVideo provinceData={provinceData} fixedBackground />
             <Activities provinceData={provinceData} />
             <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/comarca-guna-yala" />
             <MapSection provinceData={provinceData} />

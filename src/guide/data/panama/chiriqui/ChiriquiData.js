@@ -26,9 +26,6 @@ export const provincias = [
       'Pesca deportiva',
       'Surf',
     ],
-
-    resena:
-      'Chiriquí posee una trayectoria marcada por un profundo orgullo regional y una fertilidad agrícola que la define como el granero del país. Su nombre de origen indígena significa "Valle de la Luna" y describe perfectamente la serenidad de sus paisajes elevados. Durante el siglo XIX, la llegada de inmigrantes europeos introdujo el cultivo del café, transformando para siempre la economía de pueblos como Boquete y Volcán. Esta provincia ha evolucionado desde sus raíces ganaderas hasta convertirse en un referente mundial de producción cafetalera de especialidad. Su historia está escrita en los senderos que cruzan bosques nubosos y en la visión de familias que han convertido la montaña en un jardín productivo.',
 /*
 imagen:'/videos/chiriqui',
 */

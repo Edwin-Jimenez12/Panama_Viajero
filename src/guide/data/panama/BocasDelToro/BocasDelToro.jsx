@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import ProvinceVideoJSX from '../../../components/province/ProvinceVideo.jsx';
-import ProvinceInfo from '../../../components/province/ProvinceInfo.jsx';
 import Activities from '../../../components/province/Activities.jsx';
 import Suggestions from '../../../components/province/Suggestions.jsx';
 import MapSection from '../../../components/province/MapSection.jsx';
@@ -26,7 +25,7 @@ function BocasDelToro() {
     }, [location.hash]);
 
     return (
-        <div className="relative bg-brand-soft text-brand-charcoal">
+        <div className="relative isolate text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
                 <Menu
                     onLogoClick={() => navigate('/#home')}
@@ -37,9 +36,7 @@ function BocasDelToro() {
                 />
             </div>
 
-            <ProvinceVideoJSX provinceData={bocasDelToro} />
-
-            <ProvinceInfo provinceData={bocasDelToro} />
+            <ProvinceVideoJSX provinceData={bocasDelToro} fixedBackground />
 
             <Activities provinceData={bocasDelToro} />
 

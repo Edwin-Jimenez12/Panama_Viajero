@@ -32,9 +32,6 @@ export const provincias = [
 
     ],
 
-    resena:
-      'Aunque es la provincia más joven de la república su historia está ligada al paso constante de personas que cruzan el país por la carretera Panamericana. Panamá Oeste creció como un refugio de naturaleza y producción agrícola alimentando a la capital con sus famosas piñas y sus tradiciones de ganadería. Lugares como La Chorrera han mantenido vivas costumbres gastronómicas que hoy son paradas obligatorias para cualquier viajero que busque el sabor auténtico del interior. Es una zona que combina lo mejor de dos mundos: barrios modernos que crecen rápido y rincones naturales que todavía se sienten muy lejos de la ciudad. ',
-
     lugaresDestacados: [
       {
         id: 'Cascada_Las_Filipinas',

@@ -27,9 +27,6 @@ export const provincias = [
       'Senderismo',
     ],
 
-    resena:
-      'La historia de Guna Yala es un testimonio de resistencia, autonomía y profunda conexión con la naturaleza. Antiguamente conocida como San Blas, esta comarca indígena consolidó su soberanía tras la histórica Revolución Guna de 1925, dando origen a un modelo de autogobierno regulado por el Congreso General Guna. Su sociedad destaca por su estructura comunitaria y por la preservación de tradiciones milenarias, donde las mujeres desempeñan un rol fundamental como creadoras de las molas, complejos tejidos que reflejan su cosmovisión. El archipiélago, compuesto por más de 360 islas, representa un santuario ecológico donde el turismo sostenible es gestionado de manera exclusiva por su propio pueblo.',
-
     lugaresDestacados: [
       {
         id: 'isla-carti',

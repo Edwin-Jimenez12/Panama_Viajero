@@ -28,9 +28,6 @@ export const provincias = [
       'Windsurf',
     ],
 
-    resena:
-      'La historia de Colón es un relato de épica colonial y modernidad logística. Fundada en 1852 como terminal del ferrocarril transístmico, la ciudad se convirtió rápidamente en un crisol de culturas. Sus fuertes en Portobelo y San Lorenzo protegieron durante siglos las riquezas que España transportaba hacia Europa, enfrentando constantes asedios de piratas famosos. Esta herencia bélica convive con la cultura congo, que mantiene viva la resistencia y la alegría de los antepasados africanos. Actualmente, la provincia es un pilar fundamental para el comercio global a través de sus puertos y el Canal, consolidándose como un destino que combina leyendas antiguas con una actividad económica sin precedentes.',
-
     lugaresDestacados: [
       {
         id: 'Cerro_Pavon',

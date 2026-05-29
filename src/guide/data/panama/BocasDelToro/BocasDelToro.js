@@ -37,9 +37,6 @@ export const provincias = [
       'Tours ecológicos',
     ],
 
-    resena:
-      'Bocas del Toro fue habitada originalmente por pueblos indígenas como los Ngäbe. Durante la época colonial tuvo poco desarrollo, pero a finales del siglo XIX se convirtió en un importante centro bananero con la llegada de empresas extranjeras. Su mezcla cultural se fortaleció con la migración afroantillana. Hoy es uno de los destinos turísticos más importantes de Panamá por su biodiversidad y su ambiente relajado.',
-
     lugaresDestacados: [
       {
         id: 'isla-colon',

@@ -26,9 +26,6 @@ export const provincias = [
       'Ciclismo de ruta',
     ],
 
-    resena:
-      'Los Santos es el corazón de la península de Azuero y el lugar donde nació el espíritu libertador del país con el famoso Grito de La Villa en 1821. Su historia es un relato de familias que han perfeccionado el arte de la pollera y la orfebrería durante generations, convirtiendo cada traje en una pieza de historia viva. Mientras caminas por las plazas de sus pueblos coloniales, sientes el peso de una tradición que no se rinde ante el paso del tiempo. Desde las hazañas de los próceres hasta la vida tranquila de los pescadores en Pedasí, esta provincia representa el equilibrio perfecto entre el respeto por lo que fuimos y la alegría de un pueblo que celebra su identidad.',
-
     lugaresDestacados: [
       {
         id: 'Playa_Venao',

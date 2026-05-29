@@ -23,10 +23,10 @@ function AleatorySuggestions() {
     return (
         <section className="mx-auto w-full max-w-6xl px-4 py-0">
             <div className="mb-8 flex flex-col items-end">
-                <h2 className="font-main text-2xl text-brand-blue md:text-5xl">
+                <h2 className="font-main text-2xl text-brand-white/95 md:text-5xl">
                     Otras provincias
                 </h2>
-                <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-charcoal/90 md:text-lg">
+                <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg">
                     Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo.
                 </p>
             </div>
@@ -56,7 +56,7 @@ function AleatorySuggestions() {
                         </div>
                         <div className="mt-4 w-full overflow-hidden text-center">
                             <span
-                                className="inline-block font-secondary-italic text-2xl md:text-4xl font-bold text-brand-blue
+                                className="inline-block font-secondary-italic text-2xl md:text-4xl font-bold text-brand-white/95
                                 transform translate-y-0 opacity-100 
                                 transition-all duration-300 ease-out
                                 md:translate-y-3 md:opacity-0 

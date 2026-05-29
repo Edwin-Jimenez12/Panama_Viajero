@@ -27,9 +27,6 @@ export const provincias = [
       'Pesca artesanal',
     ],
 
-    resena:
-      'La provincia del Darién representa el punto donde la geografía detuvo al progreso moderno para proteger un ecosistema único en su tipo. Fue el hogar de la primera ciudad española en tierra firme y hoy sigue siendo el territorio sagrado de las etnias emberá y wounaan, que custodian los secretos de sus bosques. Su historia es un relato de resistencia frente a los intentos de conquista y un testimonio de la fuerza de sus ríos, que sirven como las únicas carreteras posibles en gran parte de su extensión. Visitar esta región es entender el valor de lo que permanece intacto y descubrir un Panamá que todavía respira al ritmo original de la tierra, lejos de las distracciones y el ruido de la vida moderna.',
-
     lugaresDestacados: [
       {
         id: 'Parque_Nacional_Darien',

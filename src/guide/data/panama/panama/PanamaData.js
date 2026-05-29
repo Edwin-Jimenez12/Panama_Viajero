@@ -28,9 +28,6 @@ export const provincias = [
       'Snorkel',
     ],
 
-    resena:
-      'La historia de la Ciudad de Panamá es la de una superviviente que ha sabido reinventarse tras cada ataque de piratas y cada cambio de era. Desde su fundación original in 1519, ha sido el puente que une al mundo entero, primero con el oro colonial y ahora con el comercio global del Canal. Su identidad se construyó piedra sobre piedra en el Casco Antiguo tras el saqueo de Henry Morgan, creando un barrio lleno de balconies y leyendas francesas y españolas. Hoy es una ciudad que no duerme, donde la modernidad más extrema convive con selvas tropicales a pocos minutos de distancia, demostrando que el progreso no tiene por qué borrar las huellas del pasado.',
-
     lugaresDestacados: [
       {
         id: 'Canal_de_Panama',

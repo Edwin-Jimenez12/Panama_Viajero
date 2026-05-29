@@ -34,9 +34,6 @@ export const provincias = [
       'Ciclismo de ruta',
     ],
 
-    resena:
-      'La historia de Veraguas está marcada por su posición privilegiada como el nexo entre los dos grandes mares que bañan a Panamá. Fue una tierra otorgada a la familia de Cristóbal Colón y, desde siempre, ha sido un pilar de la vida rural y ganadera del interior del país. Su verdadera joya es la Isla de Coiba, que pasó de ser una prisión de acceso prohibido a convertirse en uno de los parques naturales más increíbles del mundo. Es una provincia de contrastes que ha sabido proteger la mística de sus pueblos de montaña, como San Francisco, mientras se convierte en un referente mundial para los amantes del surf que buscan olas perfectas en la costa de Santa Catalina.',
-
     lugaresDestacados: [
       {
         id: 'Isla_Coiba',
