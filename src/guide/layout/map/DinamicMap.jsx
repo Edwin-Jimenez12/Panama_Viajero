@@ -28,13 +28,13 @@ const provinces = [
     { component: ChiriquiSvg, alt: 'Chiriquí', to: '/provincias/chiriqui#video', top: '28.5%', left: '-0.20%', width: '25.66%', useExternalTrigger: true },
     { component: BocasDelToroSvg, alt: 'Bocas del Toro', to: '/provincias/bocas-del-toro#video', top: '-3%', left: '0.50%', width: '32%', useExternalTrigger: true },
     { component: Cocle, alt: 'Coclé', to: '/provincias/cocle#video', top: '12%', left: '34.75%', width: '21%', useExternalTrigger: true },
-    { component: Colon, alt: 'Colón', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true, hoverScale: true },
+    { component: Colon, alt: 'Colón', to: '/provincias/colon#video', top: '0%', left: '37.56%', width: '30.05%', zIndex: 31, useExternalTrigger: true },
     { component: GunaYala, alt: 'Guna Yala (San Blas)', to: '/provincias/comarca-guna-yala#video', top: '7.08%', left: '64.68%', width: '31.22%', zIndex: 23, useExternalTrigger: true },
     { component: Darien, alt: 'Darién', to: '/provincias/darien#video', top: '18.5%', left: '77.2%', width: '23.5%', useExternalTrigger: true },
     { component: Veraguas, alt: 'Veraguas', to: '/provincias/veraguas#video', top: '26%', left: '20.85%', width: '23.60%', zIndex: 22, useExternalTrigger: true },
     { component: Herrera, alt: 'Herrera', to: '/provincias/herrera#video', top: '58.50%', left: '28.85%', width: '20.85%', zIndex: 23, useExternalTrigger: true },
-    { component: PanamaOeste, alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32, useExternalTrigger: true, hoverScale: true },
-    { component: Panama, alt: 'Panamá', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29, useExternalTrigger: true },
+    { component: PanamaOeste, alt: 'Panamá Oeste', to: '/provincias/panama-oeste#video', top: '12.2%', left: '46.35%', width: '15.5%', zIndex: 32, useExternalTrigger: true },
+    { component: Panama, alt: 'Panamá', to: '/provincias/panama#video', top: '0%', left: '56.5%', width: '30.80%', zIndex: 29, useExternalTrigger: true  },
 ];
 
 const externalProvinceDecorations = [
@@ -54,6 +54,7 @@ const externalProvinceDecorations = [
 function Map() {
     const [activeProvince, setActiveProvince] = useState(null);
     const navigate = useNavigate();
+    const activeScale = 1.10;
 
     return (
         <div className="mx-auto my-28 flex max-w-6xl flex-col items-center text-center md:my-10">
@@ -82,20 +83,21 @@ function Map() {
                     {provinces.map((province) => (
                         <div
                             key={province.alt}
-                            className="pointer-events-none absolute transition duration-300 drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
+                            className="pointer-events-none absolute transition duration-300 ease-out drop-shadow-[0_3px_2px_rgba(77,76,76,0.50)]"
                             style={{
                                 top: province.top,
                                 left: province.left,
                                 width: province.width,
                                 zIndex: activeProvince === province.alt ? 50 : (province.zIndex ?? 1),
-                                transform: activeProvince === province.alt ? 'scale(1.15)' : 'scale(1)',
+                                transform: activeProvince === province.alt ? `scale(${activeScale})` : 'scale(1)',
+                                transformOrigin: 'center center',
                             }}
                         >
                             {province.component ? (
                                 <province.component
-                                    className={`pointer-events-none h-auto w-full ${province.hoverScale ? 'origin-center transition-transform duration-300 ease-out hover:scale-105' : ''}`}
-                                    onMouseEnter={province.useExternalTrigger ? undefined : () => setActiveProvince(province.alt)}
-                                    onMouseLeave={province.useExternalTrigger ? undefined : () => setActiveProvince(null)}
+                                    className="pointer-events-auto h-auto w-full"
+                                    onMouseEnter={() => setActiveProvince(province.alt)}
+                                    onMouseLeave={() => setActiveProvince(null)}
                                     onClick={() => navigate(province.to)}
                                 />
                             ) : null}
@@ -111,7 +113,7 @@ function Map() {
                                 top: item.buttonTop,
                                 left: item.buttonLeft,
                                 color: item.color,
-                                transform: activeProvince === item.alt ? 'scale(1.15)' : 'scale(1)',
+                                transform: activeProvince === item.alt ? `scale(${activeScale})` : 'scale(1)',
                             }}
                             onMouseEnter={() => setActiveProvince(item.alt)}
                             onMouseLeave={() => setActiveProvince(null)}

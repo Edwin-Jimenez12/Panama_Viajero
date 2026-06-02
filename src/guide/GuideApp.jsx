@@ -8,7 +8,8 @@ import Logo from './img_test/LogoRectangular.svg'
 
 const AboutUs = lazy(() => import('./components/about us/AboutUs.jsx'))
 const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
-const AleatorySuggestions = lazy(() => import('./layout/suggestion/Suggestions.tsx'))
+const AleatorySuggestions = lazy(() => import('./layout/sitiosInfo/Suggestions.tsx'))
+const SiteInfo = lazy(() => import('./layout/sitiosInfo/SiteInfo.jsx'))
 const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
 const BannerLayout = lazy(() => import('./layout/banner/BannerLayout.jsx'))
@@ -149,6 +150,7 @@ function GuideApp() {
         <Route path="/provincias/panama-oeste" element={<PanamaOeste />} />
         <Route path="/provincias/veraguas" element={<Veraguas />} />
         <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
+        <Route path="/sitios/:siteId" element={<SiteInfo />} />
       </Routes>
     </Suspense>
   )

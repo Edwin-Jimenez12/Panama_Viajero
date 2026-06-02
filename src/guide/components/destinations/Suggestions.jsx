@@ -1,6 +1,8 @@
 import SmartVideo from '../video/SmartVideo.jsx';
+import { useNavigate } from 'react-router-dom';
 
 function Suggestions({ provinceData }) {
+    const navigate = useNavigate();
     const fallbackPoster = provinceData.banner?.poster
         || provinceData.imagenProvincia?.src
         || provinceData.lugaresDestacados.find((item) => item.tipo !== 'video')?.imagen;
@@ -14,9 +16,12 @@ function Suggestions({ provinceData }) {
                     const isVideo = lugar.tipo === 'video';
 
                     return (
-                        <article
+                        <button
                             key={lugar.id}
-                            className="flex w-full max-w-md flex-col overflow-hidden rounded-xl bg-brand-white text-left  
+                            type="button"
+                            aria-label={`Ver informacion de ${lugar.nombre}`}
+                            onClick={() => navigate(`/sitios/${encodeURIComponent(lugar.id)}`)}
+                            className="flex w-full max-w-md cursor-pointer flex-col overflow-hidden rounded-xl bg-brand-white text-left  
                             shadow-xl transition hover:-translate-y-1 md:w-[355px]"
                         >
                             <div className="group relative aspect-[16/9] w-full overflow-hidden bg-brand-soft">
@@ -57,7 +62,7 @@ function Suggestions({ provinceData }) {
                                     {lugar.ubicacion}
                                 </p>
                             </div>
-                        </article>
+                        </button>
                     );
                 })}
             </div>

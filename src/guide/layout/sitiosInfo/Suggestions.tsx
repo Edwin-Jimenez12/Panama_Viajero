@@ -15,35 +15,34 @@ function getRandomItems(items, limit) {
 
 function AleatorySuggestions() {
     const navigate = useNavigate();
+    
     const suggestions = useMemo(() => {
-        const provincesWithPoster = provinceMedia.filter((province) => province.poster);
-        return getRandomItems(provincesWithPoster, 3);
+        const provincesWithVideoBanner = provinceMedia.filter((province) => province.banner);
+        return getRandomItems(provincesWithVideoBanner, 3);
     }, []);
 
     return (
-        <section className="mx-auto w-full max-w-6xl px-4 py-0">
-            <div className="mb-8 flex flex-col items-end">
-                <h2 className="font-main text-2xl text-brand-white/95 md:text-5xl"
-                style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.9)'}}>
-                    Otras provincias
+        <section className="mx-auto w-full max-w-6xl px-4 py-16">
+            <div className="mb-8 text-center">
+                <h2 className="font-main text-3xl text-brand-blue md:text-5xl text-left">
+                    Sugerencias para explorar
                 </h2>
-                <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg"
-                style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.9)'}}>
-                    Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo.
+                <p className="font-body-italic ml-2 mt-3 max-w-2xl text-brand-charcoal/90 md:text-lg text-left">
+                    Provincias recomendadas para descubrir historia, naturaleza, cultura y experiencias únicas.
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto flex  justify-center gap-4 md:gap-8 ">
+            <div className="max-w-6xl mx-auto flex  justify-center gap-4 md:gap-8">
                 {suggestions.map((province) => (
                     <button
                         key={province.id}
                         type="button"
                         aria-label={`Explorar ${province.nombre}`}
                         onClick={() => navigate(`${province.path}#video`)}
-                        className="group flex w-full max-w-md cursor-pointer flex-col items-center md:w-[355px]"
+                        className="group flex flex-col items-center w-full max-w-md cursor-pointer md:w-[355px]"
                     >
-                        <div
-                            className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-brand-soft
+                        {/* Poster estático para evitar cargar tres videos extra en home */}
+                        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-brand-soft 
                             transition-all duration-300 group-hover:scale-105
                             group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.20)]"
                         >
@@ -54,15 +53,12 @@ function AleatorySuggestions() {
                                 decoding="async"
                                 className="h-[116%] w-full object-cover object-top"
                             />
+                            {/* Overlay discret que se aclara en hover */}
                             <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
                         </div>
+                        {/* Province Name Below */}
                         <div className="mt-4 w-full overflow-hidden text-center">
-                            <span
-                                className="inline-block font-secondary-italic text-2xl md:text-4xl font-bold text-brand-white/95
-                                transform translate-y-0 opacity-100 
-                                transition-all duration-300 ease-out
-                                md:translate-y-3 md:opacity-0 
-                                md:group-hover:translate-y-0 md:group-hover:opacity-100"
+                            <span className="inline-block font-secondary-italic text-2xl font-bold text-brand-blue transition-all duration-300 ease-out group-hover:scale-105 md:text-4xl"
                             >
                                 {province.nombre}
                             </span>
