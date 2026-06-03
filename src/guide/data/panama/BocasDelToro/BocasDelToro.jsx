@@ -4,8 +4,7 @@ import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import ProvinceVideoJSX from '../../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../../components/destinations/Activities.jsx';
-import Suggestions from '../../../components/destinations/Suggestions.jsx';
-import MapSection from '../../../components/destinations/MapSection.jsx';
+import Sitios from '../../../components/destinations/Sitios.jsx';
 import OtherProvinces from '../../../components/destinations/OtherProvinces.tsx';
 import { provincias } from './BocasDelToro.js';
 
@@ -28,6 +27,7 @@ function BocasDelToro() {
         <div className="relative isolate text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
                 <Menu
+                    autoHideOnScroll
                     onLogoClick={() => navigate('/#home')}
                     onUsClick={() => navigate('/#us')}
                     onMapClick={() => navigate('/#map')}
@@ -40,9 +40,7 @@ function BocasDelToro() {
 
             <Activities provinceData={bocasDelToro} />
 
-            <Suggestions provinceData={bocasDelToro} navigate={navigate} basePath="../bocas-del-toro" />
-
-            <MapSection provinceData={bocasDelToro} />
+            <Sitios provinceData={bocasDelToro} />
 
             <OtherProvinces provincias={provincias} />
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import LogoVertical from '../../img_test/LogoVertical.svg';
 import LogoCuadrado from '../../img_test/LogoCuadrado.svg';
 
@@ -72,8 +72,17 @@ function ClipboardPenIcon(props) {
 }
 
 
-function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSuggestionsClick}) {
+function Menu({
+    onLogoClick,
+    onPreregisterClick,
+    onMapClick,
+    onUsClick,
+    onSuggestionsClick,
+    autoHideOnScroll = false,
+}) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollY = useRef(0);
 
     useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -82,6 +91,30 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
             document.body.style.overflow = '';
         };
     }, [isOpen]);
+
+    useEffect(() => {
+        if (!autoHideOnScroll) {
+            setIsVisible(true);
+            return undefined;
+        }
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY < 80 || currentScrollY < lastScrollY.current) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        handleScroll();
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [autoHideOnScroll]);
 
     const closeMenu = () => {
         setIsOpen(false);
@@ -111,7 +144,12 @@ function Menu({ onLogoClick, onPreregisterClick, onMapClick, onUsClick, onSugges
 
     return(
         /* Fondo del menu */
-        <div className="relative z-[100] bg-gradient-to-b from-brand-charcoal/80 via-brand-charcoal/45 to-transparent pb-7 backdrop-blur-[1px]">
+        <div
+            className={`relative z-[100] bg-gradient-to-b from-brand-charcoal/80 via-brand-charcoal/45 to-transparent pb-7 backdrop-blur-[1px] transition-transform duration-300 ease-in-out ${
+                autoHideOnScroll && !isVisible ? '-translate-y-full' : 'translate-y-0'
+            }`}
+            style={autoHideOnScroll && !isVisible ? { pointerEvents: 'none' } : undefined}
+        >
             {/* Justificacion del menu */}
             <div className="flex justify-between items-center pt-5 md:pt-5 px-3 md:pl-10 md:pr-30 text-brand-white text-lg">
                 <button className="cursor-pointer transition hover:scale-110" onClick={goToHome}>

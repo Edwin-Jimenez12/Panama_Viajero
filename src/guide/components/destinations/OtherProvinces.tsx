@@ -21,9 +21,9 @@ function AleatorySuggestions() {
     }, []);
 
     return (
-        <section className="mx-auto w-full max-w-6xl px-4 py-0">
+        <section className="mx-auto w-full max-w-6xl px-4 mt-30">
             <div className="mb-8 flex flex-col items-end">
-                <h2 className="font-main text-2xl text-brand-white/95 md:text-5xl"
+                <h2 className="font-main md:text-2xl text-4xl text-brand-white/95 md:text-5xl"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.9)'}}>
                     Otras provincias
                 </h2>

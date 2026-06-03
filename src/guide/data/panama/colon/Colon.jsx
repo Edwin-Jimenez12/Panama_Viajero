@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../../components/destinations/Activities.jsx';
-import Suggestions from '../../../components/destinations/Suggestions.jsx';
-import MapSection from '../../../components/destinations/MapSection.jsx';
+import Sitios from '../../../components/destinations/Sitios.jsx';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import OtherProvinces from '../../../components/destinations/OtherProvinces.tsx';
@@ -26,6 +25,7 @@ function Colon() {
         <div className="relative isolate text-brand-charcoal">
             <div className="fixed top-0 z-30 w-full">
                 <Menu
+                    autoHideOnScroll
                     onLogoClick={() => navigate('/#home')}
                     onUsClick={() => navigate('/#us')}
                     onMapClick={() => navigate('/#map')}
@@ -35,8 +35,7 @@ function Colon() {
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <Activities provinceData={provinceData} />
-            <Suggestions provinceData={provinceData} navigate={navigate} basePath="/provincias/colon" />
-            <MapSection provinceData={provinceData} />
+            <Sitios provinceData={provinceData} />
             <OtherProvinces provincias={provincias} />
             <BottomBanner onLogoClick={() => navigate('/#home')} />
         </div>

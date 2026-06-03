@@ -1,4 +1,8 @@
 import { RxCross2 } from 'react-icons/rx';
+import VentanaEmergente from '../../img_test/VentanaEmergente.webp';
+
+const preloadedPopupImage = new Image();
+preloadedPopupImage.src = VentanaEmergente;
 
 function CountdownModal({ onClose, onPreregister }) {
     return (
@@ -13,8 +17,11 @@ function CountdownModal({ onClose, onPreregister }) {
                     <RxCross2 className="h-7 w-7" aria-hidden="true" />
                 </button>
                 <img
-                    src="/VentanaEmergente.svg"
+                    src={VentanaEmergente}
                     alt="Promocion"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
                     className="mx-auto mb-6 h-auto w-full rounded-2xl object-cover"
                 />
 

@@ -5,6 +5,7 @@ import Menu from './components/menu/Menu.jsx'
 import useHomeNavigation from './layout/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './img_test/LogoRectangular.svg'
+import CountdownModal from './layout/counter/Counter.jsx'
 
 const AboutUs = lazy(() => import('./components/about us/AboutUs.jsx'))
 const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
@@ -13,7 +14,6 @@ const SiteInfo = lazy(() => import('./layout/sitiosInfo/SiteInfo.jsx'))
 const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
 const BannerLayout = lazy(() => import('./layout/banner/BannerLayout.jsx'))
-const CountdownModal = lazy(() => import('./layout/counter/Counter.jsx'))
 const BocasDelToro = lazy(() => import('./data/panama/BocasDelToro/BocasDelToro.jsx'))
 const Chiriqui = lazy(() => import('./data/panama/chiriqui/chiriqui.jsx'))
 const Cocle = lazy(() => import('./data/panama/cocle/Cocle.jsx'))
