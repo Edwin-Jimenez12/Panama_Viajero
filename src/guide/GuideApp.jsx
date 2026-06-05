@@ -1,30 +1,30 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import DeferredSection from './components/layout/DeferredSection.jsx'
+import DeferredSection from './layout/layout-components/DeferredSection.jsx'
 import Menu from './components/menu/Menu.jsx'
-import useHomeNavigation from './layout/functions/useHomeNavigation.js'
+import useHomeNavigation from './layout/layout-components/functions/useHomeNavigation.js'
 import './App.css'
 import Logo from './img_test/LogoRectangular.svg'
-import CountdownModal from './layout/counter/Counter.jsx'
+import CountdownModal from './layout/layout-components/counter/Counter.jsx'
 
-const AboutUs = lazy(() => import('./components/about us/AboutUs.jsx'))
-const Map = lazy(() => import('./layout/map/DinamicMap.jsx'))
-const AleatorySuggestions = lazy(() => import('./layout/sites/Suggestions.tsx'))
-const SiteInfo = lazy(() => import('./layout/sites/SiteInfo.jsx'))
-const Preregister = lazy(() => import('./layout/preregister/Preregister.jsx'))
+const AboutUs = lazy(() => import('./layout/layout-components/about-us/AboutUs.jsx'))
+const Map = lazy(() => import('./layout/layout-components/map/DinamicMap.jsx'))
+const Suggestions = lazy(() => import('./layout/layout-components/Suggestions.tsx'))
+const SiteInfo = lazy(() => import('./sites/SiteInfo.jsx'))
+const Preregister = lazy(() => import('./layout/layout-components/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
-const BannerLayout = lazy(() => import('./layout/banner/BannerLayout.jsx'))
-const BocasDelToro = lazy(() => import('./data/panama/BocasDelToro/BocasDelToro.jsx'))
-const Chiriqui = lazy(() => import('./data/panama/chiriqui/chiriqui.jsx'))
-const Cocle = lazy(() => import('./data/panama/cocle/Cocle.jsx'))
-const Colon = lazy(() => import('./data/panama/colon/Colon.jsx'))
-const Darien = lazy(() => import('./data/panama/darien/Darien.jsx'))
-const Herrera = lazy(() => import('./data/panama/herrera/Herrera.jsx'))
-const LosSantos = lazy(() => import('./data/panama/lossantos/LosSantos.jsx'))
-const Panama = lazy(() => import('./data/panama/panama/Panama.jsx'))
-const PanamaOeste = lazy(() => import('./data/panama/panama_oeste/PanamaOeste.jsx'))
-const Veraguas = lazy(() => import('./data/panama/veraguas/Veraguas.jsx'))
-const GunaYala = lazy(() => import('./data/panama/comarca_guna_yala/GunaYala.jsx'))
+const BannerLayout = lazy(() => import('./layout/layout-components/banner/BannerLayout.jsx'))
+const BocasDelToro = lazy(() => import('./destinations/desti-pages/bocas-del-toro/BocasDelToro.jsx'))
+const Chiriqui = lazy(() => import('./destinations/desti-pages/chiriqui/Chiriqui.jsx'))
+const Cocle = lazy(() => import('./destinations/desti-pages/cocle/Cocle.jsx'))
+const Colon = lazy(() => import('./destinations/desti-pages/colon/Colon.jsx'))
+const Darien = lazy(() => import('./destinations/desti-pages/darien/Darien.jsx'))
+const Herrera = lazy(() => import('./destinations/desti-pages/herrera/Herrera.jsx'))
+const LosSantos = lazy(() => import('./destinations/desti-pages/los-santos/LosSantos.jsx'))
+const Panama = lazy(() => import('./destinations/desti-pages/panama/Panama.jsx'))
+const PanamaOeste = lazy(() => import('./destinations/desti-pages/panama-oeste/PanamaOeste.jsx'))
+const Veraguas = lazy(() => import('./destinations/desti-pages/veraguas/Veraguas.jsx'))
+const GunaYala = lazy(() => import('./destinations/desti-pages/comarca-guna-yala/GunaYala.jsx'))
 
 function RouteFallback() {
   return (
@@ -112,7 +112,7 @@ function GuideHome() {
       <section id="suggestions" ref={suggestionsRef} className="scroll-mt-24 md:scroll-mt-28">
         <DeferredSection fallback={<SectionFallback className="min-h-[480px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
-            <AleatorySuggestions />
+            <Suggestions />
           </Suspense>
         </DeferredSection>
       </section>
@@ -127,7 +127,9 @@ function GuideHome() {
 
       <DeferredSection fallback={<SectionFallback className="min-h-[120px]" />} rootMargin="200px">
         <Suspense fallback={<SectionFallback className="min-h-[120px]" />}>
-          <BottomBanner onLogoClick={scrollToHome} />
+          <div className="relative z-10 mt-40">
+            <BottomBanner onLogoClick={scrollToHome} />
+          </div>
         </Suspense>
       </DeferredSection>
     </div>

@@ -37,7 +37,7 @@ function BottomBanner({ onLogoClick }) {
 
             <hr className="w-full border-brand-white opacity-40" />
             <div className="font-body text-center text-xs md:text-md">
-                © 2026 Panamá Viajero. Todos los derechos reservados. | Desarrollado por DHM-Asesores | Contacto: <a href="panamaviajero@.com.pa">panamaviajero@.com.pa</a>
+                © 2026 Panamá Viajero. Todos los derechos reservados. | Desarrollado por DHM-Asesores | Contacto: <a href="panamaviajero@.com.pa">panamaviajero@gmail.com.pa </a>
             </div>
             </div>
         </div>
