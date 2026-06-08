@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../../destinations/desti-components/ProvinceVideo.jsx';
 import Activities from '../../../destinations/desti-components/Activities.jsx';
-import Sitios from '../../desti-components/SitesList.jsx';
+import ChiriquiSitios from '../../desti-components/ChiriquiSitesList.jsx';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import OtherProvinces from '../../../destinations/desti-components/OtherProvinces.tsx';
@@ -39,7 +39,7 @@ function Chiriqui() {
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <div className="relative z-10">
                 <Activities provinceData={provinceData} />
-                <Sitios provinceData={provinceData} />
+                <ChiriquiSitios provinceData={provinceData} />
                 <OtherProvinces provincias={provincias} />
                 <div className="mt-40">
                 <BottomBanner onLogoClick={() => navigate('/#home')} />

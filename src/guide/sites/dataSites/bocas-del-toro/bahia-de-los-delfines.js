@@ -23,6 +23,9 @@ export const bahiaDeLosDelfines = {
     ],
     descripcion:
         'Un santuario idílico donde las aguas calmas y los manglares crean el escenario de un ballet natural eterno. Un rincón mágico rodeado de una costa exuberante, diseñado para conmover tu alma al presenciar la libertad y la gracia en el estado más puro y fascinante del Caribe.',
+    previewDescripcion:
+        'Un santuario idílico donde las aguas calmas y los manglares crean el escenario.',
+    previewUbicacion: 'Bocas del Toro, Bahía de los Delfines',
     actividades: [
         {
             nombre: 'Avistamiento de delfines',

@@ -11,6 +11,7 @@ const AboutUs = lazy(() => import('./layout/layout-components/about-us/AboutUs.j
 const Map = lazy(() => import('./layout/layout-components/map/DinamicMap.jsx'))
 const Suggestions = lazy(() => import('./layout/layout-components/Suggestions.tsx'))
 const SiteInfo = lazy(() => import('./sites/SiteInfo.jsx'))
+const ZonePage = lazy(() => import('./sites/ZonePage.jsx'))
 const Preregister = lazy(() => import('./layout/layout-components/preregister/Preregister.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
 const BannerLayout = lazy(() => import('./layout/layout-components/banner/BannerLayout.jsx'))
@@ -153,6 +154,7 @@ function GuideApp() {
         <Route path="/provincias/veraguas" element={<Veraguas />} />
         <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
         <Route path="/sitios/:siteId" element={<SiteInfo />} />
+        <Route path="/zonas/:zoneId" element={<ZonePage />} />
       </Routes>
     </Suspense>
   )

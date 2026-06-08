@@ -23,6 +23,9 @@ export const cayoZapatilla = {
     ],
     descripcion:
         'Dos joyas de arena blanca flotando en un mar de cristal turquesa. Un Edén virgen custodiado por arrecifes donde el tiempo se rinde ante la belleza absoluta de playas desiertas y una jungla tropical que invita a vivir la fantasía de náufrago más sofisticada.',
+    previewDescripcion:
+        'Dos joyas de arena blanca flotando en un mar de cristal turquesa.',
+    previewUbicacion: 'Bocas del Toro, Cayo Zapatilla',
     actividades: [
         {
             nombre: 'Snorkel en arrecifes',

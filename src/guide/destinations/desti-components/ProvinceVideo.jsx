@@ -5,6 +5,7 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
     const source = videoSrc || banner.src;
     const isVideo = banner.tipo === 'video';
     const fallbackPoster = provinceData.imagenProvincia?.src
+        || provinceData.targets?.find((lugar) => lugar.type !== 'video')?.imagen
         || provinceData.lugaresDestacados?.find((lugar) => lugar.tipo !== 'video')?.imagen;
     const poster = banner.poster || fallbackPoster;
 

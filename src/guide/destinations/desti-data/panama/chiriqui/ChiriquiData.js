@@ -26,63 +26,33 @@ export const provincias = [
       'Pesca deportiva',
       'Surf',
     ],
-/*
-imagen:'/videos/chiriqui',
-*/
-    lugaresDestacados: [
+
+    displayMode: 'mixed',
+    targets: [
       {
-        id: 'Bajo_mono',
-        nombre: 'Bajo Mono',
-        descripcion:
-          'Zona fresca de Boquete con senderos, quebradas y paisajes de montaña ideales para caminatas.',
-        tipo: 'imagen',  
-        imagen:'/videos/chiriqui/Bajo_mono.avif',        
-        ubicacion: 'Bajo Mono, Boquete',
-      },
-      
-      {
-        id: 'Volcan_Baru',
-        nombre: 'Volcán Barú',
-        descripcion:
-          'Punto más alto de Panamá, famoso por sus rutas de ascenso y vistas hacia ambos océanos en días despejados.',
-        imagen:'/videos/chiriqui/Volcan_Baru.avif',        
-        ubicacion: 'Volcán Barú, Volcán',
+        id: 'boquete',
+        type: 'zone',
+        zoneId: 'boquete',
+        nombre: 'Boquete',
+        descripcion: 'Zona',
+        imagen: '/videos/chiriqui/Bajo_mono.avif',
       },
       {
-        id: 'El_pianista',
-        nombre: 'El Pianista',
-        descripcion:
-          'Sendero de bosque nuboso en Boquete, rodeado de vegetación, aves y ambiente de montaña.',
-        imagen:'/videos/chiriqui/El_pianista.avif',
-        ubicacion: 'El Pianista, Boquete',
+        id: 'cerro-punta',
+        type: 'zone',
+        zoneId: 'cerro-punta',
+        nombre: 'Cerro Punta',
+        descripcion: 'Zona',
+        imagen: '/videos/chiriqui/Bajo_mono.avif',
       },
       {
-        id: 'Salto_del_Tigre',
-        nombre: 'Salto del Tigre',
-        descripcion:
-          'Cascada de gran fuerza visual en Tierras Altas, ideal para aventura, fotografía y contacto con la naturaleza.',
-        tipo: 'video',
-        imagen: '/videos/chiriqui/Salto_del_Tigre.av1.mp4',
-        ubicacion: 'Salto del Tigre, Volcán',
-      },
-      {
-        id: 'Monte_Las_Totumas',
-        nombre: 'Monte Las Totumas',
-        descripcion:
-          'Reserva privada de montaña reconocida por sus senderos, observación de aves y biodiversidad.',
-        tipo: 'video',
-        imagen:'/videos/chiriqui/Monte_Las_Totumas.av1.mp4',
-        ubicacion: 'Monte Las Totumas, Tierras Altas',
-      },
-      {
-        id: 'Cascada_Jaguatta',
-        nombre: 'Cascada Jagüatta',
-        descripcion:
-          'Cascada natural en Caldera, rodeada de vegetación y ambiente fresco para una visita de aventura.',
-        tipo: 'video',
-        imagen: '/videos/chiriqui/Cascada_Jaguatta.av1.mp4',
-        ubicacion: 'Cascada Jagüatta, Caldera',
+        id: 'david',
+        type: 'zone',
+        zoneId: 'david',
+        nombre: 'David',
+        descripcion: 'Zona',
+        imagen: '/videos/chiriqui/Bajo_mono.avif',
       },
     ],
   },
-];
+]

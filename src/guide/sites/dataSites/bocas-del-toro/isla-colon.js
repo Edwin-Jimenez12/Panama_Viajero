@@ -23,6 +23,9 @@ export const islaColon = {
   ],
   descripcion:
     'Un secreto caribeño donde la selva abraza un mar de aguas turquesas. Un santuario de paz y biodiversidad, con una vibrante energía cultural que hechiza tus sentidos y te invita a desconectar del mundo en un entorno paradisíaco y eterno.',
+  previewDescripcion:
+    'Un secreto caribeño donde la selva abraza un mar de aguas turquesas.',
+  previewUbicacion: 'Bocas del Toro, Isla Colón',
   actividades: [
     {
       nombre: 'Snorkel en arrecifes',
