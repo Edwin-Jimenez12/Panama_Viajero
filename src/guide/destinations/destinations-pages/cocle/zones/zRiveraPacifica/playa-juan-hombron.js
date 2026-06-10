@@ -5,11 +5,11 @@ export const playaJuanHombron = {
     provinceId: 'cocle',
     nombre: 'Playa Juan Hombrón',
     banner: {
-        src: `${playaJuanHombronImageBase}/banner/bg-playa-juan-hombron.jpg`,
+        src: `${playaJuanHombronImageBase}/banner/bg-playa-juan-hombron.png`,
         alt: 'Banner de Playa Juan Hombrón',
     },
     gallery: [
-        `${playaJuanHombronImageBase}/banner/bg-playa-juan-hombron.jpg`,
+        `${playaJuanHombronImageBase}/banner/bg-playa-juan-hombron.png`,
         `${playaJuanHombronImageBase}/gallery/g1-playa-juan-hombron.jpg`,
         `${playaJuanHombronImageBase}/gallery/g2-playa-juan-hombron.jpg`,
         `${playaJuanHombronImageBase}/gallery/g3-playa-juan-hombron.jpg`,
@@ -17,15 +17,13 @@ export const playaJuanHombron = {
         `${playaJuanHombronImageBase}/gallery/g5-playa-juan-hombron.jpg`,
         `${playaJuanHombronImageBase}/gallery/g6-playa-juan-hombron.jpg`,
         `${playaJuanHombronImageBase}/gallery/g7-playa-juan-hombron.jpg`,
-        `${playaJuanHombronImageBase}/gallery/g8-playa-juan-hombron.jpg`,
-        `${playaJuanHombronImageBase}/gallery/g9-playa-juan-hombron.jpg`,
-        `${playaJuanHombronImageBase}/gallery/g10-playa-juan-hombron.jpg`,
+
     ],
     descripcion:
         'Un extenso litoral indómito de arenas mixtas y mareas vivas, oculto tras un laberinto natural de caminos rurales y vegetación costera. Un paraje solitario de impresionante belleza rústica que se mantiene al margen del turismo masivo, ofreciendo un refugio místico y completamente plano ideal para largas caminatas contemplativas frente a la inmensidad del Océano Pacífico.',
     previewDescripcion:
         'Una kilométrica y solitaria playa virgen rodeada de naturaleza rural, idónea para desconectarse del mundo, realizar largas caminatas y disfrutar de la tranquilidad.',
-    previewUbicacion: 'Chiriquí, Playa Juan Hombrón',
+    previewUbicacion: 'Coclé, Playa Juan Hombrón',
     actividades: [
         {
             nombre: 'Caminata por el litoral',

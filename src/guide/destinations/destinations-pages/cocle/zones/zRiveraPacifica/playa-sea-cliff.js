@@ -5,11 +5,11 @@ export const playaSeaCliff = {
     provinceId: 'cocle',
     nombre: 'Playa Sea Cliff',
     banner: {
-        src: `${playaSeaCliffImageBase}/banner/bg-playa-sea-cliff.jpg`,
+        src: `${playaSeaCliffImageBase}/banner/bg-playa-sea-cliff.png`,
         alt: 'Banner de Playa Sea Cliff',
     },
     gallery: [
-        `${playaSeaCliffImageBase}/banner/bg-playa-sea-cliff.jpg`,
+        `${playaSeaCliffImageBase}/banner/bg-playa-sea-cliff.png`,
         `${playaSeaCliffImageBase}/gallery/g1-playa-sea-cliff.jpg`,
         `${playaSeaCliffImageBase}/gallery/g2-playa-sea-cliff.jpg`,
         `${playaSeaCliffImageBase}/gallery/g3-playa-sea-cliff.jpg`,
@@ -17,15 +17,12 @@ export const playaSeaCliff = {
         `${playaSeaCliffImageBase}/gallery/g5-playa-sea-cliff.jpg`,
         `${playaSeaCliffImageBase}/gallery/g6-playa-sea-cliff.jpg`,
         `${playaSeaCliffImageBase}/gallery/g7-playa-sea-cliff.jpg`,
-        `${playaSeaCliffImageBase}/gallery/g8-playa-sea-cliff.jpg`,
-        `${playaSeaCliffImageBase}/gallery/g9-playa-sea-cliff.jpg`,
-        `${playaSeaCliffImageBase}/gallery/g10-playa-sea-cliff.jpg`,
     ],
     descripcion:
         'Un retiro costero exclusivo flanqueado por icónicos acantilados e hileras de palmeras que se inclinan hacia el océano. Un paraíso escondido de arenas claras y ambiente residencial muy pacífico, donde las mareas bajas exponen una inmensa llanura de arena perfecta para descansar lejos del bullicio urbano.',
     previewDescripcion:
         'Un encantador escape de playa enmarcado por acantilados costeros y palmeras, famoso por su oleaje sereno, privacidad y extensas orillas de arena fina.',
-    previewUbicacion: 'Chiriquí, Playa Sea Cliff',
+    previewUbicacion: 'Coclé, Playa Sea Cliff',
     actividades: [
         {
             nombre: 'Caminata por la costa',
@@ -77,5 +74,5 @@ export const playaSeaCliff = {
         },
     ],
     ubicacion:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.000000000000!2d-82.40000000000000!3d8.21000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTInMzYuMCJOIDgywrAyNCcwMC4wIlc!5e1!3m2!1sen!2spa!4v1781025900000!5m2!1sen!2spa',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.9957362853474!2d-80.0920309255067!3d8.383577198758966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facffff82c39a15%3A0x61204fa9d11f21bb!2sPlaya%20Sea%20Cliff!5e1!3m2!1sen!2spa!4v1781113117376!5m2!1sen!2spa',
 }

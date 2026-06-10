@@ -17,15 +17,12 @@ export const penonome = {
         `${penonomeImageBase}/gallery/g5-penonome.jpg`,
         `${penonomeImageBase}/gallery/g6-penonome.jpg`,
         `${penonomeImageBase}/gallery/g7-penonome.jpg`,
-        `${penonomeImageBase}/gallery/g8-penonome.jpg`,
-        `${penonomeImageBase}/gallery/g9-penonome.jpg`,
-        `${penonomeImageBase}/gallery/g10-penonome.jpg`,
     ],
     descripcion:
         'Un vibrante epicentro geográfico e histórico donde las tradiciones folclóricas se fusionan con el verdor de los valles interiores. Un encantador rincón rodeado de ríos cristalinos, cerros guardianes y calles coloniales, reconocido por salvaguardar el legado precolombino y las manifestaciones culturales más puras de la identidad del país.',
     previewDescripcion:
         'El dinámico corazón geográfico de la región, célebre por su rica herencia colonial, coloridos mercados de artesanías y hermosos entornos fluviales.',
-    previewUbicacion: 'Chiriquí, Penonomé',
+    previewUbicacion: 'Coclé, Penonomé',
     actividades: [
         {
             nombre: 'Caminata colonial',
@@ -77,5 +74,5 @@ export const penonome = {
         },
     ],
     ubicacion:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.000000000000!2d-82.55000000000000!3d8.52000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzEnMTIuMCJOIDgywrAzMycwMC4wIlc!5e1!3m2!1sen!2spa!4v1781026100000!5m2!1sen!2spa',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114259.32151776375!2d-80.51772736629061!3d8.533741271565516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fac4f37d08ca311%3A0xa9ea2d6c396c5052!2sPenonome%2C%20Cocl%C3%A9%20Province!5e1!3m2!1sen!2spa!4v1781109857895!5m2!1sen!2spa',
 }

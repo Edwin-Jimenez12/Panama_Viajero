@@ -38,15 +38,11 @@ function Chiriqui() {
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <section className="relative z-10 ">
-                <div className="relative min-h-screen">
-                    <div className="relative z-20">
-                        <Activities provinceData={provinceData} />
-                        <ProvinceZonesOnly provinceData={provinceData} />
-                        <OtherProvinces provincias={chiriquiProvinceData} />
-                    </div>
-                    <div className="relative z-20 mt-40">
-                        <BottomBanner onLogoClick={() => navigate('/#home')} />
-                    </div>
+                <Activities provinceData={provinceData} />
+                <ProvinceZonesOnly provinceData={provinceData} />
+                <OtherProvinces provincias={chiriquiProvinceData} />
+                <div className="mt-40">
+                    <BottomBanner onLogoClick={() => navigate('/#home')} />
                 </div>
             </section>
         </div>

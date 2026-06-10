@@ -17,15 +17,12 @@ export const playaBlanca = {
         `${playaBlancaImageBase}/gallery/g5-playa-blanca.jpg`,
         `${playaBlancaImageBase}/gallery/g6-playa-blanca.jpg`,
         `${playaBlancaImageBase}/gallery/g7-playa-blanca.jpg`,
-        `${playaBlancaImageBase}/gallery/g8-playa-blanca.jpg`,
-        `${playaBlancaImageBase}/gallery/g9-playa-blanca.jpg`,
-        `${playaBlancaImageBase}/gallery/g10-playa-blanca.jpg`,
     ],
     descripcion:
         'Un refugio costero escondido de arenas claras y aguas serenas, donde la naturaleza tropical se entrelaza con la pasividad del mar. Un rincón secreto rodeado de exuberante vegetación costera que ofrece el escenario perfecto para quienes buscan privacidad absoluta, tardes de sol radiante y un descanso reparador arrullado por el suave murmullo de las olas del Pacífico.',
     previewDescripcion:
         'Una joya costera escondida de arenas claras y aguas mansas, ideal para quienes buscan un escape exclusivo de total relajación y paisajes tropicales vírgenes.',
-    previewUbicacion: 'Chiriquí, Playa Blanca',
+    previewUbicacion: 'Coclé, Playa Blanca',
     actividades: [
         {
             nombre: 'Caminata por la bahía',
@@ -77,5 +74,5 @@ export const playaBlanca = {
         },
     ],
     ubicacion:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.774438318356!2d-82.41328905000001!3d8.214819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa5776d54830155%3A0xe53ab8394e7dfba6!2sPlaya%20Blanca!5e1!3m2!1sen!2spa!4v1781025500000!5m2!1sen!2spa',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7144.7319539021855!2d-80.16280622699962!3d8.343183448533583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fadab248bf0ddf7%3A0x382a7986e22433aa!2sPlaya%20Blanca!5e1!3m2!1sen!2spa!4v1781111033686!5m2!1sen!2spa',
 }

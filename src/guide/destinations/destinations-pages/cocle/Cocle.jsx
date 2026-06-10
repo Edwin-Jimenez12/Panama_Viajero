@@ -35,12 +35,14 @@ function Cocle() {
                 />
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
-            <Activities provinceData={provinceData} />
-            <ProvinceZonesAndSites provinceData={provinceData} />
-            <OtherProvinces provincias={provincias} />
-            <div className="mt-40">
-                <BottomBanner onLogoClick={() => navigate('/#home')} />
-            </div>
+            <section className="relative z-10 ">
+                <Activities provinceData={provinceData} />
+                <ProvinceZonesAndSites provinceData={provinceData} />
+                <OtherProvinces provincias={provincias} />
+                <div className="mt-40">
+                    <BottomBanner onLogoClick={() => navigate('/#home')} />
+                </div>
+            </section>
         </div>
     );
 }

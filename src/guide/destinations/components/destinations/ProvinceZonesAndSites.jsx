@@ -32,6 +32,7 @@ function ProvinceZonesAndSites({ provinceData }) {
           targets={zones}
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="zones-only"
+          provinceId={provinceData.id}
         />
       )}
       {sites.length > 0 && (
@@ -40,6 +41,7 @@ function ProvinceZonesAndSites({ provinceData }) {
           targets={sites}
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="sites-only"
+          provinceId={provinceData.id}
         />
       )}
     </div>

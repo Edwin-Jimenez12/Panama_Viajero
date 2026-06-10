@@ -32,6 +32,7 @@ function SitesList({ provinceData }) {
           targets={zoneTargets}
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="zones-only"
+          provinceId={provinceData.id}
         />
       )}
 
@@ -41,6 +42,7 @@ function SitesList({ provinceData }) {
           targets={siteTargets}
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="sites-only"
+          provinceId={provinceData.id}
         />
       )}
     </div>

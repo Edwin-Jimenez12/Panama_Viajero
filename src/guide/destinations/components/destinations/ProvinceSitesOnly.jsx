@@ -29,6 +29,7 @@ function ProvinceSitesOnly({ provinceData, title = 'Sitios Turisticos' }) {
       targets={targets}
       fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
       mode="sites-only"
+      provinceId={provinceData.id}
     />
   )
 }

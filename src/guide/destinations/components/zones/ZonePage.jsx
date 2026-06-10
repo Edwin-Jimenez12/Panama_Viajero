@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, useLocation } from 'react-router-dom'
 import Menu from '../../../components/menu/Menu.jsx'
 import ButtomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import ZoneVideo from './ZoneVideo.jsx'
 import ProvinceTargetsGrid from '../destinations/ProvinceTargetsGrid.jsx'
+import OtherProvinces from '../destinations/OtherProvinces.tsx'
 import { zoneRegistry } from '../../destinations-pages/zoneRegistry.js'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import { provincias as chiriquiProvincias } from '../../destinations-pages/chiriqui/ChiriquiData.js'
@@ -18,12 +19,14 @@ const provinceDataRegistry = {
 
 function ZonePage() {
   const { zoneId } = useParams()
+  const location = useLocation()
   const navigate = useNavigate()
   const [scrollProgress, setScrollProgress] = useState(0)
 
   const decodedZoneId = zoneId ? decodeURIComponent(zoneId) : ''
   const zone = zoneRegistry[decodedZoneId] ?? zoneRegistry[zoneId] ?? null
-  const provinceId = zone?.provinceIds?.[0] ?? zone?.provinceId ?? 'chiriqui'
+  const searchProvinceId = new URLSearchParams(location.search).get('province')
+  const provinceId = searchProvinceId || zone?.provinceId || zone?.provinceIds?.[0] || 'chiriqui'
   const provinceData = provinceDataRegistry[provinceId] ?? chiriquiProvinces[0]
   const fallbackTarget =
     provinceData?.targets?.find((target) => target.zoneId === decodedZoneId || target.id === decodedZoneId) ?? null
@@ -78,7 +81,7 @@ function ZonePage() {
 
       <ZoneVideo provinceData={provinceData} zone={zone} fixedBackground scrollProgress={scrollProgress} />
 
-      <section className="relative z-10">
+      <section className="relative z-10 pt-[100vh]">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
           <p className="mb-50 text-center text-2xl font-secondary-italic text-brand-white/95 backdrop-blur-sm">
             {safeDescription}
@@ -93,6 +96,8 @@ function ZonePage() {
             />
           </div>
 
+          <OtherProvinces />
+
           {!sitios.length && (
             <div className="py-10 text-center text-brand-white/90">
               <h2 className="text-2xl font-bold">{safeHeading}</h2>
@@ -102,7 +107,7 @@ function ZonePage() {
         </div>
       </section>
 
-      <div className="mt-24">
+      <div className="relative z-20 mt-24">
         <ButtomBanner onLogoClick={() => navigate('/#home')} />
       </div>
     </main>

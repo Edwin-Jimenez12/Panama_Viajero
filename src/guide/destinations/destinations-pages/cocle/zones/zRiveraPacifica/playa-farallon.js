@@ -17,15 +17,12 @@ export const playaFarallon = {
         `${playaFarallonImageBase}/gallery/g5-playa-farallon.jpg`,
         `${playaFarallonImageBase}/gallery/g6-playa-farallon.jpg`,
         `${playaFarallonImageBase}/gallery/g7-playa-farallon.jpg`,
-        `${playaFarallonImageBase}/gallery/g8-playa-farallon.jpg`,
-        `${playaFarallonImageBase}/gallery/g9-playa-farallon.jpg`,
-        `${playaFarallonImageBase}/gallery/g10-playa-farallon.jpg`,
     ],
     descripcion:
         'Un imponente paraje costero custodiado por monumentales formaciones de piedra que emergen con fuerza desde el fondo del mar. Un destino cautivador de arenas oscuras y olas dinámicas, donde los espectaculares acantilados marinos crean un escenario fotográfico insuperable, invitando a los viajeros a explorar su mística naturaleza costera.',
     previewDescripcion:
         'Una majestuosa costa pacífica dominada por imponentes formaciones rocosas marinas, ideal para la fotografía de paisajes, paseos playeros y desconexión.',
-    previewUbicacion: 'Chiriquí, Playa Farallón',
+    previewUbicacion: 'Coclé, Playa Farallón',
     actividades: [
         {
             nombre: 'Caminata entre farallones',
@@ -77,5 +74,5 @@ export const playaFarallon = {
         },
     ],
     ubicacion:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15815.000000000000!2d-82.45000000000000!3d8.20000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTInMDAuMCJOIDgywrAyNycwMC4wIlc!5e1!3m2!1sen!2spa!4v1781025600000!5m2!1sen!2spa',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14288.905848965396!2d-80.14203446029927!3d8.358427446765674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fadaacd50aa8079%3A0xec6f7a99d1e57622!2sPlaya%20Farall%C3%B3n!5e1!3m2!1sen!2spa!4v1781111828704!5m2!1sen!2spa',
 }

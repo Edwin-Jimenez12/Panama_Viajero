@@ -12,6 +12,7 @@ function ChiriquiSitesList({ provinceData }) {
       targets={targets}
       fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
       mode="zones-only"
+      provinceId={provinceData.id}
     />
   )
 }

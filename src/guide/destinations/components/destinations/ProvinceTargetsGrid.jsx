@@ -2,7 +2,11 @@ import { useNavigate } from 'react-router-dom'
 import SmartVideo from '../../../components/video/SmartVideo.jsx'
 
 function resolveTargetRoute(target) {
-  if (target.type === 'zone') return `/zonas/${encodeURIComponent(target.zoneId ?? target.id)}`
+  if (target.type === 'zone') {
+    const zoneId = encodeURIComponent(target.zoneId ?? target.id)
+    const provinceId = target.provinceId ? `?province=${encodeURIComponent(target.provinceId)}` : ''
+    return `/zonas/${zoneId}${provinceId}`
+  }
   return `/sitios/${encodeURIComponent(target.siteId ?? target.id)}`
 }
 
@@ -24,6 +28,7 @@ function ProvinceTargetsGrid({
   targets = [],
   fallbackPoster,
   mode = 'sites-only',
+  provinceId,
 }) {
   const navigate = useNavigate()
 
@@ -39,7 +44,10 @@ function ProvinceTargetsGrid({
       <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4 sm:px-0">
         {targets.map((target) => {
           const isVideo = target.type === 'video'
-          const route = resolveTargetRoute(target)
+          const resolvedTarget = provinceId && target.type === 'zone' && !target.provinceId
+            ? { ...target, provinceId }
+            : target
+          const route = resolveTargetRoute(resolvedTarget)
           const description = getTargetDescription(target)
 
           return (

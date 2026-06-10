@@ -17,9 +17,7 @@ export const elValleDeAnton = {
         `${elValleDeAntonImageBase}/gallery/g5-el-valle-de-anton.jpg`,
         `${elValleDeAntonImageBase}/gallery/g6-el-valle-de-anton.jpg`,
         `${elValleDeAntonImageBase}/gallery/g7-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g8-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g9-el-valle-de-anton.jpg`,
-        `${elValleDeAntonImageBase}/gallery/g10-el-valle-de-anton.jpg`,
+
     ],
     descripcion:
         'Un santuario natural místico ubicado en el cráter de un volcán extinto, donde la primavera eterna cobija un bosque nuboso de biodiversidad única. Un pintoresco pueblo de montaña rodeado de cerros sagrados, caídas de agua cristalina y una vibrante cultura local, invitando al descanso, la aventura ecológica y la renovación espiritual absoluta.',
@@ -77,5 +75,5 @@ export const elValleDeAnton = {
         },
     ],
     ubicacion:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.000000000000!2d-82.60000000000000!3d8.60000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzYnMDAuMCJOIDgywrAzNycwMC4wIlc!5e1!3m2!1sen!2spa!4v1781026000000!5m2!1sen!2spa',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57116.68178512328!2d-80.17702209252322!3d8.620055404908197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fac58c0e8bc6925%3A0xaa27efb834833e4c!2sEl%20Valle%20de%20Ant%C3%B3n%2C%20Cocl%C3%A9%20Province!5e1!3m2!1sen!2spa!4v1781108601602!5m2!1sen!2spa',
 }
