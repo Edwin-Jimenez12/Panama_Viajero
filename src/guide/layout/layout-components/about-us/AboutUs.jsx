@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import LogoCircular from '../../../img_test/logoCircular.svg';
+
+import SimuladorApp from '../../../img_test/Simulador_app_P1.svg'
 
 function AboutUs() {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
@@ -22,15 +23,20 @@ function AboutUs() {
   };
 
   return (
-    <div className="mx-auto mt-20 flex max-w-6xl flex-col items-center justify-center gap-12 px-4 py-14 md:flex-row md:gap-16">
-      <div className="flex flex-col items-start gap-5 text-left">
+    <div className="mx-auto pt-40 pb-40 flex max-w-full flex-col items-center justify-center gap-12 px-4 
+    py-14 md:flex-row md:gap-16 bg-gradient-to-r from-[#4956A2] to-[#000000]">
+      <div className="flex flex-col items-start gap-5 text-left max-w-6xl">
         <div>
-          <h2 className="font-secondary-italic text-2xl text-brand-red md:text-3xl">Guía turística</h2>
-          <h1 className="font-main text-4xl font-bold text-brand-blue md:text-6xl">Explora Panamá</h1>
-          <h1 className="font-main text-4xl font-bold text-brand-charcoal md:text-6xl">y sus costumbres.</h1>
+          <h2 className="font-secondary-italic text-2xl text-[#FFFFFF] md:text-3xl ">Directorio turístico</h2>
+          
+          <div className='flex gap-3'>
+            <h1 className="font-secondary text-4xl  text-brand-white md:text-6xl">Explora </h1>
+            <h1 className="font-secondary font-bold text-4xl   md:text-6xl text-[#CD2E4C]">Panamá</h1>
+          </div>
+          <h1 className="font-secondary text-4xl text-brand-white md:text-6xl">y sus costumbres.</h1>
         </div>
 
-        <p className="font-body max-w-xs leading-7 text-brand-charcoal/85 md:max-w-md md:text-lg">
+        <p className="font-body max-w-xs leading-7 text-brand-white md:max-w-md md:text-lg">
           Somos un directorio digital turístico que conecta a viajeros nacionales e internacionales con experiencias 
           turísticas en todo el país. Nos convertimos en el puente digital que 
           transforma un simple viaje en una aventura inolvidable. Nuestro objetivo es dar visibilidad al talento y la calidez 
@@ -52,7 +58,8 @@ function AboutUs() {
             transformStyle: 'preserve-3d',
           }}
         >
-          <img src={LogoCircular} alt="Provincias" loading="lazy" decoding="async" className="h-50 md:h-115  " />
+          <img src={SimuladorApp} alt="Provincias" loading="lazy" decoding="async" className="h-45 md:h-130  " />
+          {/* LogoRectangular */}
         </div>
       </div>
     </div>

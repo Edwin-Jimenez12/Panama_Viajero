@@ -18,7 +18,7 @@ function BannerLayout() {
     }, [isMobile])
 
     return (
-        <div className="relative aspect-[1920/1080] w-full overflow-hidden bg-black/20 md:aspect-[1920/775]">
+        <div className="relative aspect-[1920/1080] w-full overflow-hidden bg-black/20 md:aspect-[1920/900]">
             <img
                 src="/videos/BannerPrincipal.avif"
                 alt=""

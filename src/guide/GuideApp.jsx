@@ -83,13 +83,13 @@ function GuideHome() {
 
       <section id="home" ref={homeRef} className="relative">
         <BannerLayout />
-        <div className="pointer-events-none absolute inset-0 z-20 mr-2 mb-2 flex items-end justify-end md:mr-5 md:mb-4">
+        <div className="pointer-events-none absolute inset-0 z-20 mr-2 mb-2 flex items-end justify-start md:mr-5 md:mb-4">
           <img
             src={Logo}
             alt="Logo"
             fetchPriority="high"
             decoding="async"
-            className="mb-1 h-7 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none md:h-15 md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
+            className="mb-10 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
           />
         </div>
       </section>
@@ -102,7 +102,7 @@ function GuideHome() {
         </DeferredSection>
       </section>
 
-      <section id="map" ref={mapRef}>
+      <section id="map" ref={mapRef} className='max-w-full '>
         <DeferredSection fallback={<SectionFallback className="min-h-[560px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[560px]" />}>
             <Map />
@@ -110,7 +110,7 @@ function GuideHome() {
         </DeferredSection>
       </section>
 
-      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-24 md:scroll-mt-28">
+      <section id="suggestions" ref={suggestionsRef} className="scroll-mt-24 md:scroll-mt-28 mt-[-50px]">
         <DeferredSection fallback={<SectionFallback className="min-h-[480px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
             <Suggestions />
@@ -118,7 +118,7 @@ function GuideHome() {
         </DeferredSection>
       </section>
 
-      <section id="preregister" ref={preregisterRef} className="scroll-mt-30">
+      <section id="preregister" ref={preregisterRef} className="scroll-mt-30 ">
         <DeferredSection fallback={<SectionFallback className="min-h-[440px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[440px]" />}>
             <Preregister />
@@ -128,7 +128,7 @@ function GuideHome() {
 
       <DeferredSection fallback={<SectionFallback className="min-h-[120px]" />} rootMargin="200px">
         <Suspense fallback={<SectionFallback className="min-h-[120px]" />}>
-          <div className="relative z-10 mt-40">
+          <div className="relative z-10 ">
             <BottomBanner onLogoClick={scrollToHome} />
           </div>
         </Suspense>

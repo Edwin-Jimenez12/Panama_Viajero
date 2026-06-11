@@ -57,10 +57,11 @@ function Map() {
     const activeScale = 1.10;
 
     return (
-        <div className="mx-auto my-28 flex max-w-6xl flex-col items-center text-center md:my-10">
-            <div className="w-full rounded-xl md:p-12">
+        <div className="mx-auto pt-20 flex max-w-full flex-col items-center text-center  bg-gradient-to-t from-[#CD2E4C] to-[#000000]">
+            <div className="w-full rounded-xl max-w-6xl">
                 <div className="mb-10 flex flex-col text-center">
-                    <label className="font-secondary-italic text-3xl text-brand-red">¡Conoce Panamá como nunca antes lo viste!</label>
+                    <label className="font-secondary-italic text-3xl text-brand-white
+                    ">¡Conoce Panamá como nunca antes lo viste!</label>
                 </div>
                 <div className="relative mb-6 aspect-[1025/424] ">
                     {externalProvinceDecorations.map((item) => {
