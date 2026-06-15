@@ -13,6 +13,7 @@ function PanamaOeste() {
     const provinceData = provincias[0];
 
     useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         const hash = window.location.hash;
         if (hash === '#video') {
             const videoElement = document.querySelector('video');

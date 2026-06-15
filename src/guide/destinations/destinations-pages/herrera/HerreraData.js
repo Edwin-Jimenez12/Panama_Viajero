@@ -25,31 +25,7 @@ export const provincias = [
       'Tours gastronómicos',
     ],
 
-    lugaresDestacados: [
-      {
-        id: 'Chitre',
-        nombre: 'Chitré',
-        descripcion: 'Capital provincial reconocida por su vibrante vida comercial, sus emblemáticas fiestas populares y su ambiente hospitalario.',
-        tipo: 'imagen',
-        imagen: '/videos/herrera/Chitre.avif',
-        ubicacion: 'Chitré, Herrera',
-      },
-      {
-        id: 'Pese',
-        nombre: 'Pesé',
-        descripcion: 'Pueblo histórico, cuna del desarrollo de la caña y estrechamente ligado a la tradición de la destilería y al auténtico sabor interiorano.',
-        tipo: 'video',
-        imagen: '/videos/herrera/Pese.av1.mp4',
-        ubicacion: 'Pesé, Herrera',
-      },
-      {
-        id: 'Sarigua',
-        nombre: 'Sarigua',
-        descripcion: 'Ecosistema de albina y área árida de gran valor científico e histórico, que cuenta con senderos arqueológicos únicos en Azuero.',
-        tipo: 'imagen',
-        imagen: '/videos/herrera/Sarigua.avif',
-        ubicacion: 'Parque Nacional Sarigua, Herrera',
-      },
-    ],
+    directSiteIds: [ 'reserva-forestal-el-montuoso', 'chitre', 'talleres-de-artesanos-de-diablicos'],
+    displayMode: 'sites-only',
   },
-];
+]

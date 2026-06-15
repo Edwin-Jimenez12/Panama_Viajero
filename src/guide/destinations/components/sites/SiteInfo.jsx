@@ -5,7 +5,6 @@ import ButtomBanner from '../../../components/bottombanner/Bottombanner.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import SiteActivities from './SiteActivities.jsx'
 import SiteDescription from './SiteDescription.jsx'
-import SiteGallery from './SiteGallery.jsx'
 import SiteHero from './SiteHero.jsx'
 import SiteMap from './SiteMap.jsx'
 import DeferredSection from '../../../layout/layout-components/DeferredSection.jsx'
@@ -22,6 +21,7 @@ function SiteInfo() {
       setScrollProgress(next)
     }
 
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -30,14 +30,6 @@ function SiteInfo() {
   if (!site) {
     return <main className="min-h-screen bg-brand-soft" />
   }
-
-  const gallery = site.gallery ?? []
-  const base = import.meta.env.BASE_URL || '/'
-  const featuredActivityImage = (() => {
-    if (!gallery || gallery.length === 0) return site.banner.src
-    const pick = gallery[Math.floor(Math.random() * gallery.length)] || gallery[0]
-    return `${base}${(pick || '').replace(/^\/+/, '')}`
-  })()
 
   return (
     <main className="relative min-h-screen overflow-x-hidden text-brand-charcoal">
@@ -67,12 +59,9 @@ function SiteInfo() {
                 <SiteDescription description={site.descripcion} />
               </DeferredSection>
               <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
-                <SiteActivities activities={site.actividades} featuredImage={featuredActivityImage} />
+                <SiteActivities activities={site.actividades} featuredImage={site.banner.src} />
               </DeferredSection>
-              <DeferredSection fallback={<div className="min-h-[520px]" />} rootMargin="350px">
-                <SiteGallery gallery={gallery} siteName={site.nombre} />
-              </DeferredSection>
-              <DeferredSection fallback={<div className="min-h-[360px]" />} rootMargin="420px">
+              <DeferredSection fallback={<div className="min-h-[360px]" />} rootMargin="350px">
                 <SiteMap site={site} />
               </DeferredSection>
             </div>

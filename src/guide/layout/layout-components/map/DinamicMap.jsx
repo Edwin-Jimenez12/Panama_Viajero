@@ -57,10 +57,10 @@ function Map() {
     const activeScale = 1.10;
 
     return (
-        <div className="mx-auto pt-20 flex max-w-full flex-col items-center text-center  bg-gradient-to-t from-[#CD2E4C] to-[#000000]">
+        <div className="mx-auto pt-20 pb-20 flex max-w-full flex-col items-center text-center">
             <div className="w-full rounded-xl max-w-6xl">
                 <div className="mb-10 flex flex-col text-center">
-                    <label className="font-secondary-italic text-3xl text-brand-white
+                    <label className="font-secondary-italic text-3xl text-brand-red
                     ">¡Conoce Panamá como nunca antes lo viste!</label>
                 </div>
                 <div className="relative mb-6 aspect-[1025/424] ">

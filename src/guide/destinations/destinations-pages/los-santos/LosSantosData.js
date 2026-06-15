@@ -26,55 +26,7 @@ export const provincias = [
       'Ciclismo de ruta',
     ],
 
-    lugaresDestacados: [
-      {
-        id: 'Playa_Venao',
-        nombre: 'Playa Venao',
-        descripcion: 'Playa de fama internacional reconocida por sus olas consistentes, ambiente bohemio y vibrante vida costera, ideal para surfistas y viajeros.',
-        tipo: 'video',
-        imagen: '/videos/los_santos/Playa_Venao.av1.mp4',
-        ubicacion: 'Playa Venao, Los Santos',
-      },
-      {
-        id: 'Isla_Iguana',
-        nombre: 'Isla Iguana',
-        descripcion: 'Refugio de vida silvestre con un arrecife de coral espectacular, aguas cristalinas, arena blanca y espacios ideales para el buceo libre.',
-        tipo: 'video',
-        imagen: '/videos/los_santos/Isla_Iguana.av1.mp4',
-        ubicacion: 'Refugio de Vida Silvestre Isla Iguana, Los Santos',
-      },
-      {
-        id: 'Playa_Cambutal',
-        nombre: 'Playa Cambutal',
-        descripcion: 'Costa imponente y tranquila donde las montañas se encuentran con el océano Pacífico, un rincón perfecto para el surf y la pesca profunda.',
-        tipo: 'video',
-        imagen: '/videos/los_santos/Playa_Cambutal.av1.mp4',
-        ubicacion: 'Playa Cambutal, Los Santos',
-      },
-      {
-        id: 'Isla_Canas',
-        nombre: 'Isla Cañas',
-        descripcion: 'Santuario ecológico y hogar de extensos manglares, famoso a nivel global por ser un sitio clave de anidación de miles de tortugas marinas.',
-        tipo: 'video',
-        imagen: '/videos/los_santos/Isla_Canas.av1.mp4',
-        ubicacion: 'Isla Cañas, Los Santos',
-      },
-      {
-        id: 'Cerro_Hoya',
-        nombre: 'Cerro Hoya',
-        descripcion: 'Parque nacional montañoso que protege el bosque lluvioso más antiguo de Azuero, refugio de especies endémicas y cascadas ocultas.',
-        tipo: 'imagen',
-        imagen:'/videos/los_santos/Cerro_Hoya.avif',
-        ubicacion: 'Parque Nacional Cerro Hoya, Los Santos',
-      },
-      {
-        id: 'Cajones_la_Angostura',
-        nombre: 'Cajones de La Angostura',
-        descripcion: 'Cañón y formación rocosa donde el río Oria se estrecha creando pozas naturales profundas, perfectas para nadar y explorar.',
-        tipo: 'video',
-        imagen: '/videos/los_santos/Cajones_la_Angostura.av1.mp4',
-        ubicacion: 'Cajones de La Angostura, Los Santos',
-      },
-    ],
+    directSiteIds: ['las-tablas', 'la-villa','isla-iguana','isla-canas', 'pedasi','playa-venao'],
+    displayMode: 'sites-only',
   },
-];
+]

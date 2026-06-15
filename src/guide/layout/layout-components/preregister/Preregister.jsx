@@ -115,7 +115,7 @@ function Preregister() {
     }
 
     return (
-        <div className='max-w-full bg-gradient-to-r from-[#4956A2] to-[#CD2E4C] p-30'>
+        <div className='max-w-full  p-30'>
             <div className="mx-auto max-w-4xl rounded-xl border border-brand-blue/15 bg-brand-white p-8 shadow-[0_18px_45px_rgba(77,76,76,0.15)]">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="flex flex-col gap-2 border-b border-brand-soft pb-4 md:flex-row md:items-baseline md:justify-end">

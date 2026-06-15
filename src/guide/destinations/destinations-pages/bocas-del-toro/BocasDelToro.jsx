@@ -14,6 +14,7 @@ function BocasDelToro() {
     const bocasDelToro = provincias[0];
 
     useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         if (location.hash) {
             const targetId = location.hash.replace('#', '');
             const section = document.getElementById(targetId);

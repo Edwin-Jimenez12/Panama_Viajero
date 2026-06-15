@@ -89,7 +89,7 @@ function GuideHome() {
             alt="Logo"
             fetchPriority="high"
             decoding="async"
-            className="mb-10 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
+            className="mb-15 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
           />
         </div>
       </section>
@@ -128,7 +128,7 @@ function GuideHome() {
 
       <DeferredSection fallback={<SectionFallback className="min-h-[120px]" />} rootMargin="200px">
         <Suspense fallback={<SectionFallback className="min-h-[120px]" />}>
-          <div className="relative z-10 ">
+          <div className="relative z-10 shadow">
             <BottomBanner onLogoClick={scrollToHome} />
           </div>
         </Suspense>

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
-import Sitios from '../../components/destinations/SitesList.jsx';
+import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx';
@@ -13,6 +13,7 @@ function Herrera() {
     const provinceData = provincias[0];
 
     useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         const hash = window.location.hash;
         if (hash === '#video') {
             const videoElement = document.querySelector('video');
@@ -36,7 +37,7 @@ function Herrera() {
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <Activities provinceData={provinceData} />
-            <Sitios provinceData={provinceData} />
+            <ProvinceSitesOnly provinceData={provinceData} />
             <OtherProvinces provincias={provincias} />
             <div className="mt-40">
                 <BottomBanner onLogoClick={() => navigate('/#home')} />

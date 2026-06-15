@@ -33,7 +33,8 @@ export const provincias = [
         zoneId: 'rivera-pacifica',
         nombre: 'Rivera Pacífica',
         descripcion: 'Zona',
-        imagen: '/maps/provinces/cocle.avif',
+        imagen: '/images/destinations/cocle/z-rivera-pacifica/bg-z-rivera-pacifica.jpg',
+        
       },
     ],
 
