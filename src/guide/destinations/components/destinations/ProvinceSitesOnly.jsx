@@ -4,11 +4,13 @@ import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 function ProvinceSitesOnly({ provinceData, title = 'Sitios Turisticos' }) {
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
+  const belongsToProvince = (site) =>
+    site?.provinceId === provinceId || site?.provinceIds?.includes(provinceId) || site?.sharedProvinceIds?.includes(provinceId)
   const fallbackSiteIds =
     directSiteIds.length > 0
       ? directSiteIds
       : Object.values(siteRegistry)
-          .filter((site) => site.provinceId === provinceId)
+          .filter((site) => belongsToProvince(site))
           .map((site) => site.id)
   const targets = fallbackSiteIds
     .map((siteId) => siteRegistry[siteId])

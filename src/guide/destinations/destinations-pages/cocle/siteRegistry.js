@@ -1,10 +1,10 @@
 import { elValleDeAnton } from './sites/el-valle-de-anton.js'
 import { penonome } from './sites/penonome.js'
-import { playaBlanca } from './zones/zRiveraPacifica/playa-blanca.js'
-import { playaFarallon } from './zones/zRiveraPacifica/playa-farallon.js'
-import { playaJuanHombron } from './zones/zRiveraPacifica/playa-juan-hombron.js'
-import { playaSeaCliff } from './zones/zRiveraPacifica/playa-sea-cliff.js'
-import { santaClara } from './zones/zRiveraPacifica/santa-clara.js'
+import { playaBlanca } from '../rivera-pacifica/sites/playa-blanca.js'
+import { playaFarallon } from '../rivera-pacifica/sites/playa-farallon.js'
+import { playaJuanHombron } from '../rivera-pacifica/sites/playa-juan-hombron.js'
+import { playaSeaCliff } from '../rivera-pacifica/sites/playa-sea-cliff.js'
+import { santaClara } from '../rivera-pacifica/sites/santa-clara.js'
 
 export const cocleSiteRegistry = {
   [elValleDeAnton.id]: elValleDeAnton,

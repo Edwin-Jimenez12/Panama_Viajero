@@ -8,12 +8,14 @@ import OtherProvinces from '../destinations/OtherProvinces.tsx'
 import { zoneRegistry } from '../../destinations-pages/zoneRegistry.js'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 import { provincias as chiriquiProvincias } from '../../destinations-pages/chiriqui/ChiriquiData.js'
+import { provincias as colonProvincias } from '../../destinations-pages/colon/ColonData.js'
 import { provincias as cocleProvincias } from '../../destinations-pages/cocle/CocleData.js'
 import { provincias as panamaOesteProvincias } from '../../destinations-pages/panama-oeste/PanamaOesteData.js'
 import { provincias as veraguasProvincias } from '../../destinations-pages/veraguas/VeraguasData.js'
 
 const provinceDataRegistry = {
   chiriqui: chiriquiProvincias[0],
+  colon: colonProvincias[0],
   cocle: cocleProvincias[0],
   'panama-oeste': panamaOesteProvincias[0],
   veraguas: veraguasProvincias[0],

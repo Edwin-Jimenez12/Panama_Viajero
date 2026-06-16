@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
-import ProvinceZonesAndSites from '../../components/destinations/ProvinceZonesAndSites.jsx';
+import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx';
@@ -38,7 +38,7 @@ function PanamaOeste() {
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <section className="relative z-10">
                 <Activities provinceData={provinceData} />
-                <ProvinceZonesAndSites provinceData={provinceData} />
+                <ProvinceSitesOnly provinceData={provinceData} title="Sitios Turisticos" />
                 <OtherProvinces provincias={provincias} />
                 <div className="mt-40">
                     <BottomBanner onLogoClick={() => navigate('/#home')} />

@@ -1,13 +1,13 @@
-import { playaBlanca } from '../cocle/zones/zRiveraPacifica/playa-blanca.js'
-import { playaFarallon } from '../cocle/zones/zRiveraPacifica/playa-farallon.js'
-import { playaJuanHombron } from '../cocle/zones/zRiveraPacifica/playa-juan-hombron.js'
-import { playaSeaCliff } from '../cocle/zones/zRiveraPacifica/playa-sea-cliff.js'
-import { santaClara } from '../cocle/zones/zRiveraPacifica/santa-clara.js'
+import { playaSanCarlos } from '../rivera-pacifica/sites/playa-san-carlos.js'
+import { coronado } from '../rivera-pacifica/sites/coronado.js'
+import { playaElPalmar } from '../rivera-pacifica/sites/playa-el-palmar.js'
+import { puntaChame } from '../rivera-pacifica/sites/punta-chame.js'
+import { playaMalibu } from '../rivera-pacifica/sites/playa-malibu.js'
 
 export const panamaOesteSiteRegistry = {
-  [playaBlanca.id]: playaBlanca,
-  [playaFarallon.id]: playaFarallon,
-  [playaJuanHombron.id]: playaJuanHombron,
-  [playaSeaCliff.id]: playaSeaCliff,
-  [santaClara.id]: santaClara,
+  [playaSanCarlos.id]: playaSanCarlos,
+  [coronado.id]: coronado,
+  [playaElPalmar.id]: playaElPalmar,
+  [puntaChame.id]: puntaChame,
+  [playaMalibu.id]: playaMalibu,
 }

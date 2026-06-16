@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
-import Sitios from '../../components/destinations/SitesList.jsx';
+import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx';
@@ -35,12 +35,14 @@ function Darien() {
                 />
             </div>
             <ProvinceVideo provinceData={provinceData} fixedBackground />
-            <Activities provinceData={provinceData} />
-            <Sitios provinceData={provinceData} />
-            <OtherProvinces provincias={provincias} />
-            <div className="mt-40">
-                <BottomBanner onLogoClick={() => navigate('/#home')} />
-            </div>
+            <section className="relative z-10">
+                <Activities provinceData={provinceData} />
+                <ProvinceSitesOnly provinceData={provinceData} title="Sitios Turisticos" />
+                <OtherProvinces provincias={provincias} />
+                <div className="mt-40">
+                    <BottomBanner onLogoClick={() => navigate('/#home')} />
+                </div>
+            </section>
         </div>
     );
 }

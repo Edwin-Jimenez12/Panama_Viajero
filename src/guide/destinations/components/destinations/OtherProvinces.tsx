@@ -16,8 +16,10 @@ function getRandomItems(items, limit) {
 function AleatorySuggestions() {
     const navigate = useNavigate();
     const suggestions = useMemo(() => {
-        const provincesWithPoster = provinceMedia.filter((province) => province.poster);
-        return getRandomItems(provincesWithPoster, 3);
+        const riveraPacifica = provinceMedia.find((province) => province.id === 'rivera-pacifica');
+        const others = provinceMedia.filter((province) => province.poster && province.id !== 'rivera-pacifica');
+        const randomOthers = getRandomItems(others, 2);
+        return riveraPacifica ? [riveraPacifica, ...randomOthers] : randomOthers;
     }, []);
 
     return (
