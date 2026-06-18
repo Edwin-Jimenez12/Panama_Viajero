@@ -35,13 +35,13 @@ function ProvinceTargetsGrid({
   return (
     <div className="flex flex-col gap-5">
       <h1
-        className="font-main flex justify-center text-3xl font-bold text-brand-white/95 md:pb-4 md:text-4xl"
+        className="font-main flex justify-center text-3xl font-bold text-brand-white/95 md:pb-4 md:text-6xl"
         style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}
       >
         {title}
       </h1>
 
-      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4 sm:px-0">
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-start gap-6 px-4 sm:px-0">
         {targets.map((target) => {
           const isVideo = target.type === 'video'
           const resolvedTarget = provinceId && target.type === 'zone' && !target.provinceId
@@ -56,7 +56,9 @@ function ProvinceTargetsGrid({
               type="button"
               aria-label={`Ver informacion de ${target.nombre}`}
               onClick={() => navigate(route)}
-              className={`flex w-full max-w-[340px] cursor-pointer flex-col overflow-hidden rounded-xl text-left shadow-xl transition hover:-translate-y-1 ${
+              className={`flex cursor-pointer flex-col overflow-hidden rounded-xl text-left shadow-xl transition hover:-translate-y-1 ${
+                mode === 'zones-only' || mode === 'mixed' ? 'basis-[300px] grow' : 'w-full max-w-[340px]'
+              } ${
                 mode === 'zones-only' || mode === 'mixed' ? 'bg-transparent' : 'bg-brand-white'
               }`}
             >

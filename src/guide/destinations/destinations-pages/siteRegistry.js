@@ -6,6 +6,7 @@ import { gunaYalaSiteRegistry } from './comarca-guna-yala/siteRegistry.js'
 import { cocleSiteRegistry } from './cocle/siteRegistry.js'
 import { herreraSiteRegistry } from './herrera/siteRegistry.js'
 import { losSantosSiteRegistry } from './los-santos/siteRegistry.js'
+import { panamaSiteRegistry } from './panama/siteRegistry.js'
 import { panamaOesteSiteRegistry } from './panama-oeste/siteRegistry.js'
 import { veraguasSiteRegistry } from './veraguas/siteRegistry.js'
 
@@ -18,6 +19,7 @@ export const siteRegistry = {
   ...cocleSiteRegistry,
   ...herreraSiteRegistry,
   ...losSantosSiteRegistry,
+  ...panamaSiteRegistry,
   ...panamaOesteSiteRegistry,
   ...veraguasSiteRegistry,
 }
