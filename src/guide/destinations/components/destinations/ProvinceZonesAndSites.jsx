@@ -37,7 +37,7 @@ function ProvinceZonesAndSites({ provinceData }) {
       )}
       {sites.length > 0 && (
         <ProvinceTargetsGrid
-          title="Sitios Directos"
+          title="Lugares turísticos"
           targets={sites}
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="sites-only"

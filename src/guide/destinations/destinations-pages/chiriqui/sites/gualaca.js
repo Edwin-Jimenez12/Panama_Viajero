@@ -53,25 +53,13 @@ export const gualaca = {
     {
       nombre: 'Exploración de cascadas',
       descripcion:
-        'Visita atractivos naturales escondidos entre las montañas de la región.',
+        'Nada y disfruta de las refrescantes cascadas y corrientes que atraviesan la zona.',
       icono: '',
     },
     {
       nombre: 'Turismo rural',
       descripcion:
         'Conoce la cultura local y los paisajes agrícolas característicos de Gualaca.',
-      icono: '',
-    },
-    {
-      nombre: 'Aventura acuática',
-      descripcion:
-        'Nada y disfruta de las refrescantes corrientes que atraviesan la zona.',
-      icono: '',
-    },
-    {
-      nombre: 'Relajación en la naturaleza',
-      descripcion:
-        'Desconéctate del ritmo urbano rodeado de tranquilidad y aire puro.',
       icono: '',
     },
   ],

@@ -5,6 +5,7 @@ import SimuladorApp from '../../../img_test/Simulador_app_P1.svg'
 function AboutUs() {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  /* const baseRotation = { x: 30, y: -20, z: 30 }; */
   const baseRotation = { x: 5, y: -15, z: 4 };
 
   const onMouseMove = (event) => {

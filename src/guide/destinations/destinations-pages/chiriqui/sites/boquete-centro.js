@@ -56,22 +56,11 @@ export const boqueteCentro = {
         'Conoce productores de café, agricultores y artesanos que exhiben lo mejor de las tierras altas.',
       icono: '',
     },
-    {
-      nombre: 'Observación del río Caldera',
-      descripcion:
-        'Disfruta de las vistas y el sonido de las aguas que atraviesan el distrito y enriquecen su paisaje natural.',
-      icono: '',
-    },
+
     {
       nombre: 'Vida nocturna tranquila',
       descripcion:
         'Descubre bares, terrazas y espacios acogedores donde disfrutar del clima fresco de montaña.',
-      icono: '',
-    },
-    {
-      nombre: 'Punto de partida para aventuras',
-      descripcion:
-        'Utiliza el centro de Boquete como base para explorar senderos, cascadas, fincas cafetaleras y el Volcán Barú.',
       icono: '',
     },
   ],

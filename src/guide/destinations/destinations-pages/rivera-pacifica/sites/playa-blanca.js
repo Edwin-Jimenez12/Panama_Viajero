@@ -7,8 +7,10 @@ export const playaBlanca = {
   riveraPacifica: true,
   nombre: 'Playa Blanca',
   banner: { src: base, alt: 'Banner de Playa Blanca' },
-  descripcion: 'Un refugio costero escondido de arenas claras y aguas serenas, donde la naturaleza tropical se entrelaza con la pasividad del mar.',
-  previewDescripcion: 'Una joya costera escondida de arenas claras y aguas mansas.',
+descripcion:
+    'Un refugio costero de gran belleza natural donde las suaves arenas claras y las tranquilas aguas del ma. Rodeado de vegetación tropical y un ambiente sereno, este destino invita a disfrutar del sol, la brisa marina y la tranquilidad de un paraíso escondido.',
+previewDescripcion:
+    'Un rincón costero de arenas claras, aguas serenas y paisajes tropicales ideales para descansar y desconectarse.',
   previewUbicacion: 'Rivera Pacífica, Playa Blanca',
   actividades: [
     { nombre: 'Caminata por la bahía', descripcion: 'Recorre el litoral de arenas claras disfrutando de una tranquilidad absoluta y de la brisa marina.', icono: '' },

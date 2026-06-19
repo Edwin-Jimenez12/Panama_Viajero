@@ -6,8 +6,10 @@ export const playaFarallon = {
   riveraPacifica: true,
   nombre: 'Playa Farallon',
   banner: { src: base, alt: 'Banner de Playa Farallon' },
-  descripcion: 'Un imponente paraje costero custodiado por monumentales formaciones de piedra que emergen con fuerza desde el fondo del mar.',
-  previewDescripcion: 'Una majestuosa costa pacífica dominada por imponentes formaciones rocosas marinas.',
+descripcion:
+    'Un impresionante rincón costero donde enormes formaciones rocosas emergen majestuosamente del mar, creando un paisaje único que combina fuerza natural, belleza escénica y la inmensidad del Pacífico. Este destino ofrece una experiencia visual impactante y un entorno ideal para conectar con la naturaleza y admirar la grandeza del océano.',
+    previewDescripcion:
+    'Una impresionante costa del Pacífico donde gigantescas formaciones rocosas y paisajes marinos crean un escenario natural inolvidable.',
   previewUbicacion: 'Rivera Pacífica, Playa Farallón',
   actividades: [
     { nombre: 'Caminata entre farallones', descripcion: 'Recorre la orilla de la playa contemplando de cerca las gigantescas estructuras rocosas de la costa.', icono: '' },
