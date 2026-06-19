@@ -9,21 +9,59 @@ export const islaContadora = {
         alt: 'Banner de Isla Contadora',
     },
     descripcion:
-        'Una de las islas más famosas del Archipiélago de las Perlas, reconocida por sus playas de arena clara, aguas cristalinas y ambiente exclusivo. Es ideal para escapadas tropicales, descanso frente al mar y recorridos entre islas.',
+        'Una de las islas más emblemáticas del Archipiélago de las Perlas, famosa por sus playas de arena clara, aguas cristalinas y ambiente exclusivo. Isla Contadora es perfecta para escapadas tropicales, descanso frente al mar y experiencias marítimas en uno de los destinos más atractivos del Pacífico panameño.',
     previewDescripcion:
-        'Playas cristalinas, descanso y encanto tropical en el Archipiélago de las Perlas.',
+        'Playas cristalinas, tranquilidad y encanto tropical en una de las islas más exclusivas de Panamá.',
     previewUbicacion: 'Panamá, Archipiélago de las Perlas',
     actividades: [
-        { nombre: 'Disfrutar de la playa', descripcion: 'Relájate en playas tranquilas de arena clara.', icono: '' },
-        { nombre: 'Snorkel', descripcion: 'Explora aguas cristalinas y vida marina.', icono: '' },
-        { nombre: 'Paseos en bote', descripcion: 'Recorre islas y costas cercanas.', icono: '' },
-        { nombre: 'Natación', descripcion: 'Disfruta aguas cálidas del Pacífico panameño.', icono: '' },
-        { nombre: 'Fotografía tropical', descripcion: 'Captura paisajes costeros y vistas paradisíacas.', icono: '' },
-        { nombre: 'Observación de fauna marina', descripcion: 'Descubre peces, aves marinas y especies costeras.', icono: '' },
-        { nombre: 'Avistamiento de ballenas', descripcion: 'Durante temporada, observa ballenas jorobadas en el Pacífico.', icono: '' },
-        { nombre: 'Gastronomía marina', descripcion: 'Disfruta mariscos frescos y platos frente al mar.', icono: '' },
-        { nombre: 'Escapada romántica', descripcion: 'Vive una experiencia tranquila en un entorno exclusivo.', icono: '' },
-        { nombre: 'Excursiones entre islas', descripcion: 'Conoce otros rincones del Archipiélago de las Perlas.', icono: '' },
+        {
+            nombre: 'Disfrutar de la playa',
+            descripcion:
+                'Relájate en playas de arena clara y aguas tranquilas ideales para descansar y disfrutar del entorno tropical.',
+            icono: '',
+        },
+        {
+            nombre: 'Snorkel',
+            descripcion:
+                'Explora aguas cristalinas y descubre arrecifes, peces tropicales y vida marina del Pacífico.',
+            icono: '',
+        },
+        {
+            nombre: 'Paseos en bote',
+            descripcion:
+                'Recorre las costas de la isla y descubre playas escondidas y paisajes marinos únicos.',
+            icono: '',
+        },
+        {
+            nombre: 'Natación',
+            descripcion:
+                'Disfruta de aguas cálidas y calmadas, ideales para nadar y relajarse.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación de fauna marina',
+            descripcion:
+                'Descubre aves marinas, peces y otras especies que habitan en el entorno costero de la isla.',
+            icono: '',
+        },
+        {
+            nombre: 'Avistamiento de ballenas',
+            descripcion:
+                'Durante la temporada, observa ballenas jorobadas que migran por las aguas del Pacífico panameño.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía marina',
+            descripcion:
+                'Disfruta mariscos frescos y cocina local en restaurantes con vistas al mar.',
+            icono: '',
+        },
+        {
+            nombre: 'Excursiones entre islas',
+            descripcion:
+                'Explora otras islas del Archipiélago de las Perlas y amplía la experiencia en este paraíso insular.',
+            icono: '',
+        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Isla%20Contadora%20Panama&output=embed',

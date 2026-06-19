@@ -9,21 +9,54 @@ export const cintaCostera = {
         alt: 'Banner de Cinta Costera',
     },
     descripcion:
-        'Uno de los espacios urbanos más importantes de la capital, ideal para caminar, hacer ejercicio y disfrutar de vistas espectaculares del skyline de Panamá y la Bahía de Panamá.',
+        'Uno de los espacios urbanos más emblemáticos de la capital, ideal para disfrutar del mar, hacer ejercicio y contemplar algunas de las mejores vistas del skyline de Panamá y la Bahía de Panamá. Su ambiente abierto y moderno lo convierte en un punto clave para la recreación y la vida urbana.',
     previewDescripcion:
-        'Vistas al mar, recreación y el mejor skyline de la ciudad.',
+        'Vistas al mar, recreación y uno de los skylines más impresionantes de la ciudad.',
     previewUbicacion: 'Panamá, Capital',
     actividades: [
-        { nombre: 'Caminatas', descripcion: 'Recorre kilómetros de costa con vistas increíbles.', icono: '' },
-        { nombre: 'Ciclismo', descripcion: 'Disfruta rutas urbanas junto al mar.', icono: '' },
-        { nombre: 'Fotografía del skyline', descripcion: 'Captura la moderna silueta de la ciudad.', icono: '' },
-        { nombre: 'Ejercicio al aire libre', descripcion: 'Aprovecha áreas deportivas y recreativas.', icono: '' },
-        { nombre: 'Patinaje', descripcion: 'Disfruta amplios espacios para patinar.', icono: '' },
-        { nombre: 'Picnic urbano', descripcion: 'Comparte momentos en áreas verdes frente al mar.', icono: '' },
-        { nombre: 'Atardeceres', descripcion: 'Contempla uno de los mejores sunsets de la ciudad.', icono: '' },
-        { nombre: 'Eventos públicos', descripcion: 'Participa en actividades y festivales al aire libre.', icono: '' },
-        { nombre: 'Turismo urbano', descripcion: 'Conoce la ciudad desde uno de sus puntos más emblemáticos.', icono: '' },
-        { nombre: 'Recreación familiar', descripcion: 'Ideal para actividades con niños y familia.', icono: '' },
+        {
+            nombre: 'Caminatas',
+            descripcion:
+                'Recorre kilómetros de paseo marítimo mientras disfrutas de vistas abiertas al mar y la ciudad.',
+            icono: '',
+        },
+        {
+            nombre: 'Ciclismo',
+            descripcion:
+                'Aprovecha sus amplias rutas para pedalear junto a la costa con una vista privilegiada del skyline.',
+            icono: '',
+        },
+        {
+            nombre: 'Fotografía del skyline',
+            descripcion:
+                'Captura la moderna silueta de la ciudad desde uno de los mejores puntos panorámicos de Panamá.',
+            icono: '',
+        },
+        {
+            nombre: 'Ejercicio al aire libre',
+            descripcion:
+                'Utiliza sus áreas deportivas y espacios abiertos para correr, entrenar o mantenerte activo.',
+            icono: '',
+        },
+        {
+            nombre: 'Patinaje',
+            descripcion:
+                'Disfruta de sus amplios espacios pavimentados, ideales para patinar con comodidad y vistas al mar.',
+            icono: '',
+        },
+        {
+            nombre: 'Eventos y festivales',
+            descripcion:
+                'Participa en conciertos, actividades culturales y eventos públicos que suelen celebrarse en este importante espacio urbano.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación de atardeceres',
+            descripcion:
+                'Disfruta de impresionantes puestas de sol sobre la Bahía de Panamá, uno de los momentos más especiales del lugar.',
+            icono: '',
+        },
     ],
-    ubicacion: 'https://www.google.com/maps?q=Cinta%20Costera%20Panama&output=embed',
+    ubicacion:
+        'https://www.google.com/maps?q=Cinta%20Costera%20Panama&output=embed',
 }

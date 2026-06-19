@@ -9,21 +9,54 @@ export const puntaPaitilla = {
         alt: 'Banner de Punta Paitilla',
     },
     descripcion:
-        'Una de las zonas más exclusivas y modernas de la ciudad de Panamá, reconocida por sus lujosos edificios, centros comerciales y vistas privilegiadas al océano Pacífico.',
+        'Una de las zonas más exclusivas y modernas de la ciudad de Panamá, reconocida por sus imponentes rascacielos, centros comerciales de alto nivel y vistas privilegiadas al océano Pacífico. Punta Paitilla representa el lado más sofisticado y cosmopolita de la capital.',
     previewDescripcion:
-        'Modernidad, exclusividad y vistas privilegiadas al Pacífico.',
+        'Modernidad, exclusividad y vistas privilegiadas al Pacífico en una de las zonas más elegantes de Panamá.',
     previewUbicacion: 'Panamá, Capital',
     actividades: [
-        { nombre: 'Compras exclusivas', descripcion: 'Accede a centros comerciales de lujo.', icono: '' },
-        { nombre: 'Gastronomía premium', descripcion: 'Disfruta restaurantes de alta categoría.', icono: '' },
-        { nombre: 'Fotografía urbana', descripcion: 'Captura el lujo y modernidad de la zona.', icono: '' },
-        { nombre: 'Paseos urbanos', descripcion: 'Recorre una de las áreas más sofisticadas de Panamá.', icono: '' },
-        { nombre: 'Observación del skyline', descripcion: 'Disfruta vistas modernas y panorámicas.', icono: '' },
-        { nombre: 'Turismo de lujo', descripcion: 'Vive una experiencia premium en la capital.', icono: '' },
-        { nombre: 'Vida nocturna', descripcion: 'Descubre bares y lounges exclusivos.', icono: '' },
-        { nombre: 'Cafés de especialidad', descripcion: 'Disfruta espacios elegantes y acogedores.', icono: '' },
-        { nombre: 'Paseos frente al mar', descripcion: 'Conecta con la costa y la ciudad.', icono: '' },
-        { nombre: 'Experiencia urbana', descripcion: 'Conoce el lado moderno de Panamá.', icono: '' },
+        {
+            nombre: 'Compras exclusivas',
+            descripcion:
+                'Accede a boutiques, tiendas de lujo y centros comerciales de alto nivel en una de las zonas más exclusivas de la ciudad.',
+            icono: '',
+        },
+        {
+            nombre: 'Gastronomía premium',
+            descripcion:
+                'Disfruta restaurantes de alta cocina, cafés elegantes y propuestas culinarias internacionales.',
+            icono: '',
+        },
+        {
+            nombre: 'Paseos urbanos',
+            descripcion:
+                'Recorre una de las áreas más modernas y sofisticadas de Panamá rodeado de arquitectura de lujo.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación del skyline',
+            descripcion:
+                'Contempla algunos de los edificios más emblemáticos y modernos que forman el perfil urbano de la capital.',
+            icono: '',
+        },
+        {
+            nombre: 'Vida nocturna',
+            descripcion:
+                'Descubre bares, lounges y espacios exclusivos para disfrutar del ambiente nocturno de la ciudad.',
+            icono: '',
+        },
+        {
+            nombre: 'Cafés de especialidad',
+            descripcion:
+                'Relájate en espacios elegantes ideales para disfrutar café, postres y reuniones con vistas urbanas.',
+            icono: '',
+        },
+        {
+            nombre: 'Paseos frente al mar',
+            descripcion:
+                'Disfruta caminatas con vistas al océano Pacífico y al contraste entre la ciudad moderna y la costa.',
+            icono: '',
+        },
     ],
-    ubicacion: 'https://www.google.com/maps?q=Punta%20Paitilla%20Panama&output=embed',
+    ubicacion:
+        'https://www.google.com/maps?q=Punta%20Paitilla%20Panama&output=embed',
 }

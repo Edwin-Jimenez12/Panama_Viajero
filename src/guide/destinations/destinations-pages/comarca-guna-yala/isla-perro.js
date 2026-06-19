@@ -9,69 +9,45 @@ export const islaPerro = {
         alt: 'Banner de Isla Perro',
     },
     descripcion:
-        'Una de las islas más famosas de Guna Yala, conocida por sus aguas cristalinas, arena blanca y el emblemático barco hundido que descansa cerca de la costa. Es un destino ideal para disfrutar del Caribe panameño y descubrir la belleza natural de las islas Guna.',
+        'Una de las islas más famosas de Guna Yala, reconocida por sus aguas cristalinas, arena blanca y el emblemático barco hundido que descansa cerca de la costa. Isla Perro es uno de los mejores lugares del archipiélago para combinar playa, snorkel y vida marina en un entorno paradisíaco.',
     previewDescripcion:
-        'Playas paradisíacas, aguas cristalinas y un famoso barco hundido en el Caribe panameño.',
+        'Playas paradisíacas, snorkel y un icónico barco hundido en las aguas cristalinas de Guna Yala.',
     previewUbicacion: 'Guna Yala, Isla Perro',
     actividades: [
         {
             nombre: 'Snorkel en el barco hundido',
             descripcion:
-                'Explora uno de los atractivos más populares de Guna Yala rodeado de peces tropicales.',
+                'Explora uno de los atractivos más emblemáticos de Guna Yala mientras nadas entre peces tropicales y restos del naufragio.',
             icono: '',
         },
         {
             nombre: 'Disfrutar de la playa',
             descripcion:
-                'Relájate en playas de arena blanca y aguas turquesas.',
+                'Relájate en playas de arena blanca y aguas turquesas rodeadas de un entorno completamente tropical.',
             icono: '',
         },
         {
             nombre: 'Natación',
             descripcion:
-                'Nada en aguas tranquilas y cristalinas ideales para toda la familia.',
-            icono: '',
-        },
-        {
-            nombre: 'Fotografía tropical',
-            descripcion:
-                'Captura paisajes caribeños únicos y escenarios paradisíacos.',
+                'Nada en aguas tranquilas y cristalinas ideales para refrescarte y disfrutar del Caribe panameño.',
             icono: '',
         },
         {
             nombre: 'Observación de vida marina',
             descripcion:
-                'Descubre peces tropicales y otras especies marinas.',
+                'Descubre peces tropicales, corales y otras especies marinas que habitan alrededor de la isla.',
             icono: '',
         },
         {
             nombre: 'Paseos en lancha',
             descripcion:
-                'Explora otras islas cercanas del archipiélago.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo de naturaleza',
-            descripcion:
-                'Disfruta de uno de los entornos naturales más bellos de Panamá.',
-            icono: '',
-        },
-        {
-            nombre: 'Descanso frente al mar',
-            descripcion:
-                'Desconéctate en un ambiente tranquilo y relajante.',
-            icono: '',
-        },
-        {
-            nombre: 'Avistamiento de paisajes caribeños',
-            descripcion:
-                'Admira el contraste entre el mar turquesa y la arena blanca.',
+                'Explora otras islas y cayos cercanos del archipiélago para ampliar la experiencia en Guna Yala.',
             icono: '',
         },
         {
             nombre: 'Excursiones insulares',
             descripcion:
-                'Utiliza la isla como punto de partida para conocer otros cayos cercanos.',
+                'Utiliza Isla Perro como punto de partida para visitar otros rincones paradisíacos de la región.',
             icono: '',
         },
     ],

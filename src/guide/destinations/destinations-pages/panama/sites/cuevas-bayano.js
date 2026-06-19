@@ -9,69 +9,51 @@ export const cuevasBayano = {
         alt: 'Banner de Cuevas de Bayano',
     },
     descripcion:
-        'Uno de los destinos de aventura más impresionantes de Panamá, donde enormes cavernas, ríos subterráneos y formaciones rocosas crean una experiencia única para los amantes de la exploración y la naturaleza.',
+        'Uno de los destinos de aventura más impresionantes de Panamá, donde enormes cavernas, ríos subterráneos y formaciones rocosas crean una experiencia única para quienes buscan exploración, adrenalina y contacto directo con la naturaleza.',
     previewDescripcion:
-        'Aventura, exploración y naturaleza en las impresionantes cavernas de Bayano.',
+        'Aventura, exploración y ríos subterráneos en uno de los escenarios naturales más sorprendentes de Panamá.',
     previewUbicacion: 'Panamá, Bayano',
     actividades: [
         {
             nombre: 'Exploración de cuevas',
             descripcion:
-                'Recorre cavernas gigantes con guías especializados.',
+                'Recorre enormes cavernas acompañado de guías especializados mientras descubres sus pasajes y cámaras ocultas.',
             icono: '',
         },
         {
             nombre: 'Espeleología',
             descripcion:
-                'Descubre formaciones rocosas y pasajes subterráneos.',
+                'Adéntrate en un sistema de cuevas lleno de formaciones rocosas, estalactitas y estalagmitas impresionantes.',
             icono: '',
         },
         {
             nombre: 'Natación en ríos subterráneos',
             descripcion:
-                'Vive una experiencia única en aguas cristalinas.',
+                'Nada en aguas cristalinas dentro de la cueva, viviendo una experiencia única bajo tierra.',
             icono: '',
         },
         {
-            nombre: 'Kayak',
+            nombre: 'Kayak en el lago Bayano',
             descripcion:
-                'Explora áreas cercanas del lago Bayano.',
-            icono: '',
-        },
-        {
-            nombre: 'Fotografía de aventura',
-            descripcion:
-                'Captura escenarios únicos dentro de las cavernas.',
+                'Explora las aguas del lago cercano y disfruta de una perspectiva diferente de la zona.',
             icono: '',
         },
         {
             nombre: 'Senderismo',
             descripcion:
-                'Recorre caminos naturales antes de entrar a las cuevas.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo de aventura',
-            descripcion:
-                'Disfruta una experiencia extrema y diferente.',
+                'Recorre senderos naturales que conectan con la entrada de las cuevas y sus alrededores selváticos.',
             icono: '',
         },
         {
             nombre: 'Observación de fauna',
             descripcion:
-                'Descubre murciélagos y otras especies de cueva.',
+                'Descubre murciélagos y otras especies adaptadas al ecosistema cavernoso durante la expedición.',
             icono: '',
         },
         {
-            nombre: 'Conexión con la naturaleza',
+            nombre: 'Tours guiados de aventura',
             descripcion:
-                'Explora un ecosistema único y protegido.',
-            icono: '',
-        },
-        {
-            nombre: 'Experiencia extrema',
-            descripcion:
-                'Ideal para quienes buscan aventura y adrenalina.',
+                'Participa en recorridos organizados que combinan exploración, seguridad y aprendizaje sobre el lugar.',
             icono: '',
         },
     ],

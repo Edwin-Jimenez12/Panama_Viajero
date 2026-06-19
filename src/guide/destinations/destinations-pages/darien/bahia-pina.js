@@ -9,69 +9,51 @@ export const bahiaPina = {
         alt: 'Banner de Bahía Piña',
     },
     descripcion:
-        'Un remoto paraíso del Pacífico panameño rodeado de selva tropical, manglares y una extraordinaria biodiversidad marina. Reconocida internacionalmente por la pesca deportiva y sus paisajes naturales, Bahía Piña ofrece una experiencia única para quienes buscan aventura y conexión con la naturaleza.',
+        'Un remoto paraíso del Pacífico panameño rodeado de selva tropical, manglares y una extraordinaria biodiversidad marina. Reconocida internacionalmente por la pesca deportiva, Bahía Piña ofrece una experiencia única para quienes buscan aventura, vida silvestre y naturaleza en uno de los rincones más salvajes de Panamá.',
     previewDescripcion:
-        'Pesca deportiva, naturaleza y aventura en uno de los rincones más espectaculares del Darién.',
+        'Pesca deportiva, biodiversidad y aventura en uno de los destinos más remotos y espectaculares del Darién.',
     previewUbicacion: 'Darién, Bahía Piña',
     actividades: [
         {
             nombre: 'Pesca deportiva',
             descripcion:
-                'Disfruta de uno de los mejores destinos de pesca deportiva del Pacífico oriental.',
+                'Disfruta de uno de los destinos de pesca deportiva más reconocidos del Pacífico oriental, famoso por especies de gran tamaño.',
             icono: '',
         },
         {
             nombre: 'Avistamiento de fauna marina',
             descripcion:
-                'Observa especies marinas que habitan las aguas de la región.',
+                'Observa delfines, tortugas y otras especies marinas que habitan las aguas de la región.',
             icono: '',
         },
         {
             nombre: 'Paseos en bote',
             descripcion:
-                'Explora bahías, manglares y paisajes costeros de gran belleza.',
-            icono: '',
-        },
-        {
-            nombre: 'Fotografía de naturaleza',
-            descripcion:
-                'Captura escenarios únicos donde la selva se encuentra con el océano.',
-            icono: '',
-        },
-        {
-            nombre: 'Observación de aves',
-            descripcion:
-                'Descubre especies tropicales propias del Darién.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo ecológico',
-            descripcion:
-                'Explora ecosistemas protegidos de gran importancia ambiental.',
+                'Explora bahías, costas y zonas naturales donde la selva tropical se encuentra con el océano.',
             icono: '',
         },
         {
             nombre: 'Exploración de manglares',
             descripcion:
-                'Conoce hábitats esenciales para numerosas especies marinas y terrestres.',
+                'Recorre ecosistemas costeros vitales para la biodiversidad y descubre su riqueza natural.',
             icono: '',
         },
         {
-            nombre: 'Aventura en la naturaleza',
+            nombre: 'Observación de aves',
             descripcion:
-                'Adéntrate en uno de los entornos más salvajes y auténticos de Panamá.',
+                'Descubre especies tropicales y migratorias propias de una de las regiones más biodiversas de Panamá.',
             icono: '',
         },
         {
-            nombre: 'Observación de paisajes costeros',
+            nombre: 'Fotografía de naturaleza',
             descripcion:
-                'Admira la combinación de selva tropical y océano Pacífico.',
+                'Captura paisajes impresionantes donde convergen selva, mar y vida silvestre en un entorno casi intacto.',
             icono: '',
         },
         {
-            nombre: 'Escapada de aventura',
+            nombre: 'Expediciones selváticas',
             descripcion:
-                'Vive una experiencia exclusiva en una de las regiones más remotas del país.',
+                'Adéntrate en los alrededores de Bahía Piña para explorar uno de los ecosistemas más salvajes y auténticos del Darién.',
             icono: '',
         },
     ],

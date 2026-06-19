@@ -9,21 +9,47 @@ export const cerroAncon = {
         alt: 'Banner de Cerro Ancón',
     },
     descripcion:
-        'Uno de los miradores naturales más icónicos de Panamá, famoso por ofrecer vistas panorámicas de la ciudad, el Canal y la bahía. Es un lugar ideal para caminatas y conexión con la naturaleza.',
+        'Uno de los miradores naturales más emblemáticos de Panamá, reconocido por sus impresionantes vistas panorámicas de la ciudad, el Canal y la bahía. Su combinación de naturaleza, historia y simbolismo nacional lo convierten en una visita imprescindible dentro de la capital.',
     previewDescripcion:
-        'Vistas panorámicas, naturaleza y uno de los símbolos más importantes de Panamá.',
+        'Vistas panorámicas, naturaleza e historia en uno de los puntos más icónicos de Panamá.',
     previewUbicacion: 'Panamá, Selva Metropolitana',
     actividades: [
-        { nombre: 'Caminata al mirador', descripcion: 'Sube hasta la cima y disfruta la vista.', icono: '' },
-        { nombre: 'Fotografía panorámica', descripcion: 'Captura la ciudad y el Canal desde las alturas.', icono: '' },
-        { nombre: 'Observación de fauna', descripcion: 'Descubre especies urbanas y tropicales.', icono: '' },
-        { nombre: 'Turismo ecológico', descripcion: 'Conoce uno de los puntos naturales más importantes de la capital.', icono: '' },
-        { nombre: 'Ejercicio al aire libre', descripcion: 'Aprovecha la subida para actividad física.', icono: '' },
-        { nombre: 'Observación del Canal', descripcion: 'Disfruta vistas estratégicas del Canal de Panamá.', icono: '' },
-        { nombre: 'Avistamiento de aves', descripcion: 'Encuentra aves tropicales y migratorias.', icono: '' },
-        { nombre: 'Conexión con la historia', descripcion: 'Conoce el simbolismo de la bandera nacional en la cima.', icono: '' },
-        { nombre: 'Paseo familiar', descripcion: 'Ideal para disfrutar con amigos y familia.', icono: '' },
-        { nombre: 'Atardeceres', descripcion: 'Contempla hermosos sunsets desde lo alto.', icono: '' },
+        {
+            nombre: 'Caminata al mirador',
+            descripcion:
+                'Recorre el ascenso hasta la cima y disfruta de una experiencia rodeada de vegetación y vistas espectaculares.',
+            icono: '',
+        },
+        {
+            nombre: 'Fotografía panorámica',
+            descripcion:
+                'Captura impresionantes vistas de la ciudad de Panamá, la bahía y el Canal desde uno de sus mejores puntos de observación.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación de fauna',
+            descripcion:
+                'Descubre especies como perezosos, monos y otros animales que habitan este pulmón natural en plena ciudad.',
+            icono: '',
+        },
+        {
+            nombre: 'Avistamiento de aves',
+            descripcion:
+                'Observa aves tropicales y migratorias en uno de los espacios verdes más importantes de la capital.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación del Canal',
+            descripcion:
+                'Admira una perspectiva privilegiada del Canal de Panamá y su importancia estratégica.',
+            icono: '',
+        },
+        {
+            nombre: 'Conexión con la historia',
+            descripcion:
+                'Conoce el valor histórico y simbólico del cerro, coronado por la bandera panameña como emblema nacional.',
+            icono: '',
+        },
     ],
     ubicacion:
         'https://www.google.com/maps?q=Cerro%20Ancon%20Panama&output=embed',

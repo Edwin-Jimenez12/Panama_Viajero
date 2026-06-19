@@ -9,21 +9,54 @@ export const panamaViejo = {
         alt: 'Banner de Panamá Viejo',
     },
     descripcion:
-        'Las ruinas de la primera ciudad fundada por los españoles en el Pacífico americano. Este sitio arqueológico es una pieza clave de la historia de Panamá y ofrece un recorrido fascinante entre vestigios coloniales.',
+        'Las ruinas de la primera ciudad fundada por los españoles en el Pacífico americano y uno de los sitios históricos más importantes del país. Panamá Viejo ofrece una experiencia única para descubrir el origen de la ciudad y revivir parte de su legado colonial a través de su patrimonio arqueológico.',
     previewDescripcion:
-        'Historia, arqueología y patrimonio en la primera ciudad de Panamá.',
+        'Historia, arqueología y patrimonio en el lugar donde nació la ciudad de Panamá.',
     previewUbicacion: 'Panamá, Capital',
     actividades: [
-        { nombre: 'Recorrido arqueológico', descripcion: 'Explora ruinas históricas de gran valor patrimonial.', icono: '' },
-        { nombre: 'Visita al museo', descripcion: 'Conoce la historia de la ciudad original.', icono: '' },
-        { nombre: 'Fotografía histórica', descripcion: 'Captura vestigios coloniales únicos.', icono: '' },
-        { nombre: 'Turismo educativo', descripcion: 'Aprende sobre la fundación y destrucción de Panamá Viejo.', icono: '' },
-        { nombre: 'Observación de ruinas', descripcion: 'Admira estructuras que sobrevivieron siglos.', icono: '' },
-        { nombre: 'Paseo cultural', descripcion: 'Conecta con la historia del país.', icono: '' },
-        { nombre: 'Subida a la torre', descripcion: 'Disfruta vistas panorámicas desde uno de sus puntos más altos.', icono: '' },
-        { nombre: 'Visita guiada', descripcion: 'Profundiza en la historia con expertos.', icono: '' },
-        { nombre: 'Exploración patrimonial', descripcion: 'Conoce el origen de la ciudad de Panamá.', icono: '' },
-        { nombre: 'Experiencia histórica', descripcion: 'Revive los primeros años de la colonia española.', icono: '' },
+        {
+            nombre: 'Recorrido arqueológico',
+            descripcion:
+                'Explora ruinas y vestigios coloniales que revelan cómo era la primera ciudad de Panamá.',
+            icono: '',
+        },
+        {
+            nombre: 'Visita al museo',
+            descripcion:
+                'Descubre piezas históricas y exposiciones que narran la fundación, desarrollo y destrucción de Panamá Viejo.',
+            icono: '',
+        },
+        {
+            nombre: 'Subida a la torre',
+            descripcion:
+                'Asciende a uno de los puntos más emblemáticos del sitio y disfruta vistas panorámicas de la ciudad moderna y sus alrededores.',
+            icono: '',
+        },
+        {
+            nombre: 'Visita guiada',
+            descripcion:
+                'Profundiza en la historia y relevancia del sitio con explicaciones especializadas durante el recorrido.',
+            icono: '',
+        },
+        {
+            nombre: 'Fotografía histórica',
+            descripcion:
+                'Captura la belleza de las ruinas y la mezcla entre historia colonial y ciudad contemporánea.',
+            icono: '',
+        },
+        {
+            nombre: 'Experiencia educativa',
+            descripcion:
+                'Aprende sobre la fundación de la ciudad y su importancia dentro de la expansión española en América.',
+            icono: '',
+        },
+        {
+            nombre: 'Observación del patrimonio colonial',
+            descripcion:
+                'Admira estructuras y detalles arquitectónicos que han sobrevivido siglos como parte del legado histórico de Panamá.',
+            icono: '',
+        },
     ],
-    ubicacion: 'https://www.google.com/maps?q=Panama%20Viejo%20Panama&output=embed',
+    ubicacion:
+        'https://www.google.com/maps?q=Panama%20Viejo%20Panama&output=embed',
 }

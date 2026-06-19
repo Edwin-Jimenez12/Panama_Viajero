@@ -9,69 +9,51 @@ export const islaTaboga = {
         alt: 'Banner de Isla Taboga',
     },
     descripcion:
-        'Conocida como la Isla de las Flores, Taboga es uno de los destinos insulares más accesibles y encantadores de Panamá. Sus playas, su historia colonial y su ambiente relajado la convierten en una escapada perfecta desde la ciudad.',
+        'Conocida como la Isla de las Flores, Taboga es uno de los destinos insulares más accesibles y encantadores de Panamá. Sus playas, su legado colonial y su ambiente relajado la convierten en una escapada ideal para quienes buscan combinar historia, mar y tranquilidad a pocos minutos de la ciudad.',
     previewDescripcion:
-        'Playas, historia y tranquilidad en una de las islas más emblemáticas de Panamá.',
+        'Playas, historia y tranquilidad en una de las islas más emblemáticas y accesibles de Panamá.',
     previewUbicacion: 'Panamá, Isla Taboga',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',
             descripcion:
-                'Relájate en playas tranquilas con vistas al Pacífico.',
+                'Relájate en playas tranquilas y disfruta de la brisa marina con vistas al Pacífico.',
             icono: '',
         },
         {
             nombre: 'Caminatas históricas',
             descripcion:
-                'Recorre calles llenas de historia y arquitectura colonial.',
+                'Recorre calles llenas de historia, arquitectura colonial y rincones tradicionales de la isla.',
             icono: '',
         },
         {
             nombre: 'Senderismo',
             descripcion:
-                'Sube a miradores naturales con vistas panorámicas.',
-            icono: '',
-        },
-        {
-            nombre: 'Fotografía tropical',
-            descripcion:
-                'Captura playas, paisajes y rincones históricos.',
+                'Sube a miradores naturales y disfruta de impresionantes vistas panorámicas del océano y la costa.',
             icono: '',
         },
         {
             nombre: 'Natación',
             descripcion:
-                'Disfruta de aguas tranquilas y cálidas.',
+                'Aprovecha sus aguas tranquilas y cálidas para refrescarte y disfrutar del mar.',
             icono: '',
         },
         {
             nombre: 'Gastronomía local',
             descripcion:
-                'Prueba mariscos frescos y platos típicos frente al mar.',
+                'Prueba mariscos frescos y platos típicos en restaurantes frente al mar.',
             icono: '',
         },
         {
             nombre: 'Paseos en bote',
             descripcion:
-                'Explora áreas cercanas y disfruta del mar.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo cultural',
-            descripcion:
-                'Conoce una de las comunidades históricas más antiguas del Pacífico.',
+                'Explora la costa de la isla y descubre otras perspectivas del paisaje marino.',
             icono: '',
         },
         {
             nombre: 'Observación de atardeceres',
             descripcion:
-                'Disfruta vistas espectaculares al final del día.',
-            icono: '',
-        },
-        {
-            nombre: 'Escapada de un día',
-            descripcion:
-                'Ideal para desconectarse a poca distancia de la ciudad.',
+                'Contempla espectaculares puestas de sol que hacen de Taboga uno de los mejores puntos para cerrar el día.',
             icono: '',
         },
     ],

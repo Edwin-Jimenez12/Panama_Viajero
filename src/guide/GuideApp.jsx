@@ -84,13 +84,13 @@ function GuideHome() {
 
       <section id="home" ref={homeRef} className="relative">
         <BannerLayout />
-        <div className="pointer-events-none absolute inset-0 z-20 mr-2 mb-2 flex items-end justify-start md:mr-5 md:mb-4">
+        <div className="absolute inset-0 z-20 mr-2 mb-2 flex items-end justify-start md:mr-5 md:mb-4">
           <img
             src={Logo}
             alt="Logo"
             fetchPriority="high"
             decoding="async"
-            className="mb-15 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)]"
+            className="mb-15 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] duration-400 hover:scale-103"
           />
         </div>
       </section>

@@ -9,69 +9,45 @@ export const islaChichime = {
         alt: 'Banner de Isla Chichime',
     },
     descripcion:
-        'Un auténtico paraíso tropical rodeado de aguas transparentes y palmeras que parecen sacadas de una postal. Isla Chichime ofrece una experiencia caribeña inolvidable para quienes buscan tranquilidad, naturaleza y playas espectaculares.',
+        'Un auténtico paraíso tropical rodeado de aguas transparentes y palmeras que parecen sacadas de una postal. Isla Chichime ofrece una experiencia caribeña única para quienes buscan desconexión, mar cristalino y la belleza natural intacta de Guna Yala.',
     previewDescripcion:
-        'Arena blanca, aguas turquesas y paisajes tropicales en una de las joyas de Guna Yala.',
+        'Arena blanca, aguas turquesas y paisajes tropicales en una de las joyas más tranquilas de Guna Yala.',
     previewUbicacion: 'Guna Yala, Isla Chichime',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',
             descripcion:
-                'Relájate en una isla rodeada de paisajes paradisíacos.',
+                'Relájate en playas de arena blanca rodeadas de aguas cristalinas y un entorno completamente tropical.',
             icono: '',
         },
         {
             nombre: 'Snorkel',
             descripcion:
-                'Explora arrecifes y ecosistemas marinos cercanos.',
+                'Explora arrecifes cercanos y descubre la vida marina que rodea la isla.',
             icono: '',
         },
         {
             nombre: 'Natación',
             descripcion:
-                'Disfruta de aguas tranquilas y cristalinas.',
-            icono: '',
-        },
-        {
-            nombre: 'Fotografía del Caribe',
-            descripcion:
-                'Captura escenarios tropicales de gran belleza.',
+                'Nada en aguas tranquilas, cálidas y transparentes ideales para disfrutar con total calma.',
             icono: '',
         },
         {
             nombre: 'Observación de vida marina',
             descripcion:
-                'Descubre peces tropicales y fauna marina diversa.',
+                'Descubre peces tropicales y otras especies marinas en uno de los ecosistemas más atractivos del Caribe panameño.',
             icono: '',
         },
         {
             nombre: 'Paseos entre islas',
             descripcion:
-                'Visita otros cayos cercanos del archipiélago.',
+                'Visita otros cayos cercanos del archipiélago y amplía la experiencia de explorar Guna Yala.',
             icono: '',
         },
         {
             nombre: 'Descanso en hamacas',
             descripcion:
-                'Relájate bajo la sombra de las palmeras frente al mar.',
-            icono: '',
-        },
-        {
-            nombre: 'Turismo ecológico',
-            descripcion:
-                'Conoce uno de los ecosistemas costeros más atractivos del país.',
-            icono: '',
-        },
-        {
-            nombre: 'Avistamiento de paisajes naturales',
-            descripcion:
-                'Disfruta la belleza única del Caribe panameño.',
-            icono: '',
-        },
-        {
-            nombre: 'Escapada tropical',
-            descripcion:
-                'Vive una experiencia auténtica en las islas de Guna Yala.',
+                'Relájate bajo la sombra de las palmeras con la brisa del Caribe y el sonido del mar como compañía.',
             icono: '',
         },
     ],
