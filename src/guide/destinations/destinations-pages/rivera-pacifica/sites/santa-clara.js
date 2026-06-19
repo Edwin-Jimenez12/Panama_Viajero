@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-santa-clara.png'
+const base = '/images/destinations/rivera-pacifica/bg-santa-clara.webp'
 
 export const santaClara = {
   id: 'santa-clara',

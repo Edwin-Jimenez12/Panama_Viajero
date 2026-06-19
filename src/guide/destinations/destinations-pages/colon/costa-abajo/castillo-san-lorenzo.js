@@ -5,7 +5,7 @@ export const castilloSanLorenzo = {
     provinceId: 'colon',
     nombre: 'Castillo de San Lorenzo',
     banner: {
-        src: `${castilloSanLorenzoImageBase}/bg-castillo-san-lorenzo.jpg`,
+        src: `${castilloSanLorenzoImageBase}/bg-castillo-san-lorenzo.webp`,
         alt: 'Banner del Castillo de San Lorenzo',
     },
     descripcion:

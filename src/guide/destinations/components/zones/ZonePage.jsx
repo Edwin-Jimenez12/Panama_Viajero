@@ -33,7 +33,7 @@ function ZonePage() {
   const zone = zoneRegistry[decodedZoneId] ?? zoneRegistry[zoneId] ?? null
   const searchProvinceId = new URLSearchParams(location.search).get('province')
   const provinceId = searchProvinceId || zone?.provinceId || zone?.provinceIds?.[0] || 'chiriqui'
-  const provinceData = provinceDataRegistry[provinceId] ?? chiriquiProvinces[0]
+  const provinceData = provinceDataRegistry[provinceId] ?? chiriquiProvincias[0]
   const fallbackTarget =
     provinceData?.targets?.find((target) => target.zoneId === decodedZoneId || target.id === decodedZoneId) ?? null
   const safeHeading = zone?.nombre || fallbackTarget?.nombre || 'Zona'
@@ -86,16 +86,27 @@ function ZonePage() {
         />
       </div>
 
-      <ZoneVideo provinceData={provinceData} zone={zone} fixedBackground scrollProgress={scrollProgress} />
-
-      <section className="relative z-10 pt-[100vh]">
-        <div className="mx-auto max-w-6xl px-4 md:px-10">
-          <div className="mx-auto mb-50 max-w-4xl rounded-[1.75rem] border border-white/15 bg-black/25 px-6 py-6 text-center shadow-[0_18px_50px_rgba(0,0,0,0.28)] backdrop-blur-md md:px-10 md:py-8">
-            <p className="font-secondary-italic text-xl leading-relaxed text-brand-white/95 md:text-2xl md:leading-[1.9rem]">
+      <section id="video" className="relative min-h-screen overflow-hidden">
+        <div className="pointer-events-none fixed inset-0  bg-brand-charcoal">
+          <ZoneVideo provinceData={provinceData} zone={zone} fixedBackground scrollProgress={scrollProgress} />
+        </div>
+        <div className="relative z-10 flex min-h-screen items-start px-4 md:items-center">
+          <div className="mt-24 max-w-2xl rounded-xl border border-white/15 bg-black/40 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-10">
+            <h1
+              className="font-main text-5xl font-bold text-brand-white brightness-150 md:text-6xl"
+              style={{ textShadow: '0 0 6px rgba(39, 39, 75, 0.9)' }}
+            >
+              {safeHeading}
+            </h1>
+            <p className="mt-4 font-body text-lg leading-7 text-brand-white/90">
               {safeDescription}
             </p>
           </div>
+        </div>
+      </section>
 
+      <section className="relative z-10">
+        <div className="mx-auto max-w-6xl px-4 md:px-10">
           <div className="mt-8 flex flex-col gap-12">
             <ProvinceTargetsGrid
               title="Lugares turísticos"

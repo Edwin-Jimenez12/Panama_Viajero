@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-playa-san-carlos.jpg'
+const base = '/images/destinations/rivera-pacifica/bg-playa-san-carlos.webp'
 
 export const playaSanCarlos = {
   id: 'playa-san-carlos',

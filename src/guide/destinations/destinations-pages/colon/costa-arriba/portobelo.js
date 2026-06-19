@@ -5,7 +5,7 @@ export const portobelo = {
     provinceId: 'colon',
     nombre: 'Portobelo',
     banner: {
-        src: `${portobeloImageBase}/bg-portobelo.jpg`,
+        src: `${portobeloImageBase}/bg-portobelo.webp`,
         alt: 'Banner de Portobelo',
     },
     descripcion:

@@ -5,7 +5,7 @@ export const puertoLindo = {
     provinceId: 'colon',
     nombre: 'Puerto Lindo',
     banner: {
-        src: `${puertoLindoImageBase}/bg-puerto-lindo.jpg`,
+        src: `${puertoLindoImageBase}/bg-puerto-lindo.webp`,
         alt: 'Banner de Puerto Lindo',
     },
     descripcion:

@@ -27,16 +27,6 @@ function ZoneVideo({ provinceData, zone, videoSrc, fixedBackground = false, scro
         <div className="absolute inset-0">
           {media}
         </div>
-        <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
-          <div>
-            <h1
-              className="font-main text-5xl font-bold brightness-150 text-brand-white transition-opacity duration-300 md:text-6xl"
-              style={{ textShadow: '0 0 6px rgba(39, 39, 75, 0.9)', opacity: 1 - scrollProgress }}
-            >
-              {heading}
-            </h1>
-          </div>
-        </div>
       </section>
     )
   }

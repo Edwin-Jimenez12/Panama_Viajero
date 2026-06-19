@@ -5,7 +5,7 @@ export const islaGrande = {
     provinceId: 'colon',
     nombre: 'Isla Grande',
     banner: {
-        src: `${islaGrandeImageBase}/bg-isla-grande.jpg`,
+        src: `${islaGrandeImageBase}/bg-isla-grande.webp`,
         alt: 'Banner de Isla Grande',
     },
     descripcion:

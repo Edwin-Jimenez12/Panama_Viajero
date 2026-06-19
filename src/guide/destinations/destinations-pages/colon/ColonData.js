@@ -31,7 +31,7 @@ export const provincias = [
         zoneId: 'costa-abajo',
         nombre: 'Costa Abajo',
         descripcion: 'Historia, naturaleza y Canal de Panamá en Colón.',
-        imagen: '/images/destinations/colon/costa-abajo/bg-castillo-san-lorenzo.jpg',
+        imagen: '/images/destinations/colon/costa-abajo/bg-castillo-san-lorenzo.webp',
       },
       {
         id: 'costa-arriba',
@@ -39,7 +39,7 @@ export const provincias = [
         zoneId: 'costa-arriba',
         nombre: 'Costa Arriba',
         descripcion: 'Caribe histórico y cultural de Colón.',
-        imagen: '/images/destinations/colon/costa-arriba/bg-portobelo.jpg',
+        imagen: '/images/destinations/colon/costa-arriba/bg-portobelo.webp',
       },
     ],
   },

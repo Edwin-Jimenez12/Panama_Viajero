@@ -5,7 +5,7 @@ export const calzadaAmador = {
     provinceId: 'panama',
     nombre: 'Calzada de Amador',
     banner: {
-        src: `${calzadaAmadorImageBase}/bg-calzada-amador.jpg`,
+        src: `${calzadaAmadorImageBase}/bg-calzada-amador.webp`,
         alt: 'Banner de Calzada de Amador',
     },
     descripcion:

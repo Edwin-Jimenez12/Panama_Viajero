@@ -5,7 +5,7 @@ export const miraflores = {
     provinceId: 'panama',
     nombre: 'Centro de Visitantes de Miraflores',
     banner: {
-        src: `${mirafloresImageBase}/bg-miraflores.jpg`,
+        src: `${mirafloresImageBase}/bg-miraflores.webp`,
         alt: 'Banner de Miraflores',
     },
     descripcion:

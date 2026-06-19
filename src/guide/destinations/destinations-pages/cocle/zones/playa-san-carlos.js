@@ -5,7 +5,7 @@ export const playaSanCarlos = {
     provinceId: 'panama-oeste',
     nombre: 'Playa San Carlos',
     banner: {
-        src: `${playaSanCarlosImageBase}/bg-playa-san-carlos.jpg`,
+        src: `${playaSanCarlosImageBase}/bg-playa-san-carlos.webp`,
         alt: 'Banner de Playa San Carlos',
     },
     descripcion:

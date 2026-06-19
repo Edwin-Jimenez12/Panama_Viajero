@@ -23,15 +23,6 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
 - TypeScript en componentes puntuales (`.ts`, `.tsx`)
 - CSS personalizado
 
-### Backend
-
-- Node.js
-- Express 5
-- TypeScript
-- Zod para validacion
-- Supabase como base de datos
-- SQL para esquema inicial
-
 ## Tipografias utilizadas
 
 - `InvisibleSans`
@@ -78,7 +69,7 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
 - Sugerencias o lugares turisticos destacados
 - Seccion institucional
 - Formulario de preregistro conectado a API
-- Integracion con Supabase para almacenar registros (Hasta tener host y dominio)
+- Integracion con el flujo de prerregistro del sitio
 
 ## Estructura de trabajo
 
@@ -153,8 +144,7 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
   - Secciones principales que construyen la página de inicio.
 - `public/`
   - Recursos públicos como videos y mapas optimizados para mostrarse en producción.
-- `backend/`
-  - API del formulario de prerregistro y conexión con Supabase.
+
 - `dist/`
   - Build final generado para producción.
 - `_oversize_assets/`
@@ -166,13 +156,11 @@ Panama Viajero es un directorio enfocado en promover destinos turisticos de Pana
 2. Navega por la pagina principal o por una provincia.
 3. Visualiza contenido multimedia y sugerencias turisticas.
 4. Completa el preregistro.
-5. El frontend envia la informacion al backend.
-6. El backend valida y guarda los datos en Supabase.
+5. El frontend envia la informacion al formulario externo configurado.
 
 ## Consideraciones tecnicas para hosting
 
 - El frontend puede compilarse como sitio estatico.
-- El proyecto tambien depende de un backend Node.js para el formulario.
 - El contenido multimedia es pesado, especialmente por el volumen de videos.
 - El build actual ronda los `193 MB`, por lo que almacenamiento y ancho de banda importan.
 

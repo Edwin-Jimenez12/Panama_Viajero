@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-playa-farallon.jpg'
+const base = '/images/destinations/rivera-pacifica/bg-playa-farallon.webp'
 export const playaFarallon = {
   id: 'playa-farallon',
   provinceIds: ['cocle'],

@@ -5,7 +5,7 @@ export const bosqueProtectorSanLorenzo = {
     provinceId: 'colon',
     nombre: 'Bosque Protector San Lorenzo',
     banner: {
-        src: `${bosqueProtectorSanLorenzoImageBase}/bg-bosque-protector-san-lorenzo.jpg`,
+        src: `${bosqueProtectorSanLorenzoImageBase}/bg-bosque-protector-san-lorenzo.webp`,
         alt: 'Banner del Bosque Protector San Lorenzo',
     },
     descripcion:

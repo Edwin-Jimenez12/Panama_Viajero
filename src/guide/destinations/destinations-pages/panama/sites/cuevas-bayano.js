@@ -5,7 +5,7 @@ export const cuevasBayano = {
     provinceId: 'panama',
     nombre: 'Cuevas de Bayano',
     banner: {
-        src: `${cuevasBayanoImageBase}/bg-cuevas-bayano.jpg`,
+        src: `${cuevasBayanoImageBase}/bg-cuevas-bayano.webp`,
         alt: 'Banner de Cuevas de Bayano',
     },
     descripcion:

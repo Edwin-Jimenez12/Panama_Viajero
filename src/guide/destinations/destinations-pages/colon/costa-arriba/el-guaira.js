@@ -5,7 +5,7 @@ export const elGuaira = {
     provinceId: 'colon',
     nombre: 'El Guaira',
     banner: {
-        src: `${elGuairaImageBase}/bg-el-guaira.jpg`,
+        src: `${elGuairaImageBase}/bg-el-guaira.webp`,
         alt: 'Banner de El Guaira',
     },
     descripcion:

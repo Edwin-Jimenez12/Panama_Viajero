@@ -1,4 +1,4 @@
-const base = '/images/destinations/rivera-pacifica/bg-playa-sea-cliff.png'
+const base = '/images/destinations/rivera-pacifica/bg-playa-sea-cliff.webp'
 
 export const playaSeaCliff = {
   id: 'playa-sea-cliff',

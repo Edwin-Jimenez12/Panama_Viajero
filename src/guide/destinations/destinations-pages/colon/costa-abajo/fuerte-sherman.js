@@ -5,7 +5,7 @@ export const fuerteSherman = {
     provinceId: 'colon',
     nombre: 'Fuerte Sherman',
     banner: {
-        src: `${fuerteShermanImageBase}/bg-fuerte-sherman.jpg`,
+        src: `${fuerteShermanImageBase}/bg-fuerte-sherman.webp`,
         alt: 'Banner de Fuerte Sherman',
     },
     descripcion:

@@ -5,7 +5,7 @@ export const parqueMetropolitano = {
     provinceId: 'panama',
     nombre: 'Parque Natural Metropolitano',
     banner: {
-        src: `${parqueMetropolitanoImageBase}/bg-parque-metropolitano.jpg`,
+        src: `${parqueMetropolitanoImageBase}/bg-parque-metropolitano.webp`,
         alt: 'Banner del Parque Natural Metropolitano',
     },
     descripcion:

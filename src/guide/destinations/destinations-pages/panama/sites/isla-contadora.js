@@ -5,7 +5,7 @@ export const islaContadora = {
     provinceId: 'panama',
     nombre: 'Isla Contadora',
     banner: {
-        src: `${islaContadoraImageBase}/bg-isla-contadora.jpg`,
+        src: `${islaContadoraImageBase}/bg-isla-contadora.webp`,
         alt: 'Banner de Isla Contadora',
     },
     descripcion:

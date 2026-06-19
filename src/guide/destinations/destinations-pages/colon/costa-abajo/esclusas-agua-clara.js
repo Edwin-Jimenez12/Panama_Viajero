@@ -5,7 +5,7 @@ export const esclusasAguaClara = {
     provinceId: 'colon',
     nombre: 'Esclusas de Agua Clara',
     banner: {
-        src: `${esclusasAguaClaraImageBase}/bg-esclusas-agua-clara.jpg`,
+        src: `${esclusasAguaClaraImageBase}/bg-esclusas-agua-clara.webp`,
         alt: 'Banner de Esclusas de Agua Clara',
     },
     descripcion:
