@@ -1,6 +1,6 @@
 function SiteMap({ site }) {
   return (
-    <div className="text-center">
+    <div id="site-map" className="text-center">
       <h2 className="font-main mb-10 mt-[-2rem] text-4xl text-brand-white md:mb-10 md:text-6xl">
         Traza tu Ruta
       </h2>
