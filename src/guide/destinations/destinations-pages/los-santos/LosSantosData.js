@@ -26,7 +26,7 @@ export const provincias = [
       'Ciclismo de ruta',
     ],
 
-    directSiteIds: ['las-tablas', 'la-villa','isla-iguana','isla-canas', 'pedasi','playa-venao'],
+    directSiteIds: ['las-tablas', 'la-villa','isla-iguana','isla-canas', 'pedasi','playa-venao','tonosi'],
     displayMode: 'sites-only',
   },
 ]

@@ -12,7 +12,7 @@ export const cintaCostera = {
         'Uno de los espacios urbanos más emblemáticos de la capital, ideal para disfrutar del mar, hacer ejercicio y contemplar algunas de las mejores vistas del skyline de Panamá y la Bahía de Panamá. Su ambiente abierto y moderno lo convierte en un punto clave para la recreación y la vida urbana.',
     previewDescripcion:
         'Vistas al mar, recreación y uno de los skylines más impresionantes de la ciudad.',
-    previewUbicacion: 'Panamá, Capital',
+    previewUbicacion: 'Bella Vista, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Caminatas',

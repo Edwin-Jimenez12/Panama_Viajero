@@ -12,7 +12,7 @@ export const gualaca = {
     'Un destino rodeado de montañas, ríos cristalinos y paisajes naturales que invitan a la aventura y el descanso. Gualaca es el lugar perfecto para descubrir cascadas, pozas refrescantes y la belleza rural del interior chiricano.',
   previewDescripcion:
     'Ríos, cascadas y paisajes montañosos en uno de los rincones naturales más encantadores de Chiriquí.',
-  previewUbicacion: 'Chiriquí, Gualaca',
+  previewUbicacion: 'Gualaca, Chiriquí',
   actividades: [
     {
       nombre: 'Baño en ríos y pozas',

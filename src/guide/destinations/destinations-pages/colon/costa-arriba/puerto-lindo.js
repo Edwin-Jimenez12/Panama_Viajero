@@ -12,7 +12,7 @@ export const puertoLindo = {
         'Un encantador pueblo costero del Caribe panameño rodeado de naturaleza tropical y aguas cristalinas, reconocido como punto de partida hacia algunas de las islas y playas más hermosas de la Costa Arriba. Su ambiente relajado y su conexión con el mar lo convierten en un destino ideal para la aventura y la exploración.',
     previewDescripcion:
         'Naturaleza, mar Caribe y acceso a islas paradisíacas desde uno de los puertos más emblemáticos de Colón.',
-    previewUbicacion: 'Colón, Costa Arriba',
+    previewUbicacion: 'Costa Arriba, Colón',
     actividades: [
         {
             nombre: 'Paseos en lancha',

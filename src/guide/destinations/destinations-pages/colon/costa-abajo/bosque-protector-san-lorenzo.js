@@ -12,7 +12,7 @@ export const bosqueProtectorSanLorenzo = {
         'Un importante refugio ecológico de la costa caribeña de Colón donde bosques tropicales, ríos y una extraordinaria biodiversidad se combinan en un entorno natural protegido. Este destino es ideal para quienes buscan aventura, observación de fauna y experiencias auténticas en plena selva tropical.',
     previewDescripcion:
         'Bosque tropical, biodiversidad y senderos naturales en una de las áreas protegidas más importantes de Colón.',
-    previewUbicacion: 'Colón, Costa Abajo',
+    previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
             nombre: 'Senderismo natural',

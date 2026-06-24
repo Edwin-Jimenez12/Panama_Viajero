@@ -12,7 +12,7 @@ export const reservaForestalElMontuoso = {
     'Ubicada entre las montañas de Herrera, la Reserva Forestal El Montuoso protege uno de los ecosistemas más importantes y biodiversos de la región de Azuero. Sus bosques nubosos, senderos naturales, cascadas y abundante vida silvestre ofrecen una experiencia única para quienes desean descubrir un entorno lleno de naturaleza, aire puro y espectaculares paisajes montañosos.',
   previewDescripcion:
     'Refugio natural de bosques nubosos, senderos y biodiversidad, ideal para el ecoturismo y la aventura en las montañas herreranas.',
-  previewUbicacion: 'Herrera, Reserva Forestal El Montuoso',
+  previewUbicacion: 'Las Minas, Herrera',
   actividades: [
     { nombre: 'Senderismo ecológico', descripcion: 'Recorre caminos naturales rodeados de exuberante vegetación y descubre la riqueza ambiental de la reserva.', icono: '' },
     { nombre: 'Observación de aves', descripcion: 'Identifica especies residentes y migratorias que encuentran refugio en los bosques del área protegida.', icono: '' },

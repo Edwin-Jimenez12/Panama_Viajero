@@ -12,7 +12,7 @@ export const islaPerro = {
         'Una de las islas más famosas de Guna Yala, reconocida por sus aguas cristalinas, arena blanca y el emblemático barco hundido que descansa cerca de la costa. Isla Perro es uno de los mejores lugares del archipiélago para combinar playa, snorkel y vida marina en un entorno paradisíaco.',
     previewDescripcion:
         'Playas paradisíacas, snorkel y un icónico barco hundido en las aguas cristalinas de Guna Yala.',
-    previewUbicacion: 'Guna Yala, Isla Perro',
+    previewUbicacion: 'Guna Yala',
     actividades: [
         {
             nombre: 'Snorkel en el barco hundido',

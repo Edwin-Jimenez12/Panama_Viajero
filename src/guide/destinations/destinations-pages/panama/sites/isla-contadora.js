@@ -12,7 +12,7 @@ export const islaContadora = {
         'Una de las islas más emblemáticas del Archipiélago de las Perlas, famosa por sus playas de arena clara, aguas cristalinas y ambiente exclusivo. Isla Contadora es perfecta para escapadas tropicales, descanso frente al mar y experiencias marítimas en uno de los destinos más atractivos del Pacífico panameño.',
     previewDescripcion:
         'Playas cristalinas, tranquilidad y encanto tropical en una de las islas más exclusivas de Panamá.',
-    previewUbicacion: 'Panamá, Archipiélago de las Perlas',
+    previewUbicacion: 'Archipiélago de las Perlas, Panamá',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',

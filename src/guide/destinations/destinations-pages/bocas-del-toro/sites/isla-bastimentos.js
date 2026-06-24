@@ -25,7 +25,7 @@ export const islaBastimentos = {
         'Un refugio indómito donde la naturaleza late con fuerza salvaje. Es un santuario de playas secretas doradas, manglares misteriosos y una cultura caribeña auténtica, diseñado para almas libres que buscan una reconexión mística con el paraíso más puro.',
     previewDescripcion:
         'Un refugio indómito donde la naturaleza late con fuerza salvaje.',
-    previewUbicacion: 'Bocas del Toro, Isla Bastimentos',
+    previewUbicacion: 'Bastimentos, Bocas del Toro',
     actividades: [
         {
             nombre: 'Avistamiento de ranas rojas',

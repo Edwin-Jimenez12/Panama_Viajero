@@ -12,7 +12,7 @@ export const cascoAntiguo = {
         'El corazón histórico de la ciudad de Panamá y uno de los destinos más emblemáticos del país. Sus calles empedradas, arquitectura colonial, plazas, iglesias y vibrante vida cultural convierten este Patrimonio de la Humanidad en una parada imprescindible para descubrir la esencia histórica y moderna de la capital.',
     previewDescripcion:
         'Historia, arquitectura colonial y vida cultural en el corazón de Panamá.',
-    previewUbicacion: 'Panamá, Capital',
+    previewUbicacion: 'San Felipe, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Recorrido histórico',

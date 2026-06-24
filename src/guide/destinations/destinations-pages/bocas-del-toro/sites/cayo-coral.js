@@ -23,7 +23,7 @@ export const cayoCoral = {
         'Un rincón de fantasía sumergido donde el mar se vuelve completamente transparente para revelar un espectáculo de colores vivos. Es el epicentro de la vida marina más deslumbrante, rodeado de exóticos restaurantes sobre pilotes que flotan en un entorno de ensueño, paz y exclusividad.',
     previewDescripcion:
         'Un rincón de fantasía sumergido donde el mar se vuelve transparente.',
-    previewUbicacion: 'Bocas del Toro, Cayo Coral',
+    previewUbicacion: 'Bocas del Toro',
     actividades: [
         {
             nombre: 'Snorkel en arrecifes',

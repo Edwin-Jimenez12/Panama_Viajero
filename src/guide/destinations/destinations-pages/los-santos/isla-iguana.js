@@ -12,7 +12,7 @@ export const islaIguana = {
         'Un paraíso natural protegido frente a las costas de Pedasí, reconocido por sus aguas cristalinas, playas de arena blanca y extraordinaria biodiversidad marina. Este refugio de vida silvestre es uno de los destinos más impresionantes del Pacífico panameño para disfrutar de la naturaleza y el mar.',
     previewDescripcion:
         'Aguas cristalinas, playas paradisíacas y vida marina en una joya del Pacífico panameño.',
-    previewUbicacion: 'Los Santos, Isla Iguana',
+    previewUbicacion: 'Pedasí, Los Santos',
     actividades: [
         {
             nombre: 'Snorkel',

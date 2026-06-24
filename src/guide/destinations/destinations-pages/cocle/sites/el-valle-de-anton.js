@@ -23,7 +23,7 @@ export const elValleDeAnton = {
         'Un santuario natural místico ubicado en el cráter de un volcán extinto, donde la primavera eterna cobija un bosque nuboso de biodiversidad única. Un pintoresco pueblo de montaña rodeado de cerros sagrados, caídas de agua cristalina y una vibrante cultura local, invitando al descanso, la aventura ecológica y la renovación espiritual absoluta.',
     previewDescripcion:
         'Un fascinante y fresco destino de montaña asentado sobre un cráter volcánico inactivo, célebre por su biodiversidad, cascadas y senderos ecológicos.',
-    previewUbicacion: 'Chiriquí, El Valle de Antón',
+    previewUbicacion: 'Antón, Coclé',
     actividades: [
         {
             nombre: 'Senderismo de montaña',

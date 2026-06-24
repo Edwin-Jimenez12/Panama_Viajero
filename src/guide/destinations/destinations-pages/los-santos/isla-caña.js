@@ -12,7 +12,7 @@ export const islaCanas = {
         'Un santuario natural de gran importancia ecológica en la costa del Pacífico panameño. Famosa por ser uno de los principales sitios de anidación de tortugas marinas en Centroamérica, Isla Cañas ofrece playas vírgenes, manglares y una experiencia única de conexión con la naturaleza.',
     previewDescripcion:
         'Playas vírgenes, tortugas marinas y naturaleza protegida en el Pacífico panameño.',
-    previewUbicacion: 'Los Santos, Isla Cañas',
+    previewUbicacion: 'Tonosí, Los Santos',
     actividades: [
         {
             nombre: 'Observación de tortugas marinas',

@@ -150,7 +150,7 @@ function GuideHome() {
             alt="Logo"
             fetchPriority="high"
             decoding="async"
-            className="mb-15 ml-25 h-7 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] duration-400 hover:scale-103"
+            className="mb-3 ml-5 md:mb-15 md:ml-25 h-10 md:h-35 opacity-95 w-auto max-w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] md:mb-none  md:drop-shadow-[0_5px_5px_rgba(0,0,0,0.45)] duration-400 hover:scale-103"
           />
         </div>
       </section>

@@ -12,7 +12,7 @@ export const playaElEstero = {
     'Ubicada cerca de Santa Catalina, Playa El Estero es una extensa franja de arena dorada bañada por las aguas del océano Pacífico. Reconocida por sus olas consistentes, amplios espacios abiertos y espectaculares paisajes costeros, se ha convertido en uno de los lugares favoritos para surfistas, caminantes y viajeros que buscan disfrutar de la tranquilidad y belleza natural de la costa veragüense.',
   previewDescripcion:
     'Hermosa playa del Pacífico famosa por sus olas ideales para surf, amplios paisajes costeros y espectaculares atardeceres.',
-  previewUbicacion: 'Veraguas, Playa El Estero',
+  previewUbicacion: 'Soná, Veraguas',
   actividades: [
     { nombre: 'Surf para todos los niveles', descripcion: 'Disfruta de olas constantes que permiten tanto el aprendizaje como la práctica avanzada del surf.', icono: '' },
     { nombre: 'Caminatas por la playa', descripcion: 'Recorre largos tramos de arena mientras contemplas el paisaje costero y la inmensidad del océano.', icono: '' },

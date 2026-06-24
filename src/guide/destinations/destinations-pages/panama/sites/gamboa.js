@@ -12,7 +12,7 @@ export const gamboa = {
         'Un destino rodeado de selva tropical y ríos que combina naturaleza, biodiversidad y aventura a orillas del Canal de Panamá. Gamboa es uno de los principales puntos de ecoturismo del país, ideal para descubrir fauna silvestre y vivir experiencias inmersas en la selva.',
     previewDescripcion:
         'Naturaleza, aventura y biodiversidad en uno de los principales destinos ecológicos de Panamá.',
-    previewUbicacion: 'Panamá, Selva Metropolitana',
+    previewUbicacion: 'Gamboa, Panamá',
     actividades: [
         {
             nombre: 'Paseos en bote',

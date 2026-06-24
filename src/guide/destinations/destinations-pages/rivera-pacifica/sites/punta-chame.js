@@ -14,7 +14,7 @@ export const puntaChame = {
     'Una impresionante península rodeada por el océano y famosa por sus vientos constantes, extensas playas y vistas panorámicas al Pacífico. Punta Chame es uno de los destinos más reconocidos de Panamá para deportes acuáticos, aventura y escapadas llenas de naturaleza.',
   previewDescripcion:
     'Un paraíso costero ideal para kitesurf, aventura y espectaculares paisajes frente al Pacífico.',
-  previewUbicacion: 'Rivera Pacífica, Punta Chame',
+  previewUbicacion: 'Punta Chame, Panamá Oeste',
   actividades: [
     {
       nombre: 'Kitesurf',

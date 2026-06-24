@@ -12,7 +12,7 @@ export const islaGrande = {
         'Un paraíso caribeño de aguas cristalinas, playas tropicales y vibrante cultura afrocaribeña. Isla Grande es uno de los destinos más emblemáticos de la Costa Arriba, ideal para disfrutar del mar, la naturaleza y la esencia relajada del Caribe panameño.',
     previewDescripcion:
         'Playas paradisíacas, cultura afrocaribeña y aguas cristalinas en uno de los rincones más encantadores del Caribe panameño.',
-    previewUbicacion: 'Colón, Costa Arriba',
+    previewUbicacion: 'Costa Arriba, Colón',
     actividades: [
         {
             nombre: 'Disfrutar de las playas',

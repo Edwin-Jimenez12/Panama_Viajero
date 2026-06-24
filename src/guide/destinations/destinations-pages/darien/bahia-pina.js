@@ -12,7 +12,7 @@ export const bahiaPina = {
         'Un remoto paraíso del Pacífico panameño rodeado de selva tropical, manglares y una extraordinaria biodiversidad marina. Reconocida internacionalmente por la pesca deportiva, Bahía Piña ofrece una experiencia única para quienes buscan aventura, vida silvestre y naturaleza en uno de los rincones más salvajes de Panamá.',
     previewDescripcion:
         'Pesca deportiva, biodiversidad y aventura en uno de los destinos más remotos y espectaculares del Darién.',
-    previewUbicacion: 'Darién, Bahía Piña',
+    previewUbicacion: 'Chepigana, Darién',
     actividades: [
         {
             nombre: 'Pesca deportiva',

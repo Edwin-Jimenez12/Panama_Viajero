@@ -12,7 +12,7 @@ export const puertoArmuelles = {
     'Una vibrante ciudad costera del Pacífico chiricano donde la historia, la cultura y el mar se unen en un mismo destino. Sus playas, tradición bananera y hermosos atardeceres ofrecen una experiencia auténtica en el extremo occidental de Panamá.',
   previewDescripcion:
     'Historia, playas y tradición costera en una de las ciudades más emblemáticas de Chiriquí.',
-  previewUbicacion: 'Chiriquí, Puerto Armuelles',
+  previewUbicacion: 'Barú, Chiriquí',
   actividades: [
     {
       nombre: 'Recorrido por la ciudad',

@@ -12,7 +12,7 @@ export const playaLasLajas = {
     'Una de las playas más extensas y visitadas del Pacífico panameño, famosa por su ambiente relajado, amplias franjas de arena y hermosos atardeceres. Es el destino perfecto para disfrutar del mar, la naturaleza y el descanso en la costa chiricana.',
   previewDescripcion:
     'Una extensa playa del Pacífico ideal para relajarse, caminar y disfrutar del mar.',
-  previewUbicacion: 'Chiriquí, Playa Las Lajas',
+  previewUbicacion: 'San Félix, Chiriquí',
   actividades: [
     {
       nombre: 'Caminatas por la playa',

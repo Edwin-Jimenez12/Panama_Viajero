@@ -31,6 +31,15 @@ function RiveraPacifica() {
 
   return (
     <div className="relative isolate text-brand-charcoal">
+      <div className="pointer-events-none fixed inset-0 -z-20">
+        <img
+          src={riveraPacificaProvince.banner.src}
+          alt={riveraPacificaProvince.banner.alt}
+          className="h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/25" />
+      </div>
+
       <div className="fixed top-0 z-30 w-full">
         <Menu
           autoHideOnScroll
@@ -41,15 +50,8 @@ function RiveraPacifica() {
           onPreregisterClick={() => navigate('/#preregister')}
         />
       </div>
+
       <section className="relative min-h-screen overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src={riveraPacificaProvince.banner.src}
-            alt={riveraPacificaProvince.banner.alt}
-            className="h-full w-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/25" />
-        </div>
         <div className="relative z-10 flex min-h-screen items-center px-4 md:px-10">
           <div className="max-w-2xl rounded-xl border border-white/15 bg-black/35 p-8 text-brand-white backdrop-blur-md">
             <h1 className="font-main text-5xl md:text-7xl">Rivera Pacífica</h1>
@@ -60,7 +62,7 @@ function RiveraPacifica() {
         </div>
       </section>
 
-      <section className="relative z-10 -mt-10 bg-brand-charcoal pt-10 text-brand-white">
+      <section className="relative z-10 -mt-10  pt-10 text-brand-white ">
         <div className="mx-auto max-w-6xl px-4 md:px-10">
           <ProvinceSitesOnly provinceData={riveraPacificaProvince} title="Lugares Turísticos" />
           <OtherProvinces provincias={provinceMedia} />

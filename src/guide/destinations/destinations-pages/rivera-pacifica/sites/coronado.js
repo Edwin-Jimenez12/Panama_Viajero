@@ -14,7 +14,7 @@ export const coronado = {
     'Uno de los destinos costeros más emblemáticos y exclusivos de la Rivera Pacífica, donde extensas playas, modernas residencias, comercios y una vibrante vida turística se combinan para ofrecer una experiencia completa de descanso, entretenimiento y comodidad frente al mar.',
   previewDescripcion:
     'Un destino costero icónico que combina playa, exclusividad y una vibrante vida turística en Panamá Oeste.',
-  previewUbicacion: 'Rivera Pacífica, Coronado',
+  previewUbicacion: 'Chame, Panamá Oeste',
   actividades: [
     {
       nombre: 'Disfrutar de la playa',

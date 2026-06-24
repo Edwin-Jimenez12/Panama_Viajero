@@ -12,7 +12,7 @@ export const boqueteCentro = {
     'El corazón turístico de las tierras altas chiricanas, rodeado de montañas, jardines florales y un clima fresco durante todo el año. Sus cafés de especialidad, gastronomía, cultura local y ambiente acogedor lo convierten en uno de los destinos más encantadores de Panamá.',  
   previewDescripcion:
     'El alma de Boquete: cafés de especialidad, jardines florales, cultura local y un clima fresco durante todo el año.',
-  previewUbicacion: 'Chiriquí, Boquete',
+  previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
       nombre: 'Recorrido por el centro',

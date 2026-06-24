@@ -20,7 +20,7 @@ export const islaCarenero = {
         'Un oasis de serenidad a solo minutos del bullicio, donde las palmeras se inclinan ante un mar esmeralda. Un refugio íntimo que combina la paz de sus playas calmadas con una sutil propuesta gastronómica y hotelera sobre el agua, perfecta para un escape idílico y romántico.',
     previewDescripcion:
         'Un oasis de serenidad a solo minutos del bullicio.',
-    previewUbicacion: 'Bocas del Toro, Isla Carenero',
+    previewUbicacion: 'Bocas del Toro',
     actividades: [
         {
             nombre: 'Snorkel en arrecifes',

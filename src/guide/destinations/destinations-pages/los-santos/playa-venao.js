@@ -12,7 +12,7 @@ export const playaVenao = {
         'Uno de los destinos de playa más populares de Panamá, reconocido internacionalmente por sus excelentes olas, ambiente relajado y vibrante vida turística. Rodeada de naturaleza y paisajes costeros, Playa Venao combina aventura, descanso y entretenimiento en un entorno único del Pacífico panameño.',
     previewDescripcion:
         'Surf, naturaleza y ambiente costero en una de las playas más famosas de Panamá.',
-    previewUbicacion: 'Los Santos, Playa Venao',
+    previewUbicacion: 'Pedasí, Los Santos',
     actividades: [
         {
             nombre: 'Surf',

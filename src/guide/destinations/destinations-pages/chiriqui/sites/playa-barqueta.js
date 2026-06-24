@@ -12,7 +12,7 @@ export const playaBarqueta = {
     'Una de las playas más emblemáticas de Chiriquí, reconocida por su extensa costa, ambiente tranquilo y espectaculares atardeceres sobre el Pacífico. Es el lugar ideal para relajarse, disfrutar de la naturaleza y desconectarse junto al mar.',
   previewDescripcion:
     'Una extensa playa del Pacífico famosa por sus atardeceres y su ambiente tranquilo.',
-  previewUbicacion: 'Chiriquí, Playa Barqueta',
+  previewUbicacion: 'Alanje, Chiriquí',
   actividades: [
     {
       nombre: 'Caminatas por la playa',

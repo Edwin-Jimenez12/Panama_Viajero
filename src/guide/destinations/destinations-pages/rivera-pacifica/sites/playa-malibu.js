@@ -14,7 +14,7 @@ export const playaMalibu = {
     'Uno de los puntos de surf más reconocidos de la Rivera Pacífica, famoso por sus olas consistentes, su ambiente relajado y su conexión con la cultura surfista panameña. Playa Malibú combina adrenalina, paisajes abiertos y una energía costera ideal para aventureros y amantes del mar.',
   previewDescripcion:
     'Una playa icónica para surfistas, con olas reconocidas y un ambiente vibrante frente al Pacífico.',
-  previewUbicacion: 'Rivera Pacífica, Playa Malibú',
+  previewUbicacion: 'Gorgona, Panamá Oeste',
   actividades: [
     {
       nombre: 'Surf',

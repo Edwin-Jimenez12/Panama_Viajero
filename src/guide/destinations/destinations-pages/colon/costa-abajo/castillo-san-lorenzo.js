@@ -12,7 +12,7 @@ export const castilloSanLorenzo = {
         'Una joya histórica ubicada en la desembocadura del río Chagres, rodeada de naturaleza y vistas impresionantes del Caribe. Sus antiguas murallas cuentan la historia colonial de Panamá y ofrecen una experiencia perfecta para quienes buscan cultura, patrimonio y paisajes únicos.',
     previewDescripcion:
         'Historia colonial, vistas al Caribe y naturaleza en uno de los fuertes más emblemáticos de Panamá.',
-    previewUbicacion: 'Colón, Costa Abajo',
+    previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
             nombre: 'Recorrido histórico',

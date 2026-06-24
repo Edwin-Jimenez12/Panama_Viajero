@@ -12,7 +12,7 @@ export const playaTorio = {
     'Playa Torio es uno de los secretos mejor guardados de la costa sur de Veraguas. Este tranquilo pueblo costero combina playas de arena oscura, colinas cubiertas de vegetación tropical y un ambiente relajado que invita a desconectarse del mundo moderno. Sus aguas del Pacífico, paisajes escénicos y cercanía con otros destinos naturales convierten a Torio en un refugio ideal para quienes buscan autenticidad, aventura y descanso.',
   previewDescripcion:
     'Encantadora playa del Pacífico rodeada de naturaleza, ideal para relajarse, surfear y disfrutar de paisajes costeros únicos.',
-  previewUbicacion: 'Veraguas, Playa Torio',
+  previewUbicacion: 'Mariato, Veraguas',
   actividades: [
     { nombre: 'Disfrutar de la playa', descripcion: 'Relájate en una costa tranquila rodeada de naturaleza y alejada de las grandes concentraciones turísticas.', icono: '' },
     { nombre: 'Surf recreativo', descripcion: 'Aprovecha las condiciones del mar para practicar surf en un ambiente más tranquilo que otros destinos populares.', icono: '' },

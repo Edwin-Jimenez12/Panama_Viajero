@@ -12,7 +12,7 @@ export const volcanBaru = {
     'La cumbre más alta de Panamá y uno de los destinos de aventura más impresionantes del país. Sus senderos de montaña, bosques nubosos y espectaculares vistas convierten cada ascenso en una experiencia inolvidable para los amantes de la naturaleza.',
   previewDescripcion:
     'La montaña más alta de Panamá, famosa por sus senderos, amaneceres y vistas espectaculares.',
-  previewUbicacion: 'Chiriquí, Volcán Barú',
+  previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
       nombre: 'Ascenso a la cumbre',

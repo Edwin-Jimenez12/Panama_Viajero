@@ -11,7 +11,7 @@ export const playaSanCarlos = {
         'Una hermosa playa del Pacífico panameño reconocida por sus paisajes costeros, aguas ideales para actividades acuáticas y espectaculares atardeceres. Su ambiente relajado y cercanía a la ciudad la convierten en una excelente opción para escapadas de descanso y aventura.',
     previewDescripcion:
         'Playa, surf y atardeceres en uno de los destinos costeros más atractivos de Panamá Oeste.',
-    previewUbicacion: 'Panamá Oeste, San Carlos',
+    previewUbicacion: 'San Carlos, Panamá Oeste',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',

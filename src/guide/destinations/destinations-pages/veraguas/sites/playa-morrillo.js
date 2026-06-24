@@ -12,7 +12,7 @@ export const playaMorrillo = {
     'Considerada uno de los mejores destinos de surf en Panamá, Playa Morrillo es una joya escondida de la costa veragüense donde enormes olas del Pacífico rompen frente a un paisaje salvaje de playas extensas, acantilados y vegetación tropical. Su ambiente tranquilo y poco desarrollado la convierte en un lugar ideal para quienes buscan aventura, contacto con la naturaleza y espectaculares vistas oceánicas.',
   previewDescripcion:
     'Famosa playa veragüense reconocida por sus poderosas olas, paisajes naturales y ambiente ideal para surfistas y aventureros.',
-  previewUbicacion: 'Veraguas, Playa Morrillo',
+  previewUbicacion: 'Mariato, Veraguas',
   actividades: [
     { nombre: 'Surf de nivel internacional', descripcion: 'Aprovecha algunas de las olas más consistentes y desafiantes de la costa pacífica panameña.', icono: '' },
     { nombre: 'Observación de atardeceres', descripcion: 'Disfruta espectaculares puestas de sol que iluminan el océano y los paisajes costeros.', icono: '' },

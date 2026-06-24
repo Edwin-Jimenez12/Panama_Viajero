@@ -12,7 +12,7 @@ export const calovebora = {
         'Escondido en la costa norte de Veraguas, Calovébora es uno de los rincones más remotos y espectaculares de Panamá. Rodeado por montañas cubiertas de selva tropical, ríos cristalinos y playas prácticamente vírgenes frente al mar Caribe, este destino ofrece una experiencia auténtica para quienes buscan aventura, paisajes naturales impresionantes y contacto directo con la naturaleza.',
     previewDescripcion:
         'Destino remoto del Caribe veragüense rodeado de selva, ríos y playas vírgenes ideales para la aventura y el ecoturismo.',
-    previewUbicacion: 'Veraguas, Calovébora',
+    previewUbicacion: 'Santa Fe, Veraguas',
     actividades: [
         {
             nombre: 'Exploración de playas caribeñas',

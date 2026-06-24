@@ -12,7 +12,7 @@ export const davidCentro = {
     'La capital de Chiriquí y el principal centro urbano del occidente panameño. David combina cultura, gastronomía, comercio y tradición, convirtiéndose en el punto de partida ideal para explorar los diversos atractivos turísticos de la provincia.',
   previewDescripcion:
     'La capital de Chiriquí, donde la cultura, el comercio y la gastronomía se encuentran.',
-  previewUbicacion: 'Chiriquí, David',
+  previewUbicacion: 'David, Chiriquí',
   actividades: [
     {
       nombre: 'Recorrido por el centro histórico',

@@ -12,7 +12,7 @@ export const laVilla = {
         'Uno de los pueblos históricos más importantes de Panamá y cuna de acontecimientos que marcaron la identidad nacional. Sus calles, monumentos y tradiciones conservan el legado cultural de Azuero, convirtiéndola en un destino ideal para quienes desean conocer la historia y el folclore panameño.',
     previewDescripcion:
         'Historia, tradición y orgullo nacional en uno de los pueblos más emblemáticos de Panamá.',
-    previewUbicacion: 'Los Santos, La Villa de Los Santos',
+    previewUbicacion: 'Los Santos',
     actividades: [
         {
             nombre: 'Recorrido histórico',

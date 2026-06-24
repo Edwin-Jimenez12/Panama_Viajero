@@ -191,7 +191,7 @@ function Menu({
                 </div>
                 {/* Menu Responsive */}
                 {!hideMobileMenu && (
-                    <button className="md:hidden rounded-full bg-brand-white/15 px-3 py-1 transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)]" onClick={() => setIsOpen(true)}>
+                    <button className="md:hidden rounded-full text-2xl bg-brand-white/15 px-3 py-1 transition-all duration-300 ease-out hover:bg-brand-red hover:shadow-[0_8px_24px_rgba(255,255,255,0.15)]" onClick={() => setIsOpen(true)}>
                         ☰
                     </button>
                 )}

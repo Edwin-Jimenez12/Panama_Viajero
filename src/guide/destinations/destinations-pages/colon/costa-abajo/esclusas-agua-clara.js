@@ -12,7 +12,7 @@ export const esclusasAguaClara = {
         'Uno de los mejores lugares para vivir de cerca la grandeza del Canal de Panamá en el Caribe. Desde su centro de visitantes, se pueden observar enormes buques cruzando las esclusas mientras se disfruta de una experiencia educativa, panorámica y única en Colón.',
     previewDescripcion:
         'Miradores, historia y el paso de grandes buques por el Canal de Panamá.',
-    previewUbicacion: 'Colón, Costa Abajo',
+    previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
             nombre: 'Observación de buques',

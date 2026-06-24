@@ -10,7 +10,7 @@ descripcion:
     'Un impresionante rincón costero donde enormes formaciones rocosas emergen majestuosamente del mar, creando un paisaje único que combina fuerza natural, belleza escénica y la inmensidad del Pacífico. Este destino ofrece una experiencia visual impactante y un entorno ideal para conectar con la naturaleza y admirar la grandeza del océano.',
     previewDescripcion:
     'Una impresionante costa del Pacífico donde gigantescas formaciones rocosas y paisajes marinos crean un escenario natural inolvidable.',
-  previewUbicacion: 'Rivera Pacífica, Playa Farallón',
+  previewUbicacion: 'Antón, Coclé',
   actividades: [
     { nombre: 'Caminata entre farallones', descripcion: 'Recorre la orilla de la playa contemplando de cerca las gigantescas estructuras rocosas de la costa.', icono: '' },
     { nombre: 'Expedición fotográfica', descripcion: 'Captura la fuerza del oleaje golpeando los acantilados de piedra bajo la luz dorada del atardecer.', icono: '' },

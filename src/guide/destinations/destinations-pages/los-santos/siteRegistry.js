@@ -4,6 +4,7 @@ import { islaIguana } from './isla-iguana.js'
 import { islaCanas } from './isla-caña.js'
 import { pedasi } from './pedasi.js'
 import { playaVenao } from './playa-venao.js'
+import { tonosi } from './tonosi.js'
 
 export const losSantosSiteRegistry = {
   [lasTablas.id]: lasTablas,
@@ -12,4 +13,5 @@ export const losSantosSiteRegistry = {
   [islaCanas.id]: islaCanas,
   [pedasi.id]: pedasi,
   [playaVenao.id]: playaVenao,
+  [tonosi.id]: tonosi,
 }

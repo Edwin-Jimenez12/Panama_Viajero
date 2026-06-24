@@ -12,7 +12,7 @@ export const islaMamey = {
         'Una pequeña joya del Caribe panameño reconocida por sus aguas cristalinas, arena blanca y ambiente sereno. Su cercanía a Portobelo la convierte en una escapada perfecta para quienes buscan disfrutar de playa, mar y naturaleza en un entorno tropical.',
     previewDescripcion:
         'Aguas cristalinas, arena blanca y un ambiente tropical ideal para desconectarse en el Caribe panameño.',
-    previewUbicacion: 'Colón, Costa Arriba',
+    previewUbicacion: 'Costa Arriba, Colón',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',

@@ -25,7 +25,7 @@ export const almirante = {
         'La puerta de entrada dorada hacia el paraíso caribeño, donde la historia colonial y la cultura viva se entrelazan. Un destino de paso vibrante y lleno de contrastes, rodeado de colinas verdes y el murmullo de un puerto histórico que late con la auténtica energía del comercio y la tradición local.',
     previewDescripcion:
         'La puerta de entrada dorada hacia el paraíso caribeño.',
-    previewUbicacion: 'Bocas del Toro, Almirante',
+    previewUbicacion: 'Almirante, Bocas del Toro',
     actividades: [
         {
             nombre: 'Expedición histórica',

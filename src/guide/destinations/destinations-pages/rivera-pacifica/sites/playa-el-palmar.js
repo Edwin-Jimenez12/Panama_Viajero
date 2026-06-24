@@ -14,7 +14,7 @@ export const playaElPalmar = {
     'Uno de los destinos costeros más dinámicos y reconocidos de la Rivera Pacífica, famoso por sus constantes olas, su ambiente relajado y su fuerte cultura surfista. Rodeada de paisajes tropicales y una energía vibrante, Playa El Palmar es perfecta tanto para la aventura como para el descanso frente al mar.',
   previewDescripcion:
     'Una playa icónica para surf, aventura y ambiente costero vibrante en Panamá Oeste.',
-  previewUbicacion: 'Rivera Pacífica, Playa El Palmar',
+  previewUbicacion: 'San Carlos, Panamá Oeste',
   actividades: [
     {
       nombre: 'Surf',

@@ -12,7 +12,7 @@ export const santaCatalina = {
     'Un legendario paraíso costero bañado por el Pacífico, mundialmente famoso por sus imponentes olas que atraen a surfistas de todos los rincones. Más allá de sus playas de arena oscura, este rústico y encantador pueblo pesquero sirve como la principal puerta de entrada para explorar la asombrosa biodiversidad marina del Parque Nacional Coiba.',
   previewDescripcion:
     'Famoso refugio de surfistas y amantes del buceo, conocido por sus espectaculares playas de clase mundial y por ser el punto de partida hacia la Isla de Coiba.',
-  previewUbicacion: 'Veraguas, Santa Catalina',
+  previewUbicacion: 'Soná, Veraguas',
   actividades: [
     { nombre: 'Surf de clase mundial', descripcion: 'Desafía las famosas y consistentes olas de Playa Estero o la mítica e intensa rotura de roca en La Punta.', icono: '' },
     { nombre: 'Buceo en Coiba', descripcion: 'Embárcate hacia el parque nacional para nadar junto a tiburones, mantarrayas gigantes y arrecifes rebosantes de vida.', icono: '' },

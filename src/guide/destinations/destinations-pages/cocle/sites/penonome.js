@@ -22,7 +22,7 @@ export const penonome = {
         'Un vibrante epicentro geográfico e histórico donde las tradiciones folclóricas se fusionan con el verdor de los valles interiores. Un encantador rincón rodeado de ríos cristalinos, cerros guardianes y calles coloniales, reconocido por salvaguardar el legado precolombino y las manifestaciones culturales más puras de la identidad del país.',
     previewDescripcion:
         'El dinámico corazón geográfico de la región, célebre por su rica herencia colonial, coloridos mercados de artesanías y hermosos entornos fluviales.',
-    previewUbicacion: 'Coclé, Penonomé',
+    previewUbicacion: 'Penonomé, Coclé',
     actividades: [
         {
             nombre: 'Caminata colonial',

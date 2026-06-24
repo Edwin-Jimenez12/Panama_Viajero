@@ -29,7 +29,6 @@ export const provincias = [
       'playa-farallon',
       'santa-clara',
       'playa-juan-hombron',
-      'playa-sea-cliff',
     ],
   },
 ]

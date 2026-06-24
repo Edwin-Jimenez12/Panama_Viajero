@@ -12,7 +12,7 @@ export const fuerteSherman = {
         'Un antiguo enclave militar rodeado de naturaleza, historia y paisajes caribeños en la Costa Abajo de Colón. Su cercanía al Canal, al Bosque Protector San Lorenzo y a la desembocadura del río Chagres lo convierte en un punto interesante para explorar patrimonio, aventura y entornos naturales.',
     previewDescripcion:
         'Historia militar, naturaleza caribeña y paisajes únicos cerca del Canal de Panamá.',
-    previewUbicacion: 'Colón, Costa Abajo',
+    previewUbicacion: 'Costa Abajo, Colón',
     actividades: [
         {
             nombre: 'Recorrido histórico',

@@ -12,7 +12,7 @@ export const cerroPuntaCentro = {
     'Ubicado en las tierras altas de Chiriquí, Cerro Punta cautiva con su clima fresco, impresionantes paisajes montañosos y extensos cultivos que colorean sus valles. Es el punto de partida ideal para descubrir la naturaleza, la agricultura y la tranquilidad que caracterizan esta región única de Panamá.',
   previewDescripcion:
     'El corazón de las tierras altas chiricanas, rodeado de montañas, cultivos y clima fresco.',
-  previewUbicacion: 'Chiriquí, Cerro Punta',
+  previewUbicacion: 'Tierras Altas, Chiriquí',
   actividades: [
     {
       nombre: 'Recorrido por el centro de Cerro Punta',

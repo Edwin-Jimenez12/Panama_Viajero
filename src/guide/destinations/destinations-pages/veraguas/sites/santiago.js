@@ -11,7 +11,7 @@ export const santiago = {
         'Centro urbano e histórico de la provincia de Veraguas, Santiago combina movimiento comercial, tradición cultural y una ubicación estratégica que conecta rutas hacia playas, montañas, ríos y pueblos del interior. Sus calles, parques, iglesias y espacios locales reflejan la vida cotidiana de una ciudad clave para descubrir el corazón veragüense.',
     previewDescripcion:
         'Capital provincial de Veraguas, ideal para explorar historia, cultura local, gastronomía interiorana y rutas hacia distintos destinos naturales.',
-    previewUbicacion: 'Veraguas, Santiago',
+    previewUbicacion: 'Santiago, Veraguas',
     actividades: [
         {
             nombre: 'Recorrido por el centro urbano',

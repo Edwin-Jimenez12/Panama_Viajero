@@ -12,7 +12,7 @@ export const islaCebaco = {
         'La isla más grande de la provincia de Veraguas es un paraíso poco explorado donde extensas playas vírgenes, colinas cubiertas de vegetación tropical y aguas cristalinas crean un escenario perfecto para la aventura y el descanso. Su aislamiento natural permite disfrutar de paisajes auténticos, una rica biodiversidad marina y una experiencia tranquila lejos de las multitudes.',
     previewDescripcion:
         'Isla tropical de playas vírgenes y naturaleza intacta, ideal para el ecoturismo, la pesca y la exploración marina.',
-    previewUbicacion: 'Veraguas, Isla Cébaco',
+    previewUbicacion: 'Montijo, Veraguas',
     actividades: [
         {
             nombre: 'Exploración de playas vírgenes',

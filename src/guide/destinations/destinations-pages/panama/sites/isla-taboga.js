@@ -12,7 +12,7 @@ export const islaTaboga = {
         'Conocida como la Isla de las Flores, Taboga es uno de los destinos insulares más accesibles y encantadores de Panamá. Sus playas, su legado colonial y su ambiente relajado la convierten en una escapada ideal para quienes buscan combinar historia, mar y tranquilidad a pocos minutos de la ciudad.',
     previewDescripcion:
         'Playas, historia y tranquilidad en una de las islas más emblemáticas y accesibles de Panamá.',
-    previewUbicacion: 'Panamá, Isla Taboga',
+    previewUbicacion: 'Taboga, Panamá',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',

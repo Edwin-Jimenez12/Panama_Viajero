@@ -3,7 +3,6 @@ import { penonome } from './sites/penonome.js'
 import { playaBlanca } from '../rivera-pacifica/sites/playa-blanca.js'
 import { playaFarallon } from '../rivera-pacifica/sites/playa-farallon.js'
 import { playaJuanHombron } from '../rivera-pacifica/sites/playa-juan-hombron.js'
-import { playaSeaCliff } from '../rivera-pacifica/sites/playa-sea-cliff.js'
 import { santaClara } from '../rivera-pacifica/sites/santa-clara.js'
 
 export const cocleSiteRegistry = {
@@ -12,6 +11,5 @@ export const cocleSiteRegistry = {
   [playaBlanca.id]: playaBlanca,
   [playaFarallon.id]: playaFarallon,
   [playaJuanHombron.id]: playaJuanHombron,
-  [playaSeaCliff.id]: playaSeaCliff,
   [santaClara.id]: santaClara,
 }

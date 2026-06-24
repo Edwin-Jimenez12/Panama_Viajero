@@ -9,10 +9,10 @@ function SiteActivities({ activities = [], featuredImage }) {
     <section className="mx-auto w-full max-w-6xl px-4 pb-16">
       <div className="rounded-[28px] border border-[#4D4C4C]/10 bg-[#FFFFFF]/85 shadow-[0_20px_55px_rgba(77,76,76,0.10)]">
         <div className="border-b border-[#4D4C4C]/10 px-6 py-5 sm:px-8 ">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#CD2E4C]">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#CD2E4C]">
             Experiencias
           </p>
-          <h2 className="mt-2 font-main text-3xl font-bold text-[#4D4C4C] sm:text-4xl">
+          <h2 className="mt-2 font-main text-3xl font-bold text-[#4D4C4C] sm:text-5xl">
             Lo que te espera
           </h2>
         </div>

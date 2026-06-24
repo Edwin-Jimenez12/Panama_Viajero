@@ -12,7 +12,7 @@ export const laPiscinaNatural = {
         'Uno de los atractivos más famosos de Guna Yala, donde un banco de arena en medio del mar forma una enorme piscina natural de aguas poco profundas y cristalinas. Es uno de los lugares más impresionantes del archipiélago para disfrutar del Caribe en un entorno único y completamente natural.',
     previewDescripcion:
         'Aguas cristalinas y un banco de arena en medio del Caribe que crean uno de los paisajes más icónicos de Guna Yala.',
-    previewUbicacion: 'Guna Yala, La Piscina Natural',
+    previewUbicacion: 'Guna Yala',
     actividades: [
         {
             nombre: 'Baño en aguas cristalinas',

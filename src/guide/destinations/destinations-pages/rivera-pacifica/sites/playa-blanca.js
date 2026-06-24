@@ -11,7 +11,7 @@ descripcion:
     'Un refugio costero de gran belleza natural donde las suaves arenas claras y las tranquilas aguas del ma. Rodeado de vegetación tropical y un ambiente sereno, este destino invita a disfrutar del sol, la brisa marina y la tranquilidad de un paraíso escondido.',
 previewDescripcion:
     'Un rincón costero de arenas claras, aguas serenas y paisajes tropicales ideales para descansar y desconectarse.',
-  previewUbicacion: 'Rivera Pacífica, Playa Blanca',
+  previewUbicacion: 'Antón, Coclé',
   actividades: [
     { nombre: 'Caminata por la bahía', descripcion: 'Recorre el litoral de arenas claras disfrutando de una tranquilidad absoluta y de la brisa marina.', icono: '' },
     { nombre: 'Natación en aguas quietas', descripcion: 'Disfruta de un baño seguro y refrescante en una costa protegida con un oleaje sumamente apacible.', icono: '' },

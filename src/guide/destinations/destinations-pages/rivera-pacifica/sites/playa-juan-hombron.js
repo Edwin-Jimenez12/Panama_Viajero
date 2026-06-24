@@ -13,7 +13,7 @@ export const playaJuanHombron = {
 descripcion:
   'Un extenso paraíso costero de carácter salvaje donde kilómetros de arena, mareas vivas y paisajes naturales crean un escenario único para quienes buscan tranquilidad, aventura y conexión auténtica con la naturaleza.',  previewDescripcion:
     'Una extensa playa virgen de paisajes abiertos, naturaleza salvaje y ambiente perfecto para desconectarse.',
-  previewUbicacion: 'Rivera Pacífica, Playa Juan Hombrón',
+  previewUbicacion: 'Antón, Coclé',
   actividades: [
     {
       nombre: 'Caminata por el litoral',

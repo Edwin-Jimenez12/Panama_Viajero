@@ -12,7 +12,7 @@ export const bocaChica = {
     'Un paraíso costero del Pacífico chiricano conocido por sus aguas tranquilas, espectaculares paisajes marinos y acceso a hermosas islas del Golfo de Chiriquí. Es el destino perfecto para disfrutar de playas, aventura y naturaleza frente al mar.',
   previewDescripcion:
     'Playas, islas paradisíacas y aventuras marinas en la costa del Pacífico chiricano.',
-  previewUbicacion: 'Chiriquí, Boca Chica',
+  previewUbicacion: 'San Lorenzo, Chiriquí',
   actividades: [
     {
       nombre: 'Paseos en bote',

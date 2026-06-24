@@ -12,7 +12,7 @@ export const miraflores = {
         'Uno de los destinos turísticos más importantes de Panamá, donde puedes observar de cerca el paso de enormes embarcaciones por el Canal de Panamá. Es una experiencia única que combina historia, ingeniería y vistas privilegiadas de una de las obras más importantes del mundo.',
     previewDescripcion:
         'Vive de cerca la experiencia del Canal de Panamá y el paso de grandes buques.',
-    previewUbicacion: 'Panamá, Zona del Canal',
+    previewUbicacion: 'Ancón, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Observación de buques',

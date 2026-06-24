@@ -14,7 +14,7 @@ export const chitre = {
   previewDescripcion:
     'La capital cultural de Azuero, reconocida por sus tradiciones, gastronomía y hospitalidad. Entre plazas, museos, gastronomía típica y expresiones folclóricas, ofrece una auténtica experiencia de la identidad herrerana.',
 
-  previewUbicacion: 'Herrera, Chitré',
+  previewUbicacion: 'Chitré, Herrera',
 
   actividades: [
     { nombre: 'Recorrido por el centro histórico', descripcion: 'Explora calles, plazas y edificios emblemáticos que reflejan la historia y el desarrollo de la ciudad.', icono: '' },

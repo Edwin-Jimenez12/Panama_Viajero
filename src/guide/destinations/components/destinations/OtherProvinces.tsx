@@ -34,7 +34,6 @@ function AleatorySuggestions() {
                     Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo.
                 </p>
             </div>
-
             <div className="mx-auto flex max-w-6xl justify-center gap-4 md:gap-8 ">
                 {suggestions.map((province) => (
                     <button
@@ -58,9 +57,9 @@ function AleatorySuggestions() {
                             />
                             <div className="absolute inset-0 bg-black/20 transition-all duration-300 group-hover:bg-black/0" />
                         </div>
-                        <div className="mt-4 w-full overflow-hidden text-center">
+                        <div className="mt-1 md:mt-4 w-full overflow-hidden text-center">
                             <span
-                                className="inline-block font-secondary-italic text-2xl md:text-4xl font-bold text-brand-white/95 transition-all duration-300 ease-out group-hover:scale-105"
+                                className="leading-tight inline-block font-secondary-italic text-lg md:text-3xl text-brand-white/95 transition-all duration-300 ease-out group-hover:scale-105"
                             >
                                 {province.nombre}
                             </span>

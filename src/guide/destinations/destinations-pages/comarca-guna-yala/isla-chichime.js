@@ -12,7 +12,7 @@ export const islaChichime = {
         'Un auténtico paraíso tropical rodeado de aguas transparentes y palmeras que parecen sacadas de una postal. Isla Chichime ofrece una experiencia caribeña única para quienes buscan desconexión, mar cristalino y la belleza natural intacta de Guna Yala.',
     previewDescripcion:
         'Arena blanca, aguas turquesas y paisajes tropicales en una de las joyas más tranquilas de Guna Yala.',
-    previewUbicacion: 'Guna Yala, Isla Chichime',
+    previewUbicacion: 'Guna Yala',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',

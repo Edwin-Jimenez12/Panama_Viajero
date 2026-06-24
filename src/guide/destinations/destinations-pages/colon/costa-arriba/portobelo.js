@@ -12,7 +12,7 @@ export const portobelo = {
         'Un histórico tesoro del Caribe panameño donde fortalezas coloniales, tradiciones afrocaribeñas y paisajes costeros se combinan en una experiencia única. Portobelo destaca por su legado cultural, su riqueza histórica y su vibrante identidad caribeña.',
     previewDescripcion:
         'Historia, cultura afrocaribeña y patrimonio colonial en uno de los destinos más emblemáticos de Panamá.',
-    previewUbicacion: 'Colón, Costa Arriba',
+    previewUbicacion: 'Costa Arriba, Colón',
     actividades: [
         {
             nombre: 'Visita a las fortificaciones históricas',

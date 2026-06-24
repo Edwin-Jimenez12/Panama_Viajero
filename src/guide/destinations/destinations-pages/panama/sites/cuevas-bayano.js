@@ -12,7 +12,7 @@ export const cuevasBayano = {
         'Uno de los destinos de aventura más impresionantes de Panamá, donde enormes cavernas, ríos subterráneos y formaciones rocosas crean una experiencia única para quienes buscan exploración, adrenalina y contacto directo con la naturaleza.',
     previewDescripcion:
         'Aventura, exploración y ríos subterráneos en uno de los escenarios naturales más sorprendentes de Panamá.',
-    previewUbicacion: 'Panamá, Bayano',
+    previewUbicacion: 'Chepo, Panamá',
     actividades: [
         {
             nombre: 'Exploración de cuevas',

@@ -12,7 +12,7 @@ export const calzadaAmador = {
         'Un emblemático paseo marítimo que conecta la ciudad con el Pacífico y ofrece algunas de las mejores vistas del skyline de Panamá, la entrada del Canal y las islas cercanas. Su ambiente vibrante y su cercanía al mar lo convierten en uno de los lugares más visitados para recreación, gastronomía y deporte.',
     previewDescripcion:
         'Mar, skyline y recreación en uno de los paseos costeros más icónicos de Panamá.',
-    previewUbicacion: 'Panamá, Zona del Canal',
+    previewUbicacion: 'Amador, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Caminatas',

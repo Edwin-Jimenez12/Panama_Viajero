@@ -12,7 +12,7 @@ export const panamaViejo = {
         'Las ruinas de la primera ciudad fundada por los españoles en el Pacífico americano y uno de los sitios históricos más importantes del país. Panamá Viejo ofrece una experiencia única para descubrir el origen de la ciudad y revivir parte de su legado colonial a través de su patrimonio arqueológico.',
     previewDescripcion:
         'Historia, arqueología y patrimonio en el lugar donde nació la ciudad de Panamá.',
-    previewUbicacion: 'Panamá, Capital',
+    previewUbicacion: 'Parque Lefevre, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Recorrido arqueológico',

@@ -25,7 +25,7 @@ export const provincias = [
       'Tours gastronómicos',
     ],
 
-    directSiteIds: [ 'reserva-forestal-el-montuoso', 'chitre', 'talleres-de-artesanos-de-diablicos'],
+    directSiteIds: [ 'reserva-forestal-el-montuoso', 'chitre', 'desierto-sarigua', 'parita' ],
     displayMode: 'sites-only',
   },
 ]

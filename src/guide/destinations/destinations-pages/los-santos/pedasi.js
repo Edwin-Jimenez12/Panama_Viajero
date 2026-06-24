@@ -12,7 +12,7 @@ export const pedasi = {
         'Un encantador pueblo costero reconocido por su ambiente tranquilo, hermosas playas y auténtica esencia azuerense. Pedasí es el punto de partida ideal para explorar destinos naturales como Isla Iguana, disfrutar del océano Pacífico y vivir una experiencia relajada entre cultura, naturaleza y mar.',
     previewDescripcion:
         'Playas, cultura y naturaleza en uno de los destinos costeros más atractivos de Azuero.',
-    previewUbicacion: 'Los Santos, Pedasí',
+    previewUbicacion: 'Pedasí, Los Santos',
     actividades: [
         {
             nombre: 'Visita a Isla Iguana',

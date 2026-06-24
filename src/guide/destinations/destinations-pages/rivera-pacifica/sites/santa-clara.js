@@ -14,7 +14,7 @@ export const santaClara = {
     'Un encantador refugio costero conocido por sus extensas arenas claras, aguas tranquilas y ambiente familiar. Rodeada de paisajes tropicales y una atmósfera relajada, Santa Clara es el lugar ideal para desconectarse, disfrutar del sol y vivir una experiencia auténtica junto al Pacífico.',
   previewDescripcion:
     'Una playa tranquila de arena clara, aguas serenas y ambiente perfecto para descansar y disfrutar en familia.',
-  previewUbicacion: 'Rivera Pacífica, Santa Clara',
+  previewUbicacion: 'Antón, Coclé',
 actividades: [
   {
     nombre: 'Caminata por la orilla',

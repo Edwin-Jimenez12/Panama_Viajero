@@ -12,7 +12,7 @@ export const puertoBalboa = {
         'Uno de los puertos más importantes del Pacífico y una pieza clave en el comercio marítimo mundial. Ubicado junto a la entrada del Canal de Panamá, ofrece una perspectiva única del constante movimiento de buques y de la operación logística que conecta océanos y continentes.',
     previewDescripcion:
         'Movimiento marítimo, logística y vistas estratégicas en uno de los puertos más importantes de Panamá.',
-    previewUbicacion: 'Panamá, Zona del Canal',
+    previewUbicacion: 'Balboa, Ciudad de Panamá',
     actividades: [
         {
             nombre: 'Observación de buques',

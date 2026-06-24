@@ -12,7 +12,7 @@ export const lasTablas = {
         'La cuna del folclore panameño y uno de los destinos culturales más emblemáticos del país. Famosa por sus tradiciones, artesanías, festividades y el reconocido Carnaval de Las Tablas, esta ciudad ofrece una auténtica inmersión en la identidad de la región de Azuero.',
     previewDescripcion:
         'Tradición, folclore y cultura en el corazón de la península de Azuero.',
-    previewUbicacion: 'Los Santos, Las Tablas',
+    previewUbicacion: 'Las Tablas, Los Santos',
     actividades: [
         {
             nombre: 'Carnaval de Las Tablas',

@@ -2,8 +2,8 @@ const base = '/images/destinations/rivera-pacifica/bg-playa-sea-cliff.webp'
 
 export const playaSeaCliff = {
   id: 'playa-sea-cliff',
-  provinceIds: ['cocle'],
-  sharedProvinceIds: ['cocle'],
+  provinceIds: ['panama-oeste'],
+  sharedProvinceIds: ['panama-oeste'],
   riveraPacifica: true,
   nombre: 'Playa Sea Cliff',
   banner: {
@@ -14,7 +14,7 @@ export const playaSeaCliff = {
     'Un exclusivo refugio costero donde imponentes acantilados, extensas playas y palmeras inclinadas hacia el océano crean un paisaje único de gran belleza natural, ideal para quienes buscan descanso, privacidad y conexión con el mar.',
   previewDescripcion:
     'Un elegante escape de playa rodeado de acantilados, palmeras y paisajes costeros perfectos para relajarse.',
-  previewUbicacion: 'Rivera Pacífica, Playa Sea Cliff',
+  previewUbicacion: 'San Carlos, Panamá Oeste',
   actividades: [
     {
       nombre: 'Caminata por la costa',

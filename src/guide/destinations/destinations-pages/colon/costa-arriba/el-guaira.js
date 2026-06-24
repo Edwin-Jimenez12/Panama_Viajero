@@ -12,7 +12,7 @@ export const elGuaira = {
         'Un tranquilo rincón costero de la Costa Arriba de Colón, rodeado de vegetación tropical y aguas caribeñas que invitan al descanso y la conexión con la naturaleza. El Guaira es ideal para quienes buscan playas serenas y una experiencia auténtica lejos de las zonas más concurridas.',
     previewDescripcion:
         'Playas tranquilas, naturaleza tropical y ambiente relajado en la Costa Arriba de Colón.',
-    previewUbicacion: 'Colón, Costa Arriba',
+    previewUbicacion: 'Costa Arriba, Colón',
     actividades: [
         {
             nombre: 'Disfrutar de la playa',
