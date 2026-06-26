@@ -44,7 +44,7 @@ function CountdownModal({ onClose, onPreregister }) {
                         </div>
 
                         <div className="relative z-20 mt-[-15px] flex w-full flex-col items-start text-center  md:text-left">
-                            <h1 className=" text-md font-bold text-brand-blue" >
+                            <h1 className=" text-sm  font-bold text-brand-blue" >
                                 ¡Espéralo pronto!
                             </h1>
                             <h2 className=" text-2xl font-secondary-italic text-brand-red/80 ">
@@ -73,7 +73,7 @@ function CountdownModal({ onClose, onPreregister }) {
                                 <span className="block text-[#ff8fa2]">antes lo viste</span>
                             </h2>
 
-                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 md:block hidden">
+                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0">
                                 Una nueva forma de explorar destinos, experiencias y lugares increíbles dentro de Panamá.
                             </p>
 
