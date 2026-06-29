@@ -9,7 +9,7 @@ export const islaIguana = {
         alt: 'Banner de Isla Iguana',
     },
     descripcion:
-        'Un paraíso natural protegido frente a las costas de Pedasí, reconocido por sus aguas cristalinas, playas de arena blanca y extraordinaria biodiversidad marina. Este refugio de vida silvestre es uno de los destinos más impresionantes del Pacífico panameño para disfrutar de la naturaleza y el mar.',
+        'Isla Iguana es un refugio natural frente a Pedasí, reconocido por sus playas de arena blanca, aguas cristalinas y abundante vida marina. Es un destino destacado para disfrutar del mar, observar fauna y recorrer un área protegida muy valiosa del Pacífico panameño.',
     previewDescripcion:
         'Aguas cristalinas, playas paradisíacas y vida marina en una joya del Pacífico panameño.',
     previewUbicacion: 'Pedasí, Los Santos',
@@ -21,31 +21,31 @@ export const islaIguana = {
             icono: '',
         },
         {
-            nombre: 'Observación de fauna marina',
+            nombre: 'Fauna marina',
             descripcion:
                 'Admira peces tropicales, tortugas marinas y otras especies que habitan la zona.',
             icono: '',
         },
         {
-            nombre: 'Disfrutar de playas paradisíacas',
+            nombre: 'Playa',
             descripcion:
                 'Relájate en playas de arena blanca rodeadas de aguas cristalinas.',
             icono: '',
         },
         {
-            nombre: 'Avistamiento de aves',
+            nombre: 'Aves',
             descripcion:
-                'Observa aves marinas que encuentran refugio en este importante ecosistema protegido.',
+                'Observa aves marinas que encuentran refugio en este ecosistema protegido.',
             icono: '',
         },
         {
-            nombre: 'Paseos en lancha',
+            nombre: 'Lancha',
             descripcion:
                 'Disfruta el recorrido por las aguas del Pacífico hasta llegar a la isla.',
             icono: '',
         },
         {
-            nombre: 'Fotografía de naturaleza',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura paisajes costeros, fauna silvestre y escenarios marinos únicos.',
             icono: '',
@@ -53,23 +53,23 @@ export const islaIguana = {
         {
             nombre: 'Natación',
             descripcion:
-                'Aprovecha las tranquilas aguas turquesas para refrescarte y disfrutar del entorno.',
+                'Aprovecha las aguas turquesas para refrescarte y disfrutar del entorno.',
             icono: '',
         },
         {
-            nombre: 'Observación de ballenas',
+            nombre: 'Ballenas',
             descripcion:
                 'Durante la temporada adecuada, contempla el paso de ballenas jorobadas por la región.',
             icono: '',
         },
         {
-            nombre: 'Turismo ecológico',
+            nombre: 'Ecoturismo',
             descripcion:
                 'Conoce uno de los refugios de vida silvestre más importantes de Panamá.',
             icono: '',
         },
         {
-            nombre: 'Exploración costera',
+            nombre: 'Exploración',
             descripcion:
                 'Recorre la isla y descubre sus paisajes naturales y áreas protegidas.',
             icono: '',

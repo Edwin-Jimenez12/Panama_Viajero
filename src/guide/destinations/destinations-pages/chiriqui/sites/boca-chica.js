@@ -9,69 +9,69 @@ export const bocaChica = {
     alt: 'Banner de Boca Chica',
   },
   descripcion:
-    'Un paraíso costero del Pacífico chiricano conocido por sus aguas tranquilas, espectaculares paisajes marinos y acceso a hermosas islas del Golfo de Chiriquí. Es el destino perfecto para disfrutar de playas, aventura y naturaleza frente al mar.',
+    'Boca Chica es la puerta de entrada al Golfo de Chiriquí, con aguas tranquilas, islas cercanas y un entorno marino ideal para actividades de naturaleza. Su atractivo está en la navegación, el avistamiento de fauna y las escapadas a playas e islotes del Pacífico chiricano.',
   previewDescripcion:
-    'Playas, islas paradisíacas y aventuras marinas en la costa del Pacífico chiricano.',
+    'Islas cercanas, aguas tranquilas y excursiones marinas en el Pacífico chiricano.',
   previewUbicacion: 'San Lorenzo, Chiriquí',
   actividades: [
     {
-      nombre: 'Paseos en bote',
+      nombre: 'Paseo en bote',
       descripcion:
-        'Recorre las islas y paisajes costeros que rodean el Golfo de Chiriquí.',
+        'Navega entre islas y paisajes costeros para disfrutar de una vista completa del Golfo de Chiriquí.',
       icono: '',
     },
     {
-      nombre: 'Visita a islas paradisíacas',
+      nombre: 'Islas',
       descripcion:
-        'Explora playas de arena clara y aguas cristalinas en las islas cercanas.',
+        'Explora playas de arena clara y aguas cristalinas en las islas cercanas a Boca Chica.',
       icono: '',
     },
     {
       nombre: 'Pesca deportiva',
       descripcion:
-        'Vive una experiencia de pesca en uno de los destinos marinos más reconocidos del país.',
+        'Vive una jornada de pesca en una zona reconocida por su riqueza marina y sus aguas productivas.',
       icono: '',
     },
     {
-      nombre: 'Avistamiento de ballenas',
+      nombre: 'Ballenas',
       descripcion:
-        'Observa ballenas jorobadas durante la temporada migratoria en el Pacífico panameño.',
+        'Observa ballenas jorobadas durante su temporada migratoria en el Pacífico panameño.',
       icono: '',
     },
     {
       nombre: 'Snorkel',
       descripcion:
-        'Descubre la vida marina y los arrecifes en aguas tranquilas y transparentes.',
+        'Descubre arrecifes, peces tropicales y fondos marinos en aguas tranquilas y transparentes.',
       icono: '',
     },
     {
       nombre: 'Kayak',
       descripcion:
-        'Explora manglares, costas e islas remando entre paisajes naturales únicos.',
+        'Explora manglares, costas e islas a tu ritmo mientras remas entre paisajes naturales abiertos.',
       icono: '',
     },
     {
-      nombre: 'Disfrutar de playas tranquilas',
+      nombre: 'Descanso',
       descripcion:
-        'Relájate junto al mar en entornos alejados del turismo masivo.',
+        'Relájate junto al mar en un entorno tranquilo, alejado del turismo masivo.',
       icono: '',
     },
     {
-      nombre: 'Fotografía de paisajes marinos',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura impresionantes vistas del océano, las islas y los atardeceres del Pacífico.',
+        'Captura vistas del océano, las islas y los atardeceres del Pacífico.',
       icono: '',
     },
     {
-      nombre: 'Observación de fauna marina',
+      nombre: 'Fauna marina',
       descripcion:
-        'Descubre delfines, tortugas marinas y diversas especies costeras.',
+        'Descubre delfines, tortugas marinas y otras especies que frecuentan la zona costera.',
       icono: '',
     },
     {
-      nombre: 'Excursiones al Golfo de Chiriquí',
+      nombre: 'Excursión al golfo',
       descripcion:
-        'Explora uno de los parques marinos más importantes y biodiversos de Panamá.',
+        'Explora uno de los entornos marinos más valiosos y diversos de Panamá.',
       icono: '',
     },
   ],

@@ -6,7 +6,7 @@ export const islaBastimentos = {
     nombre: 'Isla Bastimentos',
     banner: {
         src: `${islaBastimentosImageBase}/banner/bg-isla-bastimentos.webp`,
-        alt: 'Banner de Isla Bastimento',
+        alt: 'Banner de Isla Bastimentos',
     },
     gallery: [
         `${islaBastimentosImageBase}/banner/bg-isla-bastimentos.webp`,
@@ -22,51 +22,51 @@ export const islaBastimentos = {
         `${islaBastimentosImageBase}/gallery/g10-isla-bastimentos.webp`,
     ],
     descripcion:
-        'Un refugio indómito donde la naturaleza late con fuerza salvaje. Es un santuario de playas secretas doradas, manglares misteriosos y una cultura caribeña auténtica, diseñado para almas libres que buscan una reconexión mística con el paraíso más puro.',
+        'Una de las islas más salvajes y auténticas de Bocas del Toro, famosa por sus playas vírgenes, manglares, selva tropical y fuerte identidad afrocaribeña. Bastimentos es ideal para quienes buscan aventura, naturaleza y una conexión más profunda con el Caribe panameño.',
     previewDescripcion:
-        'Un refugio indómito donde la naturaleza late con fuerza salvaje.',
+        'Naturaleza salvaje, playas vírgenes y cultura auténtica en Bocas del Toro.',
     previewUbicacion: 'Bastimentos, Bocas del Toro',
     actividades: [
         {
             nombre: 'Avistamiento de ranas rojas',
             descripcion:
-                'Descubre la joya viviente de la isla oculta entre la densa vegetación.',
+                'Descubre una de las especies más emblemáticas de la isla escondida entre la vegetación tropical.',
             icono: '',
         },
         {
-            nombre: 'Kayak en los manglares',
+            nombre: 'Kayak',
             descripcion:
-                'Navega por laberintos verdes donde el agua refleja la calma del cielo.',
+                'Explora manglares y canales naturales mientras navegas por uno de los ecosistemas más ricos de la isla.',
             icono: '',
         },
         {
-            nombre: 'Caminata en cueva Nivida',
+            nombre: 'Exploración de cuevas',
             descripcion:
-                'Desafía tu espíritu aventurero explorando misteriosas grutas subterráneas.',
+                'Adéntrate en la famosa Cueva Nivida y vive una experiencia de aventura entre cavernas y agua subterránea.',
             icono: '',
         },
         {
-            nombre: 'Cultura afrocaribeña',
+            nombre: 'Cultura',
             descripcion:
-                'Déjate seducir por los ritmos, sabores e historias del auténtico pueblo de Old Bank.',
+                'Conoce la esencia afrocaribeña de Old Bank, su música, gastronomía y tradiciones locales.',
             icono: '',
         },
         {
-            nombre: 'Snorkel en arrecifes de coral',
+            nombre: 'Snorkel',
             descripcion:
-                'Sumérgete en gardens submarinos rebosantes de vida y colores vibrantes.',
+                'Sumérgete en arrecifes llenos de coral y descubre una gran variedad de vida marina tropical.',
             icono: '',
         },
         {
-            nombre: 'Senderismo en selva tropical',
+            nombre: 'Senderismo',
             descripcion:
-                'Cruza caminos selváticos donde habitan perezosos y aves exóticas.',
+                'Recorre senderos de selva tropical donde podrás observar fauna silvestre y exuberante vegetación.',
             icono: '',
         },
         {
-            nombre: 'Descanso en Playa Polo',
+            nombre: 'Descanso',
             descripcion:
-                'Relájate en una costa virgen y protegida, ideal para un escape absoluto.',
+                'Relájate en playas tranquilas y poco concurridas rodeadas de un entorno natural único.',
             icono: '',
         },
     ],

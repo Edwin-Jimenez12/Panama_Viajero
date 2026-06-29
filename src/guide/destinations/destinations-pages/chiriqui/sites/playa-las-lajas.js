@@ -9,67 +9,67 @@ export const playaLasLajas = {
     alt: 'Banner de Playa Las Lajas',
   },
   descripcion:
-    'Una de las playas más extensas y visitadas del Pacífico panameño, famosa por su ambiente relajado, amplias franjas de arena y hermosos atardeceres. Es el destino perfecto para disfrutar del mar, la naturaleza y el descanso en la costa chiricana.',
+    'Playa Las Lajas es una de las costas más extensas del Pacífico panameño, conocida por su arena amplia, ambiente relajado y atardeceres agradables. Es un destino práctico para descansar, caminar, montar a caballo y disfrutar del mar en un entorno sencillo.',
   previewDescripcion:
-    'Una extensa playa del Pacífico ideal para relajarse, caminar y disfrutar del mar.',
+    'Una playa extensa del Pacífico ideal para descansar, caminar y disfrutar del mar.',
   previewUbicacion: 'San Félix, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminatas por la playa',
+      nombre: 'Caminata',
       descripcion:
         'Recorre kilómetros de arena mientras disfrutas de la brisa del océano.',
       icono: '',
     },
     {
-      nombre: 'Disfrutar del mar',
+      nombre: 'Descanso',
       descripcion:
-        'Relájate frente a las aguas del Pacífico y conecta con la naturaleza.',
+        'Relájate frente a las aguas del Pacífico y disfruta del entorno natural.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardecer',
       descripcion:
-        'Contempla espectaculares puestas de sol sobre la costa chiricana.',
+        'Contempla puestas de sol sobre la costa chiricana con una vista amplia y abierta.',
       icono: '',
     },
     {
-      nombre: 'Fotografía costera',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura paisajes marinos, reflejos y escenarios naturales únicos.',
+        'Captura paisajes marinos, reflejos y escenarios naturales muy amplios.',
       icono: '',
     },
     {
-      nombre: 'Picnic frente al mar',
+      nombre: 'Picnic',
       descripcion:
         'Comparte momentos especiales en un entorno tranquilo y abierto.',
       icono: '',
     },
     {
-      nombre: 'Cabalgatas en la playa',
+      nombre: 'Cabalgata',
       descripcion:
         'Disfruta recorridos a caballo a lo largo de la extensa costa.',
       icono: '',
     },
     {
-      nombre: 'Observación de aves',
+      nombre: 'Aves',
       descripcion:
         'Descubre especies costeras que frecuentan la zona durante todo el año.',
       icono: '',
     },
     {
-      nombre: 'Relajación y descanso',
+      nombre: 'Relajación',
       descripcion:
         'Escapa del ritmo cotidiano en una de las playas más tranquilas de Chiriquí.',
       icono: '',
     },
     {
-      nombre: 'Turismo familiar',
+      nombre: 'Familia',
       descripcion:
         'Disfruta amplios espacios ideales para compartir con familiares y amigos.',
       icono: '',
     },
     {
-      nombre: 'Escapadas de fin de semana',
+      nombre: 'Escapada',
       descripcion:
         'Aprovecha su ambiente relajado para una experiencia de descanso junto al mar.',
       icono: '',

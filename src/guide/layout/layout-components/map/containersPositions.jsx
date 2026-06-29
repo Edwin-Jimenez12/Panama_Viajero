@@ -206,13 +206,39 @@ export const colonContainers = [
   {
     id: 'colon-main',
     component: 'Colon1Container',
-    bgClassName: 'bg-transparencia-500',
+    bgClassName: 'bg-transparent-500',
     style: {
       top: '10%',
       left: '50%',
       width: '12%',
       height: '5%',
       rotation: -30,
+      zIndex: 36,
+    },
+  },
+{
+    id: 'colon-main',
+    component: 'Colon1Container',
+    bgClassName: 'bg-transparent-500',
+    style: {
+      top: '21%',
+      left: '49.4%',
+      width: '3%',
+      height: '5%',
+      rotation: 0,
+      zIndex: 36,
+    },
+  },
+    {
+    id: 'colon-main',
+    component: 'Colon1Container',
+    bgClassName: 'bg-transparent-500',
+    style: {
+      top: '19%',
+      left: '46%',
+      width: '5%',
+      height: '5%',
+      rotation: -20,
       zIndex: 36,
     },
   },
@@ -305,5 +331,29 @@ export const darienContainers = [
       height: '12%',
       rotation: 0,
     },
+  },
+]
+export const Herrera1Container = [
+  {
+    id: 'herrera-main',
+    component: 'herrera1Container',
+    bgClassName: 'bg-transparent-500',
+        style: { 
+      top: '70%', 
+      left: '38%', 
+      width: '4%', 
+      height: '10%', 
+      rotation: 0 },
+  },
+  {
+    id: 'herrera-main',
+    component: 'herrera1Container',
+    bgClassName: 'bg-transparent-500',
+        style: { 
+      top: '69%', 
+      left: '42%', 
+      width: '1%', 
+      height: '5%', 
+      rotation: 45 },
   },
 ]

@@ -22,7 +22,7 @@ export const provinceMedia = [
   },
   {
     id: 'rivera-pacifica',
-    nombre: 'Rivera Pacífica',
+    nombre: 'Riviera Pacífica',
     path: '/rivera-pacifica',
     banner: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',
     poster: '/images/destinations/rivera-pacifica/bg-rivera-pacifica.webp',

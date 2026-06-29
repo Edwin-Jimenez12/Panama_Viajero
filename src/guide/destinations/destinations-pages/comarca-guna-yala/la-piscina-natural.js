@@ -9,19 +9,19 @@ export const laPiscinaNatural = {
         alt: 'Banner de La Piscina Natural',
     },
     descripcion:
-        'Uno de los atractivos más famosos de Guna Yala, donde un banco de arena en medio del mar forma una enorme piscina natural de aguas poco profundas y cristalinas. Es uno de los lugares más impresionantes del archipiélago para disfrutar del Caribe en un entorno único y completamente natural.',
+        'La Piscina Natural es uno de los atractivos más famosos de Guna Yala, donde un banco de arena en medio del mar forma una gran piscina de aguas poco profundas y cristalinas. Es un lugar muy representativo del archipiélago para disfrutar del Caribe en un entorno natural único.',
     previewDescripcion:
-        'Aguas cristalinas y un banco de arena en medio del Caribe que crean uno de los paisajes más icónicos de Guna Yala.',
+        'Aguas cristalinas y un banco de arena en medio del Caribe que forman uno de los paisajes más icónicos de Guna Yala.',
     previewUbicacion: 'Guna Yala',
     actividades: [
         {
-            nombre: 'Baño en aguas cristalinas',
+            nombre: 'Baño',
             descripcion:
                 'Disfruta de aguas poco profundas, transparentes y calmadas en un entorno natural único en medio del mar.',
             icono: '',
         },
         {
-            nombre: 'Observación de estrellas de mar',
+            nombre: 'Estrellas de mar',
             descripcion:
                 'Contempla algunas de las especies más representativas de la zona mientras exploras el fondo arenoso.',
             icono: '',
@@ -29,17 +29,17 @@ export const laPiscinaNatural = {
         {
             nombre: 'Natación',
             descripcion:
-                'Nada y relájate en una gigantesca piscina natural rodeada de aguas turquesas del Caribe panameño.',
+                'Nada y relájate en una enorme piscina natural rodeada de aguas turquesas del Caribe panameño.',
             icono: '',
         },
         {
-            nombre: 'Paseos en lancha',
+            nombre: 'Lancha',
             descripcion:
                 'Llega a este atractivo como parte de excursiones que recorren distintas islas y cayos del archipiélago.',
             icono: '',
         },
         {
-            nombre: 'Excursión entre islas',
+            nombre: 'Excursión',
             descripcion:
                 'Combina la visita con otros destinos cercanos de Guna Yala para vivir una experiencia más completa en la región.',
             icono: '',

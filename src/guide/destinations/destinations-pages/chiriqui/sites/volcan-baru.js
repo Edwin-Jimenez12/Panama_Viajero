@@ -9,67 +9,67 @@ export const volcanBaru = {
     alt: 'Banner del Volcán Barú',
   },
   descripcion:
-    'La cumbre más alta de Panamá y uno de los destinos de aventura más impresionantes del país. Sus senderos de montaña, bosques nubosos y espectaculares vistas convierten cada ascenso en una experiencia inolvidable para los amantes de la naturaleza.',
+    'El Volcán Barú es la cumbre más alta de Panamá y uno de los destinos de montaña más reconocidos del país. Sus senderos, bosques nubosos y vistas amplias convierten la visita en una experiencia exigente pero muy memorable para quienes disfrutan la naturaleza.',
   previewDescripcion:
-    'La montaña más alta de Panamá, famosa por sus senderos, amaneceres y vistas espectaculares.',
+    'La montaña más alta de Panamá, famosa por sus senderos y vistas panorámicas.',
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
-      nombre: 'Ascenso a la cumbre',
+      nombre: 'Ascenso',
       descripcion:
-        'Conquista los 3,475 metros de altura del punto más elevado de Panamá.',
+        'Sube hasta los 3,475 metros del punto más alto de Panamá y vive una experiencia de montaña completa.',
       icono: '',
     },
     {
-      nombre: 'Observación del amanecer',
+      nombre: 'Amanecer',
       descripcion:
         'Disfruta uno de los amaneceres más espectaculares del país desde la cima.',
       icono: '',
     },
     {
-      nombre: 'Senderismo de montaña',
+      nombre: 'Senderismo',
       descripcion:
         'Recorre rutas rodeadas de bosques nubosos y paisajes de altura.',
       icono: '',
     },
     {
-      nombre: 'Fotografía panorámica',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura vistas impresionantes de montañas, valles y cielos despejados.',
+        'Captura vistas amplias de montañas, valles y cielos despejados.',
       icono: '',
     },
     {
-      nombre: 'Observación de flora y fauna',
+      nombre: 'Flora y fauna',
       descripcion:
         'Descubre especies propias de los ecosistemas de alta montaña.',
       icono: '',
     },
     {
-      nombre: 'Avistamiento de aves',
+      nombre: 'Aves',
       descripcion:
         'Explora uno de los mejores lugares de Panamá para observar aves de altura.',
       icono: '',
     },
     {
-      nombre: 'Recorridos en vehículo 4x4',
+      nombre: '4x4',
       descripcion:
         'Accede a la cima mediante excursiones guiadas en vehículos todoterreno.',
       icono: '',
     },
     {
-      nombre: 'Observación de estrellas',
+      nombre: 'Estrellas',
       descripcion:
         'Aprovecha la altitud y la baja contaminación lumínica para admirar el cielo nocturno.',
       icono: '',
     },
     {
-      nombre: 'Exploración de bosques nubosos',
+      nombre: 'Bosque nuboso',
       descripcion:
         'Adéntrate en ecosistemas únicos cubiertos por neblina y vegetación exuberante.',
       icono: '',
     },
     {
-      nombre: 'Turismo de aventura',
+      nombre: 'Aventura',
       descripcion:
         'Vive una experiencia desafiante y memorable en uno de los íconos naturales de Panamá.',
       icono: '',

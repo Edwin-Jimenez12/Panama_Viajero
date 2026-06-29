@@ -9,67 +9,67 @@ export const lasTablas = {
         alt: 'Banner de Las Tablas',
     },
     descripcion:
-        'La cuna del folclore panameño y uno de los destinos culturales más emblemáticos del país. Famosa por sus tradiciones, artesanías, festividades y el reconocido Carnaval de Las Tablas, esta ciudad ofrece una auténtica inmersión en la identidad de la región de Azuero.',
+        'Las Tablas es uno de los centros culturales más importantes de Panamá y un referente del folclore nacional. Su vida gira en torno a las tradiciones, el Carnaval, la artesanía y una identidad local muy marcada.',
     previewDescripcion:
         'Tradición, folclore y cultura en el corazón de la península de Azuero.',
     previewUbicacion: 'Las Tablas, Los Santos',
     actividades: [
         {
-            nombre: 'Carnaval de Las Tablas',
+            nombre: 'Carnaval',
             descripcion:
                 'Vive una de las celebraciones más famosas y espectaculares de Panamá.',
             icono: '',
         },
         {
-            nombre: 'Recorrido por el centro histórico',
+            nombre: 'Caminata',
             descripcion:
-                'Descubre plazas, edificios y espacios que reflejan la historia de la ciudad.',
+                'Explora calles, plazas y edificios que reflejan la historia de la ciudad.',
             icono: '',
         },
         {
-            nombre: 'Conocer el folclore panameño',
+            nombre: 'Folclore',
             descripcion:
-                'Explora las tradiciones, costumbres y expresiones culturales que distinguen a la región.',
+                'Conoce tradiciones, costumbres y expresiones culturales que distinguen a la región.',
             icono: '',
         },
         {
-            nombre: 'Visita a talleres artesanales',
+            nombre: 'Artesanías',
             descripcion:
-                'Observa la elaboración de polleras, tembleques y artesanías tradicionales.',
+                'Observa la elaboración de polleras, tembleques y piezas tradicionales del área.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía típica',
+            nombre: 'Gastronomía',
             descripcion:
-                'Disfruta platos tradicionales y sabores característicos de la cultura santeña.',
+                'Disfruta platos típicos y sabores característicos de la cultura santeña.',
             icono: '',
         },
         {
-            nombre: 'Festivales y eventos culturales',
+            nombre: 'Festividades',
             descripcion:
-                'Participa en actividades que celebran la música, danza y tradiciones locales.',
+                'Participa en eventos que celebran la música, la danza y las tradiciones locales.',
             icono: '',
         },
         {
-            nombre: 'Fotografía cultural',
+            nombre: 'Fotografía',
             descripcion:
-                'Captura la belleza de las tradiciones, vestimentas y arquitectura de la ciudad.',
+                'Captura la arquitectura, las vestimentas y las escenas culturales de la ciudad.',
             icono: '',
         },
         {
-            nombre: 'Visita a iglesias históricas',
+            nombre: 'Iglesias',
             descripcion:
-                'Conoce importantes templos que forman parte del patrimonio religioso de la región.',
+                'Conoce templos históricos que forman parte del patrimonio religioso de la región.',
             icono: '',
         },
         {
-            nombre: 'Compra de artesanías',
+            nombre: 'Compras',
             descripcion:
                 'Encuentra recuerdos y productos elaborados por artesanos locales.',
             icono: '',
         },
         {
-            nombre: 'Experiencia azuerense',
+            nombre: 'Cultura',
             descripcion:
                 'Sumérgete en la hospitalidad y el estilo de vida tradicional de Los Santos.',
             icono: '',

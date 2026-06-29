@@ -9,25 +9,25 @@ export const pedasi = {
         alt: 'Banner de Pedasí',
     },
     descripcion:
-        'Un encantador pueblo costero reconocido por su ambiente tranquilo, hermosas playas y auténtica esencia azuerense. Pedasí es el punto de partida ideal para explorar destinos naturales como Isla Iguana, disfrutar del océano Pacífico y vivir una experiencia relajada entre cultura, naturaleza y mar.',
+        'Pedasí es un pueblo costero conocido por su ambiente tranquilo, sus playas cercanas y su papel como base para explorar la costa santeña. Combina mar, cultura local y una experiencia relajada muy atractiva para el visitante.',
     previewDescripcion:
         'Playas, cultura y naturaleza en uno de los destinos costeros más atractivos de Azuero.',
     previewUbicacion: 'Pedasí, Los Santos',
     actividades: [
         {
-            nombre: 'Visita a Isla Iguana',
+            nombre: 'Isla Iguana',
             descripcion:
                 'Explora uno de los refugios de vida silvestre más impresionantes de Panamá.',
             icono: '',
         },
         {
-            nombre: 'Disfrutar de las playas',
+            nombre: 'Playa',
             descripcion:
                 'Relájate en playas de arena clara y aguas ideales para descansar.',
             icono: '',
         },
         {
-            nombre: 'Avistamiento de ballenas',
+            nombre: 'Ballenas',
             descripcion:
                 'Observa ballenas jorobadas durante su temporada migratoria en el Pacífico.',
             icono: '',
@@ -45,31 +45,31 @@ export const pedasi = {
             icono: '',
         },
         {
-            nombre: 'Recorrido por el pueblo',
+            nombre: 'Caminata',
             descripcion:
                 'Descubre la arquitectura tradicional y el ambiente acogedor de Pedasí.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía local',
+            nombre: 'Gastronomía',
             descripcion:
                 'Prueba mariscos frescos y platos típicos de la región santeña.',
             icono: '',
         },
         {
-            nombre: 'Fotografía de paisajes',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura playas, atardeceres y escenarios naturales únicos de la península.',
             icono: '',
         },
         {
-            nombre: 'Observación de fauna',
+            nombre: 'Fauna',
             descripcion:
                 'Descubre aves y especies marinas que habitan la zona costera.',
             icono: '',
         },
         {
-            nombre: 'Turismo de naturaleza',
+            nombre: 'Naturaleza',
             descripcion:
                 'Combina playa, vida silvestre y paisajes costeros en una sola experiencia.',
             icono: '',

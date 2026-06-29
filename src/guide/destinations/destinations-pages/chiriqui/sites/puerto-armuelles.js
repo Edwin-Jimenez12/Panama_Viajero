@@ -9,39 +9,39 @@ export const puertoArmuelles = {
     alt: 'Banner de Puerto Armuelles',
   },
   descripcion:
-    'Una vibrante ciudad costera del Pacífico chiricano donde la historia, la cultura y el mar se unen en un mismo destino. Sus playas, tradición bananera y hermosos atardeceres ofrecen una experiencia auténtica en el extremo occidental de Panamá.',
+    'Puerto Armuelles es una ciudad costera del Pacífico chiricano donde conviven historia, mar y tradición local. Su entorno combina playas, memoria bananera y vida comunitaria en un destino auténtico del extremo occidental de Panamá.',
   previewDescripcion:
-    'Historia, playas y tradición costera en una de las ciudades más emblemáticas de Chiriquí.',
+    'Historia, playa y tradición costera en una de las ciudades más representativas de Chiriquí.',
   previewUbicacion: 'Barú, Chiriquí',
   actividades: [
     {
-      nombre: 'Recorrido por la ciudad',
+      nombre: 'Caminata',
       descripcion:
-        'Descubre la historia, cultura y tradiciones que dieron forma a Puerto Armuelles.',
+        'Recorre la ciudad y descubre la historia, la cultura y las tradiciones que la formaron.',
       icono: '',
     },
     {
-      nombre: 'Disfrutar de las playas',
+      nombre: 'Playa',
       descripcion:
-        'Relájate en las costas del Pacífico y disfruta de amplios paisajes marinos.',
+        'Relájate en la costa del Pacífico y disfruta de amplios paisajes marinos.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardecer',
       descripcion:
-        'Contempla espectaculares puestas de sol sobre el océano.',
+        'Contempla puestas de sol sobre el océano con vistas abiertas y serenas.',
       icono: '',
     },
     {
-      nombre: 'Turismo histórico',
+      nombre: 'Historia',
       descripcion:
         'Conoce el legado de la industria bananera que marcó el desarrollo de la región.',
       icono: '',
     },
     {
-      nombre: 'Fotografía costera',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la belleza del litoral, el puerto y los paisajes del Pacífico.',
+        'Captura el litoral, el puerto y los paisajes del Pacífico en distintos puntos de la ciudad.',
       icono: '',
     },
     {
@@ -51,25 +51,25 @@ export const puertoArmuelles = {
       icono: '',
     },
     {
-      nombre: 'Gastronomía marina',
+      nombre: 'Gastronomía',
       descripcion:
         'Degusta mariscos frescos y especialidades típicas de la región.',
       icono: '',
     },
     {
-      nombre: 'Observación de fauna marina',
+      nombre: 'Fauna marina',
       descripcion:
         'Descubre diversas especies que habitan las aguas del Pacífico chiricano.',
       icono: '',
     },
     {
-      nombre: 'Paseos junto al mar',
+      nombre: 'Paseo',
       descripcion:
         'Recorre la costa mientras disfrutas de la brisa marina y el paisaje.',
       icono: '',
     },
     {
-      nombre: 'Experiencia cultural local',
+      nombre: 'Cultura',
       descripcion:
         'Conoce la identidad y el estilo de vida de esta histórica comunidad costera.',
       icono: '',

@@ -17,57 +17,57 @@ export const islaCarenero = {
         `${islaCareneroImageBase}/gallery/g5-isla-carenero.webp`,
     ],
     descripcion:
-        'Un oasis de serenidad a solo minutos del bullicio, donde las palmeras se inclinan ante un mar esmeralda. Un refugio íntimo que combina la paz de sus playas calmadas con una sutil propuesta gastronómica y hotelera sobre el agua, perfecta para un escape idílico y romántico.',
+        'Una pequeña isla caribeña ubicada a pocos minutos de Isla Colón, conocida por sus playas tranquilas, ambiente relajado y excelente acceso a surf y snorkel. Isla Carenero es ideal para quienes buscan combinar descanso, aventura y buena gastronomía frente al mar.',
     previewDescripcion:
-        'Un oasis de serenidad a solo minutos del bullicio.',
+        'Playas tranquilas, surf y ambiente relajado a pocos minutos de Isla Colón.',
     previewUbicacion: 'Bocas del Toro',
     actividades: [
         {
-            nombre: 'Snorkel en arrecifes',
+            nombre: 'Snorkel',
             descripcion:
-                'Sumérgete directamente desde la orilla hacia jardines de coral llenos de vida marina.',
+                'Explora arrecifes cercanos y descubre peces tropicales y vida marina en aguas cristalinas.',
             icono: '',
         },
         {
-            nombre: 'Caminata perimetral',
+            nombre: 'Caminata',
             descripcion:
-                'Recorre toda la costa de la isla a pie en un sendero lleno de vistas hermosas.',
+                'Recorre la isla a pie disfrutando de senderos costeros y vistas panorámicas del Caribe.',
             icono: '',
         },
         {
-            nombre: 'Paddle surf y kayak',
+            nombre: 'Kayak',
             descripcion:
-                'Deslízate sobre aguas tan mansas y transparentes que parecen una piscina natural.',
+                'Navega por las aguas tranquilas que rodean la isla y disfruta de una perspectiva diferente del paisaje.',
             icono: '',
         },
         {
-            nombre: 'Surf en la punta',
+            nombre: 'Surf',
             descripcion:
-                'Desafía olas consistentes y divertidas en uno de los puntos más icónicos de la zona.',
+                'Disfruta uno de los spots más conocidos de la zona, ideal para surfistas de nivel intermedio y avanzado.',
             icono: '',
         },
         {
-            nombre: 'Expedición gastronómica',
+            nombre: 'Gastronomía',
             descripcion:
-                'Deleita tu paladar en restaurantes sobre el mar con mariscos frescos y estilo caribeño.',
+                'Prueba mariscos frescos y cocina caribeña en restaurantes ubicados frente al mar.',
             icono: '',
         },
         {
-            nombre: 'Atardecer caribeño',
+            nombre: 'Fotografía',
             descripcion:
-                'Disfruta de cocteles exclusivos mientras el sol tiñe el horizonte de tonos dorados.',
+                'Captura paisajes tropicales, playas de arena blanca y atardeceres únicos del Caribe.',
             icono: '',
         },
         {
-            nombre: 'Caminata por la selva',
+            nombre: 'Atardeceres',
             descripcion:
-                'Cruza el corazón verde de la isla descubriendo vegetación tropical y fauna local.',
+                'Disfruta de espectaculares puestas de sol en un ambiente relajado junto al mar.',
             icono: '',
         },
         {
-            nombre: 'Descanso en Playa Carenero',
+            nombre: 'Descanso',
             descripcion:
-                'Relájate sobre arenas blancas a la sombra de cocoteros en un ambiente pacífico.',
+                'Relájate en sus playas tranquilas y disfruta de un entorno perfecto para desconectarte.',
             icono: '',
         },
     ],

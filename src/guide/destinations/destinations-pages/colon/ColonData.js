@@ -8,18 +8,18 @@ export const provincias = [
       alt: 'Vista de la provincia de Colón',
     },
     descripcionCorta:
-      'Caminar por Colón es encontrarse con la historia de frente en fortalezas que miran al Caribe desde hace siglos. Es una provincia con una identidad propia marcada por el ritmo de los tambores y la vida que se mueve entre islas de aguas claras y el paso constante de barcos por el Canal de Panamá.',
+      'Colón combina historia, Caribe, islas y paisajes vinculados al Canal de Panamá. Es una provincia ideal para conocer fortificaciones, playas y destinos naturales con identidad propia.',
     ubicacionProvincia: {
-      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797024.4492928673!2d-80.63741947944797!3d9.139537273998036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fab25f6fbeed405%3A0xbc032eadbbacf29a!2sCol%C3%B3n%20Province!5e1!3m2!1sen!2spa!4v1778602312976!5m2!1sen!2spa',
+      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797024.4492928673!2d-80.63741947944797!3d9.139537273998036!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fab25f6fbeed405%3A0xbc032eadbbacf29a!2sCol%C3%B3n%20Province!5e1!3m2!1sen!2spa!4v1778602312976!5m2!1sen!2spa',
     },
     actividades: [
       'Surf',
       'Ciclismo',
       'Playa',
       'Buceo',
-      'Avistamiento de aves',
-      'Giras históricas',
-      'Esnórquel',
+      'Aves',
+      'Historia',
+      'Snorkel',
       'Kitesurf',
       'Windsurf',
     ],

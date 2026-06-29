@@ -9,21 +9,21 @@ export const gualaca = {
     alt: 'Banner de Gualaca',
   },
   descripcion:
-    'Un destino rodeado de montañas, ríos cristalinos y paisajes naturales que invitan a la aventura y el descanso. Gualaca es el lugar perfecto para descubrir cascadas, pozas refrescantes y la belleza rural del interior chiricano.',
+    'Gualaca combina ríos, cascadas y paisajes rurales en un entorno perfecto para la naturaleza y el descanso. Sus pozas, cañones y áreas verdes ofrecen una experiencia sencilla pero muy atractiva para quienes buscan agua fresca y entorno de montaña.',
   previewDescripcion:
-    'Ríos, cascadas y paisajes montañosos en uno de los rincones naturales más encantadores de Chiriquí.',
+    'Ríos, cascadas y paisajes rurales en un rincón natural muy atractivo de Chiriquí.',
   previewUbicacion: 'Gualaca, Chiriquí',
   actividades: [
     {
-      nombre: 'Baño en ríos y pozas',
+      nombre: 'Natación',
       descripcion:
-        'Disfruta de aguas frescas y cristalinas rodeadas de exuberante naturaleza.',
+        'Disfruta de aguas frescas y cristalinas rodeadas de vegetación y paisajes naturales.',
       icono: '',
     },
     {
-      nombre: 'Visita a Los Cangilones',
+      nombre: 'Los Cangilones',
       descripcion:
-        'Descubre esta espectacular formación rocosa esculpida por el río Estí.',
+        'Descubre esta formación rocosa esculpida por el río Estí, uno de los atractivos más conocidos de la zona.',
       icono: '',
     },
     {
@@ -33,27 +33,27 @@ export const gualaca = {
       icono: '',
     },
     {
-      nombre: 'Fotografía de naturaleza',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura impresionantes escenarios de ríos, cañones y vegetación tropical.',
+        'Captura ríos, cañones y vegetación tropical en escenarios muy fotogénicos.',
       icono: '',
     },
     {
-      nombre: 'Observación de aves',
+      nombre: 'Aves',
       descripcion:
         'Encuentra diversas especies que habitan los bosques y áreas ribereñas.',
       icono: '',
     },
     {
-      nombre: 'Picnic al aire libre',
+      nombre: 'Picnic',
       descripcion:
         'Comparte momentos de descanso en entornos naturales junto al río.',
       icono: '',
     },
     {
-      nombre: 'Exploración de cascadas',
+      nombre: 'Cascadas',
       descripcion:
-        'Nada y disfruta de las refrescantes cascadas y corrientes que atraviesan la zona.',
+        'Explora y disfruta las cascadas y corrientes que atraviesan la zona.',
       icono: '',
     },
     {

@@ -9,43 +9,43 @@ export const parita = {
         alt: 'Banner de Parita',
     },
     descripcion:
-        'Uno de los pueblos coloniales más antiguos de Panamá, donde la historia, la tradición y la arquitectura conservan la esencia del interior del país. Parita destaca por su patrimonio cultural, festividades tradicionales y ambiente auténticamente herrerano.',
+        'Parita es uno de los pueblos coloniales más antiguos de Panamá, donde la historia, la tradición y la arquitectura conservan la esencia del interior del país. Su valor está en el patrimonio cultural y en la vida tradicional que aún mantiene.',
     previewDescripcion:
         'Historia colonial, tradición y cultura en uno de los pueblos más antiguos de Panamá.',
     previewUbicacion: 'Parita, Herrera',
     actividades: [
         {
-            nombre: 'Recorrido por el centro histórico',
+            nombre: 'Caminata',
             descripcion:
                 'Explora calles y edificaciones coloniales que conservan siglos de historia.',
             icono: '',
         },
         {
-            nombre: 'Visita a la Iglesia Santo Domingo de Guzmán',
+            nombre: 'Iglesia',
             descripcion:
-                'Conoce uno de los templos coloniales más importantes de Panamá y su impresionante valor patrimonial.',
+                'Conoce uno de los templos coloniales más importantes de Panamá y su valor patrimonial.',
             icono: '',
         },
         {
-            nombre: 'Fotografía colonial',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura plazas, fachadas antiguas y detalles arquitectónicos únicos del pueblo.',
             icono: '',
         },
         {
-            nombre: 'Turismo cultural',
+            nombre: 'Cultura',
             descripcion:
                 'Descubre tradiciones, costumbres y expresiones culturales propias de la región de Azuero.',
             icono: '',
         },
         {
-            nombre: 'Festividades tradicionales',
+            nombre: 'Festividades',
             descripcion:
                 'Participa en celebraciones como carnavales, patronales y danzas folclóricas reconocidas a nivel nacional.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía típica',
+            nombre: 'Gastronomía',
             descripcion:
                 'Prueba platos tradicionales y sabores auténticos del interior panameño.',
             icono: '',

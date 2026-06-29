@@ -10,19 +10,19 @@ export const provincias = [
     },
 
     descripcionCorta:
-      'Herrera te recibe con la calidez de un pueblo que nunca olvida sus raíces y celebra la vida en cada festival folclórico. Desde el paisaje surrealista de Sarigua hasta la maestría de sus artesanos, esta provincia es el sitio donde la hospitalidad panameña se siente más real y auténtica.',
+      'Herrera combina tradición, cultura y paisajes naturales en una provincia de fuerte identidad interiorana. Destaca por sus pueblos históricos, su vida folclórica y la Reserva El Montuoso.',
 
     ubicacionProvincia: {
       src: 'https://www.google.com/maps?q=Herrera%2C%20Panam%C3%A1&output=embed',
     },
 
     actividades: [
-      'Tours de alfarería',
-      'Cata de licores',
+      'Alfarería',
+      'Gastronomía',
       'Ciclismo',
-      'Senderismo en manglares',
-      'Visitas a iglesias',
-      'Tours gastronómicos',
+      'Senderismo',
+      'Patrimonio',
+      'Folclore',
     ],
 
     directSiteIds: [ 'reserva-forestal-el-montuoso', 'chitre', 'desierto-sarigua', 'parita' ],

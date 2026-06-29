@@ -9,69 +9,69 @@ export const cerroPuntaCentro = {
     alt: 'Banner de Cerro Punta',
   },
   descripcion:
-    'Ubicado en las tierras altas de Chiriquí, Cerro Punta cautiva con su clima fresco, impresionantes paisajes montañosos y extensos cultivos que colorean sus valles. Es el punto de partida ideal para descubrir la naturaleza, la agricultura y la tranquilidad que caracterizan esta región única de Panamá.',
+    'Cerro Punta destaca por su clima fresco, sus valles agrícolas y sus paisajes montañosos. Es uno de los lugares más representativos de las tierras altas chiricanas para conocer la producción local, descansar y disfrutar de la naturaleza.',
   previewDescripcion:
-    'El corazón de las tierras altas chiricanas, rodeado de montañas, cultivos y clima fresco.',
+    'Clima fresco, valles agrícolas y paisajes montañosos en una de las zonas más altas de Chiriquí.',
   previewUbicacion: 'Tierras Altas, Chiriquí',
   actividades: [
     {
-      nombre: 'Recorrido por el centro de Cerro Punta',
+      nombre: 'Caminata',
       descripcion:
-        'Descubre el ambiente local y la vida cotidiana de esta comunidad de montaña.',
+        'Recorre la comunidad y conoce su ambiente tranquilo, marcado por la vida de montaña.',
       icono: '',
     },
     {
-      nombre: 'Visita a fincas agrícolas',
+      nombre: 'Fincas agrícolas',
       descripcion:
-        'Conoce los cultivos de hortalizas, flores y fresas que distinguen a la región.',
+        'Conoce cultivos de hortalizas, flores y fresas que distinguen a la región.',
       icono: '',
     },
     {
-      nombre: 'Fotografía paisajística',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura espectaculares vistas de valles, montañas y campos de cultivo.',
+        'Captura valles, montañas y campos de cultivo con escenas típicas de las tierras altas.',
       icono: '',
     },
     {
-      nombre: 'Observación de aves',
+      nombre: 'Aves',
       descripcion:
-        'Explora uno de los mejores entornos naturales para observar aves de altura.',
+        'Explora un entorno favorable para observar aves propias de la zona de altura.',
       icono: '',
     },
     {
-      nombre: 'Disfrutar del clima de montaña',
+      nombre: 'Descanso',
       descripcion:
         'Relájate en uno de los lugares más frescos y agradables de Panamá.',
       icono: '',
     },
     {
-      nombre: 'Turismo gastronómico',
+      nombre: 'Gastronomía',
       descripcion:
         'Prueba productos frescos de la región y platillos elaborados con ingredientes locales.',
       icono: '',
     },
     {
-      nombre: 'Compra de productos agrícolas',
+      nombre: 'Productos agrícolas',
       descripcion:
         'Adquiere frutas, vegetales y flores cultivados en las fértiles tierras altas.',
       icono: '',
     },
     {
-      nombre: 'Senderismo en áreas cercanas',
+      nombre: 'Senderismo',
       descripcion:
-        'Accede fácilmente a senderos y atractivos naturales de la región.',
+        'Accede a senderos y atractivos naturales de la región cercana.',
       icono: '',
     },
     {
-      nombre: 'Avistamiento de paisajes montañosos',
+      nombre: 'Paisajes',
       descripcion:
         'Contempla algunos de los escenarios naturales más impresionantes de Chiriquí.',
       icono: '',
     },
     {
-      nombre: 'Punto de partida para explorar',
+      nombre: 'Base de exploración',
       descripcion:
-        'Utiliza Cerro Punta como base para visitar Bambito, Paso Ancho y el Parque Internacional La Amistad.',
+        'Usa Cerro Punta como base para visitar Bambito, Paso Ancho y el Parque Internacional La Amistad.',
       icono: '',
     },
   ],

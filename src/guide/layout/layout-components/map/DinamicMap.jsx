@@ -4,6 +4,7 @@ import BocasContainer from './containersMap/ContBocas.jsx'
 import ChiriContainer from './containersMap/ContChiriqui.jsx'
 import VeraguasContainer from './containersMap/ContVeraguas.jsx'
 import CocleContainer from './containersMap/ContCocle.jsx'
+import HerreraContainer from './containersMap/ContHerrera.jsx'
 import PanamaContainer from './containersMap/ContPanama.jsx'
 import ColonContainer from './containersMap/ContColon.jsx'
 import GunaYalaContainer from './containersMap/ContGunaYala.jsx'
@@ -17,6 +18,7 @@ import {
   cocleContainers,
   darienContainers,
   externalProvinceDecorations,
+  Herrera1Container,
   gunaYalaContainers,
   panamaContainers,
   provinces,
@@ -77,6 +79,18 @@ function Map() {
               onMouseEnter={() => setActiveProvince('veraguas')}
               onMouseLeave={() => setActiveProvince(null)}
               onClick={() => navigate('/provincias/veraguas#video')}
+            />
+          ))}
+
+          {Herrera1Container.map((container) => (
+            <HerreraContainer
+              key={container.id}
+              className={container.className}
+              bgClassName={container.bgClassName}
+              style={container.style}
+              onMouseEnter={() => setActiveProvince('herrera')}
+              onMouseLeave={() => setActiveProvince(null)}
+              onClick={() => navigate('/provincias/herrera#video')}
             />
           ))}
 

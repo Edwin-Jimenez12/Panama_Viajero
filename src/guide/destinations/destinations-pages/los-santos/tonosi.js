@@ -9,13 +9,13 @@ export const tonosi = {
         alt: 'Banner de Tonosí',
     },
     descripcion:
-        'Un destino auténtico del sur de Azuero donde la naturaleza, la tradición y las playas salvajes se mezclan en una experiencia única. Tonosí es conocido por sus paisajes rurales, su cercanía a playas vírgenes y su ambiente relajado, ideal para quienes buscan aventura y conexión con la esencia más natural de Los Santos.',
+        'Tonosí es un destino del sur de Azuero donde se combinan naturaleza, playas salvajes y una vida rural muy auténtica. Su valor está en los paisajes abiertos, la cercanía a playas vírgenes y la tranquilidad del entorno.',
     previewDescripcion:
         'Playas salvajes, naturaleza y tradición en uno de los rincones más auténticos de Los Santos.',
     previewUbicacion: 'Tonosí, Los Santos',
     actividades: [
         {
-            nombre: 'Visita a playas cercanas',
+            nombre: 'Playas',
             descripcion:
                 'Explora playas como Cambutal, Guánico y La Marinera, conocidas por su belleza natural y ambiente tranquilo.',
             icono: '',
@@ -33,7 +33,7 @@ export const tonosi = {
             icono: '',
         },
         {
-            nombre: 'Observación de fauna',
+            nombre: 'Fauna',
             descripcion:
                 'Descubre aves, tortugas marinas y otras especies propias de la biodiversidad costera y rural de la región.',
             icono: '',
@@ -45,13 +45,13 @@ export const tonosi = {
             icono: '',
         },
         {
-            nombre: 'Fotografía de paisajes',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura la combinación de valles, montañas y costa que hacen de Tonosí un destino visualmente único.',
             icono: '',
         },
         {
-            nombre: 'Exploración de ríos y cascadas',
+            nombre: 'Ríos',
             descripcion:
                 'Descubre rincones naturales escondidos en las áreas montañosas y rurales de la región.',
             icono: '',

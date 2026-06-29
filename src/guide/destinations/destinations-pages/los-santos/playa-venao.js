@@ -9,7 +9,7 @@ export const playaVenao = {
         alt: 'Banner de Playa Venao',
     },
     descripcion:
-        'Uno de los destinos de playa más populares de Panamá, reconocido internacionalmente por sus excelentes olas, ambiente relajado y vibrante vida turística. Rodeada de naturaleza y paisajes costeros, Playa Venao combina aventura, descanso y entretenimiento en un entorno único del Pacífico panameño.',
+        'Playa Venao es uno de los destinos de playa más populares de Panamá, reconocido por sus olas, su ambiente relajado y su oferta turística creciente. Combina surf, descanso y vida costera en un entorno amplio y atractivo.',
     previewDescripcion:
         'Surf, naturaleza y ambiente costero en una de las playas más famosas de Panamá.',
     previewUbicacion: 'Pedasí, Los Santos',
@@ -21,21 +21,21 @@ export const playaVenao = {
             icono: '',
         },
         {
-            nombre: 'Clases de surf',
+            nombre: 'Clases',
             descripcion:
                 'Aprende a surfear con instructores especializados en un entorno seguro.',
             icono: '',
         },
         {
-            nombre: 'Disfrutar de la playa',
+            nombre: 'Playa',
             descripcion:
                 'Relájate sobre la arena mientras contemplas el paisaje del Pacífico.',
             icono: '',
         },
         {
-            nombre: 'Observación de atardeceres',
+            nombre: 'Atardecer',
             descripcion:
-                'Contempla impresionantes puestas de sol sobre el océano.',
+                'Contempla puestas de sol sobre el océano.',
             icono: '',
         },
         {
@@ -45,31 +45,31 @@ export const playaVenao = {
             icono: '',
         },
         {
-            nombre: 'Yoga y bienestar',
+            nombre: 'Bienestar',
             descripcion:
                 'Participa en actividades enfocadas en la relajación y la conexión con la naturaleza.',
             icono: '',
         },
         {
-            nombre: 'Fotografía costera',
+            nombre: 'Fotografía',
             descripcion:
                 'Captura paisajes espectaculares, olas y escenarios tropicales.',
             icono: '',
         },
         {
-            nombre: 'Paseos por la playa',
+            nombre: 'Caminata',
             descripcion:
                 'Recorre la costa y disfruta del ambiente relajado que caracteriza a Playa Venao.',
             icono: '',
         },
         {
-            nombre: 'Avistamiento de fauna',
+            nombre: 'Fauna',
             descripcion:
                 'Observa aves y especies marinas que habitan la región costera.',
             icono: '',
         },
         {
-            nombre: 'Turismo de aventura',
+            nombre: 'Aventura',
             descripcion:
                 'Combina playa, deportes acuáticos y experiencias al aire libre en un solo destino.',
             icono: '',

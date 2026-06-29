@@ -13,6 +13,7 @@ import {
     LuUtensilsCrossed,
     LuWaves,
 } from 'react-icons/lu';
+import { useState } from 'react';
 
 const activityRules = [
     { test: /(surf|snorkel|buce|kayak|ballena|tortuga|mar|arrecife|playa)/, Icon: LuWaves },
@@ -40,16 +41,25 @@ function getActivityIcon(activity) {
 }
 
 function Activities({ provinceData }) {
+    const [isPaused, setIsPaused] = useState(false);
+
     return (
-        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mb-16 mt-[-110px]">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 mb-16 mt-[-65px]">
             <h1
                 className="font-main text-3xl font-bold text-brand-white md:text-4xl "
                 style={{ textShadow: '0 0 6px rgba(0, 0, 0, 0.9)' }}
             >
                 Actividades
             </h1>
-            <div className="overflow-hidden py-5 md:mt-2 [mask-image:linear-gradient(to_right,transparent,black_3%,black_90%,transparent)]">
-                <div className="flex w-max animate-marquee-right hover:[animation-play-state:paused]">
+            <div
+                className="overflow-hidden py-5 md:mt-2 [mask-image:linear-gradient(to_right,transparent,black_3%,black_90%,transparent)]"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+            >
+                <div
+                    className="flex w-max animate-marquee-right"
+                    style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+                >
                     {[0, 1].map((grupo) => (
                         <div
                             key={grupo}
@@ -63,7 +73,7 @@ function Activities({ provinceData }) {
                                     <button
                                         key={`${grupo}-${actividad}`}
                                         type="button"
-                                        className="font-secondary inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-brand-blue/20 bg-brand-white px-4 py-2 text-sm text-brand-charcoal shadow-sm transition hover:bg-brand-blue hover:text-brand-white focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
+                                        className="font-secondary inline-flex cursor-pointer items-center gap-2 whitespace-nowrap rounded-full border border-brand-blue/20 bg-brand-white px-4 py-2 text-sm text-brand-charcoal shadow-sm transition hover:bg-brand-blue hover:text-brand-white focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
                                     >
                                         <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
                                         {actividad}

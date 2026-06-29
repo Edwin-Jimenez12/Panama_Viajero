@@ -22,57 +22,57 @@ export const cayoZapatilla = {
         `${cayoZapatillaImageBase}/gallery/g10-cayos-zapatilla.webp`,
     ],
     descripcion:
-        'Dos joyas de arena blanca flotando en un mar de cristal turquesa. Un Edén virgen custodiado por arrecifes donde el tiempo se rinde ante la belleza absoluta de playas desiertas y una jungla tropical que invita a vivir la fantasía de náufrago más sofisticada.',
+        'Uno de los rincones más paradisíacos de Bocas del Toro, formado por dos pequeñas islas de arena blanca rodeadas de aguas cristalinas y arrecifes de coral. Cayo Zapatilla es ideal para disfrutar de playas vírgenes, snorkel y una conexión total con la naturaleza del Caribe panameño.',
     previewDescripcion:
-        'Dos joyas de arena blanca flotando en un mar de cristal turquesa.',
+        'Playas vírgenes, aguas cristalinas y naturaleza intacta en uno de los paraísos de Bocas del Toro.',
     previewUbicacion: 'Bastimentos, Bocas del Toro',
     actividades: [
         {
-            nombre: 'Snorkel en arrecifes',
+            nombre: 'Snorkel',
             descripcion:
-                'Explora un universo submarino cristalino habitado por tortugas marinas y corales radiantes.',
+                'Explora arrecifes de coral llenos de peces tropicales y una gran biodiversidad marina.',
             icono: '',
         },
         {
-            nombre: 'Caminata por la isla',
+            nombre: 'Caminata',
             descripcion:
-                'Recorre senderos vírgenes entre cocoteros y árboles ancestrales en total serenidad.',
+                'Recorre senderos naturales y disfruta del entorno virgen rodeado de vegetación tropical.',
             icono: '',
         },
         {
-            nombre: 'Expedición ecológica',
+            nombre: 'Exploración',
             descripcion:
-                'Descubre los santuarios protegidos donde anidan aves exóticas y especies marinas únicas.',
+                'Descubre rincones naturales, playas escondidas y ecosistemas protegidos de gran belleza.',
             icono: '',
         },
         {
             nombre: 'Avistamiento de tortugas',
             descripcion:
-                'Siente el privilegio de observar el desove de tortugas en costas protegidas.',
+                'Durante ciertas temporadas, es posible observar tortugas marinas en áreas protegidas de la isla.',
             icono: '',
         },
         {
-            nombre: 'Fotografía de paisaje',
+            nombre: 'Fotografía',
             descripcion:
-                'Captura horizontes infinitos donde el azul del cielo se funde con el mar.',
+                'Captura paisajes paradisíacos donde el azul turquesa del mar se mezcla con la arena blanca y la vegetación tropical.',
             icono: '',
         },
         {
-            nombre: 'Pícnic en la playa',
+            nombre: 'Pícnic',
             descripcion:
-                'Disfruta de un brindis exclusivo sobre arenas de coral completamente paradisíacas.',
+                'Disfruta de un momento de descanso y comida frente al mar en un entorno completamente natural.',
             icono: '',
         },
         {
-            nombre: 'Navegación en catamarán',
+            nombre: 'Paseos en lancha',
             descripcion:
-                'Siente la brisa caribeña mientras te aproximas a este paraíso desde el mar.',
+                'Llega y explora el área disfrutando del paisaje caribeño desde el mar.',
             icono: '',
         },
         {
-            nombre: 'Natación en piscinas naturales',
+            nombre: 'Natación',
             descripcion:
-                'Sumérgete en aguas templadas y mansas que simulan un spa natural privado.',
+                'Relájate en aguas cálidas, tranquilas y cristalinas ideales para disfrutar del Caribe.',
             icono: '',
         },
     ],

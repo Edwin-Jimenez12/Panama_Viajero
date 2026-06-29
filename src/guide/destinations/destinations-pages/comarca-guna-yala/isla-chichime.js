@@ -9,15 +9,15 @@ export const islaChichime = {
         alt: 'Banner de Isla Chichime',
     },
     descripcion:
-        'Un auténtico paraíso tropical rodeado de aguas transparentes y palmeras que parecen sacadas de una postal. Isla Chichime ofrece una experiencia caribeña única para quienes buscan desconexión, mar cristalino y la belleza natural intacta de Guna Yala.',
+        'Isla Chichime es una de las islas más tranquilas de Guna Yala, con arena blanca, aguas turquesas y un ambiente caribeño muy relajado. Es ideal para descansar, nadar y disfrutar de la belleza natural del archipiélago.',
     previewDescripcion:
-        'Arena blanca, aguas turquesas y paisajes tropicales en una de las joyas más tranquilas de Guna Yala.',
+        'Arena blanca, aguas turquesas y un ambiente tropical muy tranquilo en Guna Yala.',
     previewUbicacion: 'Guna Yala',
     actividades: [
         {
-            nombre: 'Disfrutar de la playa',
+            nombre: 'Playa',
             descripcion:
-                'Relájate en playas de arena blanca rodeadas de aguas cristalinas y un entorno completamente tropical.',
+                'Relájate en playas de arena blanca rodeadas de aguas cristalinas y un entorno tropical.',
             icono: '',
         },
         {
@@ -29,25 +29,25 @@ export const islaChichime = {
         {
             nombre: 'Natación',
             descripcion:
-                'Nada en aguas tranquilas, cálidas y transparentes ideales para disfrutar con total calma.',
+                'Nada en aguas tranquilas, cálidas y transparentes ideales para disfrutar con calma.',
             icono: '',
         },
         {
-            nombre: 'Observación de vida marina',
+            nombre: 'Vida marina',
             descripcion:
                 'Descubre peces tropicales y otras especies marinas en uno de los ecosistemas más atractivos del Caribe panameño.',
             icono: '',
         },
         {
-            nombre: 'Paseos entre islas',
+            nombre: 'Islas',
             descripcion:
                 'Visita otros cayos cercanos del archipiélago y amplía la experiencia de explorar Guna Yala.',
             icono: '',
         },
         {
-            nombre: 'Descanso en hamacas',
+            nombre: 'Descanso',
             descripcion:
-                'Relájate bajo la sombra de las palmeras con la brisa del Caribe y el sonido del mar como compañía.',
+                'Relájate bajo la sombra de las palmeras con la brisa del Caribe y el sonido del mar.',
             icono: '',
         },
     ],

@@ -9,55 +9,55 @@ export const davidCentro = {
     alt: 'Banner de David Centro',
   },
   descripcion:
-    'La capital de Chiriquí y el principal centro urbano del occidente panameño. David combina cultura, gastronomía, comercio y tradición, convirtiéndose en el punto de partida ideal para explorar los diversos atractivos turísticos de la provincia.',
+    'David es la capital de Chiriquí y el principal centro urbano del occidente panameño. Su valor turístico está en la vida comercial, la gastronomía, la cultura local y la comodidad de contar con servicios y conectividad para recorrer el resto de la provincia.',
   previewDescripcion:
-    'La capital de Chiriquí, donde la cultura, el comercio y la gastronomía se encuentran.',
+    'La capital de Chiriquí, práctica para comer, comprar y salir hacia el resto de la provincia.',
   previewUbicacion: 'David, Chiriquí',
   actividades: [
     {
-      nombre: 'Recorrido por el centro histórico',
+      nombre: 'Caminata',
       descripcion:
-        'Descubre plazas, monumentos y espacios que forman parte de la historia de la ciudad.',
+        'Recorre el centro y descubre plazas, calles y espacios que reflejan la vida cotidiana de la ciudad.',
       icono: '',
     },
     {
-      nombre: 'Turismo gastronómico',
+      nombre: 'Gastronomía',
       descripcion:
         'Disfruta restaurantes, cafeterías y platillos tradicionales de la región chiricana.',
       icono: '',
     },
     {
-      nombre: 'Compras y comercio',
+      nombre: 'Compras',
       descripcion:
         'Explora centros comerciales, mercados y tiendas con una amplia variedad de productos.',
       icono: '',
     },
     {
-      nombre: 'Visita a parques urbanos',
+      nombre: 'Parques',
       descripcion:
-        'Relájate en espacios públicos ideales para pasear y disfrutar del ambiente local.',
+        'Relájate en espacios públicos ideales para pasear y observar el ambiente local.',
       icono: '',
     },
     {
-      nombre: 'Conocer la cultura chiricana',
+      nombre: 'Cultura',
       descripcion:
-        'Descubre las costumbres, tradiciones y estilo de vida de la región.',
+        'Descubre las costumbres, tradiciones y el estilo de vida de la región chiricana.',
       icono: '',
     },
     {
-      nombre: 'Fotografía urbana',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la arquitectura, monumentos y escenas cotidianas de la ciudad.',
+        'Captura la arquitectura, los espacios urbanos y las escenas cotidianas de la ciudad.',
       icono: '',
     },
     {
-      nombre: 'Eventos y festividades',
+      nombre: 'Eventos',
       descripcion:
-        'Participa en actividades culturales, ferias y celebraciones tradicionales.',
+        'Participa en ferias, celebraciones y actividades culturales que animan la ciudad durante el año.',
       icono: '',
     },
     {
-      nombre: 'Visita a mercados locales',
+      nombre: 'Mercados',
       descripcion:
         'Encuentra productos frescos, artesanías y especialidades regionales.',
       icono: '',
@@ -65,13 +65,13 @@ export const davidCentro = {
     {
       nombre: 'Vida nocturna',
       descripcion:
-        'Disfruta bares, restaurantes y espacios de entretenimiento en la ciudad.',
+        'Disfruta bares, restaurantes y espacios de entretenimiento al caer la noche.',
       icono: '',
     },
     {
-      nombre: 'Punto de partida para explorar Chiriquí',
+      nombre: 'Base de viaje',
       descripcion:
-        'Accede fácilmente a playas, montañas, tierras altas y otros destinos turísticos de la provincia.',
+        'Usa David como base para acceder con facilidad a playas, montañas, tierras altas y otros destinos de la provincia.',
       icono: '',
     },
   ],

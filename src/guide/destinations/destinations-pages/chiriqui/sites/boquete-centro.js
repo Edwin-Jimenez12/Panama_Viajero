@@ -9,58 +9,57 @@ export const boqueteCentro = {
     alt: 'Banner de Boquete',
   },
   descripcion:
-    'El corazón turístico de las tierras altas chiricanas, rodeado de montañas, jardines florales y un clima fresco durante todo el año. Sus cafés de especialidad, gastronomía, cultura local y ambiente acogedor lo convierten en uno de los destinos más encantadores de Panamá.',  
+    'Boquete es el principal destino de las tierras altas de Chiriquí, conocido por su clima fresco, paisajes montañosos, cafetales y un ambiente animado pero relajado. Su centro concentra buena gastronomía, cafés de especialidad, comercio local y espacios agradables para recorrer a pie.',
   previewDescripcion:
-    'El alma de Boquete: cafés de especialidad, jardines florales, cultura local y un clima fresco durante todo el año.',
+    'Clima fresco, café de especialidad y paisajes montañosos en el destino más visitado de las tierras altas.',
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
-      nombre: 'Recorrido por el centro',
+      nombre: 'Caminata',
       descripcion:
-        'Camina por las pintorescas calles del pueblo y descubre su ambiente acogedor rodeado de montañas.',
+        'Recorre el centro del pueblo y descubre su ambiente tranquilo, sus comercios y la vida cotidiana rodeada de montañas.',
       icono: '',
     },
     {
-      nombre: 'Cafés de especialidad',
+      nombre: 'Café',
       descripcion:
-        'Degusta algunos de los mejores cafés de altura del mundo en cafeterías y tostadores locales.',
+        'Degusta café de altura en cafeterías y tostadores locales que muestran el valor de la producción chiricana.',
       icono: '',
     },
     {
       nombre: 'Compras artesanales',
       descripcion:
-        'Explora tiendas de artesanía, recuerdos, productos gourmet y creaciones elaboradas por emprendedores locales.',
+        'Explora tiendas con artesanías, productos gourmet y artículos elaborados por emprendedores locales.',
       icono: '',
     },
     {
-      nombre: 'Fotografía urbana y paisajística',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura la belleza de sus jardines florales, arquitectura pintoresca y vistas montañosas.',
+        'Captura jardines, fachadas del pueblo y vistas de montaña en distintos puntos del centro.',
       icono: '',
     },
     {
-      nombre: 'Gastronomía boqueteña',
+      nombre: 'Gastronomía',
       descripcion:
-        'Disfruta restaurantes con propuestas locales e internacionales acompañadas por productos frescos de la región.',
+        'Disfruta restaurantes y cafés con platos locales e internacionales preparados con productos frescos de la región.',
       icono: '',
     },
     {
-      nombre: 'Visita al parque central',
+      nombre: 'Parque central',
       descripcion:
-        'Relájate en el corazón del pueblo mientras observas la vida cotidiana y el encanto de la comunidad local.',
+        'Pasa un rato tranquilo en el corazón del pueblo mientras observas el ritmo cotidiano de la comunidad.',
       icono: '',
     },
     {
-      nombre: 'Mercados y ferias locales',
+      nombre: 'Mercados locales',
       descripcion:
-        'Conoce productores de café, agricultores y artesanos que exhiben lo mejor de las tierras altas.',
+        'Conoce productores, agricultores y artesanos que ofrecen café, frutas, vegetales y otros productos de la zona.',
       icono: '',
     },
-
     {
-      nombre: 'Vida nocturna tranquila',
+      nombre: 'Vida nocturna',
       descripcion:
-        'Descubre bares, terrazas y espacios acogedores donde disfrutar del clima fresco de montaña.',
+        'Disfruta bares, terrazas y espacios relajados para cerrar el día con el clima fresco de montaña.',
       icono: '',
     },
   ],

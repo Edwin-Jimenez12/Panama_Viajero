@@ -57,7 +57,7 @@ function SiteActivities({ activities = [], featuredImage }) {
                   <h3 className="font-secondary text-2xl leading-tight text-[#4D4C4C] sm:text-3xl">
                     {featuredActivity.nombre}
                   </h3>
-                  <p className="mt-4 max-w-xl font-body text-sm leading-7 text-[#4D4C4C]/78 sm:text-base">
+                  <p className="mt-4 max-w-xl font-body text-md leading-7 text-[#4D4C4C]/78 sm:text-base">
                     {featuredActivity.descripcion}
                   </p>
                 </div>
@@ -104,7 +104,7 @@ function SiteActivities({ activities = [], featuredImage }) {
 
                       <div className="min-w-0 flex-1">
                         <div className="flex items-start justify-between gap-3">
-                          <h4 className="truncate font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
+                          <h4 className="font-secondary-italic leading-tight text-[#4D4C4C] sm:text-md">
                             {actividad.nombre}
                           </h4>
                         </div>

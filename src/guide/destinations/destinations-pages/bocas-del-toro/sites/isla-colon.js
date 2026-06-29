@@ -22,57 +22,57 @@ export const islaColon = {
     `${islaColonImageBase}/gallery/g10-isla-colon.webp`,
   ],
   descripcion:
-    'Un secreto caribeño donde la selva abraza un mar de aguas turquesas. Un santuario de paz y biodiversidad, con una vibrante energía cultural que hechiza tus sentidos y te invita a desconectar del mundo en un entorno paradisíaco y eterno.',
+    'El corazón vibrante de Bocas del Toro, donde playas caribeñas, vida nocturna, gastronomía y naturaleza tropical se unen en un solo destino. Isla Colón es el punto principal para explorar el archipiélago, disfrutar de aventuras marinas y vivir la esencia auténtica del Caribe panameño.',
   previewDescripcion:
-    'Un secreto caribeño donde la selva abraza un mar de aguas turquesas.',
+    'El corazón de Bocas del Toro, donde playas, cultura y aventura se encuentran.',
   previewUbicacion: 'Bocas del Toro',
   actividades: [
     {
-      nombre: 'Snorkel en arrecifes',
+      nombre: 'Snorkel',
       descripcion:
-        'Explora un fascinante mundo bajo el agua lleno de corales exóticos y peces tropicales.',
+        'Explora arrecifes de coral y descubre peces tropicales en algunas de las aguas más cristalinas del archipiélago.',
       icono: 'snorkel',
     },
     {
       nombre: 'Avistamiento de delfines',
       descripcion:
-        'Siente la emoción al ver delfines saltando en libertad en aguas cristalinas.',
+        'Disfruta la experiencia de observar delfines en libertad durante recorridos por la bahía.',
       icono: 'dolphin',
     },
     {
-      nombre: 'Ciclismo playero',
+      nombre: 'Ciclismo',
       descripcion:
-        'Renta una bicicleta y recorre senderos costeros rodeados de una selva exuberante.',
+        'Recorre senderos costeros y caminos naturales mientras descubres rincones únicos de la isla.',
       icono: 'bike',
     },
     {
-      nombre: 'Surf en olas míticas',
+      nombre: 'Surf',
       descripcion:
-        'Desafía las famosas olas caribeñas en playas perfectas para todos los niveles.',
+        'Aprovecha las olas caribeñas de playas cercanas, ideales para surfistas de distintos niveles.',
       icono: 'surf',
     },
     {
       nombre: 'Bioluminiscencia',
       descripcion:
-        'Vive una noche mágica navegando sobre aguas que brillan como un cielo estrellado.',
+        'Vive una experiencia única observando aguas que brillan naturalmente durante recorridos nocturnos.',
       icono: 'spark',
     },
     {
-      nombre: 'Tours de cacao',
+      nombre: 'Tour de cacao',
       descripcion:
-        'Descubre el místico proceso del chocolate artesanal en fincas indígenas locales.',
+        'Descubre el proceso artesanal del cacao y conoce comunidades locales que mantienen viva esta tradición.',
       icono: 'cacao',
     },
     {
-      nombre: 'Buceo profundo',
+      nombre: 'Buceo',
       descripcion:
-        'Explora misteriosos barcos hundidos y cuevas submarinas llenas de vida marina.',
+        'Explora arrecifes, formaciones submarinas y zonas llenas de biodiversidad marina.',
       icono: 'diving',
     },
     {
       nombre: 'Avistamiento de aves',
       descripcion:
-        'Camina por la selva para fotografiar aves exóticas y escuchar su hermoso canto.',
+        'Observa aves tropicales y especies exóticas en senderos rodeados de selva y naturaleza.',
       icono: 'bird',
     },
   ],

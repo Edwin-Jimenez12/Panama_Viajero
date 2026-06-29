@@ -17,60 +17,59 @@ export const cayoCoral = {
         `${cayoCoralImageBase}/gallery/g5-cayo-coral.webp`,
         `${cayoCoralImageBase}/gallery/g6-cayo-coral.webp`,
         `${cayoCoralImageBase}/gallery/g7-cayo-coral.webp`
-        
     ],
     descripcion:
-        'Un rincón de fantasía sumergido donde el mar se vuelve completamente transparente para revelar un espectáculo de colores vivos. Es el epicentro de la vida marina más deslumbrante, rodeado de exóticos restaurantes sobre pilotes que flotan en un entorno de ensueño, paz y exclusividad.',
+        'Uno de los destinos marinos más impresionantes de Bocas del Toro, famoso por sus aguas cristalinas, arrecifes de coral y abundante vida marina. Cayo Coral es ideal para quienes buscan una experiencia auténtica de snorkel, paisajes caribeños y gastronomía frente al mar.',
     previewDescripcion:
-        'Un rincón de fantasía sumergido donde el mar se vuelve transparente.',
+        'Aguas cristalinas, arrecifes de coral y vida marina en uno de los mejores spots de Bocas del Toro.',
     previewUbicacion: 'Bocas del Toro',
     actividades: [
         {
-            nombre: 'Snorkel en arrecifes',
+            nombre: 'Snorkel',
             descripcion:
-                'Flota sobre un jardín submarino repleto de corales multicolores y bancos de peces exóticos.',
+                'Explora arrecifes llenos de corales, peces tropicales y una biodiversidad marina impresionante.',
             icono: '',
         },
         {
-            nombre: 'Expedición en kayak',
+            nombre: 'Kayak',
             descripcion:
-                'Rema sobre aguas tan cristalinas que te darán la hermosa sensación de flotar en el aire.',
+                'Recorre las tranquilas aguas del cayo y disfruta de vistas únicas del entorno marino.',
             icono: '',
         },
         {
-            nombre: 'Caminata por pasarelas',
+            nombre: 'Fotografía',
             descripcion:
-                'Recorre los senderos de madera sobre el agua que conectan los restaurantes flotantes.',
+                'Captura la transparencia del agua, los arrecifes y la belleza natural del Caribe panameño.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía sobre el mar',
+            nombre: 'Gastronomía',
             descripcion:
-                'Saborea mariscos frescos recién capturados mientras tus pies casi tocan el agua cristalina.',
+                'Disfruta mariscos frescos y cocina caribeña en restaurantes construidos sobre el mar.',
             icono: '',
         },
         {
-            nombre: 'Fotografía submarina',
+            nombre: 'Avistamiento de estrellas de mar',
             descripcion:
-                'Captura la claridad perfecta del agua y la asombrosa biodiversidad de este acuario natural.',
+                'Observa estrellas de mar y otras especies marinas en aguas poco profundas y cristalinas.',
             icono: '',
         },
         {
-            nombre: 'Avistamiento de estrellas',
+            nombre: 'Paseos en lancha',
             descripcion:
-                'Observa las hermosas estrellas de mar que reposan en los fondos arenas de la orilla.',
+                'Explora los alrededores del cayo y otros rincones cercanos de Bocas del Toro.',
             icono: '',
         },
         {
-            nombre: 'Navegación contemplativa',
+            nombre: 'Natación',
             descripcion:
-                'Relájate a bordo mientras tu embarcación se desliza por canales de manglares vírgenes.',
+                'Relájate y disfruta de aguas cálidas y tranquilas ideales para nadar.',
             icono: '',
         },
         {
-            nombre: 'Descanso flotante',
+            nombre: 'Observación de vida marina',
             descripcion:
-                'Disfruta de una bebida refrescante en hamacas suspendidas directamente sobre el mar caribeño.',
+                'Descubre peces tropicales, corales y ecosistemas marinos que hacen de este lugar un acuario natural.',
             icono: '',
         },
     ],

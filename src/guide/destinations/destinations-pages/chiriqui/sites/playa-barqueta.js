@@ -9,69 +9,69 @@ export const playaBarqueta = {
     alt: 'Banner de Playa Barqueta',
   },
   descripcion:
-    'Una de las playas más emblemáticas de Chiriquí, reconocida por su extensa costa, ambiente tranquilo y espectaculares atardeceres sobre el Pacífico. Es el lugar ideal para relajarse, disfrutar de la naturaleza y desconectarse junto al mar.',
+    'Playa Barqueta destaca por su extensa costa, su ambiente tranquilo y sus atardeceres sobre el Pacífico. Es un destino sencillo y natural para caminar, descansar y disfrutar del mar sin aglomeraciones.',
   previewDescripcion:
-    'Una extensa playa del Pacífico famosa por sus atardeceres y su ambiente tranquilo.',
+    'Una extensa playa del Pacífico ideal para caminar, descansar y ver atardeceres.',
   previewUbicacion: 'Alanje, Chiriquí',
   actividades: [
     {
-      nombre: 'Caminatas por la playa',
+      nombre: 'Caminata',
       descripcion:
-        'Recorre kilómetros de costa mientras disfrutas de la brisa marina y el paisaje.',
+        'Recorre kilómetros de costa mientras disfrutas de la brisa marina y el paisaje abierto.',
       icono: '',
     },
     {
-      nombre: 'Observación de atardeceres',
+      nombre: 'Atardecer',
       descripcion:
-        'Contempla impresionantes puestas de sol sobre las aguas del océano Pacífico.',
+        'Contempla puestas de sol sobre el océano Pacífico con vistas amplias y despejadas.',
       icono: '',
     },
     {
-      nombre: 'Relajación frente al mar',
+      nombre: 'Descanso',
       descripcion:
-        'Disfruta de un ambiente tranquilo ideal para descansar y desconectarte.',
+        'Disfruta de un ambiente tranquilo ideal para relajarte y desconectarte.',
       icono: '',
     },
     {
-      nombre: 'Fotografía de paisajes',
+      nombre: 'Fotografía',
       descripcion:
-        'Captura escenas únicas de la playa, el océano y los colores del atardecer.',
+        'Captura escenas de la playa, el océano y los colores del atardecer.',
       icono: '',
     },
     {
-      nombre: 'Observación de aves',
+      nombre: 'Aves',
       descripcion:
         'Descubre especies costeras que habitan en los alrededores de la playa.',
       icono: '',
     },
     {
-      nombre: 'Avistamiento de tortugas marinas',
+      nombre: 'Tortugas',
       descripcion:
         'Durante ciertas temporadas, observa el proceso de anidación en áreas protegidas.',
       icono: '',
     },
     {
-      nombre: 'Picnic junto al mar',
+      nombre: 'Picnic',
       descripcion:
         'Comparte momentos especiales en un entorno natural con amplios espacios abiertos.',
       icono: '',
     },
     {
-      nombre: 'Disfrutar de la brisa marina',
+      nombre: 'Brisa marina',
       descripcion:
-        'Relájate mientras contemplas el océano y el sonido de las olas.',
+        'Relájate mientras contemplas el océano y escuchas el sonido de las olas.',
       icono: '',
     },
     {
-      nombre: 'Turismo de naturaleza',
+      nombre: 'Naturaleza',
       descripcion:
         'Explora los ecosistemas costeros característicos de la región chiricana.',
       icono: '',
     },
     {
-      nombre: 'Escapada de descanso',
+      nombre: 'Escapada',
       descripcion:
-        'Vive una experiencia de tranquilidad lejos del bullicio de la ciudad.',
+        'Vive una experiencia tranquila lejos del bullicio de la ciudad.',
       icono: '',
     },
   ],

@@ -9,67 +9,67 @@ export const laVilla = {
         alt: 'Banner de La Villa de Los Santos',
     },
     descripcion:
-        'Uno de los pueblos históricos más importantes de Panamá y cuna de acontecimientos que marcaron la identidad nacional. Sus calles, monumentos y tradiciones conservan el legado cultural de Azuero, convirtiéndola en un destino ideal para quienes desean conocer la historia y el folclore panameño.',
+        'La Villa de Los Santos es uno de los pueblos históricos más importantes de Panamá y cuna de hechos clave para la independencia. Su valor turístico está en el patrimonio, la arquitectura tradicional y el peso cultural que conserva en Azuero.',
     previewDescripcion:
         'Historia, tradición y orgullo nacional en uno de los pueblos más emblemáticos de Panamá.',
     previewUbicacion: 'Los Santos',
     actividades: [
         {
-            nombre: 'Recorrido histórico',
+            nombre: 'Historia',
             descripcion:
-                'Descubre los lugares donde ocurrieron importantes acontecimientos de la historia panameña.',
+                'Descubre los lugares donde ocurrieron hechos importantes de la historia panameña.',
             icono: '',
         },
         {
-            nombre: 'Visita a monumentos',
+            nombre: 'Monumentos',
             descripcion:
                 'Conoce plazas, estatuas y sitios que forman parte del patrimonio nacional.',
             icono: '',
         },
         {
-            nombre: 'Explorar el centro colonial',
+            nombre: 'Caminata',
             descripcion:
-                'Recorre calles llenas de historia y arquitectura tradicional azuerense.',
+                'Recorre calles con arquitectura tradicional y un ambiente colonial bien conservado.',
             icono: '',
         },
         {
-            nombre: 'Turismo cultural',
+            nombre: 'Cultura',
             descripcion:
                 'Sumérgete en las costumbres, tradiciones y expresiones folclóricas de la región.',
             icono: '',
         },
         {
-            nombre: 'Visita a iglesias históricas',
+            nombre: 'Iglesias',
             descripcion:
                 'Admira templos emblemáticos que forman parte de la herencia religiosa del país.',
             icono: '',
         },
         {
-            nombre: 'Fotografía patrimonial',
+            nombre: 'Fotografía',
             descripcion:
-                'Captura la belleza de edificios históricos y espacios llenos de identidad cultural.',
+                'Captura edificios históricos y espacios llenos de identidad cultural.',
             icono: '',
         },
         {
-            nombre: 'Gastronomía típica',
+            nombre: 'Gastronomía',
             descripcion:
                 'Disfruta sabores tradicionales que reflejan la riqueza culinaria de Azuero.',
             icono: '',
         },
         {
-            nombre: 'Festividades tradicionales',
+            nombre: 'Festividades',
             descripcion:
                 'Participa en celebraciones que mantienen vivas las costumbres santeñas.',
             icono: '',
         },
         {
-            nombre: 'Conocer el folclore local',
+            nombre: 'Folclore',
             descripcion:
-                'Descubre la música, danza y vestimenta que distinguen a la región.',
+                'Descubre la música, la danza y la vestimenta que distinguen a la región.',
             icono: '',
         },
         {
-            nombre: 'Experiencia azuerense',
+            nombre: 'Tradición',
             descripcion:
                 'Vive la hospitalidad y el estilo de vida característicos de Los Santos.',
             icono: '',
