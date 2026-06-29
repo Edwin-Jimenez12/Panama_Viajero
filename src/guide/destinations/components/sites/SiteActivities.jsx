@@ -22,7 +22,7 @@ function SiteActivities({ activities = [], featuredImage }) {
 
   return (
     <section className="mx-auto w-full max-w-6xl px-4 pb-12">
-      <div className="rounded-[28px] border border-[#4D4C4C]/10 bg-[#FFFFFF]/85 shadow-[0_20px_55px_rgba(77,76,76,0.10)]">
+      <div className="overflow-hidden rounded-[28px] border border-[#4D4C4C]/10 bg-[#FFFFFF]/85 shadow-[0_20px_55px_rgba(77,76,76,0.10)]">
         <div className="border-b border-[#4D4C4C]/10 px-6 py-4 sm:px-8 sm:py-5">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#CD2E4C]">
             Experiencias
@@ -65,7 +65,7 @@ function SiteActivities({ activities = [], featuredImage }) {
             ) : null}
           </div>
 
-          <div className="rounded-b-[28px] bg-[#FFFFFF]/50 p-3 sm:p-4 md:p-5">
+          <div className="rounded-b-[28px] md:rounded-br-[28px] bg-[#FFFFFF]/50 p-3 sm:p-4 md:p-5">
             <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
               <div>
                 <p className="text-md font-semibold uppercase tracking-[0.26em] text-[#4956A2]">
