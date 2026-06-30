@@ -37,7 +37,7 @@ function Darien() {
             <ProvinceVideo provinceData={provinceData} fixedBackground />
             <section className="relative z-10">
                 <Activities provinceData={provinceData} />
-                <ProvinceSitesOnly provinceData={provinceData} title="Sitios Turisticos" />
+                <ProvinceSitesOnly provinceData={provinceData} title="Sitios Tursticos" />
                 <OtherProvinces provincias={provincias} />
                 <div className="mt-40">
                     <BottomBanner onLogoClick={() => navigate('/#home')} />

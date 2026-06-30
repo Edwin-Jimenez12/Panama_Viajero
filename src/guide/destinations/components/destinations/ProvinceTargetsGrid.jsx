@@ -24,7 +24,7 @@ function getTargetDescription(target) {
 }
 
 function ProvinceTargetsGrid({
-  title = 'Sitios Turisticos',
+  title = 'Sitios turísticos',
   targets = [],
   fallbackPoster,
   mode = 'sites-only',

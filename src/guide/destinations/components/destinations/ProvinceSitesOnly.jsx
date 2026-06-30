@@ -1,7 +1,7 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 
-function ProvinceSitesOnly({ provinceData, title = 'Sitios Turisticos' }) {
+function ProvinceSitesOnly({ provinceData, title = 'Sitios Turísticos' }) {
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
   const belongsToProvince = (site) =>
