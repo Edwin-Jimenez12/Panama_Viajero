@@ -55,7 +55,7 @@ function Descarga() {
                     <img
                         src={CELULAR}
                         alt="Descargar app"
-                        className="w-40 h-auto object-contain"
+                        className="w-45 h-auto object-contain"
                     />
                 </div>
             </div>

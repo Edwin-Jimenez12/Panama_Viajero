@@ -121,7 +121,6 @@ function GuideHome() {
 
   return (
     <div className="relative bg-brand-soft text-brand-charcoal">
-      <Descarga/>
       {showCountdown && (
         <Suspense fallback={null}>
           <CountdownModal
@@ -161,6 +160,7 @@ function GuideHome() {
         <DeferredSection fallback={<SectionFallback className="min-h-[320px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[320px]" />}>
             <AboutUs />
+            <Descarga/>
           </Suspense>
         </DeferredSection>
       </section>
