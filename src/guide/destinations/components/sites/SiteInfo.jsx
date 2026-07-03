@@ -6,6 +6,7 @@ import SiteActivities from './SiteActivities.jsx'
 import SiteMap from './SiteMap.jsx'
 import DeferredSection from '../../../layout/layout-components/DeferredSection.jsx'
 import { FiMapPin } from 'react-icons/fi'
+import HospedajeYComida from '../../../fase_2/HospedajeYComida.jsx'
 
 function SiteInfo() {
   const navigate = useNavigate()
@@ -67,6 +68,9 @@ function SiteInfo() {
           <div className="mx-auto flex max-w-6xl flex-col gap-50">
             <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
               <SiteActivities activities={site.actividades} featuredImage={site.banner.src} />
+            </DeferredSection>
+            <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
+              <HospedajeYComida fallbackImage={site.banner.src} />
             </DeferredSection>
           </div>
         </div>
