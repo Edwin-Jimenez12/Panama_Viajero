@@ -160,7 +160,6 @@ function GuideHome() {
         <DeferredSection fallback={<SectionFallback className="min-h-[320px]" />}>
           <Suspense fallback={<SectionFallback className="min-h-[320px]" />}>
             <AboutUs />
-            <Descarga/>
           </Suspense>
         </DeferredSection>
       </section>
@@ -205,6 +204,7 @@ function GuideApp() {
 
   return (
     <Suspense fallback={<RouteFallback />}>
+      <Descarga />
       <Routes>
         <Route path="/" element={<GuideHome />} />
         <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />

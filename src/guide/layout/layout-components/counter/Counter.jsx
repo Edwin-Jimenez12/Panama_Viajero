@@ -106,7 +106,7 @@ preloadedPopupImage.src = VentanaEmergente
 
 function CountdownModal({ onClose, onPreregister }) {
     return (
-        <div className="fixed inset-0 z-[500] flex md:items-center md:justify-center bg-[#081020]/70 px-4 py-2 backdrop-blur-md">
+        <div className="fixed inset-0 z-[1000] flex md:items-center md:justify-center bg-[#081020]/70 px-4 py-2 backdrop-blur-md">
             <div className="relative w-full max-w-6xl overflow-hidden rounded-[30px] border border-white/20  shadow-[0_35px_120px_rgba(0,0,0,0.45)]">
                 <div className="absolute inset-x-0 top-0 z-30 h-2 bg-gradient-to-r from-brand-red via-[#5864c7] to-brand-red" />
 

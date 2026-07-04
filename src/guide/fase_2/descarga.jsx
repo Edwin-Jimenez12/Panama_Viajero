@@ -30,7 +30,7 @@ function Descarga() {
     }
 
     return (
-        <div className="fixed z-[1000] bottom-6 right-5 flex flex-col items-center gap-4">
+        <div className="fixed z-[500] bottom-6 right-5 flex flex-col items-center gap-4">
             <div style={{ perspective: '1000px' }}>
                 <div
                     className="
