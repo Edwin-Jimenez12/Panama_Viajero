@@ -32,33 +32,33 @@ function HospedajeYComida({ fallbackImage = '' }) {
 
             <div className="relative h-60 w-60 shrink-0" style={{ perspective: '1000px' }}>
               <div
-                className="absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out"
+                className="absolute inset-0 transition-transform duration-700 ease-in-out"
                 style={{
                   transform:
                     activeTab === 'hoteles'
-                      ? 'rotateY(0deg) scale(1)'
-                      : 'rotateY(-90deg) scale(0.9)',
-                  opacity: activeTab === 'hoteles' ? 1 : 0,
-                  backfaceVisibility: 'hidden',
+                      ? 'rotateY(0deg)'
+                      : 'rotateY(180deg)',
                   transformStyle: 'preserve-3d',
                 }}
               >
-                <FiHome className="h-60 w-60" />
-              </div>
+                <div
+                  className="absolute inset-0 flex items-center justify-center"
+                  style={{
+                    backfaceVisibility: 'hidden',
+                  }}
+                >
+                  <FiHome className="block h-60 w-60" />
+                </div>
 
-              <div
-                className="absolute mt-3 inset-0 flex items-center justify-center transition-all duration-500 ease-in-out"
-                style={{
-                  transform:
-                    activeTab === 'restaurantes'
-                      ? 'rotateY(0deg) scale(1)'
-                      : 'rotateY(90deg) ',
-                  opacity: activeTab === 'restaurantes' ? 1 : 0,
-                  backfaceVisibility: 'hidden',
-                  transformStyle: 'preserve-3d',
-                }}
-              >
-                <FiCoffee className="h-60 w-60" />
+                <div
+                  className="absolute mt-4.5 inset-0 flex items-center justify-center"
+                  style={{
+                    transform: 'rotateY(180deg)',
+                    backfaceVisibility: 'hidden',
+                  }}
+                >
+                  <FiCoffee className="block h-60 w-60" />
+                </div>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ function HospedajeYComida({ fallbackImage = '' }) {
 
         <div className="px-4 pb-8 sm:px-6 sm:pb-9">
           <div className="grid gap-6 lg:grid-cols-3">
-            {items.map((item, index) => {
+            {items.map((item) => {
               const imageSrc = item.imagen || fallbackImage
               const label = activeTab === 'hoteles' ? 'Alojamiento' : 'Restaurante'
               const priceText = item.precio.replace(/^Desde\s*/i, '')
