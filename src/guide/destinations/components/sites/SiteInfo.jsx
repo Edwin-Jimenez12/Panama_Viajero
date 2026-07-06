@@ -44,7 +44,6 @@ function SiteInfo() {
           <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm md:mt-0 md:ml-15">
             <h1
               className="font-main text-5xl text-brand-white md:text-6xl"
-              style={{ textShadow: '0 0 3px #e1e1e1e6' }}
             >
               {site.nombre}
             </h1>

@@ -144,7 +144,7 @@ function Preregister() {
                             name="lastName"
                             value={form.lastName}
                             onChange={handleChange}
-                            placeholder="Perez"
+                            placeholder="Pérez"
                             required
                             className="font-body w-full rounded-lg border-2 border-brand-soft p-3 pl-10 text-brand-charcoal outline-brand-blue transition placeholder:text-brand-charcoal/75 focus:border-brand-blue hover:border-brand-blue/90"
                         />

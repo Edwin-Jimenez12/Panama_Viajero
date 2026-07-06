@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { FiMapPin } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx'
 import Menu from '../../../components/menu/Menu.jsx'
@@ -53,8 +54,12 @@ function RiveraPacifica() {
 
       <section className="relative min-h-screen overflow-hidden">
         <div className="relative z-10 flex min-h-screen items-center px-4 md:px-10">
-          <div className="max-w-2xl rounded-xl border border-white/15 bg-black/35 p-8 text-brand-white backdrop-blur-md">
+          <div className="max-w-md rounded-xl border border-white/10 bg-black/15 p-8 text-start shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm text-white">
             <h1 className="font-main text-5xl md:text-7xl">Riviera Pacífica</h1>
+            <div className="flex gap-1 items-center text-[#f1f1f1e6]/85">
+              <FiMapPin className="h-4 w-4 " />
+              <p className="mt-1 text-sm font-secondary leading-6">Costas de Coclé y Panamá Oeste</p>
+            </div>
             <p className="mt-5 text-lg leading-8 text-brand-white/90">
               {riveraPacificaProvince.descripcionCorta}
             </p>
