@@ -54,7 +54,7 @@ function SiteInfo() {
                 {site.previewUbicacion ?? 'Ubicación no disponible'}
               </p>
             </div>
-            <p className="mx-auto mt-5 max-w-2xl font-body leading-7 text-brand-white/90 md:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl font-body leading-7 text-brand-white md:text-lg">
               {site.descripcion}
             </p>
           </div>
