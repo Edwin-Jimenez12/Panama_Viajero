@@ -65,7 +65,7 @@ function SiteActivities({ activities = [], featuredImage }) {
             ) : null}
           </div>
 
-          <div className="rounded-b-[28px] md:rounded-br-[28px] bg-[#FFFFFF]/50 p-3 sm:p-4 md:p-5">
+          <div className="rounded-b-[28px] md:rounded-br-[28px] p-3 sm:p-4 md:p-5">
             <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-2 border-b border-[#4D4C4C]/10 pb-4">
               <div>
                 <p className="text-md font-semibold uppercase tracking-[0.26em] text-[#4956A2]">
@@ -75,7 +75,7 @@ function SiteActivities({ activities = [], featuredImage }) {
                   {activities.length} nuevas experiencias
                 </p>
               </div>
-              <div className="rounded-full border border-[#4D4C4C]/10 bg-[#EBEBEB] px-4 py-2 text-sm font-semibold text-[#4D4C4C]">
+              <div className="rounded-full border border-[#4D4C4C] bg-[#EBEBEB] px-4 py-2 text-sm font-semibold text-[#4D4C4C]">
                 {activities.length}
               </div>
             </div>
@@ -92,7 +92,11 @@ function SiteActivities({ activities = [], featuredImage }) {
                     type="button"
                     aria-expanded={isOpen}
                     onClick={() => setActiveActivity(isOpen ? null : actividad.nombre)}
-                    className="group mb-3 inline-flex w-full break-inside-avoid cursor-pointer flex-col rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] px-4 py-3 text-left transition duration-300 hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
+                    className="group mb-3 inline-flex w-full break-inside-avoid cursor-pointer flex-col 
+                    rounded-[22px] border border-[#4D4C4C]/10 bg-[#FFFFFF] 
+                    px-4 py-3 text-left transition duration-300 
+                    hover:-translate-y-[1px] hover:border-[#4956A2]/25 hover:bg-[#FBFBFB] 
+                    hover:shadow-[0_10px_24px_rgba(77,76,76,0.08)]"
                   >
                     <div className="flex items-center gap-2">
                       <div

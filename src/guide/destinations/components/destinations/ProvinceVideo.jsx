@@ -29,7 +29,6 @@ function ProvinceVideo({ provinceData, videoSrc, fixedBackground = false }) {
                     <div className="mt-24 max-w-md rounded-xl border border-white/10 bg-black/15 p-8 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md md:mt-0 md:ml-15">
                         <h1
                             className="font-main text-6xl font-bold brightness-150 text-brand-white md:pb-4 md:text-6xl"
-                            style={{ textShadow: '0 0 6px rgba(39, 39, 75, 0.9)' }}
                         >
                             {provinceData.nombre}
                         </h1>

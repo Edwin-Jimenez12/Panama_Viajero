@@ -5,10 +5,10 @@ import politicaDePrivacidadPdf from '../../Politica-de-privacidad.pdf';
 function BottomBanner({ onLogoClick }) {
     return (
         <footer className="relative z-20 bg-brand-blue text-brand-white shadow-[0_-12px_30px_rgba(77,76,76,0.15)]">
-            <div className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+            <div className="mx-auto max-w-7xl px-6 py-5 md:py-5">
                 
                 {/* SECCIÓN PRINCIPAL: Logo, Slogan y Redes */}
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center md:justify-between pb-10">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center md:justify-between pb-5">
                     
                     {/* Logo y Slogan */}
                     <div className="flex flex-col items-center text-center md:items-start md:text-left gap-5">
@@ -67,7 +67,7 @@ function BottomBanner({ onLogoClick }) {
                 <hr className="border-brand-white/15" />
                 
                 {/* SECCIÓN INFERIOR: Copyright, Legal y Créditos */}
-                <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-6 font-body text-xs md:text-sm text-brand-white/70 text-center lg:text-left">
+                <div className="pt-5 flex flex-col lg:flex-row items-center justify-between gap-6 font-body text-xs md:text-sm text-brand-white/70 text-center lg:text-left">
                     
                     {/* Copyright y Enlaces Legales */}
                     <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
