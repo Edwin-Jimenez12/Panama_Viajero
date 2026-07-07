@@ -49,7 +49,7 @@ export const cayoCoral = {
             icono: '',
         },
         {
-            nombre: 'Avistamiento de estrellas de mar',
+            nombre: 'Estrellas de mar',
             descripcion:
                 'Observa estrellas de mar y otras especies marinas en aguas poco profundas y cristalinas.',
             icono: '',
@@ -67,7 +67,7 @@ export const cayoCoral = {
             icono: '',
         },
         {
-            nombre: 'Observación de vida marina',
+            nombre: 'Vida marina',
             descripcion:
                 'Descubre peces tropicales, corales y ecosistemas marinos que hacen de este lugar un acuario natural.',
             icono: '',
