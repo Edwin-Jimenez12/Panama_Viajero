@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Menu from '../../../components/menu/Menu.jsx';
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx';
 import ProvinceVideoJSX from '../../components/destinations/ProvinceVideo.jsx';
 import Activities from '../../components/destinations/Activities.jsx';
+import ActivityFilter from '../../components/destinations/ActivityFilter.jsx';
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx';
 import OtherProvinces from '../../components/destinations/OtherProvinces.tsx';
 import { provincias } from './BocasDelToro.js';
@@ -12,6 +13,7 @@ function BocasDelToro() {
     const navigate = useNavigate();
     const location = useLocation();
     const bocasDelToro = provincias[0];
+    const [selectedActivities, setSelectedActivities] = useState([]);
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -39,9 +41,22 @@ function BocasDelToro() {
 
             <ProvinceVideoJSX provinceData={bocasDelToro} fixedBackground />
 
-            <Activities provinceData={bocasDelToro} />
+            <Activities
+                provinceData={bocasDelToro}
+                selectedActivities={selectedActivities}
+                onActivitySelect={setSelectedActivities}
+            />
 
-            <ProvinceSitesOnly provinceData={bocasDelToro} className="ml-200"/>
+            <ActivityFilter
+                selectedActivities={selectedActivities}
+                onActivitySelect={setSelectedActivities}
+            />
+
+            <ProvinceSitesOnly
+                provinceData={bocasDelToro}
+                selectedActivities={selectedActivities}
+                className="ml-200"
+            />
 
             <OtherProvinces provincias={provincias} />
 

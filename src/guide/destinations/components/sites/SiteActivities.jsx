@@ -80,7 +80,7 @@ function SiteActivities({ activities = [], featuredImage }) {
               </div>
             </div>
 
-            <div className="mx-auto mt-4 max-h-[380px] w-full max-w-2xl columns-1 gap-3 overflow-y-auto pr-1 sm:columns-2 lg:columns-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
+            <div className="mx-auto mt-4 max-h-[350px] w-full max-w-2xl columns-1 gap-3 overflow-y-auto pr-1 sm:columns-2 lg:columns-2 [scrollbar-width:thin] [scrollbar-color:#4956A2_#EBEBEB]">
               {secondaryActivities.map((actividad, index) => {
                 const { Icon } = getActivityIcon(actividad.nombre)
                 const accent = index % 3 === 0 ? '#4956A2' : index % 3 === 1 ? '#CD2E4C' : '#4D4C4C'

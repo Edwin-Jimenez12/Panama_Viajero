@@ -12,6 +12,7 @@ const Suggestions = lazy(() => import('./layout/layout-components/Suggestions.ts
 const SiteInfo = lazy(() => import('./destinations/components/sites/SiteInfo.jsx'))
 const ZonePage = lazy(() => import('./destinations/components/zones/ZonePage.jsx'))
 const Preregister = lazy(() => import('./layout/layout-components/preregister/Preregister.jsx'))
+const RegistrerFlotante = lazy(() => import('./layout/layout-components/counter/RegistrerFlotante.jsx'))
 const BottomBanner = lazy(() => import('./components/bottombanner/Bottombanner.jsx'))
 const BannerLayout = lazy(() => import('./layout/layout-components/banner/BannerLayout.jsx'))
 const BocasDelToro = lazy(() => import('./destinations/destinations-pages/bocas-del-toro/BocasDelToro.jsx'))
@@ -42,6 +43,7 @@ function SectionFallback({ className = '' }) {
 function GuideHome() {
   const location = useLocation()
   const [showCountdown, setShowCountdown] = useState(true)
+  const [showRegisterFlot, setShowRegisterFlot] = useState(false)
 
   const homeRef = useRef(null)
   const preregisterRef = useRef(null)
@@ -60,6 +62,7 @@ function GuideHome() {
 
   const scrollToSection = (ref) => {
     setShowCountdown(false)
+    setShowRegisterFlot(false)
     const target = ref.current
     if (!target) return
     const top = target.getBoundingClientRect().top + window.scrollY - menuOffset
@@ -69,6 +72,7 @@ function GuideHome() {
   const scrollToHome = () => scrollToSection(homeRef)
   const scrollToMap = () => {
     setShowCountdown(false)
+    setShowRegisterFlot(false)
     const target = mapRef.current
     if (!target) return
     const top = target.getBoundingClientRect().top + window.scrollY + sectionOffsets['#map']
@@ -77,6 +81,10 @@ function GuideHome() {
   const scrollToPreregister = () => scrollToSection(preregisterRef)
   const scrollToUs = () => scrollToSection(usRef)
   const scrollToSuggestions = () => scrollToSection(suggestionsRef)
+  const openRegisterFlot = () => {
+    setShowCountdown(false)
+    setShowRegisterFlot(true)
+  }
 
 
   useEffect(() => {
@@ -124,8 +132,15 @@ function GuideHome() {
         <Suspense fallback={null}>
           <CountdownModal
             onClose={() => setShowCountdown(false)}
-            onPreregister={scrollToPreregister}
+            onPreregister={openRegisterFlot}
           />
+          
+        </Suspense>
+      )}
+
+      {showRegisterFlot && (
+        <Suspense fallback={null}>
+          <RegistrerFlotante onClose={() => setShowRegisterFlot(false)} />
         </Suspense>
       )}
 

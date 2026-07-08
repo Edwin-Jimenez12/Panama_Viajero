@@ -51,12 +51,6 @@ export const santiago = {
             icono: '',
         },
         {
-            nombre: 'Ruta',
-            descripcion:
-                'Usa Santiago como punto de partida para visitar playas, montañas, ríos y comunidades cercanas de la provincia.',
-            icono: '',
-        },
-        {
             nombre: 'Cultura',
             descripcion:
                 'Participa en ferias, actividades comunitarias y eventos tradicionales que reflejan el carácter del interior panameño.',
