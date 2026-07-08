@@ -1,30 +1,44 @@
 import {
   LuBird,
+  LuBinoculars,
   LuBike,
+  LuCamera,
   LuCompass,
   LuFish,
-  LuGalleryHorizontal,
   LuMapPinned,
   LuMountain,
   LuPartyPopper,
   LuShipWheel,
+  LuStore,
+  LuSparkles,
+  LuTreePalm,
   LuTrees,
   LuUtensilsCrossed,
   LuWaves,
 } from 'react-icons/lu'
+import { FaUmbrellaBeach } from 'react-icons/fa6'
+import { IoBoat } from 'react-icons/io5'
 
 const activityIconRules = [
-  { test: /(surf|snorkel|buce|kayak|mar|arrecife|playa)/, Icon: LuWaves },
+  { test: /(playa|playas)/, Icon: FaUmbrellaBeach },
+  { test: /(nataci|nado|nadar|swim|surf|snorkel|buce|kayak|mar|arrecife)/, Icon: LuWaves },
+  { test: /(paseo(?:s)? en lancha|lancha|bote|boat)/, Icon: IoBoat },
   { test: /(pesca)/, Icon: LuFish },
   { test: /(ciclismo|patinaje|ruta|bicicleta)/, Icon: LuBike },
   { test: /(gastron|comida|restaur|sabores|culin)/, Icon: LuUtensilsCrossed },
   { test: /(vida nocturna|nocturna|fiesta|noche)/, Icon: LuPartyPopper },
   { test: /(senderismo|monta|trek)/, Icon: LuMountain },
   { test: /(bosque|naturaleza|parque)/, Icon: LuTrees },
+  { test: /(estrella|estrellas)/, Icon: LuSparkles },
+  { test: /(avistamiento|observaci).*(rana|ranas).*(roja|rojas)/, Icon: LuCamera },
+  { test: /(avistamiento|observaci).*(delfin|delfines)/, Icon: LuBinoculars },
+  { test: /(avistamiento|observaci).*(ballena|ballenas|tortuga|tortugas|fauna marina|marino|marina|medusa|medusas|pez|peces|coral|arrecife|manta|rayas?)/, Icon: LuWaves },
   { test: /(avistamiento|observaci|aves|pajar)/, Icon: LuBird },
   { test: /(tour|recorrido|museo|hist|casco|ciudad|urbano|paseo|visitas)/, Icon: LuMapPinned },
+  { test: /(isla|islote)/, Icon: LuTreePalm },
   { test: /(isla|islote|costa|costera|marino)/, Icon: LuShipWheel },
-  { test: /(fotograf|paisaje|foto|mirador)/, Icon: LuGalleryHorizontal },
+  { test: /(fotograf|paisaje|foto|mirador)/, Icon: LuCamera },
+  { test: /(compra|compras|shopping|centros comerciales|mall)/, Icon: LuStore },
   { test: /.*/, Icon: LuCompass },
 ]
 

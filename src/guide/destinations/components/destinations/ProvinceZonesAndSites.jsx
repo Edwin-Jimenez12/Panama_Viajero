@@ -1,7 +1,7 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
 
-function ProvinceZonesAndSites({ provinceData }) {
+function ProvinceZonesAndSites({ provinceData, selectedActivity = null }) {
   const zones = provinceData?.targets?.filter((target) => target.type === 'zone') ?? []
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
@@ -20,6 +20,7 @@ function ProvinceZonesAndSites({ provinceData }) {
       descripcion: site.previewDescripcion || site.descripcion || '',
       imagen: site.banner?.src || site.thumbnail || site.src,
       ubicacion: site.previewUbicacion || site.ubicacion,
+      activities: site.actividades ?? [],
       type: 'site',
       siteId: site.id,
     }))
@@ -42,6 +43,7 @@ function ProvinceZonesAndSites({ provinceData }) {
           fallbackPoster={provinceData.banner?.poster || provinceData.imagenProvincia?.src}
           mode="sites-only"
           provinceId={provinceData.id}
+          selectedActivity={selectedActivity}
         />
       )}
     </div>

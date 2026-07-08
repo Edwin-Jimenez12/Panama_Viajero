@@ -76,9 +76,6 @@ function BottomBanner({ onLogoClick }) {
                         </div>
                         <span className="hidden md:inline text-brand-white/30">•</span>
                         <div className="flex gap-4">
-                            <a href="/terminos-y-condiciones" className="hover:text-brand-white underline underline-offset-4 transition">
-                                Términos y Condiciones
-                            </a>
                             <a href={politicaDePrivacidadPdf} 
                             target="_blank"
                             rel="noreferrer" 

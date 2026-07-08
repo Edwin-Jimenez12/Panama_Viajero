@@ -15,12 +15,6 @@ export const volcanBaru = {
   previewUbicacion: 'Boquete, Chiriquí',
   actividades: [
     {
-      nombre: 'Ascenso',
-      descripcion:
-        'Sube hasta los 3,475 metros del punto más alto de Panamá y vive una experiencia de montaña completa.',
-      icono: '',
-    },
-    {
       nombre: 'Amanecer',
       descripcion:
         'Disfruta uno de los amaneceres más espectaculares del país desde la cima.',
@@ -51,7 +45,7 @@ export const volcanBaru = {
       icono: '',
     },
     {
-      nombre: '4x4',
+      nombre: 'Senderismo 4x4',
       descripcion:
         'Accede a la cima mediante excursiones guiadas en vehículos todoterreno.',
       icono: '',

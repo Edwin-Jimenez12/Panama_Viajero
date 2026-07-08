@@ -28,7 +28,7 @@ export const islaBastimentos = {
     previewUbicacion: 'Bastimentos, Bocas del Toro',
     actividades: [
         {
-            nombre: 'Avistamiento de ranas rojas',
+            nombre: 'Ranas rojas',
             descripcion:
                 'Descubre una de las especies más emblemáticas de la isla escondida entre la vegetación tropical.',
             icono: '',
