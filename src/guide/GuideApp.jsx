@@ -182,7 +182,7 @@ function GuideHome() {
         
       </section>
 
-      <section id="suggestions" className="mt-[-50px]">
+      <section id="suggestions"  className="mt-[-50px]">
         <Suspense fallback={<SectionFallback className="min-h-[480px]" />}>
             <Suggestions />
           </Suspense>
