@@ -65,7 +65,7 @@ function SiteInfo() {
         <div className="relative z-20 px-4 pt-16 md:px-10">
           <div className="mx-auto flex max-w-6xl flex-col gap-50">
             <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
-              <SiteActivities activities={site.actividades} featuredImage={site.banner.src} />
+              <SiteActivities site={site} />
             </DeferredSection>
             <DeferredSection fallback={<div className="min-h-[420px]" />} rootMargin="300px">
               <HospedajeYComida fallbackImage={site.banner.src} />
