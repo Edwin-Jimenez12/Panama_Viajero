@@ -1,4 +1,4 @@
-const islaCebacoImageBase = '/images/destinations/veraguas'
+const islaCebacoImageBase = '/images/destinations/veraguas/isla-cebaco'
 
 export const islaCebaco = {
     id: 'isla-cebaco',
@@ -8,6 +8,15 @@ export const islaCebaco = {
         src: `${islaCebacoImageBase}/bg-isla-cebaco.webp`,
         alt: 'Banner de Isla Cébaco',
     },
+    gallery: [
+        `${islaCebacoImageBase}/bg-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g1-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g2-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g3-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g4-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g5-isla-cebaco.webp`,
+        `${islaCebacoImageBase}/g6-isla-cebaco.webp`,
+    ],
     descripcion:
         'Isla Cébaco es la más grande de Veraguas y un destino poco explorado donde predominan las playas vírgenes, la vegetación tropical y las aguas cristalinas. Su aislamiento la convierte en una opción ideal para quienes buscan naturaleza, navegación y descanso lejos de las multitudes.',
     previewDescripcion:
@@ -33,13 +42,7 @@ export const islaCebaco = {
             icono: '',
         },
         {
-            nombre: 'Fauna',
-            descripcion:
-                'Observa aves marinas, especies costeras y otros animales que habitan los ecosistemas de la isla.',
-            icono: '',
-        },
-        {
-            nombre: 'Lancha',
+            nombre: 'Paseo en bote',
             descripcion:
                 'Navega alrededor de la isla para descubrir playas escondidas, acantilados y paisajes costeros únicos.',
             icono: '',

@@ -16,7 +16,7 @@ function getRandomItems(items, limit) {
 function AleatorySuggestions() {
     const navigate = useNavigate();
     const location = useLocation();
-    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
+    const breadcrumbSourceLabel = 'Destinos';
     const suggestions = useMemo(() => {
         const riveraPacifica = provinceMedia.find((province) => province.id === 'rivera-pacifica');
         const others = provinceMedia.filter((province) => province.poster && province.id !== 'rivera-pacifica');
@@ -42,7 +42,7 @@ function AleatorySuggestions() {
                         key={province.id}
                         type="button"
                         aria-label={`Explorar ${province.nombre}`}
-                        onClick={() => navigate(`${province.path}#video`, { state: { breadcrumbSourceLabel } })}
+                        onClick={() => navigate(`${province.path}#video`)}
                         className="group flex w-full max-w-md cursor-pointer flex-col items-center md:w-[355px]"
                     >
                         <div

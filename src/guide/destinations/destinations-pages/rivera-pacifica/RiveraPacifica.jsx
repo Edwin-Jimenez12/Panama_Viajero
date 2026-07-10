@@ -27,8 +27,8 @@ const riveraPacificaProvince = {
 function RiveraPacifica() {
   const navigate = useNavigate()
   const location = useLocation()
-  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
-  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
+  const breadcrumbSourceLabel = 'Destinos';
+  const breadcrumbSourceTo = '/#map';
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })

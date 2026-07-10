@@ -30,8 +30,8 @@ function SiteInfo() {
   const { siteId } = useParams()
   const site = siteId ? siteRegistry[decodeURIComponent(siteId)] ?? null : null
   const provinceId = site?.provinceId || site?.provinceIds?.[0] || site?.sharedProvinceIds?.[0] || ''
-  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
-  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
+  const breadcrumbSourceLabel = 'Destinos';
+  const breadcrumbSourceTo = '/#map';
   const provinceLabel = location.state?.breadcrumbProvinceLabel || provinceLabels[provinceId] || provinceId || 'Provincia'
   const zoneLabel = location.state?.breadcrumbZoneLabel
   const breadcrumbItems = [
