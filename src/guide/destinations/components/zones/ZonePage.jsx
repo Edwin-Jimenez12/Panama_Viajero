@@ -35,8 +35,8 @@ function ZonePage() {
   const searchProvinceId = new URLSearchParams(location.search).get('province')
   const provinceId = searchProvinceId || zone?.provinceId || zone?.provinceIds?.[0] || 'chiriqui'
   const provinceData = provinceDataRegistry[provinceId] ?? chiriquiProvincias[0]
-  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
-  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
+  const breadcrumbSourceLabel = 'Destinos';
+  const breadcrumbSourceTo = '/#map';
   const fallbackTarget =
     provinceData?.targets?.find((target) => target.zoneId === decodedZoneId || target.id === decodedZoneId) ?? null
   const safeHeading = zone?.nombre || fallbackTarget?.nombre || 'Zona'

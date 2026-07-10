@@ -14,8 +14,8 @@ function BocasDelToro() {
     const location = useLocation();
     const bocasDelToro = provincias[0];
     const [selectedActivities, setSelectedActivities] = useState([]);
-    const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa';
-    const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map';
+    const breadcrumbSourceLabel = 'Destinos';
+    const breadcrumbSourceTo = '/#map';
 
     const toggleSelectedActivity = (activity) => {
         setSelectedActivities((current) => {

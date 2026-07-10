@@ -1,7 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import ProvinceVideo from '../../components/destinations/ProvinceVideo.jsx'
 import Activities from '../../components/destinations/Activities.jsx'
+import SelectedActivitiesBar from '../../components/destinations/SelectedActivitiesBar.jsx'
 import ProvinceSitesOnly from '../../components/destinations/ProvinceSitesOnly.jsx'
 import Menu from '../../../components/menu/Menu.jsx'
 import BottomBanner from '../../../components/bottombanner/Bottombanner.jsx'
@@ -12,8 +13,50 @@ function Veraguas() {
   const navigate = useNavigate()
   const location = useLocation()
   const provinceData = provincias[0]
-  const breadcrumbSourceLabel = location.state?.breadcrumbSourceLabel || 'Mapa'
-  const breadcrumbSourceTo = breadcrumbSourceLabel === 'Sugerencias' ? '/#suggestions' : '/#map'
+  const [selectedActivities, setSelectedActivities] = useState([])
+  const breadcrumbSourceLabel = 'Destinos';
+  const breadcrumbSourceTo = '/#map';
+
+  const toggleSelectedActivity = (activity) => {
+    setSelectedActivities((current) => {
+      const currentList = Array.isArray(current) ? current : current ? [current] : []
+      const normalizedActivity = activity.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim()
+      const alreadySelected = currentList.some(
+        (item) =>
+          String(item)
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim() === normalizedActivity,
+      )
+      if (alreadySelected) {
+        return currentList.filter(
+          (item) =>
+            String(item)
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .trim() !== normalizedActivity,
+        )
+      }
+      return [...currentList, activity]
+    })
+  }
+
+  const removeSelectedActivity = (activityToRemove) => {
+    setSelectedActivities((current) => {
+      const currentList = Array.isArray(current) ? current : current ? [current] : []
+      const targetKey = String(activityToRemove).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim()
+      return currentList.filter(
+        (item) =>
+          String(item)
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim() !== targetKey,
+      )
+    })
+  }
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
@@ -46,9 +89,19 @@ function Veraguas() {
           { label: provinceData.nombre },
         ]}
       />
-      <Activities provinceData={provinceData} />
+      <Activities
+        provinceData={provinceData}
+        selectedActivities={selectedActivities}
+        onActivitySelect={toggleSelectedActivity}
+      />
+      <SelectedActivitiesBar
+        selectedActivities={selectedActivities}
+        onRemoveActivity={removeSelectedActivity}
+        onClearAll={() => setSelectedActivities([])}
+      />
       <ProvinceSitesOnly
         provinceData={provinceData}
+        selectedActivities={selectedActivities}
         breadcrumbSourceLabel={breadcrumbSourceLabel}
         provinceLabel={provinceData.nombre}
       />

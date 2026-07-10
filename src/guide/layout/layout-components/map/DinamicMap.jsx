@@ -49,7 +49,7 @@ function Map() {
                 style={container.style}
                 onMouseEnter={() => setActiveProvince('bocas-del-toro')}
                 onMouseLeave={() => setActiveProvince(null)}
-                onClick={() => navigate('/provincias/bocas-del-toro#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+                onClick={() => navigate('/provincias/bocas-del-toro#video')}
               />
             )
           })}
@@ -65,7 +65,7 @@ function Map() {
                 style={container.style}
                 onMouseEnter={() => setActiveProvince('chiriqui')}
                 onMouseLeave={() => setActiveProvince(null)}
-                onClick={() => navigate('/provincias/chiriqui#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+                onClick={() => navigate('/provincias/chiriqui#video')}
               />
             )
           })}
@@ -78,7 +78,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('veraguas')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/veraguas#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/veraguas#video')}
             />
           ))}
 
@@ -90,7 +90,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('herrera')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/herrera#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/herrera#video')}
             />
           ))}
 
@@ -102,7 +102,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('cocle')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/cocle#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/cocle#video')}
             />
           ))}
 
@@ -114,7 +114,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('colon')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/colon#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/colon#video')}
             />
           ))}
 
@@ -126,7 +126,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('guna-yala')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/comarca-guna-yala#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/comarca-guna-yala#video')}
             />
           ))}
 
@@ -138,7 +138,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('darien')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/darien#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/darien#video')}
             />
           ))}
 
@@ -150,7 +150,7 @@ function Map() {
               style={container.style}
               onMouseEnter={() => setActiveProvince('panama')}
               onMouseLeave={() => setActiveProvince(null)}
-              onClick={() => navigate('/provincias/panama#video', { state: { breadcrumbSourceLabel: 'Mapa' } })}
+              onClick={() => navigate('/provincias/panama#video')}
             />
           ))}
 
