@@ -1,4 +1,5 @@
 import { RxCross2 } from 'react-icons/rx'
+import { useEffect } from 'react'
 import VentanaEmergente from '../../../img_test/VEMERGENTE.svg'
 import Logo from '../../../img_test/LogoRectangularNegro.svg'
 import Playstore from '../../../img_test/Playstore.svg'
@@ -8,6 +9,15 @@ const preloadedPopupImage = new Image()
 preloadedPopupImage.src = VentanaEmergente
 
 function CountdownModal({ onClose, onPreregister }) {
+    useEffect(() => {
+        const previousOverflow = document.body.style.overflow
+        document.body.style.overflow = 'hidden'
+
+        return () => {
+            document.body.style.overflow = previousOverflow
+        }
+    }, [])
+
     return (
         <div className="fixed inset-0 z-[500] flex md:items-center md:justify-center bg-[#081020]/70 px-4 py-2 backdrop-blur-md">
             <div className="relative w-full max-w-6xl overflow-hidden rounded-[30px] border border-white/20 shadow-[0_35px_120px_rgba(0,0,0,0.45)]">
@@ -22,7 +32,7 @@ function CountdownModal({ onClose, onPreregister }) {
                     <RxCross2 className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
                 </button>
 
-                <div className="grid md:grid-cols-[1fr_0.95fr]">
+                <div className="grid h-full grid-rows-[auto_1fr] md:h-auto md:grid-cols-[1fr_0.95fr] md:grid-rows-none">
                     <div className="relative flex min-h-[400px] flex-col items-center justify-between overflow-hidden bg-[#f6f7ff] px-5 sm:min-h-[460px] sm:px-8 sm:pb-8 md:min-h-[620px] md:items-start md:px-10 md:pt-10">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(88,100,199,0.16),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(205,46,76,0.12),transparent_35%)]" />
 
@@ -60,7 +70,8 @@ function CountdownModal({ onClose, onPreregister }) {
                         <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-brand-red/20 blur-3xl" />
 
                         <div className="relative z-10 mx-auto max-w-md text-center md:mx-0 md:text-left">
-                            <div className="mx-auto inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
+                            <div className="mx-auto inline-flex mb-5 md:mb-0  w-fit items-center rounded-full border 
+                            border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 backdrop-blur md:mx-0">
                                 Muy pronto
                             </div>
 
@@ -70,7 +81,7 @@ function CountdownModal({ onClose, onPreregister }) {
                                 <span className="block text-[#CD2E4C]">antes lo viste</span>
                             </h2>
 
-                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0">
+                            <p className="mx-auto mt-5 max-w-sm font-body text-sm leading-6 text-white/80 sm:text-base md:mx-0 hidden md:block">
                                 Una nueva forma de explorar destinos, experiencias y lugares increíbles dentro de Panamá.
                             </p>
 
