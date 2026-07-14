@@ -33,7 +33,7 @@ function AleatorySuggestions() {
                 </h2>
                 <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg text-lg"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}>
-                    Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo.
+                    Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo
                 </p>
             </div>
             <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 md:justify-start md:gap-8">
