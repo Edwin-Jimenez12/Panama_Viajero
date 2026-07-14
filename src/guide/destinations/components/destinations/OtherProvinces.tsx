@@ -25,18 +25,18 @@ function AleatorySuggestions() {
     }, []);
 
     return (
-        <section className="mx-auto w-full max-w-6xl px-4 mt-30">
-            <div className="mb-8 flex flex-col items-end ">
-                <h2 className="font-main md:text-2xl text-4xl text-brand-white/95 md:text-5xl"
+        <section className="mx-auto w-full max-w-7xl px-4 mt-30">
+            <div className="mb-8 flex flex-col items-end mr-18">
+                <h2 className="font-main md:text-2xl text-5xl text-brand-white/95 md:text-5xl"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}>
                     Otros destinos
                 </h2>
-                <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg"
+                <p className="font-secondary-italic text-right  mt-3 max-w-3xl text-brand-white/95 md:text-lg text-lg"
                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}>
                     Más allá del horizonte hay un lugar esperando cambiar tu forma de ver el mundo.
                 </p>
             </div>
-            <div className="mx-auto flex max-w-6xl justify-center gap-4 md:gap-8 ">
+            <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 md:justify-start md:gap-8">
                 {suggestions.map((province) => (
                     <button
                         key={province.id}
@@ -61,7 +61,7 @@ function AleatorySuggestions() {
                         </div>
                         <div className="mt-1 md:mt-4 w-full overflow-hidden text-center">
                             <span
-                                className="leading-tight inline-block font-secondary-italic text-lg md:text-3xl 
+                                className="leading-tight inline-block font-secondary-italic text-2xl md:text-3xl 
                                 text-brand-white/95 transition-all duration-300 ease-out group-hover:scale-105"
                                 style={{  textShadow: '0 0 6px rgba(0, 0, 0, 0.5)'}}
                             >
