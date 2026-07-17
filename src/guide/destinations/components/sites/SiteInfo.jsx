@@ -7,6 +7,7 @@ import SiteMap from './SiteMap.jsx'
 import DeferredSection from '../../../layout/layout-components/DeferredSection.jsx'
 import { FiMapPin } from 'react-icons/fi'
 import BreadcrumbNav from '../destinations/BreadcrumbNav.jsx'
+import { usePublishedSites } from '../../context/publishedSitesStore.js'
 
 const provinceLabels = {
   'bocas-del-toro': 'Bocas del Toro',
@@ -27,7 +28,11 @@ function SiteInfo() {
   const navigate = useNavigate()
   const location = useLocation()
   const { siteId } = useParams()
-  const site = siteId ? siteRegistry[decodeURIComponent(siteId)] ?? null : null
+  const { sitesBySlug, loading } = usePublishedSites()
+  const decodedSiteId = siteId ? decodeURIComponent(siteId) : ''
+  const site = decodedSiteId
+    ? sitesBySlug[decodedSiteId] ?? siteRegistry[decodedSiteId] ?? null
+    : null
   const provinceId = site?.provinceId || site?.provinceIds?.[0] || site?.sharedProvinceIds?.[0] || ''
   const breadcrumbSourceLabel = 'Destinos';
   const breadcrumbSourceTo = '/#map';
@@ -40,8 +45,25 @@ function SiteInfo() {
     { label: site?.nombre || 'Sitio' },
   ]
 
-  if (!site) {
+  if (!site && loading) {
     return <main className="min-h-screen bg-brand-soft" />
+  }
+
+  if (!site) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-brand-charcoal px-6 text-center text-brand-white">
+        <div>
+          <h1 className="font-main text-4xl">Sitio no encontrado</h1>
+          <button
+            type="button"
+            onClick={() => navigate('/#map')}
+            className="mt-6 cursor-pointer rounded-full bg-brand-blue px-5 py-3 font-secondary text-sm"
+          >
+            Volver a destinos
+          </button>
+        </div>
+      </main>
+    )
   }
 
   return (

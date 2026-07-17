@@ -1,7 +1,9 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
+import { usePublishedSites } from '../../context/publishedSitesStore.js'
 
 function ProvinceZonesAndSites({ provinceData, selectedActivity = null, breadcrumbSourceLabel = 'Mapa' }) {
+  const { sites: publishedSites } = usePublishedSites()
   const zones = provinceData?.targets?.filter((target) => target.type === 'zone') ?? []
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
@@ -11,9 +13,22 @@ function ProvinceZonesAndSites({ provinceData, selectedActivity = null, breadcru
       : Object.values(siteRegistry)
           .filter((site) => site.provinceId === provinceId)
           .map((site) => site.id)
-  const sites = fallbackSiteIds
+  const staticSites = fallbackSiteIds
     .map((siteId) => siteRegistry[siteId])
     .filter(Boolean)
+  const dynamicSites = publishedSites.filter((site) => (
+    !site.zoneId
+    && (
+      site.provinceId === provinceId
+      || site.provinceIds?.includes(provinceId)
+      || site.sharedProvinceIds?.includes(provinceId)
+    )
+  ))
+  const sites = Array.from(
+    new Map(
+      [...staticSites, ...dynamicSites].map((site) => [site.id, site]),
+    ).values(),
+  )
     .map((site) => ({
       id: site.id,
       nombre: site.nombre,

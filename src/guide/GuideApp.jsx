@@ -5,6 +5,7 @@ import Menu from './components/menu/Menu.jsx'
 import './App.css'
 import Logo from './img_test/LogoRectangular.svg'
 import CountdownModal from './layout/layout-components/counter/Counter.jsx'
+import { PublishedSitesProvider } from './destinations/context/PublishedSitesContext.jsx'
 
 const AboutUs = lazy(() => import('./layout/layout-components/about-us/AboutUs.jsx'))
 const Map = lazy(() => import('./layout/layout-components/map/DinamicMap.jsx'))
@@ -213,25 +214,27 @@ function GuideApp() {
   }, [location.pathname])
 
   return (
-    <Suspense fallback={<RouteFallback />}>
-      <Routes>
-        <Route path="/" element={<GuideHome />} />
-        <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />
-        <Route path="/provincias/chiriqui" element={<Chiriqui />} />
-        <Route path="/provincias/cocle" element={<Cocle />} />
-        <Route path="/provincias/colon" element={<Colon />} />
-        <Route path="/provincias/darien" element={<Darien />} />
-        <Route path="/provincias/herrera" element={<Herrera />} />
-        <Route path="/provincias/los-santos" element={<LosSantos />} />
-        <Route path="/provincias/panama" element={<Panama />} />
-        <Route path="/provincias/panama-oeste" element={<PanamaOeste />} />
-        <Route path="/provincias/veraguas" element={<Veraguas />} />
-        <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
-        <Route path="/rivera-pacifica" element={<RiveraPacifica />} />
-        <Route path="/sitios/:siteId" element={<SiteInfo />} />
-        <Route path="/zonas/:zoneId" element={<ZonePage />} />
-      </Routes>
-    </Suspense>
+    <PublishedSitesProvider>
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          <Route path="/" element={<GuideHome />} />
+          <Route path="/provincias/bocas-del-toro" element={<BocasDelToro />} />
+          <Route path="/provincias/chiriqui" element={<Chiriqui />} />
+          <Route path="/provincias/cocle" element={<Cocle />} />
+          <Route path="/provincias/colon" element={<Colon />} />
+          <Route path="/provincias/darien" element={<Darien />} />
+          <Route path="/provincias/herrera" element={<Herrera />} />
+          <Route path="/provincias/los-santos" element={<LosSantos />} />
+          <Route path="/provincias/panama" element={<Panama />} />
+          <Route path="/provincias/panama-oeste" element={<PanamaOeste />} />
+          <Route path="/provincias/veraguas" element={<Veraguas />} />
+          <Route path="/provincias/comarca-guna-yala" element={<GunaYala />} />
+          <Route path="/rivera-pacifica" element={<RiveraPacifica />} />
+          <Route path="/sitios/:siteId" element={<SiteInfo />} />
+          <Route path="/zonas/:zoneId" element={<ZonePage />} />
+        </Routes>
+      </Suspense>
+    </PublishedSitesProvider>
   )
 }
 
