@@ -47,7 +47,7 @@ function mapPublishedSite(site) {
     gallery,
     actividades: (site.activities || []).map((activity) => ({
       nombre: activity.name,
-      descripcion: '',
+      descripcion: activity.description || '',
       icono: activity.iconKey,
     })),
   }
