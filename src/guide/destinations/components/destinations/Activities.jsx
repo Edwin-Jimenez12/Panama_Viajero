@@ -17,7 +17,8 @@ import {
 } from 'react-icons/lu';
 import { FaUmbrellaBeach } from 'react-icons/fa6';
 import { IoBoat } from 'react-icons/io5';
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
+import { usePublishedSites } from '../../context/publishedSitesStore.js';
 
 const activityRules = [
     { test: /(playa|playas)/, Icon: FaUmbrellaBeach },
@@ -64,6 +65,7 @@ function normalizeActivitySelection(selection = []) {
 }
 
 function Activities({ provinceData, selectedActivities = [], onActivitySelect = () => {} }) {
+    const { sites: publishedSites } = usePublishedSites();
     const contentRef = useRef(null);
     const firstGroupRef = useRef(null);
     const dragStateRef = useRef({
@@ -74,6 +76,31 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
         isDragging: false,
     });
     const offsetRef = useRef(0);
+    const activityNames = useMemo(() => {
+        const baseActivities = Array.isArray(provinceData.actividades)
+            ? provinceData.actividades
+            : [];
+        const dynamicActivities = provinceData.isActivityScopeComplete
+            ? []
+            : publishedSites
+                .filter((site) => (
+                    site.provinceId === provinceData.id
+                    || site.provinceIds?.includes(provinceData.id)
+                    || site.sharedProvinceIds?.includes(provinceData.id)
+                ))
+                .flatMap((site) => site.actividades || [])
+                .map((activity) => (
+                    typeof activity === 'string' ? activity : activity?.nombre
+                ))
+                .filter(Boolean);
+
+        return Array.from(
+            new Map(
+                [...baseActivities, ...dynamicActivities]
+                    .map((activity) => [normalizeActivity(activity), activity]),
+            ).values(),
+        );
+    }, [provinceData.actividades, provinceData.id, provinceData.isActivityScopeComplete, publishedSites]);
     const selectedActivityKeys = new Set(normalizeActivitySelection(selectedActivities));
 
     useEffect(() => {
@@ -81,7 +108,7 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
         if (contentRef.current) {
             contentRef.current.style.transform = 'translate3d(0px, 0, 0)';
         }
-    }, [provinceData.actividades]);
+    }, [activityNames]);
 
     useEffect(() => {
         let rafId = 0;
@@ -119,7 +146,7 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
         return () => {
             window.cancelAnimationFrame(rafId);
         };
-    }, [provinceData.actividades]);
+    }, [activityNames]);
 
     const handlePointerDown = (event) => {
         const content = contentRef.current;
@@ -202,7 +229,7 @@ function Activities({ provinceData, selectedActivities = [], onActivitySelect = 
                             ref={grupo === 0 ? firstGroupRef : null}
                             aria-hidden={grupo === 1}
                         >
-                            {provinceData.actividades.map((actividad) => {
+                            {activityNames.map((actividad) => {
                                 const { Icon } = getActivityIcon(actividad);
                                 const activityKey = normalizeActivity(actividad);
                                 const isSelected = selectedActivityKeys.has(activityKey);

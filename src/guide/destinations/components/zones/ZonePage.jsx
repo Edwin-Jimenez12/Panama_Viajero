@@ -16,6 +16,7 @@ import { provincias as cocleProvincias } from '../../destinations-pages/cocle/Co
 import { provincias as panamaProvincias } from '../../destinations-pages/panama/PanamaData.js'
 import { provincias as panamaOesteProvincias } from '../../destinations-pages/panama-oeste/PanamaOesteData.js'
 import { provincias as veraguasProvincias } from '../../destinations-pages/veraguas/VeraguasData.js'
+import { usePublishedSites } from '../../context/publishedSitesStore.js'
 
 const provinceDataRegistry = {
   chiriqui: chiriquiProvincias[0],
@@ -40,6 +41,7 @@ function ZonePage() {
   const navigate = useNavigate()
   const [scrollProgress, setScrollProgress] = useState(0)
   const [selectedActivities, setSelectedActivities] = useState([])
+  const { sites: publishedSites } = usePublishedSites()
   const deferredSelectedActivities = useDeferredValue(selectedActivities)
 
   const decodedZoneId = zoneId ? decodeURIComponent(zoneId) : ''
@@ -54,8 +56,22 @@ function ZonePage() {
   const safeHeading = zone?.nombre || fallbackTarget?.nombre || 'Zona'
   const safeDescription = zone?.descripcion || fallbackTarget?.descripcion || provinceData?.descripcionCorta || ''
   const sitios = useMemo(
-    () => (zone?.sitios || []).map((id) => siteRegistry[id]).filter(Boolean),
-    [zone],
+    () => {
+      const staticSites = (zone?.sitios || [])
+        .map((id) => siteRegistry[id])
+        .filter(Boolean)
+      const dynamicSites = publishedSites.filter((site) => (
+        site.provinceId === provinceId
+        && site.zoneId === decodedZoneId
+      ))
+
+      return Array.from(
+        new Map(
+          [...staticSites, ...dynamicSites].map((site) => [site.id, site]),
+        ).values(),
+      )
+    },
+    [decodedZoneId, provinceId, publishedSites, zone],
   )
   const isColonZone = provinceId === 'colon'
   const zoneActivities = useMemo(
@@ -73,6 +89,7 @@ function ZonePage() {
     () => ({
       ...provinceData,
       actividades: zoneActivities,
+      isActivityScopeComplete: true,
     }),
     [provinceData, zoneActivities],
   )

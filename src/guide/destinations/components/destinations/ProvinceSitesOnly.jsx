@@ -1,5 +1,6 @@
 import ProvinceTargetsGrid from './ProvinceTargetsGrid.jsx'
 import { siteRegistry } from '../../destinations-pages/siteRegistry.js'
+import { usePublishedSites } from '../../context/publishedSitesStore.js'
 
 function ProvinceSitesOnly({
   provinceData,
@@ -9,6 +10,7 @@ function ProvinceSitesOnly({
   provinceLabel,
   zoneLabel,
 }) {
+  const { sites: publishedSites } = usePublishedSites()
   const provinceId = provinceData?.id ?? ''
   const directSiteIds = provinceData?.directSiteIds ?? []
 
@@ -24,9 +26,16 @@ function ProvinceSitesOnly({
           .filter((site) => belongsToProvince(site))
           .map((site) => site.id)
 
-  const targets = fallbackSiteIds
+  const staticSites = fallbackSiteIds
     .map((siteId) => siteRegistry[siteId])
     .filter(Boolean)
+  const dynamicSites = publishedSites.filter((site) => belongsToProvince(site))
+  const mergedSites = Array.from(
+    new Map(
+      [...staticSites, ...dynamicSites].map((site) => [site.id, site]),
+    ).values(),
+  )
+  const targets = mergedSites
     .map((site) => ({
       id: site.id,
       nombre: site.nombre,

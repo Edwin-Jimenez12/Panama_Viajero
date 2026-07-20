@@ -38,15 +38,7 @@ export const provincias = [
       'Bioluminiscencia',
 
     ],
-    directSiteIds: [
-      'isla-colon',
-      'isla-bastimentos',
-      'cayo-zapatilla',
-      'isla-carenero',
-      'bahia-de-los-delfines',
-      'cayo-coral',
-      'almirante',
-    ],
+    directSiteIds: [],
     displayMode: 'sites-only',
   },
 ]
