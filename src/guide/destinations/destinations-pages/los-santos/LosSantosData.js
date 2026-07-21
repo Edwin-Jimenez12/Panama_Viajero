@@ -36,7 +36,7 @@ export const provincias = [
       'Yoga',
     ],
 
-    directSiteIds: ['las-tablas', 'la-villa','isla-iguana','isla-canas', 'pedasi','playa-venao','tonosi'],
+    directSiteIds: [],
     displayMode: 'sites-only',
   },
 ]
